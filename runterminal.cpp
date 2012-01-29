@@ -3,9 +3,9 @@
 #include <QProcess>
 #include <mainwindow.h>
 
-
 runTerminal::runTerminal(QObject *parent) : QObject(parent)
 {
+    TermianlOutputDialog = new DialogTerminalOutput;
 }
 
 QString runTerminal::sayHello()
@@ -39,14 +39,15 @@ void runTerminal::runcmd(QString cmd, QStringList args)
 
 void runTerminal::readstdoutput()
 {
-    QByteArray strdata = process->readAllStandardOutput();
+    strdata = process->readAllStandardOutput();
     qDebug() << "Standard output:" << strdata;
 }
 
 void runTerminal::readstderr()
 {
-    QByteArray stderrdata = process->readAllStandardError();
+    stderrdata = process->readAllStandardError();
     qDebug() << "Standard Error:" <<stderrdata;
+    TermianlOutputDialog->stderroutput(stderrdata);
 }
 
 void runTerminal::onProcessFinished(int exitCode, QProcess::ExitStatus status)

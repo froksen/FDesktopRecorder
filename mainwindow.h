@@ -4,6 +4,7 @@
 #include <configurationfile.h>
 #include <aboutprog.h>
 #include <windowgrapper.h>
+#include <dialogterminaloutput.h>
 
 #include <QMainWindow>
 
@@ -23,7 +24,9 @@ private slots:
     void on_pushButtonStartrecord_clicked();
     void on_pushButtonStoprecord_clicked();
     void on_actionAbout_triggered();
-    void onProcessFinished();
+    void onProcessFinished(int Exitcode);
+
+    void on_actionShow_Terminal_output_triggered();
 
 private:
     Ui::MainWindow *ui;
@@ -31,6 +34,7 @@ private:
 
     //fixResolution
     int fixResolution(int number);
+    QString setFilename(QString path, QString basename, QString format);
 
 
     //Other

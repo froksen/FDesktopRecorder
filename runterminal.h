@@ -3,6 +3,7 @@
 
 #include <QObject>
 #include <QProcess>
+#include <dialogterminaloutput.h>
 
 class runTerminal : public QObject
 {
@@ -16,6 +17,10 @@ public:
 
     //QProcess
     QProcess *process;
+    QByteArray strdata;
+    QByteArray stderrdata;
+
+
 
 signals:
 
@@ -27,6 +32,7 @@ public slots:
     void stopProcess();
 
 private:
+    DialogTerminalOutput *TermianlOutputDialog;
 
 };
 

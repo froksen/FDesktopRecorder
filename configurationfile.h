@@ -18,9 +18,12 @@ public:
     QString getValue(QString key, QString group);
     int ValueExists(QString key, QString group);
     void writeValue(QString keyvalue, QString key, QString group);
+    void setDefaults();
+
+    QSettings configurationfile;
+
 
 private:
-    QSettings configurationfile;
 
 };
 
