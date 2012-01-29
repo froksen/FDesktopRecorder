@@ -4,6 +4,7 @@
 #include <QObject>
 #include <configurationfile.h>
 #include <QStringList>
+#include <QSettings>
 
 class RecordingDevices : public QObject
 {

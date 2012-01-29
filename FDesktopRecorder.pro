@@ -17,7 +17,8 @@ SOURCES += main.cpp\
     aboutprog.cpp \
     windowgrapper.cpp \
     dialogterminaloutput.cpp \
-    recordingdevices.cpp
+    recordingdevices.cpp \
+    settingsdialog.cpp
 
 HEADERS  += mainwindow.h \
     runterminal.h \
@@ -25,15 +26,20 @@ HEADERS  += mainwindow.h \
     aboutprog.h \
     windowgrapper.h \
     dialogterminaloutput.h \
-    recordingdevices.h
+    recordingdevices.h \
+    settingsdialog.h
 
 FORMS    += mainwindow.ui\
             aboutprog.ui \
-    dialogterminaloutput.ui
+    dialogterminaloutput.ui \
+    settingsdialog.ui
 
 
 TRANSLATIONS    = translations/FDesktopRecorder_da_DK.ts \
                   translations/FDesktopRecorder_de_DE.ts \
+
+
+
 
 
 

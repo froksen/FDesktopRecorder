@@ -107,7 +107,7 @@ void MainWindow::on_pushButtonStartrecord_clicked()
    ui->actionAbout->setEnabled(0);
    ui->actionSettings->setEnabled(0);
 
-   ui->statusBar->showMessage(trUtf8("Recording started to file:") + filename);
+   ui->statusBar->showMessage(trUtf8("Recording started") + " (" + filename + ")");
 }
 
 void MainWindow::on_pushButtonStoprecord_clicked()
@@ -156,3 +156,9 @@ void MainWindow::on_actionShow_Terminal_output_triggered()
     TerminalOutputDialog->show();
 }
 
+
+void MainWindow::on_actionSettings_triggered()
+{
+    SettingsDialog *dialogsettings = new SettingsDialog();
+    dialogsettings->exec();
+}

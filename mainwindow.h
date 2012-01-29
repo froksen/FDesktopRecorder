@@ -5,6 +5,7 @@
 #include <aboutprog.h>
 #include <windowgrapper.h>
 #include <dialogterminaloutput.h>
+#include <settingsdialog.h>
 
 #include <QMainWindow>
 
@@ -27,6 +28,8 @@ private slots:
     void onProcessFinished(int Exitcode);
 
     void on_actionShow_Terminal_output_triggered();
+
+    void on_actionSettings_triggered();
 
 private:
     Ui::MainWindow *ui;

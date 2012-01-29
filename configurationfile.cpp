@@ -1,6 +1,9 @@
 #include "configurationfile.h"
 #include <QStringList>
 #include <QDir>
+#include <recordingdevices.h>
+#include <QDebug>
+
 
 
 ConfigurationFile::ConfigurationFile(QObject *parent) :
@@ -65,8 +68,10 @@ void ConfigurationFile::setDefaults()
     values2check.clear();
     values2write.clear();
 
+    RecordingDevices *RecordingDevicesClass = new RecordingDevices();
+    RecordingDevicesClass->getRecorddevices();
     values2check << "defaultrecorddevice" << "defaultformat" << "defaultname" << "defaultpath";
-    values2write << "hw:1,0" << "avi" << trUtf8("recording") << QDir::homePath();
+    values2write << RecordingDevicesClass->RecordDeviceHW[0] << "avi" << trUtf8("recording") << QDir::homePath();
 
     index = 0;
     foreach(QString item, values2check)

@@ -101,7 +101,6 @@
    <addaction name="actionAbout"/>
    <addaction name="actionSettings"/>
    <addaction name="separator"/>
-   <addaction name="actionShow_Terminal_output"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionAbout">
