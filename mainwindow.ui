@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>444</width>
+    <width>510</width>
     <height>107</height>
    </rect>
   </property>
@@ -34,7 +34,7 @@
         </property>
        </widget>
       </item>
-      <item row="0" column="3">
+      <item row="0" column="4">
        <widget class="QPushButton" name="pushButtonStartrecord">
         <property name="text">
          <string>Record</string>
@@ -54,10 +54,17 @@
         </property>
        </spacer>
       </item>
-      <item row="0" column="4">
+      <item row="0" column="5">
        <widget class="QPushButton" name="pushButtonStoprecord">
         <property name="text">
          <string>Stop</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QCheckBox" name="checkBoxRecordaudio">
+        <property name="text">
+         <string>Mute microphone</string>
         </property>
        </widget>
       </item>
@@ -70,7 +77,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>444</width>
+     <width>510</width>
      <height>21</height>
     </rect>
    </property>

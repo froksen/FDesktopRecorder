@@ -11,8 +11,30 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    runterminal.cpp \
+    configurationfile.cpp \
+    aboutprog.cpp \
+    windowgrapper.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    runterminal.h \
+    configurationfile.h \
+    aboutprog.h \
+    windowgrapper.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui\
+            aboutprog.ui \
+
+
+TRANSLATIONS    = translations/FDesktopRecorder_da_DK.ts \
+                  translations/FDesktopRecorder_de_DE.ts \
+
+
+
+
+
+
+
+
+
