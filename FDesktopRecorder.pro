@@ -38,6 +38,14 @@ FORMS    += mainwindow.ui\
 TRANSLATIONS    = translations/FDesktopRecorder_da_DK.ts \
                   translations/FDesktopRecorder_de_DE.ts \
 
+RESOURCES += \
+    resources.qrc
+
+
+
+
+
+
 
 
 

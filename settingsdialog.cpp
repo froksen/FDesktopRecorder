@@ -41,6 +41,9 @@ void SettingsDialog::writeSettings()
     ConfigurationFileClass->configurationfile.setValue("defaultname",ui->lineEditbasename->text());
     ConfigurationFileClass->configurationfile.setValue("defaultpath",ui->lineEditpath->text());
 
+    int comboxformatindex = ui->comboBoxFormat->currentIndex();
+    ConfigurationFileClass->configurationfile.setValue("defaultformat",ui->comboBoxFormat->itemData(comboxformatindex));
+
     ConfigurationFileClass->configurationfile.endGroup();
     ConfigurationFileClass->configurationfile.sync();
 
@@ -81,12 +84,34 @@ void SettingsDialog::readSettings()
         index += 1;
     }
 
+    QStringList ItemFormatList;
+    //Addes the diffent formats. PLEASE NOTE: the order is important.
+    ItemFormatList << "mkv";
+    ItemFormatList << "avi";
+
+
+    QStringList ItemDescList;
+    ItemDescList << "MKV - Matroska Multimedia Container";
+    ItemDescList << "AVI - Audio Video Interleaver";
+
+
+    int Indexnumber = 0;
+    foreach(QString format,ItemFormatList)
+    {
+        ui->comboBoxFormat->addItem(ItemDescList[Indexnumber],format);
+        Indexnumber += 1;
+    }
+
 
     ConfigurationFile *ConfigurationFileClass = new ConfigurationFile();
     //Reads and sets the value from the cfg file
     QString recordingdevice = ConfigurationFileClass->getValue("defaultrecorddevice","startupbehavior");
     int comboboxIndex = ui->comboBoxrecording->findData(recordingdevice);
     ui->comboBoxrecording->setCurrentIndex(comboboxIndex);
+
+    QString formatcfg = ConfigurationFileClass->getValue("defaultformat","startupbehavior");
+    int comboboxIndexfind = ui->comboBoxFormat->findData(formatcfg);
+    ui->comboBoxFormat->setCurrentIndex(comboboxIndexfind);
 
     QString videocodec = ConfigurationFileClass->getValue("videocodec","record");
     QString audiocodec = ConfigurationFileClass->getValue("audiocodec","record");

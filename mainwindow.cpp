@@ -2,6 +2,9 @@
 #include "ui_mainwindow.h"
 #include <QDebug>
 #include <QFileInfo>
+#include <QtGui>
+#include <QtCore>
+#include <QSystemTrayIcon>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -16,6 +19,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ConfigurationFileClass = new ConfigurationFile();
 
     ConfigurationFileClass->setDefaults();
+
+    createsystemtray();
 }
 
 MainWindow::~MainWindow()
@@ -106,6 +111,8 @@ void MainWindow::on_pushButtonStartrecord_clicked()
    ui->radioButtonEntirescreen->setEnabled(0);
    ui->actionAbout->setEnabled(0);
    ui->actionSettings->setEnabled(0);
+   trayIcon->setIcon(QIcon(":/trolltech/styles/commonstyle/images/media-stop-16.png"));
+   stoprecord->setEnabled(true);
 
    ui->statusBar->showMessage(trUtf8("Recording started") + " (" + filename + ")");
 }
@@ -139,6 +146,9 @@ void MainWindow::onProcessFinished(int Exitcode)
         ui->radioButtonEntirescreen->setEnabled(1);
         ui->actionAbout->setEnabled(1);
         ui->actionSettings->setEnabled(1);
+
+        trayIcon->setIcon((QIcon)":/images/icon.png");
+        stoprecord->setEnabled(false);
     }
 }
 
@@ -161,4 +171,62 @@ void MainWindow::on_actionSettings_triggered()
 {
     SettingsDialog *dialogsettings = new SettingsDialog();
     dialogsettings->exec();
+}
+
+void MainWindow::createsystemtray()
+{
+    //Defines the actions
+    viewhidewindow = new QAction(tr("&Show/Hide window"), this);
+    connect(viewhidewindow, SIGNAL(triggered()), this, SLOT(showhidewindow()));
+
+    stoprecord = new QAction(tr("&Stop recording"), this);
+    connect(stoprecord, SIGNAL(triggered()), this, SLOT(on_pushButtonStoprecord_clicked()));
+
+    latestrecording = new QAction(trUtf8("&Latest recording: "),this);
+    latestrecording->setEnabled(false);
+
+//    settingsfile.beginGroup("misc");
+//    if(settingsfile.contains("latestrecording"))
+//    {
+//        latestrecording->setText(trUtf8("Latest recording: ") + settingsfile.value("latestrecording").toString());
+//        qDebug() << "Latest recording: " + settingsfile.value("latestrecording").toString();
+//    }
+//    settingsfile.endGroup();
+
+    quitAction = new QAction(tr("&Quit program"), this);
+    connect(quitAction, SIGNAL(triggered()), qApp , SLOT(quit()));
+
+    // Makes the layout
+
+    trayIcon = new QSystemTrayIcon;
+
+    trayIconMenu = new QMenu(this);
+    trayIconMenu->addAction(latestrecording);
+    trayIconMenu->addSeparator();;
+    trayIconMenu->addAction(viewhidewindow);
+    trayIconMenu->addAction(stoprecord);
+    stoprecord->setEnabled(false);
+    trayIconMenu->addAction(quitAction);
+
+    //Sets the icon
+    trayIcon->setContextMenu(trayIconMenu);
+    trayIcon->setIcon((QIcon)":/images/icon.png");
+    //trayIcon->setIcon(QIcon(":/trolltech/styles/commonstyle/images/media-stop-16.png"));
+    //connect(trayIcon, SIGNAL(activated(QSystemTrayIcon::ActivationReason)),
+            //this, SLOT(iconActivated(QSystemTrayIcon::ActivationReason)));
+
+    //Shows the icon
+    trayIcon->show();
+}
+
+void MainWindow::showhidewindow()
+{
+    if(MainWindow::isHidden())
+    {
+       MainWindow::show();
+    }
+    else
+    {
+        MainWindow::hide();
+    }
 }
