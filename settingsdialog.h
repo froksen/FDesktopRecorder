@@ -20,6 +20,8 @@ private slots:
 
     void on_pushButtonRestore_clicked();
 
+    void on_pushButtonpathBrowse_clicked();
+
 private:
     Ui::SettingsDialog *ui;
 

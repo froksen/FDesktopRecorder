@@ -4,6 +4,7 @@
 #include <recordingdevices.h>
 #include <QDebug>
 #include <QFile>
+#include <QFileDialog>
 
 SettingsDialog::SettingsDialog(QWidget *parent) :
     QDialog(parent),
@@ -36,9 +37,11 @@ void SettingsDialog::writeSettings()
 
     int comboboxindex = ui->comboBoxrecording->currentIndex();
     ConfigurationFileClass->configurationfile.setValue("defaultrecorddevice",ui->comboBoxrecording->itemData(comboboxindex));
+
+    ConfigurationFileClass->configurationfile.setValue("defaultname",ui->lineEditbasename->text());
+    ConfigurationFileClass->configurationfile.setValue("defaultpath",ui->lineEditpath->text());
+
     ConfigurationFileClass->configurationfile.endGroup();
-
-
     ConfigurationFileClass->configurationfile.sync();
 
     delete ConfigurationFileClass;
@@ -70,6 +73,7 @@ void SettingsDialog::readSettings()
 
     //Creates the combobx containing the recording devices.
     int index = 0;
+    ui->comboBoxrecording->clear();
     foreach(QString device,RecordingDevicesclass->RecordDeviceHW)
     {
         ui->comboBoxrecording->addItem(RecordingDevicesclass->RecordDeviceDesc[index],device);
@@ -99,4 +103,23 @@ void SettingsDialog::readSettings()
     ui->spinBoxfps->setValue(fps.toInt());
     ui->lineEditbasename->setText(defaultname);
     ui->lineEditpath->setText(defaultpath);
+}
+
+void SettingsDialog::on_pushButtonpathBrowse_clicked()
+{
+
+    QString prefileName = ui->lineEditpath->text();
+
+    QString fileName = QFileDialog::getExistingDirectory(this, tr("Open Directory"),
+                                                         prefileName,
+                                                         QFileDialog::ShowDirsOnly
+                                                         | QFileDialog::DontResolveSymlinks);
+    if(fileName.size()>0){
+        ui->lineEditpath->setText(fileName);
+    }
+    else{
+        fileName = prefileName;
+        ui->lineEditpath->setText(fileName);
+    }
+
 }
