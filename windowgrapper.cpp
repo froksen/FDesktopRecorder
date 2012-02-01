@@ -32,3 +32,81 @@ QString WindowGrapper::Fullscreenaspects()
     qDebug () << "Fullscreen geometry:" << geometry;
     return geometry;
 }
+
+QString WindowGrapper::Singlewindowgeometry(QString Text)
+{
+    QString geometry;
+    QStringList argsscript;
+    QString geometryWidth;
+    QString geometryHeight;
+    QString corners;
+    QString argcorners;
+
+    QString p_stdout = Text;
+
+    //Gets the width of the screen.
+    QTextStream inw(&p_stdout);
+    while ( !inw.atEnd() )
+    {
+       QString widthline = inw.readLine();
+       if(widthline.left(8) == "  Width:")
+       {
+       geometryWidth = widthline.remove(0,9);
+       }
+    }
+    geometryWidth = QString::number(fixResolution(geometryWidth.toInt()));
+    qDebug() << "Width:" << geometryWidth;
+
+    //Gets the height of the screen.
+    QTextStream inh(&p_stdout);
+    while ( !inh.atEnd() )
+    {
+        QString heightline = inh.readLine();
+        if(heightline.left(9) == "  Height:")
+        {
+        geometryHeight = heightline.remove(0,10);
+        qDebug() << "Height:" << geometryHeight;
+        }
+    }
+
+    geometryHeight = QString::number(fixResolution(geometryHeight.toInt()));
+    qDebug() << "Height:" << geometryHeight;
+
+    geometry = geometryWidth + "x" + geometryHeight;
+
+    return geometry;
+
+
+    argsscript.clear();
+}
+
+QString WindowGrapper::Singlewindowcorners(QString Text)
+{
+    QString geometry;
+    QStringList argsscript;
+    QString geometryWidth;
+    QString geometryHeight;
+    QString corners;
+    QString argcorners;
+
+    QString p_stdout = Text;
+
+    QTextStream in(&p_stdout);
+    while ( !in.atEnd() )
+    {
+       QString line = in.readLine();
+       if(line.left(10) == "  Corners:")
+       {
+       qDebug() << "Geometry line found in xwininfo:" << line;
+       corners = line.remove(0,13);
+       corners = corners.remove(8,100);
+       corners = corners.replace("+",",");
+       corners = corners.replace("-",",");
+       qDebug() << "Corners:" << corners;
+       }
+
+       argcorners = ":0.0+"+corners;
+    }
+
+    return argcorners;
+}

@@ -30,8 +30,15 @@ private slots:
     void showhidewindow();
     void on_actionConsole_triggered();
 
+    //Todo with the process
     void readstderr();
     void readstdout();
+
+    //Pushbutton Menu slots
+    void startRecordandminimize();
+
+    //Systemtray slots
+    void iconActivated(QSystemTrayIcon::ActivationReason reason);
 
 private:
     Ui::MainWindow *ui;

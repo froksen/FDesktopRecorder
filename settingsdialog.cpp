@@ -13,6 +13,7 @@ SettingsDialog::SettingsDialog(QWidget *parent) :
     ui->setupUi(this);
     readSettings();
 
+    on_checkBoxMicMute_clicked();
 }
 
 SettingsDialog::~SettingsDialog()
@@ -37,6 +38,16 @@ void SettingsDialog::writeSettings()
 
     int comboboxindex = ui->comboBoxrecording->currentIndex();
     ConfigurationFileClass->configurationfile.setValue("defaultrecorddevice",ui->comboBoxrecording->itemData(comboboxindex));
+
+    if(ui->checkBoxMicMute->isChecked())
+    {
+        ConfigurationFileClass->configurationfile.setValue("defaultrecorddeviceMute","true");
+    }
+    else
+    {
+        ConfigurationFileClass->configurationfile.setValue("defaultrecorddeviceMute","false");
+    }
+
 
     ConfigurationFileClass->configurationfile.setValue("defaultname",ui->lineEditbasename->text());
 
@@ -68,6 +79,9 @@ void SettingsDialog::on_buttonBox_accepted()
 
 void SettingsDialog::on_pushButtonRestore_clicked()
 {
+    ui->checkBoxMicMute->setChecked(1);
+    ui->comboBoxrecording->setEnabled(0);
+
     ConfigurationFile *ConfigurationFileClass = new ConfigurationFile();
     ConfigurationFileClass->configurationfile.clear();
     ConfigurationFileClass->setDefaults();
@@ -121,6 +135,12 @@ void SettingsDialog::readSettings()
     QString formatcfg = ConfigurationFileClass->getValue("defaultformat","startupbehavior");
     int comboboxIndexfind = ui->comboBoxFormat->findData(formatcfg);
     ui->comboBoxFormat->setCurrentIndex(comboboxIndexfind);
+
+    if(ConfigurationFileClass->getValue("defaultrecorddeviceMute","startupbehavior") == "false")
+    {
+        ui->checkBoxMicMute->setChecked(0);
+        on_checkBoxMicMute_clicked();
+    }
 
     QString videocodec = ConfigurationFileClass->getValue("videocodec","record");
     QString audiocodec = ConfigurationFileClass->getValue("audiocodec","record");
@@ -178,5 +198,17 @@ void SettingsDialog::on_checkBoxbasenametimedate_clicked()
     else
     {
         ui->lineEditbasename->setEnabled(1);
+    }
+}
+
+void SettingsDialog::on_checkBoxMicMute_clicked()
+{
+    if(ui->checkBoxMicMute->isChecked())
+    {
+        ui->comboBoxrecording->setEnabled(0);
+    }
+    else
+    {
+        ui->comboBoxrecording->setEnabled(1);
     }
 }

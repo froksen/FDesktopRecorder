@@ -24,6 +24,8 @@ private slots:
 
     void on_checkBoxbasenametimedate_clicked();
 
+    void on_checkBoxMicMute_clicked();
+
 private:
     Ui::SettingsDialog *ui;
 

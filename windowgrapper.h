@@ -12,6 +12,8 @@ public:
     int fixResolution(int number);
 
     QString Fullscreenaspects();
+    QString Singlewindowgeometry(QString Text);
+    QString Singlewindowcorners(QString Text);
 
 signals:
 

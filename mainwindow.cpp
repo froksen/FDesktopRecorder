@@ -10,24 +10,47 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
-
     ui->setupUi(this);
+    //Makes sure that the program can run i bg
+    //QApplication::setQuitOnLastWindowClosed(false);
+
+
+    //Hides objects that needs to be hidden
     ui->dockWidget->hide();
-
-    MainWindow::setFixedHeight(107);
-
-
     ui->pushButtonStoprecord->hide();
 
+    //Sets the MainWindow size
+    MainWindow::setFixedHeight(107);
     QRect r = MainWindow::geometry();
     r.moveCenter(QApplication::desktop()->availableGeometry().center());
 
-    //Sets pointers
+    //Sets pointers to other dialogs
     runTerminalClass = new runTerminal();
     ConfigurationFileClass = new ConfigurationFile();
 
+    //If there is no cfg file. it will be set.
     ConfigurationFileClass->setDefaults();
 
+
+    //Set the Startrecord PushButton menu
+    QMenu *Recordbuttonmenu = new QMenu();
+    QAction *startrecording = new QAction(trUtf8("Start recording"), this);
+    connect(startrecording,SIGNAL(triggered()),this,SLOT(on_pushButtonStartrecord_clicked()));
+    QAction *startandminimize = new QAction(trUtf8("Minimize and start record"), this);
+    connect(startandminimize,SIGNAL(triggered()),this,SLOT(startRecordandminimize()));
+
+    Recordbuttonmenu->addAction(startrecording);
+    Recordbuttonmenu->addAction(startandminimize);
+    ui->pushButtonStartrecord->setMenu(Recordbuttonmenu);
+
+
+    //Reads from cfg file
+    if(ConfigurationFileClass->getValue("defaultrecorddeviceMute","startupbehavior") != "false")
+    {
+        ui->checkBoxRecordaudio->setChecked(1);
+    }
+
+    //Creates systemtrayp
     createsystemtray();
 
 
@@ -38,6 +61,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+//This function appends a number to the end of a filename if filename exists!
 QString MainWindow::setFilename(QString path, QString basename, QString format)
 {
     QFileInfo Filename = path + "/" + basename + "." + format;
@@ -52,6 +76,7 @@ QString MainWindow::setFilename(QString path, QString basename, QString format)
 }
 
 
+//This function handles what happens when Start Record is clicked!
 void MainWindow::on_pushButtonStartrecord_clicked()
 {
     QStringList recordingargs;
@@ -63,7 +88,29 @@ void MainWindow::on_pushButtonStartrecord_clicked()
     QString audiocodec = ConfigurationFileClass->getValue("audiocodec","record");
     QString audiochannels = ConfigurationFileClass->getValue("audiochannels","record");
     QString fps = ConfigurationFileClass->getValue("fps","record");
-    QString geometry = WindowGrapperClass->Fullscreenaspects();
+
+    QString geometry;
+    QString corners;
+    if(ui->radioButtonSinglewindow->isChecked())
+    {
+        QProcess p;
+        QStringList argsscript;
+        argsscript << "-frame";
+        p.start("xwininfo",argsscript);
+        p.waitForFinished(-1);
+
+        QString p_stdout = p.readAllStandardOutput();
+        QString p_stderr = p.readAllStandardError();
+
+        geometry = WindowGrapperClass->Singlewindowgeometry(p_stdout);
+        corners = WindowGrapperClass->Singlewindowcorners(p_stdout);
+    }
+    else
+    {
+        geometry = WindowGrapperClass->Fullscreenaspects();
+        corners = ":0.0";
+    }
+
 
     QString defaultpath = ConfigurationFileClass->getValue("defaultpath", "startupbehavior");
 
@@ -107,7 +154,7 @@ void MainWindow::on_pushButtonStartrecord_clicked()
     recordingargs << "-s";
     recordingargs << geometry;
     recordingargs << "-i";
-    recordingargs << ":0.0";
+    recordingargs << corners;
 
     recordingargs << "-vcodec";
     recordingargs << videocodec;
@@ -134,6 +181,7 @@ void MainWindow::on_pushButtonStartrecord_clicked()
     connect(runTerminalClass->process,SIGNAL(finished(int,QProcess::ExitStatus)),this,SLOT(onProcessFinished(int)));
 
    ui->checkBoxRecordaudio->setEnabled(0);
+   ui->radioButtonSinglewindow->setEnabled(0);
    ui->radioButtonEntirescreen->setEnabled(0);
    ui->actionAbout->setEnabled(0);
    ui->actionSettings->setEnabled(0);
@@ -181,6 +229,7 @@ void MainWindow::onProcessFinished(int Exitcode)
     {
         ui->checkBoxRecordaudio->setEnabled(1);
         ui->radioButtonEntirescreen->setEnabled(1);
+        ui->radioButtonSinglewindow->setEnabled(1);
         ui->actionAbout->setEnabled(1);
         ui->actionSettings->setEnabled(1);
 
@@ -239,12 +288,38 @@ void MainWindow::createsystemtray()
     //Sets the icon
     trayIcon->setContextMenu(trayIconMenu);
     trayIcon->setIcon((QIcon)":/images/icon.png");
-    //trayIcon->setIcon(QIcon(":/trolltech/styles/commonstyle/images/media-stop-16.png"));
-    //connect(trayIcon, SIGNAL(activated(QSystemTrayIcon::ActivationReason)),
-            //this, SLOT(iconActivated(QSystemTrayIcon::ActivationReason)));
+    connect(trayIcon, SIGNAL(activated(QSystemTrayIcon::ActivationReason)),
+            this, SLOT(iconActivated(QSystemTrayIcon::ActivationReason)));
 
     //Shows the icon
     trayIcon->show();
+}
+
+// Handles what happens when the systemtray icon is clicked!
+void MainWindow::iconActivated(QSystemTrayIcon::ActivationReason reason)
+{
+    switch (reason) {
+    case QSystemTrayIcon::Trigger:
+        if(stoprecord->isEnabled())
+        {
+            qDebug() << "Recording stopped";
+            on_pushButtonStoprecord_clicked();
+            showhidewindow();
+        }
+        else
+        {
+            qDebug() << "No recording started, and there for nothing to stop";
+            break;
+        }
+        break;
+    case QSystemTrayIcon::DoubleClick:
+        showhidewindow();
+        break;
+    case QSystemTrayIcon::MiddleClick:
+        break;
+    default:
+        ;
+    }
 }
 
 void MainWindow::showhidewindow()
@@ -288,4 +363,10 @@ void MainWindow::readstdout()
 {
     QByteArray stdout = runTerminalClass->strdata;
     ui->textEditConsole->append(stdout);
+}
+
+void MainWindow::startRecordandminimize()
+{
+    showhidewindow();
+    on_pushButtonStartrecord_clicked();
 }

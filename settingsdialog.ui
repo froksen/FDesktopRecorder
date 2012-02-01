@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>422</width>
-    <height>347</height>
+    <width>426</width>
+    <height>362</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -49,52 +49,65 @@
          <item row="0" column="0">
           <widget class="QLabel" name="labelfps">
            <property name="text">
-            <string>Frames pr. second</string>
+            <string>Frames pr. sec</string>
            </property>
           </widget>
          </item>
          <item row="0" column="1">
-          <widget class="QSpinBox" name="spinBoxfps"/>
+          <widget class="QSpinBox" name="spinBoxfps">
+           <property name="toolTip">
+            <string>Changes the framerate in the recording</string>
+           </property>
+          </widget>
          </item>
          <item row="1" column="0">
           <widget class="QLabel" name="labelvideocodec">
            <property name="text">
-            <string>Videocodec</string>
+            <string>Video codec</string>
            </property>
           </widget>
          </item>
          <item row="1" column="1">
-          <widget class="QLineEdit" name="lineEditvideocodec"/>
+          <widget class="QLineEdit" name="lineEditvideocodec">
+           <property name="toolTip">
+            <string>Changes the video codec used in the recording</string>
+           </property>
+          </widget>
          </item>
          <item row="2" column="0">
           <widget class="QLabel" name="labelaudiocodec">
            <property name="text">
-            <string>Audiocodec</string>
+            <string>Audio codec</string>
            </property>
           </widget>
          </item>
          <item row="2" column="1">
-          <widget class="QLineEdit" name="lineEditaudiocodec"/>
+          <widget class="QLineEdit" name="lineEditaudiocodec">
+           <property name="toolTip">
+            <string>Changes the audio codec used in the recording</string>
+           </property>
+          </widget>
          </item>
          <item row="3" column="0">
           <widget class="QLabel" name="labelaudiochannles">
            <property name="text">
-            <string>Audio channels</string>
+            <string>Audiochannels</string>
            </property>
           </widget>
          </item>
          <item row="3" column="1">
-          <widget class="QSpinBox" name="spinBoxaudiochannels"/>
+          <widget class="QSpinBox" name="spinBoxaudiochannels">
+           <property name="toolTip">
+            <string>Changes the number of audiochannels used</string>
+           </property>
+          </widget>
          </item>
          <item row="4" column="0">
           <widget class="QLabel" name="labelRecordingdevice">
            <property name="text">
-            <string>Recording device</string>
+            <string>Microphone</string>
            </property>
           </widget>
-         </item>
-         <item row="4" column="1">
-          <widget class="QComboBox" name="comboBoxrecording"/>
          </item>
          <item row="5" column="0" colspan="2">
           <widget class="Line" name="line">
@@ -113,10 +126,17 @@
          <item row="6" column="1">
           <layout class="QGridLayout" name="gridLayout">
            <item row="0" column="0">
-            <widget class="QLineEdit" name="lineEditbasename"/>
+            <widget class="QLineEdit" name="lineEditbasename">
+             <property name="toolTip">
+              <string>Choose a basename.</string>
+             </property>
+            </widget>
            </item>
            <item row="0" column="1">
             <widget class="QCheckBox" name="checkBoxbasenametimedate">
+             <property name="toolTip">
+              <string>Use the time and date as the basename.</string>
+             </property>
              <property name="text">
               <string>Time/Date</string>
              </property>
@@ -135,6 +155,9 @@
           <layout class="QGridLayout" name="gridLayout_3">
            <item row="0" column="0">
             <widget class="QLineEdit" name="lineEditpath">
+             <property name="toolTip">
+              <string>Choose where to save your recordings</string>
+             </property>
              <property name="readOnly">
               <bool>true</bool>
              </property>
@@ -142,6 +165,9 @@
            </item>
            <item row="0" column="1">
             <widget class="QPushButton" name="pushButtonpathBrowse">
+             <property name="toolTip">
+              <string>Change the default path.</string>
+             </property>
              <property name="text">
               <string>Change</string>
              </property>
@@ -157,9 +183,44 @@
           </widget>
          </item>
          <item row="8" column="1">
-          <widget class="QComboBox" name="comboBoxFormat"/>
+          <widget class="QComboBox" name="comboBoxFormat">
+           <property name="toolTip">
+            <string>Choose which format the recordings should be saved with. </string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="0" column="0">
+            <widget class="QComboBox" name="comboBoxrecording">
+             <property name="toolTip">
+              <string>Select a microphone input device</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QCheckBox" name="checkBoxMicMute">
+             <property name="toolTip">
+              <string>Mute the microphone. (No audio will be recorded)</string>
+             </property>
+             <property name="text">
+              <string>Mute</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </item>
         </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>NOTE: Some changes might first apply after a restart of this program</string>
+         </property>
+        </widget>
        </item>
        <item>
         <spacer name="verticalSpacer">
@@ -177,6 +238,7 @@
       </layout>
       <zorder>labelRecordheader</zorder>
       <zorder>verticalSpacer</zorder>
+      <zorder>label</zorder>
      </widget>
     </widget>
    </item>
@@ -184,6 +246,9 @@
     <layout class="QGridLayout" name="gridLayout_2">
      <item row="0" column="1">
       <widget class="QDialogButtonBox" name="buttonBox">
+       <property name="statusTip">
+        <string>Save or decline changes</string>
+       </property>
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
@@ -194,6 +259,12 @@
      </item>
      <item row="0" column="0">
       <widget class="QPushButton" name="pushButtonRestore">
+       <property name="toolTip">
+        <string>Restores the settings to the defaults. Please note, these can not be undone!</string>
+       </property>
+       <property name="statusTip">
+        <string>Restore to default. PLEASE NOTE: CAN NOT BE UNDONE!</string>
+       </property>
        <property name="text">
         <string>Restore to default</string>
        </property>

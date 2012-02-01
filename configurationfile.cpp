@@ -85,6 +85,11 @@ void ConfigurationFile::setDefaults()
         index += 1;
     }
 
+    configurationfile.beginGroup("startupbehavior");
+    configurationfile.setValue("defaultrecorddeviceMute","true");
+    configurationfile.endGroup();
+
+
     //Writes the settings
     configurationfile.sync();
 }
