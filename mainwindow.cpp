@@ -154,7 +154,16 @@ void MainWindow::onProcessFinished(int Exitcode)
 {
     if(Exitcode == 0)
     {
-        ui->statusBar->showMessage(trUtf8("Finished recording successfully"));
+        ui->statusBar->showMessage(trUtf8("Successfully finished recording"));
+
+        QString currentdatetime = QDateTime::currentDateTime().toString();
+        ConfigurationFileClass->configurationfile.beginGroup("misc");
+        ConfigurationFileClass->configurationfile.setValue("latestrecording",currentdatetime);
+        ConfigurationFileClass->configurationfile.endGroup();
+
+
+        latestrecording->setText(trUtf8("Latest Recording") + ": " + currentdatetime);
+
     }
     else
     {
@@ -207,13 +216,10 @@ void MainWindow::createsystemtray()
     latestrecording = new QAction(trUtf8("&Latest recording: "),this);
     latestrecording->setEnabled(false);
 
-//    settingsfile.beginGroup("misc");
-//    if(settingsfile.contains("latestrecording"))
-//    {
-//        latestrecording->setText(trUtf8("Latest recording: ") + settingsfile.value("latestrecording").toString());
-//        qDebug() << "Latest recording: " + settingsfile.value("latestrecording").toString();
-//    }
-//    settingsfile.endGroup();
+    ConfigurationFileClass = new ConfigurationFile();
+    QString latestrecordingText = ConfigurationFileClass->getValue("latestrecording","misc");
+
+    latestrecording->setText(trUtf8("Latest Recording") + ": " + latestrecordingText);
 
     quitAction = new QAction(tr("&Quit program"), this);
     connect(quitAction, SIGNAL(triggered()), qApp , SLOT(quit()));
