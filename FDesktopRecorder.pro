@@ -16,7 +16,6 @@ SOURCES += main.cpp\
     configurationfile.cpp \
     aboutprog.cpp \
     windowgrapper.cpp \
-    dialogterminaloutput.cpp \
     recordingdevices.cpp \
     settingsdialog.cpp
 
@@ -25,7 +24,6 @@ HEADERS  += mainwindow.h \
     configurationfile.h \
     aboutprog.h \
     windowgrapper.h \
-    dialogterminaloutput.h \
     recordingdevices.h \
     settingsdialog.h
 
@@ -40,6 +38,14 @@ TRANSLATIONS    = translations/FDesktopRecorder_da_DK.ts \
 
 RESOURCES += \
     resources.qrc
+
+
+
+
+
+
+
+
 
 
 

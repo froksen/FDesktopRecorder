@@ -10,9 +10,17 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
+
     ui->setupUi(this);
+    ui->dockWidget->hide();
+
+    MainWindow::setFixedHeight(107);
+
+
     ui->pushButtonStoprecord->hide();
 
+    QRect r = MainWindow::geometry();
+    r.moveCenter(QApplication::desktop()->availableGeometry().center());
 
     //Sets pointers
     runTerminalClass = new runTerminal();
@@ -21,6 +29,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ConfigurationFileClass->setDefaults();
 
     createsystemtray();
+
+
 }
 
 MainWindow::~MainWindow()
@@ -56,7 +66,20 @@ void MainWindow::on_pushButtonStartrecord_clicked()
     QString geometry = WindowGrapperClass->Fullscreenaspects();
 
     QString defaultpath = ConfigurationFileClass->getValue("defaultpath", "startupbehavior");
-    QString defaultname = ConfigurationFileClass->getValue("defaultname", "startupbehavior");
+
+    QString defaultnamedatetime = ConfigurationFileClass->getValue("defaultnametimedate","startupbehavior");
+
+    QString defaultname;
+    if(defaultnamedatetime != "true")
+    {
+       defaultname = ConfigurationFileClass->getValue("defaultname", "startupbehavior");
+    }
+    else
+    {
+        defaultname = QDateTime::currentDateTime().toString();
+    }
+
+
     QString defaultformat = ConfigurationFileClass->getValue("defaultformat", "startupbehavior");
 
     QString filename = setFilename(defaultpath,defaultname,defaultformat);
@@ -102,8 +125,11 @@ void MainWindow::on_pushButtonStartrecord_clicked()
     connect(runTerminalClass->process, SIGNAL(started()),ui->pushButtonStartrecord,SLOT(hide()));
     connect(runTerminalClass->process, SIGNAL(started()),ui->pushButtonStoprecord,SLOT(show()));
 
-    connect(runTerminalClass->process, SIGNAL(finished(int)),ui->pushButtonStartrecord,SLOT(show()));
+    ui->textEditConsole->clear();
+    connect(runTerminalClass->process, SIGNAL(readyReadStandardError()),this,SLOT(readstderr()));
+
     connect(runTerminalClass->process, SIGNAL(finished(int)),ui->pushButtonStoprecord,SLOT(hide()));
+    connect(runTerminalClass->process, SIGNAL(finished(int)),ui->pushButtonStartrecord,SLOT(show()));
     connect(runTerminalClass->process, SIGNAL(finished(int)),this,SLOT(onProcessFinished(int)));
     connect(runTerminalClass->process,SIGNAL(finished(int,QProcess::ExitStatus)),this,SLOT(onProcessFinished(int)));
 
@@ -116,6 +142,8 @@ void MainWindow::on_pushButtonStartrecord_clicked()
 
    ui->statusBar->showMessage(trUtf8("Recording started") + " (" + filename + ")");
 }
+
+
 
 void MainWindow::on_pushButtonStoprecord_clicked()
 {
@@ -159,12 +187,6 @@ void MainWindow::on_actionAbout_triggered()
     AboutProgDialog->show();
 }
 
-
-void MainWindow::on_actionShow_Terminal_output_triggered()
-{
-    DialogTerminalOutput *TerminalOutputDialog = new DialogTerminalOutput();
-    TerminalOutputDialog->show();
-}
 
 
 void MainWindow::on_actionSettings_triggered()
@@ -229,4 +251,35 @@ void MainWindow::showhidewindow()
     {
         MainWindow::hide();
     }
+}
+
+void MainWindow::on_actionConsole_triggered()
+{
+//    TerminalWindowDialog = new TerminalWindow();
+//    TerminalWindowDialog->show();
+
+    if(ui->dockWidget->isHidden())
+    {
+        MainWindow::setGeometry(MainWindow::pos().x(),MainWindow::pos().y(),510,227);
+        MainWindow::setFixedHeight(227);
+        ui->dockWidget->show();
+    }
+    else
+    {
+        MainWindow::setGeometry(MainWindow::pos().x(),MainWindow::pos().y(),510,107);
+        MainWindow::setFixedHeight(107);
+        ui->dockWidget->hide();
+    }
+}
+
+void MainWindow::readstderr()
+{
+    QByteArray stderrdata = runTerminalClass->stderrdata;
+    ui->textEditConsole->append(stderrdata);
+}
+
+void MainWindow::readstdout()
+{
+    QByteArray stdout = runTerminalClass->strdata;
+    ui->textEditConsole->append(stdout);
 }

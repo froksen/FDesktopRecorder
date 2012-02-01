@@ -25,7 +25,11 @@ int main(int argc, char *argv[])
     QSettings configurationfile;
 
     MainWindow w;
+
     w.show();
+
+
+
 
     return a.exec();
 }

@@ -22,6 +22,8 @@ private slots:
 
     void on_pushButtonpathBrowse_clicked();
 
+    void on_checkBoxbasenametimedate_clicked();
+
 private:
     Ui::SettingsDialog *ui;
 

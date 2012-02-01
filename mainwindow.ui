@@ -6,9 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>603</width>
-    <height>107</height>
+    <width>510</width>
+    <height>375</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
   </property>
   <property name="windowTitle">
    <string>FDesktopRecorder</string>
@@ -18,7 +24,7 @@
     <normaloff>:/images/icon.png</normaloff>:/images/icon.png</iconset>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <layout class="QHBoxLayout" name="horizontalLayout">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
     <item>
      <layout class="QGridLayout" name="gridLayout">
       <property name="sizeConstraint">
@@ -77,7 +83,7 @@
          <string>Mute microphone</string>
         </property>
         <property name="checked">
-         <bool>false</bool>
+         <bool>true</bool>
         </property>
        </widget>
       </item>
@@ -90,7 +96,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>603</width>
+     <width>510</width>
      <height>21</height>
     </rect>
    </property>
@@ -105,8 +111,37 @@
    <addaction name="actionAbout"/>
    <addaction name="actionSettings"/>
    <addaction name="separator"/>
+   <addaction name="actionConsole"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QDockWidget" name="dockWidget">
+   <property name="features">
+    <set>QDockWidget::DockWidgetFloatable|QDockWidget::DockWidgetMovable</set>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::BottomDockWidgetArea</set>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>8</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QTextEdit" name="textEditConsole">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
   <action name="actionAbout">
    <property name="text">
     <string>About</string>
@@ -123,6 +158,11 @@
   <action name="actionShow_Terminal_output">
    <property name="text">
     <string>Show Terminal output</string>
+   </property>
+  </action>
+  <action name="actionConsole">
+   <property name="text">
+    <string>Console</string>
    </property>
   </action>
  </widget>

@@ -39,6 +39,15 @@ void SettingsDialog::writeSettings()
     ConfigurationFileClass->configurationfile.setValue("defaultrecorddevice",ui->comboBoxrecording->itemData(comboboxindex));
 
     ConfigurationFileClass->configurationfile.setValue("defaultname",ui->lineEditbasename->text());
+
+    if(ui->checkBoxbasenametimedate->isChecked())
+    {
+        ConfigurationFileClass->configurationfile.setValue("defaultnametimedate","true");
+    }
+    else
+    {
+        ConfigurationFileClass->configurationfile.setValue("defaultnametimedate","false");
+    }
     ConfigurationFileClass->configurationfile.setValue("defaultpath",ui->lineEditpath->text());
 
     int comboxformatindex = ui->comboBoxFormat->currentIndex();
@@ -122,6 +131,17 @@ void SettingsDialog::readSettings()
     QString defaultname = ConfigurationFileClass->getValue("defaultname", "startupbehavior");
     QString defaultformat = ConfigurationFileClass->getValue("defaultformat", "startupbehavior");
 
+    if(ConfigurationFileClass->getValue("defaultnametimedate","startupbehavior") == "true")
+    {
+        ui->checkBoxbasenametimedate->setChecked(true);
+        ui->lineEditbasename->setEnabled(0);
+    }
+    else
+    {
+        ui->checkBoxbasenametimedate->setChecked(false);
+        ui->lineEditbasename->setEnabled(1);
+    }
+
     ui->lineEditaudiocodec->setText(audiocodec);
     ui->lineEditvideocodec->setText(videocodec);
     ui->spinBoxaudiochannels->setValue(audiochannels.toInt());
@@ -147,4 +167,16 @@ void SettingsDialog::on_pushButtonpathBrowse_clicked()
         ui->lineEditpath->setText(fileName);
     }
 
+}
+
+void SettingsDialog::on_checkBoxbasenametimedate_clicked()
+{
+    if(ui->checkBoxbasenametimedate->isChecked())
+    {
+        ui->lineEditbasename->setEnabled(0);
+    }
+    else
+    {
+        ui->lineEditbasename->setEnabled(1);
+    }
 }

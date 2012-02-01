@@ -1,15 +1,14 @@
 #ifndef RUNTERMINAL_H
 #define RUNTERMINAL_H
 
-#include <QObject>
+#include <QWidget>
 #include <QProcess>
-#include <dialogterminaloutput.h>
 
-class runTerminal : public QObject
+class runTerminal : public QWidget
 {
     Q_OBJECT
 public:
-    explicit runTerminal(QObject *parent = 0);
+    explicit runTerminal(QWidget *parent = 0);
 
     QString sayHello();
 
@@ -19,9 +18,6 @@ public:
     QProcess *process;
     QByteArray strdata;
     QByteArray stderrdata;
-
-
-
 signals:
 
 public slots:
@@ -32,8 +28,6 @@ public slots:
     void stopProcess();
 
 private:
-    DialogTerminalOutput *TermianlOutputDialog;
-
 };
 
 #endif // RUNTERMINAL_H

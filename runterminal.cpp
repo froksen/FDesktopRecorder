@@ -1,13 +1,11 @@
 #include "runterminal.h"
 #include <QDebug>
 #include <QProcess>
-#include <mainwindow.h>
 
-runTerminal::runTerminal(QObject *parent) : QObject(parent)
+runTerminal::runTerminal(QWidget *parent) :
+    QWidget(parent)
 {
-    TermianlOutputDialog = new DialogTerminalOutput;
 }
-
 QString runTerminal::sayHello()
 {
     return "Hello";
@@ -35,6 +33,8 @@ void runTerminal::runcmd(QString cmd, QStringList args)
     connect(process,SIGNAL(readyReadStandardError()),this,SLOT(readstderr()));
     connect(process, SIGNAL(finished(int, QProcess::ExitStatus)),this, SLOT(onProcessFinished(int, QProcess::ExitStatus)));
 
+    //TerminalWindowDialog = new TerminalWindow();
+    //connect(process,SIGNAL(readyReadStandardError()),TerminalWindowDialog,SLOT(setText()));
 }
 
 void runTerminal::readstdoutput()
@@ -47,7 +47,6 @@ void runTerminal::readstderr()
 {
     stderrdata = process->readAllStandardError();
     qDebug() << "Standard Error:" <<stderrdata;
-    TermianlOutputDialog->stderroutput(stderrdata);
 }
 
 void runTerminal::onProcessFinished(int exitCode, QProcess::ExitStatus status)
@@ -76,3 +75,4 @@ void runTerminal::stopProcess()
 {
     process->kill();
 }
+
