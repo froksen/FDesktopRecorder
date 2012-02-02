@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>508</width>
-    <height>373</height>
+    <width>512</width>
+    <height>375</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -123,7 +123,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>508</width>
+     <width>512</width>
      <height>21</height>
     </rect>
    </property>
@@ -138,7 +138,9 @@
    <addaction name="actionAbout"/>
    <addaction name="actionSettings"/>
    <addaction name="separator"/>
+   <addaction name="actionOpen_recording_directory"/>
    <addaction name="actionConsole"/>
+   <addaction name="separator"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <widget class="QDockWidget" name="dockWidget">
@@ -199,7 +201,18 @@
     <string>Shows a console where you can see the output. Usefull if recording fails.</string>
    </property>
    <property name="statusTip">
-    <string>Show console output</string>
+    <string>Show/Hide console output</string>
+   </property>
+  </action>
+  <action name="actionOpen_recording_directory">
+   <property name="text">
+    <string>Open recording directory</string>
+   </property>
+   <property name="toolTip">
+    <string>Open directory containing your recordings</string>
+   </property>
+   <property name="statusTip">
+    <string>Open directory containing your recordings</string>
    </property>
   </action>
  </widget>

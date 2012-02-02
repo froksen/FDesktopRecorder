@@ -29,7 +29,6 @@ HEADERS  += mainwindow.h \
 
 FORMS    += mainwindow.ui\
             aboutprog.ui \
-    dialogterminaloutput.ui \
     settingsdialog.ui
 
 
@@ -38,6 +37,7 @@ TRANSLATIONS    = translations/FDesktopRecorder_da_DK.ts \
 
 RESOURCES += \
     resources.qrc
+
 
 
 

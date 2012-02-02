@@ -217,13 +217,7 @@ void MainWindow::onProcessFinished(int Exitcode)
     {
         ui->statusBar->showMessage(trUtf8("Failed to start recording!"));
     }
-//    disconnect(runTerminalClass->process, SIGNAL(finished(int)),ui->pushButtonStartrecord,SLOT(show()));
-//    disconnect(runTerminalClass->process, SIGNAL(finished(int)),ui->pushButtonStoprecord,SLOT(hide()));
-//    disconnect(runTerminalClass->process, SIGNAL(finished(int)),this,SLOT(onProcessFinished()));
 
-
-//    disconnect(runTerminalClass->process, SIGNAL(started()),ui->pushButtonStartrecord,SLOT(hide()));
-//    disconnect(runTerminalClass->process, SIGNAL(started()),ui->pushButtonStoprecord,SLOT(show()));
 
     if(ui->pushButtonStartrecord->isEnabled())
     {
@@ -236,6 +230,17 @@ void MainWindow::onProcessFinished(int Exitcode)
         trayIcon->setIcon((QIcon)":/images/icon.png");
         stoprecord->setEnabled(false);
     }
+
+
+    disconnect(runTerminalClass->process, SIGNAL(started()),ui->pushButtonStartrecord,SLOT(hide()));
+    disconnect(runTerminalClass->process, SIGNAL(started()),ui->pushButtonStoprecord,SLOT(show()));
+
+    disconnect(runTerminalClass->process, SIGNAL(readyReadStandardError()),this,SLOT(readstderr()));
+
+    disconnect(runTerminalClass->process, SIGNAL(finished(int)),ui->pushButtonStoprecord,SLOT(hide()));
+    disconnect(runTerminalClass->process, SIGNAL(finished(int)),ui->pushButtonStartrecord,SLOT(show()));
+    disconnect(runTerminalClass->process, SIGNAL(finished(int)),this,SLOT(onProcessFinished(int)));
+    disconnect(runTerminalClass->process,SIGNAL(finished(int,QProcess::ExitStatus)),this,SLOT(onProcessFinished(int)));
 }
 
 
@@ -369,4 +374,13 @@ void MainWindow::startRecordandminimize()
 {
     showhidewindow();
     on_pushButtonStartrecord_clicked();
+}
+
+void MainWindow::on_actionOpen_recording_directory_triggered()
+{
+    QString defaultpath = ConfigurationFileClass->getValue("defaultpath", "startupbehavior");
+
+    QString path = defaultpath;
+
+    QDesktopServices::openUrl( QUrl::fromLocalFile(path) );
 }

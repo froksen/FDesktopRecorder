@@ -40,6 +40,8 @@ private slots:
     //Systemtray slots
     void iconActivated(QSystemTrayIcon::ActivationReason reason);
 
+    void on_actionOpen_recording_directory_triggered();
+
 private:
     Ui::MainWindow *ui;
 
