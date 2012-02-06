@@ -129,11 +129,6 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="61"/>
-        <source>Single window</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../mainwindow.ui" line="71"/>
         <source>Start a recording</source>
         <translation type="unfinished"></translation>
@@ -252,8 +247,9 @@ p, li { white-space: pre-wrap; }
         <translation type="obsolete">Vergrössert das Aufnahmefenster</translation>
     </message>
     <message>
+        <location filename="../mainwindow.ui" line="61"/>
         <source>Single Window</source>
-        <translation type="obsolete">Einzelfenster</translation>
+        <translation type="unfinished">Einzelfenster</translation>
     </message>
     <message>
         <source>Sets the recording area to a custom size</source>

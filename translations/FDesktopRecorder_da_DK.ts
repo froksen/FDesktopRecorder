@@ -140,9 +140,8 @@ p, li { white-space: pre-wrap; }
         <translation>Optage et enkelt vindue eller skærm.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="61"/>
         <source>Single window</source>
-        <translation>Enkelt vindue</translation>
+        <translation type="obsolete">Enkelt vindue</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="71"/>
@@ -264,8 +263,9 @@ p, li { white-space: pre-wrap; }
         <translation type="obsolete">Sætter optage området til et enkelt vindue</translation>
     </message>
     <message>
+        <location filename="../mainwindow.ui" line="61"/>
         <source>Single Window</source>
-        <translation type="obsolete">Enkelt vindue</translation>
+        <translation type="unfinished">Enkelt vindue</translation>
     </message>
     <message>
         <source>Sets the recording area to a custom size</source>

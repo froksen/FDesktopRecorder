@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>512</width>
-    <height>375</height>
+    <width>510</width>
+    <height>373</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -58,7 +58,7 @@
          <string>Record a single window or screen.</string>
         </property>
         <property name="text">
-         <string>Single window</string>
+         <string>Single Window</string>
         </property>
        </widget>
       </item>
@@ -123,7 +123,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>512</width>
+     <width>510</width>
      <height>21</height>
     </rect>
    </property>

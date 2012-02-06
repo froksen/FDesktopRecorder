@@ -14,6 +14,7 @@ int main(int argc, char *argv[])
     //Loads the translations
     QTranslator translator;
     translator.load(":/translations/FDesktopRecorder_"+locale);
+    //translator.load(":/translations/FDesktopRecorder_de_DE");
     a.installTranslator(&translator);
 
 
