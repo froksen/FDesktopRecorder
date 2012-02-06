@@ -215,7 +215,15 @@ void MainWindow::onProcessFinished(int Exitcode)
     }
     else
     {
-        ui->statusBar->showMessage(trUtf8("Failed to start recording!"));
+        ui->statusBar->showMessage(trUtf8("Failed to recording!"));
+        QMessageBox msgBox;    msgBox.setText(trUtf8("Failed to start recording!"));
+        msgBox.setInformativeText(trUtf8("Press 'show details' to see console ouput."));
+        msgBox.setStandardButtons(QMessageBox::Ok);
+        msgBox.setDetailedText(QString(ui->textEditConsole->toPlainText()));
+        msgBox.setDefaultButton(QMessageBox::Save);
+        msgBox.setFixedWidth(520);
+        int ret = msgBox.exec();
+
     }
 
 
