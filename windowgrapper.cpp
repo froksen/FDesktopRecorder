@@ -10,6 +10,8 @@ WindowGrapper::WindowGrapper(QObject *parent) :
 
 int WindowGrapper::fixResolution(int number)
 {
+    //This function is more or less from Juergen Heinemann's "qx11grab". Great work from a great person! :-)
+    // Visit his project at: http://qt-apps.org/content/show.php?content=89204
     number = ( ( number % 2 ) != 0 ) ? ( number + 1 ) : number;
     qDebug() << "Fixed resolution:" << number;
     return number;

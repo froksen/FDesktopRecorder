@@ -73,6 +73,18 @@ void runTerminal::onProcessFinished(int exitCode, QProcess::ExitStatus status)
 
 void runTerminal::stopProcess()
 {
-    process->kill();
+    //This function is more or less from Juergen Heinemann's "qx11grab". Great work from a great person! :-)
+    // Visit his project at: http://qt-apps.org/content/show.php?content=89204
+    char q = 'q';
+    if ( ( process->write ( &q ) != -1 ) && ( process->waitForBytesWritten () ) ){
+          process->closeWriteChannel();
+    }
+    else
+    {
+        process->kill();
+    }
+
+
+   // process->kill();
 }
 
