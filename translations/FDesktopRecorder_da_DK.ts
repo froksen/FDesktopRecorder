@@ -413,33 +413,48 @@ p, li { white-space: pre-wrap; }
         <translation>Optagelse startet</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="205"/>
+        <location filename="../mainwindow.cpp" line="198"/>
+        <source>Please wait while saving the recording. Might take some time.</source>
+        <translation>Vent venligst mens optagelsen bliver gemt. Dette kan tage lidt tid.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="206"/>
         <source>Successfully finished recording</source>
         <translation>Afsluttede optagelsen korrekt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="213"/>
-        <location filename="../mainwindow.cpp" line="276"/>
+        <location filename="../mainwindow.cpp" line="214"/>
+        <location filename="../mainwindow.cpp" line="285"/>
         <source>Latest Recording</source>
         <translation>Seneste optagelse</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="218"/>
+        <location filename="../mainwindow.cpp" line="219"/>
+        <source>Failed to recording!</source>
+        <translation>Optagelse fejlede!</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="220"/>
         <source>Failed to start recording!</source>
         <translation>Optagelse fejlede!</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="264"/>
+        <location filename="../mainwindow.cpp" line="221"/>
+        <source>Press &apos;show details&apos; to see console ouput.</source>
+        <translation>Tryk på &quot;show details&quot; for at se konsol ouput.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="273"/>
         <source>&amp;Show/Hide window</source>
         <translation>&amp;Vis/Gem vindue</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="267"/>
+        <location filename="../mainwindow.cpp" line="276"/>
         <source>&amp;Stop recording</source>
         <translation>&amp;Stop optagelse</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="270"/>
+        <location filename="../mainwindow.cpp" line="279"/>
         <source>&amp;Latest recording: </source>
         <translation>&amp;Seneste optagelse:</translation>
     </message>
@@ -448,7 +463,7 @@ p, li { white-space: pre-wrap; }
         <translation type="obsolete">Seneste optagelse:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="278"/>
+        <location filename="../mainwindow.cpp" line="287"/>
         <source>&amp;Quit program</source>
         <translation>&amp;Afslut program</translation>
     </message>
