@@ -195,6 +195,7 @@ void MainWindow::on_pushButtonStartrecord_clicked()
 
 void MainWindow::on_pushButtonStoprecord_clicked()
 {
+    ui->statusBar->showMessage(trUtf8("Please wait while saving the recording. Might take some time."));
     runTerminalClass->stopProcess();
 }
 
