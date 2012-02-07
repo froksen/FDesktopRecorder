@@ -129,7 +129,7 @@ void MainWindow::on_pushButtonStartrecord_clicked()
 
     QString defaultformat = ConfigurationFileClass->getValue("defaultformat", "startupbehavior");
 
-    QString filename = setFilename(defaultpath,defaultname,defaultformat);
+    filename = setFilename(defaultpath,defaultname,defaultformat);
     qDebug() << "Filename:" << filename;
 
     QString recordingdevice = ConfigurationFileClass->getValue("defaultrecorddevice","startupbehavior");
@@ -371,6 +371,13 @@ void MainWindow::readstderr()
 {
     QByteArray stderrdata = runTerminalClass->stderrdata;
     ui->textEditConsole->append(stderrdata);
+
+    //If message in statusbar is changed, then this will change it back to the information, so the user knows that the program is recording.
+    if (ui->statusBar->currentMessage().isEmpty())
+    {
+         ui->statusBar->showMessage(trUtf8("Recording started") + " (" + filename + ")");
+    }
+
 }
 
 void MainWindow::readstdout()

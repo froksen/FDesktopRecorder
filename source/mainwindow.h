@@ -51,6 +51,10 @@ private:
     QString setFilename(QString path, QString basename, QString format);
 
 
+    //Variables used in recordingscript
+    QString filename;
+
+
     //Other
     runTerminal *runTerminalClass;
     ConfigurationFile *ConfigurationFileClass;
