@@ -1,0 +1,14 @@
+[Desktop Entry]
+Exec=FDesktopRecorder
+Icon=/usr/share/pixmaps/fdesktoprecorder.png
+Terminal=false
+Type=Application
+
+GenericName[da]=Optag skærmen
+GenericName=Record screen
+
+Name[da]=FDesktopRecorder
+Name=FDesktopRecorder
+Categories=Qt;KDE;Utility;X-KDE-Utilities-Desktop;X-SuSE-DesktopUtility;
+
+X-Desktop-File-Install-Version=0.18
