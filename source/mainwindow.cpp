@@ -180,10 +180,12 @@ void MainWindow::on_pushButtonStartrecord_clicked()
     connect(runTerminalClass->process, SIGNAL(finished(int)),this,SLOT(onProcessFinished(int)));
     connect(runTerminalClass->process,SIGNAL(finished(int,QProcess::ExitStatus)),this,SLOT(onProcessFinished(int)));
 
+
    ui->checkBoxRecordaudio->setEnabled(0);
    ui->radioButtonSinglewindow->setEnabled(0);
    ui->radioButtonEntirescreen->setEnabled(0);
    ui->actionAbout->setEnabled(0);
+   ui->actionOpen_recording_directory->setEnabled(0);
    ui->actionSettings->setEnabled(0);
    trayIcon->setIcon(QIcon(":/trolltech/styles/commonstyle/images/media-stop-16.png"));
    stoprecord->setEnabled(true);
@@ -235,6 +237,7 @@ void MainWindow::onProcessFinished(int Exitcode)
         ui->radioButtonSinglewindow->setEnabled(1);
         ui->actionAbout->setEnabled(1);
         ui->actionSettings->setEnabled(1);
+        ui->actionOpen_recording_directory->setEnabled(1);
 
         trayIcon->setIcon((QIcon)":/images/icon.png");
         stoprecord->setEnabled(false);
