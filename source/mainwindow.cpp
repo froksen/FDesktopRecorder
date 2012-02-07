@@ -180,7 +180,7 @@ void MainWindow::on_pushButtonStartrecord_clicked()
     connect(runTerminalClass->process, SIGNAL(finished(int)),this,SLOT(onProcessFinished(int)));
     connect(runTerminalClass->process,SIGNAL(finished(int,QProcess::ExitStatus)),this,SLOT(onProcessFinished(int)));
 
-
+   ui->pushButtonStoprecord->setEnabled(1);
    ui->checkBoxRecordaudio->setEnabled(0);
    ui->radioButtonSinglewindow->setEnabled(0);
    ui->radioButtonEntirescreen->setEnabled(0);
@@ -197,6 +197,7 @@ void MainWindow::on_pushButtonStartrecord_clicked()
 
 void MainWindow::on_pushButtonStoprecord_clicked()
 {
+    ui->pushButtonStoprecord->setEnabled(0);
     ui->statusBar->showMessage(trUtf8("Please wait while saving the recording. Might take some time."));
     runTerminalClass->stopProcess();
 }
