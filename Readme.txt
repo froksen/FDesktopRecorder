@@ -1,0 +1,23 @@
+..::Description::..
+FDesktopRecorder is a program that can video record a single window or your entire desktop using ffmpeq. 
+This can be handy if you are doing "How-To's",guides etc.
+
+..::About::..
+Created by: Ole "Froksen" Holm Frandsen
+You can contact me via kde-apps.org. Find me under the username "froksen".
+
+..::Translated::..
+* Danish by Ole Holm Frandsen (froksen)
+* German by Christian Räss (saftsocken)
+
+..::Requires to run::..
+* ffmpeq is used for the recording
+* libqt4
+
+..::Requires to build (NOTE: these are openSUSE 12.1 package names)::..
+desktop-file-utils, libqt4-devel, gcc-c++, make, gcc46
+
+..::How to build/compile::..
+* cd source
+* qmake FDesktopRecorder.pro
+* make
