@@ -4,8 +4,8 @@ Icon=/usr/share/pixmaps/fdesktoprecorder.png
 Terminal=false
 Type=Application
 
-GenericName[da]=Optag skærmen
-GenericName=Record screen
+GenericName[da]=Videooptag din skærm
+GenericName=Video record your screen
 
 Name[da]=FDesktopRecorder
 Name=FDesktopRecorder
