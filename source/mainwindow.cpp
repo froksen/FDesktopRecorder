@@ -203,7 +203,7 @@ void MainWindow::onProcessFinished(int Exitcode)
 {
     if(Exitcode == 0)
     {
-        ui->statusBar->showMessage(trUtf8("Successfully finished recording"));
+        ui->statusBar->showMessage(trUtf8("Successfully finished recording") + " (" + filename + ")");
 
         QString currentdatetime = QDateTime::currentDateTime().toString();
         ConfigurationFileClass->configurationfile.beginGroup("misc");
@@ -384,6 +384,11 @@ void MainWindow::readstdout()
 {
     QByteArray stdout = runTerminalClass->strdata;
     ui->textEditConsole->append(stdout);
+
+    if (ui->statusBar->currentMessage().isEmpty())
+    {
+         ui->statusBar->showMessage(trUtf8("Recording started") + " (" + filename + ")");
+    }
 }
 
 void MainWindow::startRecordandminimize()
