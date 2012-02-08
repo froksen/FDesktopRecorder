@@ -11,7 +11,11 @@ SettingsDialog::SettingsDialog(QWidget *parent) :
     ui(new Ui::SettingsDialog)
 {
     ui->setupUi(this);
-    readSettings();
+
+
+    getLanguages();
+
+        readSettings();
 
     on_checkBoxMicMute_clicked();
 }
@@ -71,6 +75,9 @@ void SettingsDialog::writeSettings()
 
     int comboxformatindex = ui->comboBoxFormat->currentIndex();
     ConfigurationFileClass->configurationfile.setValue("defaultformat",ui->comboBoxFormat->itemData(comboxformatindex));
+
+    int comboboxLanguage = ui->comboBoxLanguage->currentIndex();
+    ConfigurationFileClass->configurationfile.setValue("language",ui->comboBoxLanguage->itemData(comboboxLanguage));
 
     ConfigurationFileClass->configurationfile.endGroup();
     ConfigurationFileClass->configurationfile.sync();
@@ -143,6 +150,10 @@ void SettingsDialog::readSettings()
     QString formatcfg = ConfigurationFileClass->getValue("defaultformat","startupbehavior");
     int comboboxIndexfind = ui->comboBoxFormat->findData(formatcfg);
     ui->comboBoxFormat->setCurrentIndex(comboboxIndexfind);
+
+    QString languagecfg = ConfigurationFileClass->getValue("language","startupbehavior");
+    int comboboxIndexLanguage = ui->comboBoxLanguage->findData(languagecfg);
+    ui->comboBoxLanguage->setCurrentIndex(comboboxIndexLanguage);
 
     if(ConfigurationFileClass->getValue("defaultrecorddeviceMute","startupbehavior") == "false")
     {
@@ -218,5 +229,26 @@ void SettingsDialog::on_checkBoxMicMute_clicked()
     else
     {
         ui->comboBoxrecording->setEnabled(1);
+    }
+}
+
+void SettingsDialog::getLanguages()
+{
+    QDir translationfilepath(":/translations");
+    QStringList translationsfiles = translationfilepath.entryList(QDir::Files);
+    qDebug() << "Files found:" << translationsfiles;
+
+    ui->comboBoxLanguage->addItem("Use system default","default");
+    ui->comboBoxLanguage->addItem("Use original language (English)","STANDARD");
+
+    foreach(QFileInfo file,translationsfiles)
+    {
+        QString basename = file.baseName();
+        QString localending = file.baseName().remove(0,17);
+
+        qDebug() << "Translation basename:" << basename;
+        qDebug() << "Translation ending:" << localending;
+
+        ui->comboBoxLanguage->addItem(basename,localending);
     }
 }

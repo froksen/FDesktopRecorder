@@ -70,8 +70,8 @@ void ConfigurationFile::setDefaults()
 
     RecordingDevices *RecordingDevicesClass = new RecordingDevices();
     RecordingDevicesClass->getRecorddevices();
-    values2check << "defaultrecorddevice" << "defaultformat" << "defaultname" << "defaultpath" << "defaultrecorddeviceMute";
-    values2write << RecordingDevicesClass->RecordDeviceHW[0] << "avi" << trUtf8("recording") << QDir::homePath() << "true";
+    values2check << "defaultrecorddevice" << "defaultformat" << "defaultname" << "defaultpath" << "defaultrecorddeviceMute" << "language";
+    values2write << RecordingDevicesClass->RecordDeviceHW[0] << "avi" << trUtf8("recording") << QDir::homePath() << "true" << "default";
 
     index = 0;
     foreach(QString item, values2check)

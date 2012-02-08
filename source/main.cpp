@@ -8,8 +8,24 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
+    //Loads the settingsfile
+    QCoreApplication::setOrganizationName("fdesktoprecorder");
+    QCoreApplication::setApplicationName("fdesktoprecorder");
+
     QString locale = QLocale::system().name();
-    qDebug() << "Locale:" << locale;
+    qDebug() << "System default locale:" << locale;
+
+    //Reads startup behavoir
+    QSettings configurationfile;
+    configurationfile.beginGroup("startupbehavior");
+    if(configurationfile.value("language").toString() != "default" && configurationfile.contains("language"))
+    {
+        qDebug() << "Using locale:" << configurationfile.value("language").toString();
+       locale = configurationfile.value("language").toString();
+    }
+
+
+    configurationfile.endGroup();
 
     //Loads the translations
     QTranslator translator;
@@ -18,12 +34,9 @@ int main(int argc, char *argv[])
     a.installTranslator(&translator);
 
 
-    //Loads the settingsfile
-    QCoreApplication::setOrganizationName("fdesktoprecorder");
-    QCoreApplication::setApplicationName("fdesktoprecorder");
 
-    //Reads startup behavoir
-    QSettings configurationfile;
+
+
 
     MainWindow w;
 

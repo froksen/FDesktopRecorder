@@ -6,15 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>418</width>
-    <height>314</height>
+    <width>416</width>
+    <height>312</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>About kTffmpeqQt</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="resourcefile.qrc">
+   <iconset resource="resources.qrc">
     <normaloff>:/images/icon.png</normaloff>:/images/icon.png</iconset>
   </property>
   <property name="locale">
@@ -111,7 +111,7 @@ p, li { white-space: pre-wrap; }
   </layout>
  </widget>
  <resources>
-  <include location="resourcefile.qrc"/>
+  <include location="resources.qrc"/>
  </resources>
  <connections>
   <connection>

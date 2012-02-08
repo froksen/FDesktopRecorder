@@ -29,8 +29,13 @@ private slots:
 private:
     Ui::SettingsDialog *ui;
 
+    //ffmpeg settings
     void writeSettings();
     void readSettings();
+
+
+    //Application settings
+    void getLanguages();
 };
 
 #endif // SETTINGSDIALOG_H
