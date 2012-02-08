@@ -49,7 +49,15 @@ void SettingsDialog::writeSettings()
     }
 
 
-    ConfigurationFileClass->configurationfile.setValue("defaultname",ui->lineEditbasename->text());
+    if(ui->lineEditbasename->text().length() > 0 && ui->lineEditbasename->text()!="" && ui->lineEditbasename->text()!=" ")
+    {
+        ConfigurationFileClass->configurationfile.setValue("defaultname",ui->lineEditbasename->text());
+    }
+    else
+    {
+        ConfigurationFileClass->configurationfile.setValue("defaultname",trUtf8("recording"));
+    }
+
 
     if(ui->checkBoxbasenametimedate->isChecked())
     {
