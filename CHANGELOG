@@ -6,7 +6,6 @@
 - Fixed: In settings: If basename is blank it will use default.
 - Changed: If recording is successfull, the filename is visible in the Gui, makes it easy to find.
 - Changed: desktopfile description
-- Changed: "open recording directory" is no longer enabled when recording. 
 - Minor changes.
 
 * Mon Feb 06 2012
