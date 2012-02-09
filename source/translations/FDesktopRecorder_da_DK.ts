@@ -265,7 +265,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../mainwindow.ui" line="61"/>
         <source>Single Window</source>
-        <translation type="unfinished">Enkelt vindue</translation>
+        <translation>Enkelt vindue</translation>
     </message>
     <message>
         <source>Sets the recording area to a custom size</source>
@@ -408,55 +408,55 @@ p, li { white-space: pre-wrap; }
         <translation>Minimér og start optagelse</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="193"/>
-        <location filename="../mainwindow.cpp" line="382"/>
-        <location filename="../mainwindow.cpp" line="394"/>
+        <location filename="../mainwindow.cpp" line="192"/>
+        <location filename="../mainwindow.cpp" line="380"/>
+        <location filename="../mainwindow.cpp" line="392"/>
         <source>Recording started</source>
         <translation>Optagelse startet</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="201"/>
+        <location filename="../mainwindow.cpp" line="200"/>
         <source>Please wait while saving the recording. Might take some time.</source>
         <translation>Vent venligst mens optagelsen bliver gemt. Dette kan tage lidt tid.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="209"/>
+        <location filename="../mainwindow.cpp" line="208"/>
         <source>Successfully finished recording</source>
         <translation>Afsluttede optagelsen korrekt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="217"/>
-        <location filename="../mainwindow.cpp" line="289"/>
+        <location filename="../mainwindow.cpp" line="216"/>
+        <location filename="../mainwindow.cpp" line="287"/>
         <source>Latest Recording</source>
         <translation>Seneste optagelse</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="222"/>
+        <location filename="../mainwindow.cpp" line="221"/>
         <source>Failed to recording!</source>
         <translation>Optagelse fejlede!</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="223"/>
+        <location filename="../mainwindow.cpp" line="222"/>
         <source>Failed to start recording!</source>
         <translation>Optagelse fejlede!</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="224"/>
+        <location filename="../mainwindow.cpp" line="223"/>
         <source>Press &apos;show details&apos; to see console ouput.</source>
         <translation>Tryk på &quot;show details&quot; for at se konsol ouput.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="277"/>
+        <location filename="../mainwindow.cpp" line="275"/>
         <source>&amp;Show/Hide window</source>
         <translation>&amp;Vis/Gem vindue</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="280"/>
+        <location filename="../mainwindow.cpp" line="278"/>
         <source>&amp;Stop recording</source>
         <translation>&amp;Stop optagelse</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="283"/>
+        <location filename="../mainwindow.cpp" line="281"/>
         <source>&amp;Latest recording: </source>
         <translation>&amp;Seneste optagelse:</translation>
     </message>
@@ -465,7 +465,7 @@ p, li { white-space: pre-wrap; }
         <translation type="obsolete">Seneste optagelse:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="291"/>
+        <location filename="../mainwindow.cpp" line="289"/>
         <source>&amp;Quit program</source>
         <translation>&amp;Afslut program</translation>
     </message>
@@ -779,37 +779,67 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="221"/>
+        <location filename="../settingsdialog.ui" line="308"/>
         <source>NOTE: Some changes might first apply after a restart of this program</source>
         <translation>NOTE: Nogle ændringer har måske først virkning efter en 
 genstart af programmet</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="250"/>
+        <location filename="../settingsdialog.ui" line="245"/>
+        <source>Application Settings</source>
+        <translation>Program indstillinger</translation>
+    </message>
+    <message>
+        <location filename="../settingsdialog.ui" line="258"/>
+        <source>Application settings</source>
+        <translation>Program indstillinger</translation>
+    </message>
+    <message>
+        <location filename="../settingsdialog.ui" line="270"/>
+        <source>Language</source>
+        <translation>Sprog</translation>
+    </message>
+    <message>
+        <location filename="../settingsdialog.ui" line="321"/>
         <source>Save or decline changes</source>
         <translation>Gem eller afvis ændringerne</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="263"/>
+        <location filename="../settingsdialog.ui" line="334"/>
         <source>Restores the settings to the defaults. Please note, these can not be undone!</source>
         <translation>Gendanner standard indstillingerne. Vær OBS på at dette ikke kan fortrydes!</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="266"/>
+        <location filename="../settingsdialog.ui" line="337"/>
         <source>Restore to default. PLEASE NOTE: CAN NOT BE UNDONE!</source>
         <translation>Gendan til standard. OBS: Kan ikke fortrydes!</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="269"/>
+        <location filename="../settingsdialog.ui" line="340"/>
         <source>Restore to default</source>
         <translation>Gendan til standard</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.cpp" line="58"/>
+        <location filename="../settingsdialog.cpp" line="63"/>
         <source>recording</source>
-        <translation type="unfinished">optagelse</translation>
+        <translation>optagelse</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.cpp" line="186"/>
+        <location filename="../settingsdialog.cpp" line="99"/>
+        <source>Restore everything to default?</source>
+        <translation>Gendan alt tilbage til standard?</translation>
+    </message>
+    <message>
+        <location filename="../settingsdialog.cpp" line="100"/>
+        <source>If you press Yes everything will be restored to default. 
+
+ Be aware that this can NOT be undone.</source>
+        <translation>Hvis du trykker på Ja vil alt blive gendannet til standard.
+
+ Vær opmærksom på at dette ikke kan fortrydes.</translation>
+    </message>
+    <message>
+        <location filename="../settingsdialog.cpp" line="225"/>
         <source>Open Directory</source>
         <translation>Åben mappe</translation>
     </message>

@@ -392,55 +392,55 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="193"/>
-        <location filename="../mainwindow.cpp" line="382"/>
-        <location filename="../mainwindow.cpp" line="394"/>
+        <location filename="../mainwindow.cpp" line="192"/>
+        <location filename="../mainwindow.cpp" line="380"/>
+        <location filename="../mainwindow.cpp" line="392"/>
         <source>Recording started</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="201"/>
+        <location filename="../mainwindow.cpp" line="200"/>
         <source>Please wait while saving the recording. Might take some time.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="209"/>
+        <location filename="../mainwindow.cpp" line="208"/>
         <source>Successfully finished recording</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="217"/>
-        <location filename="../mainwindow.cpp" line="289"/>
+        <location filename="../mainwindow.cpp" line="216"/>
+        <location filename="../mainwindow.cpp" line="287"/>
         <source>Latest Recording</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="222"/>
+        <location filename="../mainwindow.cpp" line="221"/>
         <source>Failed to recording!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="223"/>
+        <location filename="../mainwindow.cpp" line="222"/>
         <source>Failed to start recording!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="224"/>
+        <location filename="../mainwindow.cpp" line="223"/>
         <source>Press &apos;show details&apos; to see console ouput.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="277"/>
+        <location filename="../mainwindow.cpp" line="275"/>
         <source>&amp;Show/Hide window</source>
         <translation>&amp;Zeige/Verstecke Fenster</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="280"/>
+        <location filename="../mainwindow.cpp" line="278"/>
         <source>&amp;Stop recording</source>
         <translation>&amp;Beende die Aufnahme</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="283"/>
+        <location filename="../mainwindow.cpp" line="281"/>
         <source>&amp;Latest recording: </source>
         <translation>&amp;Letzte Aufnahme:</translation>
     </message>
@@ -449,7 +449,7 @@ p, li { white-space: pre-wrap; }
         <translation type="obsolete">Letzte Aufnahme: </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="291"/>
+        <location filename="../mainwindow.cpp" line="289"/>
         <source>&amp;Quit program</source>
         <translation>&amp;Schliesse Programm</translation>
     </message>
@@ -759,36 +759,64 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="221"/>
+        <location filename="../settingsdialog.ui" line="308"/>
         <source>NOTE: Some changes might first apply after a restart of this program</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="250"/>
+        <location filename="../settingsdialog.ui" line="245"/>
+        <source>Application Settings</source>
+        <translation type="unfinished">Program indstillinger</translation>
+    </message>
+    <message>
+        <location filename="../settingsdialog.ui" line="258"/>
+        <source>Application settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../settingsdialog.ui" line="270"/>
+        <source>Language</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../settingsdialog.ui" line="321"/>
         <source>Save or decline changes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="263"/>
+        <location filename="../settingsdialog.ui" line="334"/>
         <source>Restores the settings to the defaults. Please note, these can not be undone!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="266"/>
+        <location filename="../settingsdialog.ui" line="337"/>
         <source>Restore to default. PLEASE NOTE: CAN NOT BE UNDONE!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="269"/>
+        <location filename="../settingsdialog.ui" line="340"/>
         <source>Restore to default</source>
         <translation type="unfinished">Standart wiederherstellen</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.cpp" line="58"/>
+        <location filename="../settingsdialog.cpp" line="63"/>
         <source>recording</source>
         <translation type="unfinished">Aufnahme</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.cpp" line="186"/>
+        <location filename="../settingsdialog.cpp" line="99"/>
+        <source>Restore everything to default?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../settingsdialog.cpp" line="100"/>
+        <source>If you press Yes everything will be restored to default. 
+
+ Be aware that this can NOT be undone.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../settingsdialog.cpp" line="225"/>
         <source>Open Directory</source>
         <translation type="unfinished"></translation>
     </message>

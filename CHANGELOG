@@ -1,4 +1,4 @@
-*
+* Thu Feb 09 2012
 - Added: Settings: If resert button is pressed you will see a dialog where you have to accept.
 - Added: Settings: You can now change the application language.
 - Fixed: If recording, the statusbar will keep on showing this.
