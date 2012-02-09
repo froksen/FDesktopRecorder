@@ -5,6 +5,7 @@
 #include <QDebug>
 #include <QFile>
 #include <QFileDialog>
+#include <QMessageBox>
 
 SettingsDialog::SettingsDialog(QWidget *parent) :
     QDialog(parent),
@@ -94,16 +95,43 @@ void SettingsDialog::on_buttonBox_accepted()
 
 void SettingsDialog::on_pushButtonRestore_clicked()
 {
-    ui->checkBoxMicMute->setChecked(1);
-    ui->comboBoxrecording->setEnabled(0);
+    QMessageBox msgBox;
+    msgBox.setText("..::" + trUtf8("Restore everything to default?")+ "::..");
+    msgBox.setInformativeText(trUtf8("If you press Yes everything will be restored to default. \n\n Be aware that this can NOT be undone."));
+    msgBox.setStandardButtons(QMessageBox::Yes | QMessageBox::No);
+    //msgBox.setDetailedText(QString(ui->textEditConsole->toPlainText()));
+    msgBox.setDefaultButton(QMessageBox::Save);
+    msgBox.setFixedWidth(520);
+    int ret = msgBox.exec();
 
-    ConfigurationFile *ConfigurationFileClass = new ConfigurationFile();
-    ConfigurationFileClass->configurationfile.clear();
-    ConfigurationFileClass->setDefaults();
-    readSettings();
 
-    delete ConfigurationFileClass;
-    ConfigurationFileClass = NULL;
+
+
+    switch (ret)  {
+      case QMessageBox::Yes:
+            {
+                ui->checkBoxMicMute->setChecked(1);
+                ui->comboBoxrecording->setEnabled(0);
+
+                ConfigurationFile *ConfigurationFileClass = new ConfigurationFile();
+                ConfigurationFileClass->configurationfile.clear();
+                ConfigurationFileClass->setDefaults();
+                readSettings();
+
+                delete ConfigurationFileClass;
+                ConfigurationFileClass = NULL;
+              break;
+            }
+      case QMessageBox::No:
+          // Don't Save was clicked
+          break;
+      case QMessageBox::Cancel:
+          // Cancel was clicked
+          break;
+      default:
+          // should never be reached
+          break;
+    }
 }
 
 void SettingsDialog::readSettings()
