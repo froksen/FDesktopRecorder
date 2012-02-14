@@ -333,7 +333,7 @@ p, li { white-space: pre-wrap; }
         <translation type="obsolete">Start optagelsen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="37"/>
+        <location filename="../mainwindow.cpp" line="38"/>
         <source>Start recording</source>
         <translation>Start optagelse</translation>
     </message>
@@ -403,60 +403,60 @@ p, li { white-space: pre-wrap; }
         <translation>Indstillinger</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="39"/>
+        <location filename="../mainwindow.cpp" line="40"/>
         <source>Minimize and start record</source>
         <translation>Minimér og start optagelse</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="192"/>
-        <location filename="../mainwindow.cpp" line="380"/>
-        <location filename="../mainwindow.cpp" line="392"/>
+        <location filename="../mainwindow.cpp" line="193"/>
+        <location filename="../mainwindow.cpp" line="381"/>
+        <location filename="../mainwindow.cpp" line="393"/>
         <source>Recording started</source>
         <translation>Optagelse startet</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="200"/>
+        <location filename="../mainwindow.cpp" line="201"/>
         <source>Please wait while saving the recording. Might take some time.</source>
         <translation>Vent venligst mens optagelsen bliver gemt. Dette kan tage lidt tid.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="208"/>
+        <location filename="../mainwindow.cpp" line="209"/>
         <source>Successfully finished recording</source>
         <translation>Afsluttede optagelsen korrekt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="216"/>
-        <location filename="../mainwindow.cpp" line="287"/>
+        <location filename="../mainwindow.cpp" line="217"/>
+        <location filename="../mainwindow.cpp" line="288"/>
         <source>Latest Recording</source>
         <translation>Seneste optagelse</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="221"/>
+        <location filename="../mainwindow.cpp" line="222"/>
         <source>Failed to recording!</source>
         <translation>Optagelse fejlede!</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="222"/>
+        <location filename="../mainwindow.cpp" line="223"/>
         <source>Failed to start recording!</source>
         <translation>Optagelse fejlede!</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="223"/>
+        <location filename="../mainwindow.cpp" line="224"/>
         <source>Press &apos;show details&apos; to see console ouput.</source>
         <translation>Tryk på &quot;show details&quot; for at se konsol ouput.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="275"/>
+        <location filename="../mainwindow.cpp" line="276"/>
         <source>&amp;Show/Hide window</source>
         <translation>&amp;Vis/Gem vindue</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="278"/>
+        <location filename="../mainwindow.cpp" line="279"/>
         <source>&amp;Stop recording</source>
         <translation>&amp;Stop optagelse</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="281"/>
+        <location filename="../mainwindow.cpp" line="282"/>
         <source>&amp;Latest recording: </source>
         <translation>&amp;Seneste optagelse:</translation>
     </message>
@@ -465,7 +465,7 @@ p, li { white-space: pre-wrap; }
         <translation type="obsolete">Seneste optagelse:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="289"/>
+        <location filename="../mainwindow.cpp" line="290"/>
         <source>&amp;Quit program</source>
         <translation>&amp;Afslut program</translation>
     </message>

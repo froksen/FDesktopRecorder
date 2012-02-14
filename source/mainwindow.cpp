@@ -24,6 +24,7 @@ MainWindow::MainWindow(QWidget *parent) :
     QRect r = MainWindow::geometry();
     r.moveCenter(QApplication::desktop()->availableGeometry().center());
 
+
     //Sets pointers to other dialogs
     runTerminalClass = new runTerminal();
     ConfigurationFileClass = new ConfigurationFile();

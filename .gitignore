@@ -1,0 +1,2 @@
+# Ignoring the FDesktop.pro.user file, since it only makes sence on the current computer.
+source/FDesktopRecorder.pro.user

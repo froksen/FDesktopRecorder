@@ -1,0 +1,31 @@
+<package project="home:froksen" name="FDesktopRecorder">
+  <title>A program to record the screen</title>
+  <description>FDesktopRecorder is a program that can video record a single window or your entire desktop using ffmpeq. &#13;
+&#13;
+This can be handy if you are doing "How-To's",guides etc.&#13;
+&#13;
+Basic features:&#13;
+* Video record a single window&#13;
+* Video record your entire desktop&#13;
+&#13;
+Settings you can change:&#13;
+* output-format&#13;
+* video codec&#13;
+* audio codec&#13;
+* framerate&#13;
+* the number of audiochannels&#13;
+&#13;
+Based on a script by Peter Lyberth from the danish GNU/Linux show "Kanal Tux" http://www.kanaltux.dk </description>
+  <useforbuild>
+    <disable repository="Fedora_16"/>
+  </useforbuild>
+  <build>
+    <disable repository="Fedora_16"/>
+  </build>
+  <publish>
+    <disable/>
+    <enable repository="openSUSE_12.1"/>
+    <disable repository="Fedora_16"/>
+  </publish>
+</package>
+
