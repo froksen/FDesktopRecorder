@@ -15,6 +15,8 @@ void SettingsManager::setDefaults()
     audiosource = "alsa";
     vpre = "";
     apre = "";
+    usevpre = "false";
+    useapre = "false";
 
     recordingdevices.getRecorddevices();
     microphonedevice = recordingdevices.RecordDeviceHW[0];
@@ -38,8 +40,8 @@ void SettingsManager::checkDefaults()
     QStringList values2check;
     QStringList values2write;
 
-    values2check << "videocodec" << "audiocodec" << "audiochannels" << "fps" << "audiosource" << "vpre" << "apre";
-    values2write << "libx264" << "flac" << "2" << "30" << "alsa" << "" << "";
+    values2check << "videocodec" << "audiocodec" << "audiochannels" << "fps" << "audiosource" << "vpre" << "apre" << "usevpre" << "useapre";
+    values2write << "libx264" << "flac" << "2" << "30" << "alsa" << "" << "" << "false" << "false";
 
     index = 0;
     foreach(QString item, values2check)
@@ -297,6 +299,26 @@ void SettingsManager::setApre(QString newString)
 QString SettingsManager::getApre()
 {
     return apre;
+}
+
+void SettingsManager::setUseapre(QString state)
+{
+    useapre = state;
+}
+
+QString SettingsManager::getUseapre()
+{
+    return useapre;
+}
+
+void SettingsManager::setUsevpre(QString state)
+{
+    usevpre = state;
+}
+
+QString SettingsManager::getUsevpre()
+{
+    return usevpre;
 }
 
 

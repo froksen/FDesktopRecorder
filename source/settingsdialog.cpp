@@ -68,6 +68,26 @@ void SettingsDialog::on_buttonBox_accepted()
     int langindex = ui->comboBoxLanguage->currentIndex();
     settings.setLanguage(ui->comboBoxLanguage->itemData(langindex).toString());
 
+
+    //advanced
+    if(ui->checkBoxadvancedvpreuse->isChecked())
+    {
+        settings.setVpre("true");
+    }
+    else
+    {
+        settings.setVpre("false");
+    }
+
+    if(ui->checkBoxadvancedapre->isChecked())
+    {
+        settings.setApre("true");
+    }
+    else
+    {
+        settings.setApre("false");
+    }
+
     //Writes the data
     settings.writeAll();
     settings.readAll();
@@ -176,8 +196,7 @@ void SettingsDialog::readSettings()
     {
         ui->checkBoxbasenametimedate->setChecked(false);
         ui->lineEditbasename->setEnabled(1);
-    }
-
+    }    
 
     // -----------------SECTION: Other------------------------------
     ui->lineEditaudiocodec->setText(settings.getAudiocodec());
@@ -187,6 +206,21 @@ void SettingsDialog::readSettings()
     ui->lineEditbasename->setText(settings.getFilenameBase());
     ui->lineEditpath->setText(settings.getFilenamePath());
     ui->lineEditAudiosource->setText(settings.getAudiosource());
+
+    // -----------------SECTION: Advanced------------------------------
+    //vpre
+    ui->lineEditadvancedvpre->setText(settings.getVpre());
+    if(settings.getUsevpre() == "true")
+    {
+        ui->checkBoxadvancedvpreuse->setChecked(1);
+    }
+
+    //apre
+    ui->lineEditadvancedapre->setText(settings.getApre());
+    if(settings.getUseapre() == "true")
+    {
+        ui->checkBoxadvancedapre->setChecked(1);
+    }
 }
 
 void SettingsDialog::on_pushButtonpathBrowse_clicked()

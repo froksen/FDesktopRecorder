@@ -55,6 +55,12 @@ public:
     void setApre(QString newString);
     QString getApre();
 
+    void setUseapre(QString state);
+    QString getUseapre();
+
+    void setUsevpre(QString state);
+    QString getUsevpre();
+
     //----------------SECTION: Common------------------
     void writeAll();
     void readAll();
