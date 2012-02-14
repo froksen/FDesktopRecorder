@@ -150,6 +150,13 @@ void MainWindow::on_pushButtonStartrecord_clicked()
         recordingargs << recordingdevice;
     }
 
+    //Argument: apre
+    if(settings.getUseapre() == "true")
+    {
+        recordingargs << "-apre";
+        recordingargs << settings.getApre();
+    }
+
     //Argument: what to grap
     recordingargs << "-f";
     recordingargs << "x11grab";
@@ -167,6 +174,13 @@ void MainWindow::on_pushButtonStartrecord_clicked()
     //Argument: VideoCodec
     recordingargs << "-vcodec";
     recordingargs << videocodec;
+
+    //Argument: vpre
+    if(settings.getUsevpre() == "true")
+    {
+        recordingargs << "-vpre";
+        recordingargs << settings.getVpre();
+    }
 
     //Argument: Filename
     recordingargs << "-y";
