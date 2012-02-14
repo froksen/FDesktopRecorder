@@ -22,6 +22,7 @@ public:
     void setCommand(QString newCommand);
     void setArguments(QStringList newArguments);
     void startCommand();
+    void stopCommand();
 
 private slots:
     void readstdout();
