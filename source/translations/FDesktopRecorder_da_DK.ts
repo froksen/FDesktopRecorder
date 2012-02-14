@@ -95,9 +95,8 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>ConfigurationFile</name>
     <message>
-        <location filename="../configurationfile.cpp" line="74"/>
         <source>recording</source>
-        <translation>optagelse</translation>
+        <translation type="obsolete">optagelse</translation>
     </message>
 </context>
 <context>
@@ -333,7 +332,7 @@ p, li { white-space: pre-wrap; }
         <translation type="obsolete">Start optagelsen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="38"/>
+        <location filename="../mainwindow.cpp" line="35"/>
         <source>Start recording</source>
         <translation>Start optagelse</translation>
     </message>
@@ -403,60 +402,60 @@ p, li { white-space: pre-wrap; }
         <translation>Indstillinger</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="40"/>
+        <location filename="../mainwindow.cpp" line="37"/>
         <source>Minimize and start record</source>
         <translation>Minimér og start optagelse</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="193"/>
-        <location filename="../mainwindow.cpp" line="381"/>
-        <location filename="../mainwindow.cpp" line="393"/>
+        <location filename="../mainwindow.cpp" line="230"/>
+        <location filename="../mainwindow.cpp" line="432"/>
+        <location filename="../mainwindow.cpp" line="444"/>
         <source>Recording started</source>
         <translation>Optagelse startet</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="201"/>
+        <location filename="../mainwindow.cpp" line="241"/>
         <source>Please wait while saving the recording. Might take some time.</source>
         <translation>Vent venligst mens optagelsen bliver gemt. Dette kan tage lidt tid.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="209"/>
+        <location filename="../mainwindow.cpp" line="278"/>
         <source>Successfully finished recording</source>
         <translation>Afsluttede optagelsen korrekt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="217"/>
-        <location filename="../mainwindow.cpp" line="288"/>
+        <location filename="../mainwindow.cpp" line="285"/>
+        <location filename="../mainwindow.cpp" line="339"/>
         <source>Latest Recording</source>
         <translation>Seneste optagelse</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="222"/>
+        <location filename="../mainwindow.cpp" line="292"/>
         <source>Failed to recording!</source>
         <translation>Optagelse fejlede!</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="223"/>
+        <location filename="../mainwindow.cpp" line="295"/>
         <source>Failed to start recording!</source>
         <translation>Optagelse fejlede!</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="224"/>
+        <location filename="../mainwindow.cpp" line="296"/>
         <source>Press &apos;show details&apos; to see console ouput.</source>
         <translation>Tryk på &quot;show details&quot; for at se konsol ouput.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="276"/>
+        <location filename="../mainwindow.cpp" line="328"/>
         <source>&amp;Show/Hide window</source>
         <translation>&amp;Vis/Gem vindue</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="279"/>
+        <location filename="../mainwindow.cpp" line="331"/>
         <source>&amp;Stop recording</source>
         <translation>&amp;Stop optagelse</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="282"/>
+        <location filename="../mainwindow.cpp" line="334"/>
         <source>&amp;Latest recording: </source>
         <translation>&amp;Seneste optagelse:</translation>
     </message>
@@ -465,7 +464,7 @@ p, li { white-space: pre-wrap; }
         <translation type="obsolete">Seneste optagelse:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="290"/>
+        <location filename="../mainwindow.cpp" line="341"/>
         <source>&amp;Quit program</source>
         <translation>&amp;Afslut program</translation>
     </message>
@@ -668,169 +667,199 @@ p, li { white-space: pre-wrap; }
         <translation type="obsolete">Billeder i sekundet</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="52"/>
+        <location filename="../settingsdialog.ui" line="62"/>
+        <source>Basic</source>
+        <translation>Basal</translation>
+    </message>
+    <message>
+        <location filename="../settingsdialog.ui" line="70"/>
         <source>Frames pr. sec</source>
         <translation>Billeder i sekundet</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="59"/>
+        <location filename="../settingsdialog.ui" line="77"/>
         <source>Changes the framerate in the recording</source>
         <translation>Ændre billedraten i optagelsen</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="66"/>
+        <location filename="../settingsdialog.ui" line="84"/>
         <source>Video codec</source>
         <translation>Video codec</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="73"/>
+        <location filename="../settingsdialog.ui" line="91"/>
         <source>Changes the video codec used in the recording</source>
         <translation>Ændre det video codec der bliver brugt i optagelsen</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="80"/>
+        <location filename="../settingsdialog.ui" line="98"/>
         <source>Audio codec</source>
         <translation>Lyd codec</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="87"/>
+        <location filename="../settingsdialog.ui" line="105"/>
         <source>Changes the audio codec used in the recording</source>
         <translation>Ændre det lyd codec der bliver brugt i optagelsen</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="94"/>
+        <location filename="../settingsdialog.ui" line="112"/>
         <source>Audiochannels</source>
         <translation>Lyd kanaler</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="101"/>
+        <location filename="../settingsdialog.ui" line="119"/>
         <source>Changes the number of audiochannels used</source>
         <translation>Ændre antallet af lydkanaler der bliver brugt</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="108"/>
+        <location filename="../settingsdialog.ui" line="126"/>
         <source>Microphone</source>
         <translation>Microfon</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="122"/>
+        <location filename="../settingsdialog.ui" line="140"/>
         <source>Basename</source>
         <translation>Grundnavn</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="131"/>
+        <location filename="../settingsdialog.ui" line="149"/>
         <source>Choose a basename.</source>
         <translation>Vælg et grundnavn.</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="138"/>
+        <location filename="../settingsdialog.ui" line="156"/>
         <source>Use the time and date as the basename.</source>
         <translation>Brug tid og dato som grundnavn.</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="141"/>
+        <location filename="../settingsdialog.ui" line="159"/>
         <source>Time/Date</source>
         <translation>Tid/dato</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="150"/>
+        <location filename="../settingsdialog.ui" line="168"/>
         <source>Default path</source>
         <translation>Standard sti</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="159"/>
+        <location filename="../settingsdialog.ui" line="177"/>
         <source>Choose where to save your recordings</source>
         <translation>Vælg hvor dine optagelser skal gemmes</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="169"/>
+        <location filename="../settingsdialog.ui" line="187"/>
         <source>Change the default path.</source>
         <translation>Ændre standard stien.</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="172"/>
+        <location filename="../settingsdialog.ui" line="190"/>
         <source>Change</source>
         <translation>Ændre</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="181"/>
+        <location filename="../settingsdialog.ui" line="199"/>
         <source>Default format</source>
         <translation>Standard format</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="188"/>
+        <location filename="../settingsdialog.ui" line="206"/>
         <source>Choose which format the recordings should be saved with. </source>
         <translation>Vælg hvilket format optagelserne skal gemmes i.</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="197"/>
+        <location filename="../settingsdialog.ui" line="215"/>
         <source>Select a microphone input device</source>
         <translation>Vælg en mikrofon inputenhed</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="204"/>
+        <location filename="../settingsdialog.ui" line="222"/>
         <source>Mute the microphone. (No audio will be recorded)</source>
         <translation>Sluk mikrofonen (Ingen lyd vil blive optaget)</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="207"/>
+        <location filename="../settingsdialog.ui" line="225"/>
         <source>Mute</source>
         <translation>Sluk</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="221"/>
-        <location filename="../settingsdialog.ui" line="308"/>
+        <location filename="../settingsdialog.ui" line="240"/>
+        <source>Audio source</source>
+        <translation>Lydkilde</translation>
+    </message>
+    <message>
+        <location filename="../settingsdialog.ui" line="284"/>
+        <source>Advanced</source>
+        <translation>Advanceret</translation>
+    </message>
+    <message>
+        <location filename="../settingsdialog.ui" line="292"/>
+        <source>-apre</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../settingsdialog.ui" line="302"/>
+        <location filename="../settingsdialog.ui" line="323"/>
+        <source>Use</source>
+        <translation>Brug</translation>
+    </message>
+    <message>
+        <location filename="../settingsdialog.ui" line="313"/>
+        <source>-vpre</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../settingsdialog.ui" line="349"/>
+        <location filename="../settingsdialog.ui" line="420"/>
         <source>NOTE: Some changes might first apply after a restart of this program</source>
         <translation>NOTE: Nogle ændringer har måske først virkning efter en 
 genstart af programmet</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="245"/>
+        <location filename="../settingsdialog.ui" line="357"/>
         <source>Application Settings</source>
         <translation>Program indstillinger</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="258"/>
+        <location filename="../settingsdialog.ui" line="370"/>
         <source>Application settings</source>
         <translation>Program indstillinger</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="270"/>
+        <location filename="../settingsdialog.ui" line="382"/>
         <source>Language</source>
         <translation>Sprog</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="321"/>
+        <location filename="../settingsdialog.ui" line="433"/>
         <source>Save or decline changes</source>
         <translation>Gem eller afvis ændringerne</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="334"/>
+        <location filename="../settingsdialog.ui" line="446"/>
         <source>Restores the settings to the defaults. Please note, these can not be undone!</source>
         <translation>Gendanner standard indstillingerne. Vær OBS på at dette ikke kan fortrydes!</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="337"/>
+        <location filename="../settingsdialog.ui" line="449"/>
         <source>Restore to default. PLEASE NOTE: CAN NOT BE UNDONE!</source>
         <translation>Gendan til standard. OBS: Kan ikke fortrydes!</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="340"/>
+        <location filename="../settingsdialog.ui" line="452"/>
         <source>Restore to default</source>
         <translation>Gendan til standard</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.cpp" line="63"/>
         <source>recording</source>
-        <translation>optagelse</translation>
+        <translation type="obsolete">optagelse</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.cpp" line="99"/>
+        <location filename="../settingsdialog.cpp" line="101"/>
         <source>Restore everything to default?</source>
         <translation>Gendan alt tilbage til standard?</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.cpp" line="100"/>
+        <location filename="../settingsdialog.cpp" line="102"/>
         <source>If you press Yes everything will be restored to default. 
 
  Be aware that this can NOT be undone.</source>
@@ -839,22 +868,29 @@ genstart af programmet</translation>
  Vær opmærksom på at dette ikke kan fortrydes.</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.cpp" line="225"/>
+        <location filename="../settingsdialog.cpp" line="231"/>
         <source>Open Directory</source>
         <translation>Åben mappe</translation>
     </message>
 </context>
 <context>
+    <name>SettingsManager</name>
+    <message>
+        <location filename="../settingsmanager.cpp" line="25"/>
+        <location filename="../settingsmanager.cpp" line="63"/>
+        <source>recording</source>
+        <translation>optagelse</translation>
+    </message>
+</context>
+<context>
     <name>runTerminal</name>
     <message>
-        <location filename="../runterminal.cpp" line="59"/>
         <source>Done recording</source>
-        <translation>Færdig med at optage</translation>
+        <translation type="obsolete">Færdig med at optage</translation>
     </message>
     <message>
-        <location filename="../runterminal.cpp" line="63"/>
         <source>Recording failed!</source>
-        <translation>Optagelsen fejlede!</translation>
+        <translation type="obsolete">Optagelsen fejlede!</translation>
     </message>
 </context>
 </TS>
