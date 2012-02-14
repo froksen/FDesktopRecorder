@@ -17,7 +17,8 @@ SOURCES += main.cpp\
     aboutprog.cpp \
     windowgrapper.cpp \
     recordingdevices.cpp \
-    settingsdialog.cpp
+    settingsdialog.cpp \
+    process.cpp \
 
 HEADERS  += mainwindow.h \
     runterminal.h \
@@ -25,7 +26,8 @@ HEADERS  += mainwindow.h \
     aboutprog.h \
     windowgrapper.h \
     recordingdevices.h \
-    settingsdialog.h
+    settingsdialog.h \
+    process.h
 
 FORMS    += mainwindow.ui\
             aboutprog.ui \
