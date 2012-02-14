@@ -36,8 +36,8 @@ void SettingsManager::checkDefaults()
     QStringList values2check;
     QStringList values2write;
 
-    values2check << "videocodec" << "audiocodec" << "audiochannels" << "fps";
-    values2write << "libx264" << "flac" << "2" << "30";
+    values2check << "videocodec" << "audiocodec" << "audiochannels" << "fps" << "audiosource";
+    values2write << "libx264" << "flac" << "2" << "30" << "alsa";
 
     index = 0;
     foreach(QString item, values2check)
@@ -55,8 +55,8 @@ void SettingsManager::checkDefaults()
     values2write.clear();
 
     recordingdevices.getRecorddevices();
-    values2check << "defaultrecorddevice" << "defaultformat" << "defaultname" << "defaultpath" << "defaultrecorddeviceMute" << "language" << "audiosource";
-    values2write << recordingdevices.RecordDeviceHW[0] << "avi" << trUtf8("recording") << QDir::homePath() << "true" << "default" << "alsa";
+    values2check << "defaultrecorddevice" << "defaultformat" << "defaultname" << "defaultpath" << "defaultrecorddeviceMute" << "language";
+    values2write << recordingdevices.RecordDeviceHW[0] << "avi" << trUtf8("recording") << QDir::homePath() << "true" << "default";
 
     index = 0;
     foreach(QString item, values2check)
@@ -94,6 +94,7 @@ void SettingsManager::writeAll()
     settings.beginGroup("record");
     settings.setValue("fps",framerate);
     settings.setValue("videocodec",videocodec);
+    settings.setValue("audiosource",audiosource);
     settings.setValue("audiocodec",audiocodec);
     settings.setValue("audiochannels",audiochannels);
     settings.endGroup();
@@ -120,6 +121,7 @@ void SettingsManager::readAll()
     settings.beginGroup("record");
     framerate = settings.value("fps").toInt();
     videocodec = settings.value("videocodec").toString();
+    audiosource = settings.value("audiosource").toString();
     audiocodec = settings.value("audiocodec").toString();
     audiochannels = settings.value("audiochannels").toInt();
     settings.endGroup();
