@@ -26,11 +26,13 @@ SettingsDialog::~SettingsDialog()
 
 void SettingsDialog::on_buttonBox_accepted()
 {
+    //other
     settings.setFramerate(ui->spinBoxfps->value());
     settings.setVideocodec(ui->lineEditvideocodec->text());
     settings.setAudiocodec(ui->lineEditaudiocodec->text());
     settings.setAudiochannels(ui->spinBoxaudiochannels->value());
 
+    //Microphone
     int MicIndex = ui->comboBoxrecording->currentIndex();
     settings.setMicrophonedevice(ui->comboBoxrecording->itemData(MicIndex).toString());
 
@@ -87,13 +89,8 @@ void SettingsDialog::on_pushButtonRestore_clicked()
                 ui->checkBoxMicMute->setChecked(1);
                 ui->comboBoxrecording->setEnabled(0);
 
-                ConfigurationFile *ConfigurationFileClass = new ConfigurationFile();
-                ConfigurationFileClass->configurationfile.clear();
-                ConfigurationFileClass->setDefaults();
+                settings.setDefaults();
                 readSettings();
-
-                delete ConfigurationFileClass;
-                ConfigurationFileClass = NULL;
               break;
             }
       case QMessageBox::No:
