@@ -49,6 +49,12 @@ public:
     void setLatestrecording(QString newLatest);
     QString getLatestrecording();
 
+    void setVpre(QString newString);
+    QString getVpre();
+
+    void setApre(QString newString);
+    QString getApre();
+
     //----------------SECTION: Common------------------
     void writeAll();
     void readAll();
@@ -73,6 +79,11 @@ private:
     //Microphone
     QString microphonedevice;
     QString microphonemuted;
+    //Advanced
+    QString vpre;
+    QString usevpre;
+    QString apre;
+    QString useapre;
     //Filename
     QString filenameBase;
     QString filenameUsedate;

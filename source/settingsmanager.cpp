@@ -13,6 +13,8 @@ void SettingsManager::setDefaults()
     audiocodec = "flac";
     audiochannels = 2;
     audiosource = "alsa";
+    vpre = "";
+    apre = "";
 
     recordingdevices.getRecorddevices();
     microphonedevice = recordingdevices.RecordDeviceHW[0];
@@ -36,8 +38,8 @@ void SettingsManager::checkDefaults()
     QStringList values2check;
     QStringList values2write;
 
-    values2check << "videocodec" << "audiocodec" << "audiochannels" << "fps" << "audiosource";
-    values2write << "libx264" << "flac" << "2" << "30" << "alsa";
+    values2check << "videocodec" << "audiocodec" << "audiochannels" << "fps" << "audiosource" << "vpre" << "apre";
+    values2write << "libx264" << "flac" << "2" << "30" << "alsa" << "" << "";
 
     index = 0;
     foreach(QString item, values2check)
@@ -97,6 +99,8 @@ void SettingsManager::writeAll()
     settings.setValue("audiosource",audiosource);
     settings.setValue("audiocodec",audiocodec);
     settings.setValue("audiochannels",audiochannels);
+    settings.setValue("vpre",vpre);
+    settings.setValue("apre",apre);
     settings.endGroup();
 
     settings.beginGroup("startupbehavior");
@@ -124,6 +128,8 @@ void SettingsManager::readAll()
     audiosource = settings.value("audiosource").toString();
     audiocodec = settings.value("audiocodec").toString();
     audiochannels = settings.value("audiochannels").toInt();
+    vpre = settings.value("vpre").toString();
+    apre = settings.value("apre").toString();
     settings.endGroup();
 
     settings.beginGroup("startupbehavior");
@@ -271,6 +277,26 @@ void SettingsManager::setLatestrecording(QString newLatest)
 QString SettingsManager::getLatestrecording()
 {
     return latestrecording;
+}
+
+void SettingsManager::setVpre(QString newString)
+{
+    vpre = newString;
+}
+
+QString SettingsManager::getVpre()
+{
+    return vpre;
+}
+
+void SettingsManager::setApre(QString newString)
+{
+    apre = newString;
+}
+
+QString SettingsManager::getApre()
+{
+    return apre;
 }
 
 
