@@ -30,6 +30,7 @@ void SettingsDialog::on_buttonBox_accepted()
     settings.setVideocodec(ui->lineEditvideocodec->text());
     settings.setAudiocodec(ui->lineEditaudiocodec->text());
     settings.setAudiochannels(ui->spinBoxaudiochannels->value());
+    settings.setAudiosource(ui->lineEditAudiosource->text());
 
     //Microphone
     int MicIndex = ui->comboBoxrecording->currentIndex();
@@ -185,6 +186,7 @@ void SettingsDialog::readSettings()
     ui->spinBoxfps->setValue(settings.getFramerate());
     ui->lineEditbasename->setText(settings.getFilenameBase());
     ui->lineEditpath->setText(settings.getFilenamePath());
+    ui->lineEditAudiosource->setText(settings.getAudiosource());
 }
 
 void SettingsDialog::on_pushButtonpathBrowse_clicked()

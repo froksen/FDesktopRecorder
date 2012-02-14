@@ -150,7 +150,7 @@ void MainWindow::on_pushButtonStartrecord_clicked()
         recordingargs << recordingdevice;
     }
 
-    //Argument: what to crap
+    //Argument: what to grap
     recordingargs << "-f";
     recordingargs << "x11grab";
 
