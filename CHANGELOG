@@ -1,8 +1,12 @@
+*
+- Settings: Possible to change audiosource
+- Alot of under-the-hood improvements.
+
 * Thu Feb 09 2012
 - Added: Settings: If resert button is pressed you will see a dialog where you have to accept.
 - Added: Settings: You can now change the application language.
 - Fixed: If recording, the statusbar will keep on showing this.
-- Fixed: When "stop" button is pressed, it will be enabled this prevens crashes.
+- Fixed: When "stop" button is pressed, it will be disabled this prevens crashes.
 - Fixed: In settings: If basename is blank it will use default.
 - Changed: If recording is successfull, the filename is visible in the Gui, makes it easy to find.
 - Changed: desktopfile description
