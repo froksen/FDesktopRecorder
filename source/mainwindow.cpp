@@ -143,7 +143,7 @@ void MainWindow::on_pushButtonStartrecord_clicked()
     if(! ui->checkBoxRecordaudio->isChecked())
     {
         recordingargs << "-f";
-        recordingargs << "alsa";
+        recordingargs << settings.getAudiosource();
         recordingargs << "-ac";
         recordingargs << QString::number(audiochannels);
         recordingargs << "-i";
