@@ -416,7 +416,7 @@ void MainWindow::on_actionConsole_triggered()
 
 void MainWindow::readstderr()
 {
-    QByteArray stderrdata = runTerminalClass->stderrdata;
+    QByteArray stderrdata = mProcessClass.stderrdata;
     ui->textEditConsole->append(stderrdata);
 
     //If message in statusbar is changed, then this will change it back to the information, so the user knows that the program is recording.
@@ -429,8 +429,8 @@ void MainWindow::readstderr()
 
 void MainWindow::readstdout()
 {
-    QByteArray stdout = runTerminalClass->strdata;
-    ui->textEditConsole->append(stdout);
+    QByteArray stdoutdata = mProcessClass.stdoutdata;
+    ui->textEditConsole->append(stdoutdata);
 
     if (ui->statusBar->currentMessage().isEmpty())
     {
