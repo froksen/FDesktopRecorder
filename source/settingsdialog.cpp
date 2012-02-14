@@ -70,22 +70,24 @@ void SettingsDialog::on_buttonBox_accepted()
 
 
     //advanced
+    settings.setVpre(ui->lineEditadvancedvpre->text());
     if(ui->checkBoxadvancedvpreuse->isChecked())
     {
-        settings.setVpre("true");
+        settings.setUsevpre("true");
     }
     else
     {
-        settings.setVpre("false");
+        settings.setUsevpre("false");
     }
 
+    settings.setApre(ui->lineEditadvancedapre->text());
     if(ui->checkBoxadvancedapre->isChecked())
     {
-        settings.setApre("true");
+        settings.setUseapre("true");
     }
     else
     {
-        settings.setApre("false");
+        settings.setUseapre("false");
     }
 
     //Writes the data
