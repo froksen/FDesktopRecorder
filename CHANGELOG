@@ -1,6 +1,7 @@
 *
 - Settings: Possible to change audiosource
 - Settings: Added support for -apre and -vpre statements
+- Fixed: Reads number of audiochannels propperly
 - Alot of under-the-hood improvements.
 
 * Thu Feb 09 2012
