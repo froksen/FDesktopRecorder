@@ -1,6 +1,5 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-#include <runterminal.h>
 #include <configurationfile.h>
 #include <aboutprog.h>
 #include <windowgrapper.h>
@@ -57,7 +56,6 @@ private:
 
 
     //Other
-    runTerminal *runTerminalClass;
     ConfigurationFile *ConfigurationFileClass;
     WindowGrapper *WindowGrapperClass;
     process mProcessClass;

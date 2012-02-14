@@ -26,7 +26,6 @@ MainWindow::MainWindow(QWidget *parent) :
 
 
     //Sets pointers to other dialogs
-    runTerminalClass = new runTerminal();
     ConfigurationFileClass = new ConfigurationFile();
 
     //If there is no cfg file. it will be set.
@@ -295,8 +294,8 @@ void MainWindow::onProcessFinished(int Exitcode)
 
     //------------------SECTION: Final---------------------
     //Disconnections!
-    //disconnect(runTerminalClass->process, SIGNAL(readyReadStandardError()),this,SLOT(readstderr()));
-    //disconnect(mProcessClass.mprocess,SIGNAL(finished(int)),this,SLOT(onProcessFinished(int)));
+    disconnect(mProcessClass.mprocess, SIGNAL(readyReadStandardError()),this,SLOT(readstderr()));
+    disconnect(mProcessClass.mprocess,SIGNAL(finished(int)),this,SLOT(onProcessFinished(int)));
 }
 
 

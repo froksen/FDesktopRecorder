@@ -12,7 +12,6 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    runterminal.cpp \
     configurationfile.cpp \
     aboutprog.cpp \
     windowgrapper.cpp \
@@ -21,7 +20,6 @@ SOURCES += main.cpp\
     process.cpp \
 
 HEADERS  += mainwindow.h \
-    runterminal.h \
     configurationfile.h \
     aboutprog.h \
     windowgrapper.h \
@@ -41,6 +39,8 @@ TRANSLATIONS    = translations/FDesktopRecorder_da_DK.ts \
 
 RESOURCES += \
     resources.qrc
+
+
 
 
 
