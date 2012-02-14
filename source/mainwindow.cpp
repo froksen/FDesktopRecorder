@@ -82,16 +82,20 @@ void MainWindow::on_pushButtonStartrecord_clicked()
 {
     QStringList recordingargs;
     recordingargs.clear();
-
-    //Loads values
     ConfigurationFileClass = new ConfigurationFile();
+
+
+    //------------------------SECTION: Other--------------------------------
     QString videocodec = ConfigurationFileClass->getValue("videocodec","record");
     QString audiocodec = ConfigurationFileClass->getValue("audiocodec","record");
     QString audiochannels = ConfigurationFileClass->getValue("audiochannels","record");
     QString fps = ConfigurationFileClass->getValue("fps","record");
 
+    //------------------------SECTION: Geometry--------------------------------
     QString geometry;
     QString corners;
+
+    //If Single Window radio is checked, then to this. Else record fullscreen :-)
     if(ui->radioButtonSinglewindow->isChecked())
     {
         QProcess p;
@@ -113,11 +117,15 @@ void MainWindow::on_pushButtonStartrecord_clicked()
     }
 
 
+
+
+    //------------------------SECTION: Filename--------------------------------
+    //Reads some defaults from CFG file
     QString defaultpath = ConfigurationFileClass->getValue("defaultpath", "startupbehavior");
-
     QString defaultnamedatetime = ConfigurationFileClass->getValue("defaultnametimedate","startupbehavior");
-
     QString defaultname;
+    QString defaultformat = ConfigurationFileClass->getValue("defaultformat", "startupbehavior");
+
     if(defaultnamedatetime != "true")
     {
        defaultname = ConfigurationFileClass->getValue("defaultname", "startupbehavior");
@@ -127,15 +135,15 @@ void MainWindow::on_pushButtonStartrecord_clicked()
         defaultname = QDateTime::currentDateTime().toString();
     }
 
-
-    QString defaultformat = ConfigurationFileClass->getValue("defaultformat", "startupbehavior");
-
+    //Sets the final filname!
     filename = setFilename(defaultpath,defaultname,defaultformat);
-    qDebug() << "Filename:" << filename;
 
+
+    //------------------------SECTION: Microphone--------------------------------
+    //Microphone: reads the CFG file to find which is predefined!
     QString recordingdevice = ConfigurationFileClass->getValue("defaultrecorddevice","startupbehavior");
 
-    //Adds the arguments to the ffmpeg script. See above!
+    //if NOT Mute-Microphone checkbox is checked, then it will add this section.
     if(! ui->checkBoxRecordaudio->isChecked())
     {
         recordingargs << "-f";
@@ -146,50 +154,69 @@ void MainWindow::on_pushButtonStartrecord_clicked()
         recordingargs << recordingdevice;
     }
 
+    //Argument: what to crap
     recordingargs << "-f";
     recordingargs << "x11grab";
 
+    //Argument: Framerate
     recordingargs << "-r";
     recordingargs << fps;
 
+    //Argument: Geometry/Corners
     recordingargs << "-s";
     recordingargs << geometry;
     recordingargs << "-i";
     recordingargs << corners;
 
+    //Argument: VideoCodec
     recordingargs << "-vcodec";
     recordingargs << videocodec;
 
+    //Argument: Filename
     recordingargs << "-y";
     recordingargs << filename;
 
     qDebug() << recordingargs;
 
-    runTerminalClass->runcmd("ffmpeg",recordingargs);
-
+    //------------------------SECTION: Set and run the recording--------------------------------
+    //Sets the arguments to the program
+    mProcessClass.setArguments(recordingargs);
     recordingargs.clear();
 
+    //Sets the program
+    mProcessClass.setCommand("ffmpeg");
 
-    connect(runTerminalClass->process, SIGNAL(started()),ui->pushButtonStartrecord,SLOT(hide()));
-    connect(runTerminalClass->process, SIGNAL(started()),ui->pushButtonStoprecord,SLOT(show()));
+    //Starts the command
+    mProcessClass.startCommand();
 
+    //Connections used by the QProcess
     ui->textEditConsole->clear();
-    connect(runTerminalClass->process, SIGNAL(readyReadStandardError()),this,SLOT(readstderr()));
+    connect(mProcessClass.mprocess, SIGNAL(readyReadStandardError()),this,SLOT(readstderr()));
+    connect(mProcessClass.mprocess,SIGNAL(finished(int,QProcess::ExitStatus)),this,SLOT(onProcessFinished(int)));
 
-    connect(runTerminalClass->process, SIGNAL(finished(int)),ui->pushButtonStoprecord,SLOT(hide()));
-    connect(runTerminalClass->process, SIGNAL(finished(int)),ui->pushButtonStartrecord,SLOT(show()));
-    connect(runTerminalClass->process, SIGNAL(finished(int)),this,SLOT(onProcessFinished(int)));
-    connect(runTerminalClass->process,SIGNAL(finished(int,QProcess::ExitStatus)),this,SLOT(onProcessFinished(int)));
+    //------------------------SECTION: GUI things--------------------------------
 
-   ui->pushButtonStoprecord->setEnabled(1);
-   ui->checkBoxRecordaudio->setEnabled(0);
-   ui->radioButtonSinglewindow->setEnabled(0);
-   ui->radioButtonEntirescreen->setEnabled(0);
-   ui->actionAbout->setEnabled(0);
-   ui->actionSettings->setEnabled(0);
+    //Hides what needs to be hidden while recording
+    ui->pushButtonStartrecord->setVisible(0);
+
+    //Shows what needs to be shown while recording
+    ui->pushButtonStoprecord->setVisible(1);
+
+    //Disables what needs to be disabled while recording
+    ui->checkBoxRecordaudio->setEnabled(0);
+    ui->radioButtonSinglewindow->setEnabled(0);
+    ui->radioButtonEntirescreen->setEnabled(0);
+    ui->actionAbout->setEnabled(0);
+    ui->actionSettings->setEnabled(0);
+
+    //Enables what needs to be enabled while recording
+    ui->pushButtonStoprecord->setEnabled(1);
+
+   //SystemTray
    trayIcon->setIcon(QIcon(":/trolltech/styles/commonstyle/images/media-stop-16.png"));
    stoprecord->setEnabled(true);
 
+   //StatusBar
    ui->statusBar->showMessage(trUtf8("Recording started") + " (" + filename + ")");
 }
 

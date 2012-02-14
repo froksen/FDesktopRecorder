@@ -8,6 +8,7 @@
 #include <QtGui>
 #include <QtCore>
 #include <QMainWindow>
+#include <process.h>
 
 namespace Ui {
     class MainWindow;
@@ -59,6 +60,7 @@ private:
     runTerminal *runTerminalClass;
     ConfigurationFile *ConfigurationFileClass;
     WindowGrapper *WindowGrapperClass;
+    process mProcessClass;
 
     //Systemtray other
     QSystemTrayIcon *trayIcon;
