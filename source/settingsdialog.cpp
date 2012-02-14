@@ -69,6 +69,7 @@ void SettingsDialog::on_buttonBox_accepted()
 
     //Writes the data
     settings.writeAll();
+    settings.readAll();
 }
 
 void SettingsDialog::on_pushButtonRestore_clicked()
