@@ -12,7 +12,6 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    configurationfile.cpp \
     aboutprog.cpp \
     windowgrapper.cpp \
     recordingdevices.cpp \
@@ -21,7 +20,6 @@ SOURCES += main.cpp\
     settingsmanager.cpp
 
 HEADERS  += mainwindow.h \
-    configurationfile.h \
     aboutprog.h \
     windowgrapper.h \
     recordingdevices.h \
@@ -41,6 +39,8 @@ TRANSLATIONS    = translations/FDesktopRecorder_da_DK.ts \
 
 RESOURCES += \
     resources.qrc
+
+
 
 
 
