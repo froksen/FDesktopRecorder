@@ -1,5 +1,6 @@
 *
 - Settings: Possible to change audiosource
+- Settings: Added support for -apre and -vpre statements
 - Alot of under-the-hood improvements.
 
 * Thu Feb 09 2012
