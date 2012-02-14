@@ -24,13 +24,11 @@ MainWindow::MainWindow(QWidget *parent) :
     QRect r = MainWindow::geometry();
     r.moveCenter(QApplication::desktop()->availableGeometry().center());
 
-
-    //Sets pointers to other dialogs
-    ConfigurationFileClass = new ConfigurationFile();
-
     //If there is no cfg file. it will be set.
-    ConfigurationFileClass->setDefaults();
+    settings.checkDefaults();
 
+    //Reads settingsfile
+    settings.readAll();
 
     //Set the Startrecord PushButton menu
     QMenu *Recordbuttonmenu = new QMenu();
@@ -45,7 +43,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
 
     //Reads from cfg file
-    if(ConfigurationFileClass->getValue("defaultrecorddeviceMute","startupbehavior") != "false")
+    if(settings.getMicrophonemuted() != "false")
     {
         ui->checkBoxRecordaudio->setChecked(1);
     }
@@ -79,16 +77,15 @@ QString MainWindow::setFilename(QString path, QString basename, QString format)
 //This function handles what happens when Start Record is clicked!
 void MainWindow::on_pushButtonStartrecord_clicked()
 {
+    settings.readAll();
+
     QStringList recordingargs;
     recordingargs.clear();
-    ConfigurationFileClass = new ConfigurationFile();
-
-
     //------------------------SECTION: Other--------------------------------
-    QString videocodec = ConfigurationFileClass->getValue("videocodec","record");
-    QString audiocodec = ConfigurationFileClass->getValue("audiocodec","record");
-    QString audiochannels = ConfigurationFileClass->getValue("audiochannels","record");
-    QString fps = ConfigurationFileClass->getValue("fps","record");
+    QString videocodec = settings.getVideocodec();
+    QString audiocodec = settings.getAudiocodec();
+    int audiochannels = settings.getAudiochannles();
+    int fps = settings.getFramerate();
 
     //------------------------SECTION: Geometry--------------------------------
     QString geometry;
@@ -120,14 +117,14 @@ void MainWindow::on_pushButtonStartrecord_clicked()
 
     //------------------------SECTION: Filename--------------------------------
     //Reads some defaults from CFG file
-    QString defaultpath = ConfigurationFileClass->getValue("defaultpath", "startupbehavior");
-    QString defaultnamedatetime = ConfigurationFileClass->getValue("defaultnametimedate","startupbehavior");
+    QString defaultpath = settings.getFilenamePath();
+    QString defaultnamedatetime = settings.getFilenameUsedate();
     QString defaultname;
-    QString defaultformat = ConfigurationFileClass->getValue("defaultformat", "startupbehavior");
+    QString defaultformat = settings.getFormat();
 
     if(defaultnamedatetime != "true")
     {
-       defaultname = ConfigurationFileClass->getValue("defaultname", "startupbehavior");
+       defaultname = settings.getFilenameBase();
     }
     else
     {
@@ -140,7 +137,7 @@ void MainWindow::on_pushButtonStartrecord_clicked()
 
     //------------------------SECTION: Microphone--------------------------------
     //Microphone: reads the CFG file to find which is predefined!
-    QString recordingdevice = ConfigurationFileClass->getValue("defaultrecorddevice","startupbehavior");
+    QString recordingdevice = settings.getMicrophonedevice();
 
     //if NOT Mute-Microphone checkbox is checked, then it will add this section.
     if(! ui->checkBoxRecordaudio->isChecked())
@@ -148,7 +145,7 @@ void MainWindow::on_pushButtonStartrecord_clicked()
         recordingargs << "-f";
         recordingargs << "alsa";
         recordingargs << "-ac";
-        recordingargs << "2";
+        recordingargs << QString::number(audiochannels);
         recordingargs << "-i";
         recordingargs << recordingdevice;
     }
@@ -159,7 +156,7 @@ void MainWindow::on_pushButtonStartrecord_clicked()
 
     //Argument: Framerate
     recordingargs << "-r";
-    recordingargs << fps;
+    recordingargs << QString::number(fps);
 
     //Argument: Geometry/Corners
     recordingargs << "-s";
@@ -268,9 +265,7 @@ void MainWindow::onProcessFinished(int Exitcode)
 
         //CFG: Sets the new information
         QString currentdatetime = QDateTime::currentDateTime().toString();
-        ConfigurationFileClass->configurationfile.beginGroup("misc");
-        ConfigurationFileClass->configurationfile.setValue("latestrecording",currentdatetime);
-        ConfigurationFileClass->configurationfile.endGroup();
+        settings.setLatestrecording(currentdatetime);
 
         //SystemTray: Reads information
         latestrecording->setText(trUtf8("Latest Recording") + ": " + currentdatetime);
@@ -325,8 +320,7 @@ void MainWindow::createsystemtray()
     latestrecording = new QAction(trUtf8("&Latest recording: "),this);
     latestrecording->setEnabled(false);
 
-    ConfigurationFileClass = new ConfigurationFile();
-    QString latestrecordingText = ConfigurationFileClass->getValue("latestrecording","misc");
+    QString latestrecordingText = settings.getLatestrecording();
 
     latestrecording->setText(trUtf8("Latest Recording") + ": " + latestrecordingText);
 
@@ -445,9 +439,5 @@ void MainWindow::startRecordandminimize()
 
 void MainWindow::on_actionOpen_recording_directory_triggered()
 {
-    QString defaultpath = ConfigurationFileClass->getValue("defaultpath", "startupbehavior");
-
-    QString path = defaultpath;
-
-    QDesktopServices::openUrl( QUrl::fromLocalFile(path) );
+    QDesktopServices::openUrl( QUrl::fromLocalFile(settings.getFilenamePath()) );
 }

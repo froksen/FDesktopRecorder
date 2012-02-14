@@ -12,20 +12,20 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    configurationfile.cpp \
     aboutprog.cpp \
     windowgrapper.cpp \
     recordingdevices.cpp \
     settingsdialog.cpp \
     process.cpp \
+    settingsmanager.cpp
 
 HEADERS  += mainwindow.h \
-    configurationfile.h \
     aboutprog.h \
     windowgrapper.h \
     recordingdevices.h \
     settingsdialog.h \
-    process.h
+    process.h \
+    settingsmanager.h
 
 FORMS    += mainwindow.ui\
             aboutprog.ui \
@@ -39,6 +39,10 @@ TRANSLATIONS    = translations/FDesktopRecorder_da_DK.ts \
 
 RESOURCES += \
     resources.qrc
+
+
+
+
 
 
 

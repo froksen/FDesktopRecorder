@@ -8,6 +8,7 @@
 #include <QtCore>
 #include <QMainWindow>
 #include <process.h>
+#include <settingsmanager.h>
 
 namespace Ui {
     class MainWindow;
@@ -56,9 +57,9 @@ private:
 
 
     //Other
-    ConfigurationFile *ConfigurationFileClass;
     WindowGrapper *WindowGrapperClass;
     process mProcessClass;
+    SettingsManager settings;
 
     //Systemtray other
     QSystemTrayIcon *trayIcon;

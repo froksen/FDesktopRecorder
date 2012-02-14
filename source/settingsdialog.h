@@ -2,6 +2,8 @@
 #define SETTINGSDIALOG_H
 
 #include <QDialog>
+#include <settingsmanager.h>
+#include <recordingdevices.h>
 
 namespace Ui {
     class SettingsDialog;
@@ -35,7 +37,11 @@ private:
 
 
     //Application settings
-    void getLanguages();
+    void findLanguages();
+
+    //other
+    SettingsManager settings;
+    RecordingDevices recordingdevices;
 };
 
 #endif // SETTINGSDIALOG_H
