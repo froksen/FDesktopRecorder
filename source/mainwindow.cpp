@@ -192,7 +192,7 @@ void MainWindow::on_pushButtonStartrecord_clicked()
     //Connections used by the QProcess
     ui->textEditConsole->clear();
     connect(mProcessClass.mprocess, SIGNAL(readyReadStandardError()),this,SLOT(readstderr()));
-    connect(mProcessClass.mprocess,SIGNAL(finished(int,QProcess::ExitStatus)),this,SLOT(onProcessFinished(int)));
+    connect(mProcessClass.mprocess,SIGNAL(finished(int)),this,SLOT(onProcessFinished(int)));
 
     //------------------------SECTION: GUI things--------------------------------
 
@@ -236,21 +236,54 @@ void MainWindow::on_pushButtonStoprecord_clicked()
 }
 
 void MainWindow::onProcessFinished(int Exitcode)
-{
+{  
+    //------------------SECTION: COMMON---------------------
+    //StatusBar:
+    ui->statusBar->setUpdatesEnabled(1);
+
+    //SystemTray
+    trayIcon->setIcon((QIcon)":/images/icon.png");
+    stoprecord->setEnabled(false);
+
+    //Shows what needs to be shown on stop
+    ui->pushButtonStartrecord->setVisible(1);
+
+    //Hides what needs to be hidden on stop
+    ui->pushButtonStoprecord->setVisible(0);
+
+    //Enables what needs to be Enables on Stop:
+    ui->checkBoxRecordaudio->setEnabled(1);
+    ui->radioButtonEntirescreen->setEnabled(1);
+    ui->radioButtonSinglewindow->setEnabled(1);
+    ui->actionAbout->setEnabled(1);
+    ui->actionSettings->setEnabled(1);
+    ui->pushButtonStartrecord->setEnabled(1);
+
+
+    //------------------SECTION: SUCCESS OR UNSUCCESS---------------------
+    //Recording: Successful
     if(Exitcode == 0)
     {
+        //StatusBar
         ui->statusBar->showMessage(trUtf8("Successfully finished recording") + " (" + filename + ")");
 
+        //CFG: Sets the new information
         QString currentdatetime = QDateTime::currentDateTime().toString();
         ConfigurationFileClass->configurationfile.beginGroup("misc");
         ConfigurationFileClass->configurationfile.setValue("latestrecording",currentdatetime);
         ConfigurationFileClass->configurationfile.endGroup();
+
+        //SystemTray: Reads information
         latestrecording->setText(trUtf8("Latest Recording") + ": " + currentdatetime);
 
     }
+    //Recording: Failes
     else
     {
+        //StatusBar
         ui->statusBar->showMessage(trUtf8("Failed to recording!"));
+
+        //Shows the TerminalOutput Messagebox
         QMessageBox msgBox;    msgBox.setText(trUtf8("Failed to start recording!"));
         msgBox.setInformativeText(trUtf8("Press 'show details' to see console ouput."));
         msgBox.setStandardButtons(QMessageBox::Ok);
@@ -258,32 +291,12 @@ void MainWindow::onProcessFinished(int Exitcode)
         msgBox.setDefaultButton(QMessageBox::Save);
         msgBox.setFixedWidth(520);
         int ret = msgBox.exec();
-
     }
 
-
-    if(ui->pushButtonStartrecord->isEnabled())
-    {
-        ui->checkBoxRecordaudio->setEnabled(1);
-        ui->radioButtonEntirescreen->setEnabled(1);
-        ui->radioButtonSinglewindow->setEnabled(1);
-        ui->actionAbout->setEnabled(1);
-        ui->actionSettings->setEnabled(1);
-
-        trayIcon->setIcon((QIcon)":/images/icon.png");
-        stoprecord->setEnabled(false);
-    }
-
-
-    disconnect(runTerminalClass->process, SIGNAL(started()),ui->pushButtonStartrecord,SLOT(hide()));
-    disconnect(runTerminalClass->process, SIGNAL(started()),ui->pushButtonStoprecord,SLOT(show()));
-
-    disconnect(runTerminalClass->process, SIGNAL(readyReadStandardError()),this,SLOT(readstderr()));
-
-    disconnect(runTerminalClass->process, SIGNAL(finished(int)),ui->pushButtonStoprecord,SLOT(hide()));
-    disconnect(runTerminalClass->process, SIGNAL(finished(int)),ui->pushButtonStartrecord,SLOT(show()));
-    disconnect(runTerminalClass->process, SIGNAL(finished(int)),this,SLOT(onProcessFinished(int)));
-    disconnect(runTerminalClass->process,SIGNAL(finished(int,QProcess::ExitStatus)),this,SLOT(onProcessFinished(int)));
+    //------------------SECTION: Final---------------------
+    //Disconnections!
+    //disconnect(runTerminalClass->process, SIGNAL(readyReadStandardError()),this,SLOT(readstderr()));
+    //disconnect(mProcessClass.mprocess,SIGNAL(finished(int)),this,SLOT(onProcessFinished(int)));
 }
 
 
