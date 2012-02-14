@@ -8,6 +8,7 @@
 #include <QtCore>
 #include <QMainWindow>
 #include <process.h>
+#include <settingsmanager.h>
 
 namespace Ui {
     class MainWindow;

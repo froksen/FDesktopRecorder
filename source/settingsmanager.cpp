@@ -28,6 +28,8 @@ void SettingsManager::writeAll()
     settings.beginGroup("misc");
     settings.setValue("latestrecording",latestrecording);
     settings.endGroup();
+
+    settings.sync();
 }
 
 void SettingsManager::readAll()

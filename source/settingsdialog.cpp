@@ -91,7 +91,48 @@ void SettingsDialog::writeSettings()
 
 void SettingsDialog::on_buttonBox_accepted()
 {
-    writeSettings();
+    settings.setFramerate(ui->spinBoxfps->value());
+    settings.setVideocodec(ui->lineEditvideocodec->text());
+    settings.setAudiocodec(ui->lineEditaudiocodec->text());
+    settings.setAudiochannels(ui->spinBoxaudiochannels->value());
+
+    int MicIndex = ui->comboBoxrecording->currentIndex();
+    settings.setMicrophonedevice(ui->comboBoxrecording->itemData(MicIndex).toString());
+
+    //Microphone: Mute?
+    if(ui->checkBoxMicMute->isChecked())
+    {
+        settings.setMicrophonemuted("true");
+    }
+    else
+    {
+        settings.setMicrophonemuted("false");
+    }
+
+    settings.setFilenameBase(ui->lineEditbasename->text());
+
+    //Filename: use date and time
+    if(ui->checkBoxbasenametimedate->isChecked())
+    {
+        settings.setFilenameUsedate("true");
+    }
+    else
+    {
+        settings.setFilenameUsedate("false");
+    }
+
+    settings.setFilenamePath(ui->lineEditpath->text());
+
+    //Format
+    int formatindex = ui->comboBoxFormat->currentIndex();
+    settings.setFormat(ui->comboBoxFormat->itemData(formatindex).toString());
+
+    //Language
+    int langindex = ui->comboBoxLanguage->currentIndex();
+    settings.setLanguage(ui->comboBoxLanguage->itemData(langindex).toString());
+
+    //Writes the data
+    settings.writeAll();
 }
 
 void SettingsDialog::on_pushButtonRestore_clicked()
@@ -219,21 +260,15 @@ void SettingsDialog::readSettings()
 
 void SettingsDialog::on_pushButtonpathBrowse_clicked()
 {
-
-    QString prefileName = ui->lineEditpath->text();
-
+    QString prefileName = settings.getFilenamePath();
     QString fileName = QFileDialog::getExistingDirectory(this, tr("Open Directory"),
                                                          prefileName,
                                                          QFileDialog::ShowDirsOnly
                                                          | QFileDialog::DontResolveSymlinks);
-    if(fileName.size()>0){
+    if(!fileName.isEmpty())
+    {
         ui->lineEditpath->setText(fileName);
     }
-    else{
-        fileName = prefileName;
-        ui->lineEditpath->setText(fileName);
-    }
-
 }
 
 void SettingsDialog::on_checkBoxbasenametimedate_clicked()
