@@ -13,12 +13,13 @@ SettingsDialog::SettingsDialog(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    settings.readAll();
 
-    getLanguages();
+    //getLanguages();
 
-        readSettings();
+    readSettings();
 
-    on_checkBoxMicMute_clicked();
+    //on_checkBoxMicMute_clicked();
 }
 
 SettingsDialog::~SettingsDialog()
@@ -136,22 +137,28 @@ void SettingsDialog::on_pushButtonRestore_clicked()
 
 void SettingsDialog::readSettings()
 {
+// -----------------SECTION: Recordingdevice------------------------------
+    //Refreshes the list
+    recordingdevices.getRecorddevices();
 
-    RecordingDevices *RecordingDevicesclass = new RecordingDevices();
-    RecordingDevicesclass->getRecorddevices();
-
-    //Creates the combobx containing the recording devices.
+    //Creates the combobox containing the recording devices that are on the machine.
     int index = 0;
     ui->comboBoxrecording->clear();
-    foreach(QString device,RecordingDevicesclass->RecordDeviceHW)
+    foreach(QString device,recordingdevices.RecordDeviceHW)
     {
-        ui->comboBoxrecording->addItem(RecordingDevicesclass->RecordDeviceDesc[index],device);
+        ui->comboBoxrecording->addItem(recordingdevices.RecordDeviceDesc[index],device);
 
         index += 1;
     }
 
+    //Reads the prefered value
+    QString recordingdevice = settings.getMicrophonedevice();
+    int comboboxIndex = ui->comboBoxrecording->findData(recordingdevice);
+    ui->comboBoxrecording->setCurrentIndex(comboboxIndex);
+
+// -----------------SECTION: Format------------------------------
+    //Addes the diffent formats to the combox. PLEASE NOTE: the order is important.
     QStringList ItemFormatList;
-    //Addes the diffent formats. PLEASE NOTE: the order is important.
     ItemFormatList << "mkv";
     ItemFormatList << "avi";
 
@@ -160,7 +167,6 @@ void SettingsDialog::readSettings()
     ItemDescList << "MKV - Matroska Multimedia Container";
     ItemDescList << "AVI - Audio Video Interleaver";
 
-
     int Indexnumber = 0;
     foreach(QString format,ItemFormatList)
     {
@@ -168,37 +174,29 @@ void SettingsDialog::readSettings()
         Indexnumber += 1;
     }
 
-
-    ConfigurationFile *ConfigurationFileClass = new ConfigurationFile();
-    //Reads and sets the value from the cfg file
-    QString recordingdevice = ConfigurationFileClass->getValue("defaultrecorddevice","startupbehavior");
-    int comboboxIndex = ui->comboBoxrecording->findData(recordingdevice);
-    ui->comboBoxrecording->setCurrentIndex(comboboxIndex);
-
-    QString formatcfg = ConfigurationFileClass->getValue("defaultformat","startupbehavior");
+    //Reads the prefered value
+    QString formatcfg = settings.getFormat();
     int comboboxIndexfind = ui->comboBoxFormat->findData(formatcfg);
     ui->comboBoxFormat->setCurrentIndex(comboboxIndexfind);
 
-    QString languagecfg = ConfigurationFileClass->getValue("language","startupbehavior");
+    // -----------------SECTION: Language------------------------------
+
+    //Updates the list
+    findLanguages();
+
+    //Sets the prefered
+    QString languagecfg = settings.getLanguage();
     int comboboxIndexLanguage = ui->comboBoxLanguage->findData(languagecfg);
     ui->comboBoxLanguage->setCurrentIndex(comboboxIndexLanguage);
 
-    if(ConfigurationFileClass->getValue("defaultrecorddeviceMute","startupbehavior") == "false")
+    // -----------------SECTION: Microphonemuted------------------------------
+    if(settings.getMicrophonemuted() == "false")
     {
         ui->checkBoxMicMute->setChecked(0);
-        on_checkBoxMicMute_clicked();
     }
 
-    QString videocodec = ConfigurationFileClass->getValue("videocodec","record");
-    QString audiocodec = ConfigurationFileClass->getValue("audiocodec","record");
-    QString audiochannels = ConfigurationFileClass->getValue("audiochannels","record");
-    QString fps = ConfigurationFileClass->getValue("fps","record");
-
-    QString defaultpath = ConfigurationFileClass->getValue("defaultpath", "startupbehavior");
-    QString defaultname = ConfigurationFileClass->getValue("defaultname", "startupbehavior");
-    QString defaultformat = ConfigurationFileClass->getValue("defaultformat", "startupbehavior");
-
-    if(ConfigurationFileClass->getValue("defaultnametimedate","startupbehavior") == "true")
+    // -----------------SECTION: Filename use time and date------------------------------
+    if(settings.getFilenameUsedate() == "true")
     {
         ui->checkBoxbasenametimedate->setChecked(true);
         ui->lineEditbasename->setEnabled(0);
@@ -209,12 +207,14 @@ void SettingsDialog::readSettings()
         ui->lineEditbasename->setEnabled(1);
     }
 
-    ui->lineEditaudiocodec->setText(audiocodec);
-    ui->lineEditvideocodec->setText(videocodec);
-    ui->spinBoxaudiochannels->setValue(audiochannels.toInt());
-    ui->spinBoxfps->setValue(fps.toInt());
-    ui->lineEditbasename->setText(defaultname);
-    ui->lineEditpath->setText(defaultpath);
+
+    // -----------------SECTION: Other------------------------------
+    ui->lineEditaudiocodec->setText(settings.getAudiocodec());
+    ui->lineEditvideocodec->setText(settings.getVideocodec());
+    ui->spinBoxaudiochannels->setValue(settings.getAudiochannles());
+    ui->spinBoxfps->setValue(settings.getFramerate());
+    ui->lineEditbasename->setText(settings.getFilenameBase());
+    ui->lineEditpath->setText(settings.getFilenamePath());
 }
 
 void SettingsDialog::on_pushButtonpathBrowse_clicked()
@@ -260,7 +260,7 @@ void SettingsDialog::on_checkBoxMicMute_clicked()
     }
 }
 
-void SettingsDialog::getLanguages()
+void SettingsDialog::findLanguages()
 {
     QDir translationfilepath(":/translations");
     QStringList translationsfiles = translationfilepath.entryList(QDir::Files);
