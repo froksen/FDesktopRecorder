@@ -1,6 +1,5 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-#include <configurationfile.h>
 #include <aboutprog.h>
 #include <windowgrapper.h>
 #include <settingsdialog.h>

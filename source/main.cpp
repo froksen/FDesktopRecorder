@@ -16,6 +16,7 @@ int main(int argc, char *argv[])
     qDebug() << "System default locale:" << locale;
 
     //Reads startup behavoir
+
     QSettings configurationfile;
     configurationfile.beginGroup("startupbehavior");
     if(configurationfile.value("language").toString() != "default" && configurationfile.contains("language"))

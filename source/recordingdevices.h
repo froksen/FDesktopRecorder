@@ -2,7 +2,6 @@
 #define RECORDINGDEVICES_H
 
 #include <QObject>
-#include <configurationfile.h>
 #include <QStringList>
 #include <QSettings>
 
@@ -25,7 +24,6 @@ private:
     void setRecordingdevice();
 
     //other
-    ConfigurationFile *Configurationfile;
 
 };
 
