@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>422</width>
-    <height>360</height>
+    <width>424</width>
+    <height>390</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -74,56 +74,56 @@
            </property>
           </widget>
          </item>
-         <item row="2" column="0">
+         <item row="3" column="0">
           <widget class="QLabel" name="labelaudiocodec">
            <property name="text">
             <string>Audio codec</string>
            </property>
           </widget>
          </item>
-         <item row="2" column="1">
+         <item row="3" column="1">
           <widget class="QLineEdit" name="lineEditaudiocodec">
            <property name="toolTip">
             <string>Changes the audio codec used in the recording</string>
            </property>
           </widget>
          </item>
-         <item row="3" column="0">
+         <item row="4" column="0">
           <widget class="QLabel" name="labelaudiochannles">
            <property name="text">
             <string>Audiochannels</string>
            </property>
           </widget>
          </item>
-         <item row="3" column="1">
+         <item row="4" column="1">
           <widget class="QSpinBox" name="spinBoxaudiochannels">
            <property name="toolTip">
             <string>Changes the number of audiochannels used</string>
            </property>
           </widget>
          </item>
-         <item row="4" column="0">
+         <item row="5" column="0">
           <widget class="QLabel" name="labelRecordingdevice">
            <property name="text">
             <string>Microphone</string>
            </property>
           </widget>
          </item>
-         <item row="5" column="0" colspan="2">
+         <item row="6" column="0" colspan="2">
           <widget class="Line" name="line">
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
            </property>
           </widget>
          </item>
-         <item row="6" column="0">
+         <item row="7" column="0">
           <widget class="QLabel" name="labelbasename">
            <property name="text">
             <string>Basename</string>
            </property>
           </widget>
          </item>
-         <item row="6" column="1">
+         <item row="7" column="1">
           <layout class="QGridLayout" name="gridLayout">
            <item row="0" column="0">
             <widget class="QLineEdit" name="lineEditbasename">
@@ -144,14 +144,14 @@
            </item>
           </layout>
          </item>
-         <item row="7" column="0">
+         <item row="8" column="0">
           <widget class="QLabel" name="labelpath">
            <property name="text">
             <string>Default path</string>
            </property>
           </widget>
          </item>
-         <item row="7" column="1">
+         <item row="8" column="1">
           <layout class="QGridLayout" name="gridLayout_3">
            <item row="0" column="0">
             <widget class="QLineEdit" name="lineEditpath">
@@ -175,21 +175,21 @@
            </item>
           </layout>
          </item>
-         <item row="8" column="0">
+         <item row="9" column="0">
           <widget class="QLabel" name="labelFormat">
            <property name="text">
             <string>Default format</string>
            </property>
           </widget>
          </item>
-         <item row="8" column="1">
+         <item row="9" column="1">
           <widget class="QComboBox" name="comboBoxFormat">
            <property name="toolTip">
             <string>Choose which format the recordings should be saved with. </string>
            </property>
           </widget>
          </item>
-         <item row="4" column="1">
+         <item row="5" column="1">
           <layout class="QGridLayout" name="gridLayout_5">
            <item row="0" column="0">
             <widget class="QComboBox" name="comboBoxrecording">
@@ -212,6 +212,16 @@
             </widget>
            </item>
           </layout>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="lineEditAudiosource"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>Audio source</string>
+           </property>
+          </widget>
          </item>
         </layout>
        </item>
