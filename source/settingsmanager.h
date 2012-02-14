@@ -16,6 +16,9 @@ public:
     void setVideocodec(QString newVideocodec);
     QString getVideocodec();
 
+    void setAudiosource(QString newSource);
+    QString getAudiosource();
+
     void setAudiocodec(QString newAudiocodec);
     QString getAudiocodec();
 
@@ -64,6 +67,7 @@ private:
     int framerate;
     QString videocodec;
     //Audio
+    QString audiosource;
     QString audiocodec;
     int audiochannels;
     //Microphone

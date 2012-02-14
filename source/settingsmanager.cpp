@@ -158,6 +158,17 @@ QString SettingsManager::getVideocodec()
     return videocodec;
 }
 
+void SettingsManager::setAudiosource(QString newSource)
+{
+    audiosource = newSource;
+}
+
+QString SettingsManager::getAudiosource()
+{
+    return audiosource;
+}
+
+
 void SettingsManager::setAudiocodec(QString newAudiocodec)
 {
     audiocodec = newAudiocodec;
@@ -258,4 +269,5 @@ QString SettingsManager::getLatestrecording()
 {
     return latestrecording;
 }
+
 
