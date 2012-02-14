@@ -18,6 +18,9 @@ public:
     void setAudiocodec(QString newAudiocodec);
     QString getAudiocodec();
 
+    void setAudiochannels(int newValue);
+    int getAudiochannles();
+
     void setMicrophonedevice(QString newDevice);
     QString getMicrophonedevice();
 
@@ -59,7 +62,7 @@ private:
     QString videocodec;
     //Audio
     QString audiocodec;
-    QString audiochannels;
+    int audiochannels;
     //Microphone
     QString microphonedevice;
     QString microphonemuted;

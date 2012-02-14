@@ -84,6 +84,17 @@ QString SettingsManager::getAudiocodec()
     return audiocodec;
 }
 
+void SettingsManager::setAudiochannels(int newValue)
+{
+    audiochannels = newValue;
+}
+
+int SettingsManager::getAudiochannles()
+{
+    return audiochannels;
+}
+
+
 void SettingsManager::setMicrophonedevice(QString newDevice)
 {
     microphonedevice = newDevice;
