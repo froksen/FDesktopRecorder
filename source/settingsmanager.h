@@ -3,6 +3,7 @@
 
 #include <QObject>
 #include <QSettings>
+#include <recordingdevices.h>
 
 class SettingsManager : public QObject
 {
@@ -49,6 +50,7 @@ public:
     void writeAll();
     void readAll();
     void setDefaults();
+    void checkDefaults();
 
 public slots:
 
@@ -77,6 +79,8 @@ private:
     QString language;
 //----------------SECTION: OTHER------------------
     QString latestrecording;
+    RecordingDevices recordingdevices;
+
 
 };
 

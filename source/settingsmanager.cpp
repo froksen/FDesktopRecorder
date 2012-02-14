@@ -1,7 +1,6 @@
 #include "settingsmanager.h"
 #include <QDebug>
 #include <QDir>
-#include <recordingdevices.h>
 
 SettingsManager::SettingsManager(QObject *parent) :
     QObject(parent)
@@ -14,7 +13,6 @@ void SettingsManager::setDefaults()
     audiocodec = "flac";
     audiochannels = 2;
 
-    RecordingDevices recordingdevices;
     recordingdevices.getRecorddevices();
     microphonedevice = recordingdevices.RecordDeviceHW[0];
     microphonemuted = "true";
@@ -25,9 +23,69 @@ void SettingsManager::setDefaults()
     format = "avi";
 
     language = "default";
+    latestrecording = "Unknown";
 
     //Writes them
     writeAll();
+}
+
+void SettingsManager::checkDefaults()
+{
+    int index;
+    QStringList values2check;
+    QStringList values2write;
+
+    values2check << "videocodec" << "audiocodec" << "audiochannels" << "fps";
+    values2write << "libx264" << "flac" << "2" << "30";
+
+    index = 0;
+    foreach(QString item, values2check)
+    {
+        settings.beginGroup("record");
+        if(!settings.contains(item))
+        {
+            settings.setValue(item,values2write[index]);
+        }
+        settings.endGroup();
+        index += 1;
+    }
+
+    values2check.clear();
+    values2write.clear();
+
+    recordingdevices.getRecorddevices();
+    values2check << "defaultrecorddevice" << "defaultformat" << "defaultname" << "defaultpath" << "defaultrecorddeviceMute" << "language";
+    values2write << recordingdevices.RecordDeviceHW[0] << "avi" << trUtf8("recording") << QDir::homePath() << "true" << "default";
+
+    index = 0;
+    foreach(QString item, values2check)
+    {
+        settings.beginGroup("startupbehavior");
+        if(!settings.contains(item))
+        {
+            settings.setValue(item,values2write[index]);
+        }
+        settings.endGroup();
+        index += 1;
+    }
+
+    values2check.clear();
+    values2write.clear();
+
+    values2check << "latestrecording";
+    values2write << "Unknown";
+
+    index = 0;
+    foreach(QString item, values2check)
+    {
+        settings.beginGroup("misc");
+        if(!settings.contains(item))
+        {
+            settings.setValue(item,values2write[index]);
+        }
+        settings.endGroup();
+        index += 1;
+    }
 }
 
 void SettingsManager::writeAll()
