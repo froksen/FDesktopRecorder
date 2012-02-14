@@ -48,6 +48,7 @@ public:
     //----------------SECTION: Common------------------
     void writeAll();
     void readAll();
+    void setDefaults();
 
 public slots:
 

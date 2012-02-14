@@ -1,9 +1,33 @@
 #include "settingsmanager.h"
 #include <QDebug>
+#include <QDir>
+#include <recordingdevices.h>
 
 SettingsManager::SettingsManager(QObject *parent) :
     QObject(parent)
 {
+}
+void SettingsManager::setDefaults()
+{
+    framerate = 30;
+    videocodec = "libx264";
+    audiocodec = "flac";
+    audiochannels = 2;
+
+    RecordingDevices recordingdevices;
+    recordingdevices.getRecorddevices();
+    microphonedevice = recordingdevices.RecordDeviceHW[0];
+    microphonemuted = "true";
+
+    filenameBase = trUtf8("recording");
+    filenameUsedate = "false";
+    filenamePath = QDir::homePath();
+    format = "avi";
+
+    language = "default";
+
+    //Writes them
+    writeAll();
 }
 
 void SettingsManager::writeAll()
