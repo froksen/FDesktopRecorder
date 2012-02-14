@@ -25,7 +25,7 @@ MainWindow::MainWindow(QWidget *parent) :
     r.moveCenter(QApplication::desktop()->availableGeometry().center());
 
     //If there is no cfg file. it will be set.
-    settings.setDefaults();
+    settings.checkDefaults();
 
     //Reads settingsfile
     settings.readAll();
@@ -77,6 +77,8 @@ QString MainWindow::setFilename(QString path, QString basename, QString format)
 //This function handles what happens when Start Record is clicked!
 void MainWindow::on_pushButtonStartrecord_clicked()
 {
+    settings.readAll();
+
     QStringList recordingargs;
     recordingargs.clear();
     //------------------------SECTION: Other--------------------------------
@@ -264,7 +266,6 @@ void MainWindow::onProcessFinished(int Exitcode)
         //CFG: Sets the new information
         QString currentdatetime = QDateTime::currentDateTime().toString();
         settings.setLatestrecording(currentdatetime);
-        settings.writeAll();
 
         //SystemTray: Reads information
         latestrecording->setText(trUtf8("Latest Recording") + ": " + currentdatetime);
