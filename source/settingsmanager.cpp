@@ -12,6 +12,7 @@ void SettingsManager::setDefaults()
     videocodec = "libx264";
     audiocodec = "flac";
     audiochannels = 2;
+    audiosource = "alsa";
 
     recordingdevices.getRecorddevices();
     microphonedevice = recordingdevices.RecordDeviceHW[0];
@@ -54,8 +55,8 @@ void SettingsManager::checkDefaults()
     values2write.clear();
 
     recordingdevices.getRecorddevices();
-    values2check << "defaultrecorddevice" << "defaultformat" << "defaultname" << "defaultpath" << "defaultrecorddeviceMute" << "language";
-    values2write << recordingdevices.RecordDeviceHW[0] << "avi" << trUtf8("recording") << QDir::homePath() << "true" << "default";
+    values2check << "defaultrecorddevice" << "defaultformat" << "defaultname" << "defaultpath" << "defaultrecorddeviceMute" << "language" << "audiosource";
+    values2write << recordingdevices.RecordDeviceHW[0] << "avi" << trUtf8("recording") << QDir::homePath() << "true" << "default" << "alsa";
 
     index = 0;
     foreach(QString item, values2check)
