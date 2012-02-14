@@ -224,9 +224,15 @@ void MainWindow::on_pushButtonStartrecord_clicked()
 
 void MainWindow::on_pushButtonStoprecord_clicked()
 {
+    //Disables what needs to be disabled
     ui->pushButtonStoprecord->setEnabled(0);
+
+    //StausBar
     ui->statusBar->showMessage(trUtf8("Please wait while saving the recording. Might take some time."));
-    runTerminalClass->stopProcess();
+    ui->statusBar->setUpdatesEnabled(0);
+
+    //Run the stop command
+    mProcessClass.stopCommand();
 }
 
 void MainWindow::onProcessFinished(int Exitcode)
@@ -239,8 +245,6 @@ void MainWindow::onProcessFinished(int Exitcode)
         ConfigurationFileClass->configurationfile.beginGroup("misc");
         ConfigurationFileClass->configurationfile.setValue("latestrecording",currentdatetime);
         ConfigurationFileClass->configurationfile.endGroup();
-
-
         latestrecording->setText(trUtf8("Latest Recording") + ": " + currentdatetime);
 
     }
