@@ -14,79 +14,14 @@ SettingsDialog::SettingsDialog(QWidget *parent) :
     ui->setupUi(this);
 
     settings.readAll();
-
-    //getLanguages();
-
     readSettings();
 
-    //on_checkBoxMicMute_clicked();
+    on_checkBoxMicMute_clicked();
 }
 
 SettingsDialog::~SettingsDialog()
 {
     delete ui;
-}
-
-void SettingsDialog::writeSettings()
-{
-    ConfigurationFile *ConfigurationFileClass = new ConfigurationFile();
-
-    ConfigurationFileClass->configurationfile.beginGroup("record");
-    ConfigurationFileClass->configurationfile.setValue("videocodec",ui->lineEditvideocodec->text());
-    ConfigurationFileClass->configurationfile.setValue("audiocodec",ui->lineEditaudiocodec->text());
-
-    ConfigurationFileClass->configurationfile.setValue("fps",ui->spinBoxfps->value());
-    ConfigurationFileClass->configurationfile.setValue("audiochannels",ui->spinBoxaudiochannels->value());
-    ConfigurationFileClass->configurationfile.endGroup();
-
-
-    ConfigurationFileClass->configurationfile.beginGroup("startupbehavior");
-
-    int comboboxindex = ui->comboBoxrecording->currentIndex();
-    ConfigurationFileClass->configurationfile.setValue("defaultrecorddevice",ui->comboBoxrecording->itemData(comboboxindex));
-
-    if(ui->checkBoxMicMute->isChecked())
-    {
-        ConfigurationFileClass->configurationfile.setValue("defaultrecorddeviceMute","true");
-    }
-    else
-    {
-        ConfigurationFileClass->configurationfile.setValue("defaultrecorddeviceMute","false");
-    }
-
-
-    if(ui->lineEditbasename->text().length() > 0 && ui->lineEditbasename->text()!="" && ui->lineEditbasename->text()!=" ")
-    {
-        ConfigurationFileClass->configurationfile.setValue("defaultname",ui->lineEditbasename->text());
-    }
-    else
-    {
-        ConfigurationFileClass->configurationfile.setValue("defaultname",trUtf8("recording"));
-    }
-
-
-    if(ui->checkBoxbasenametimedate->isChecked())
-    {
-        ConfigurationFileClass->configurationfile.setValue("defaultnametimedate","true");
-    }
-    else
-    {
-        ConfigurationFileClass->configurationfile.setValue("defaultnametimedate","false");
-    }
-    ConfigurationFileClass->configurationfile.setValue("defaultpath",ui->lineEditpath->text());
-
-    int comboxformatindex = ui->comboBoxFormat->currentIndex();
-    ConfigurationFileClass->configurationfile.setValue("defaultformat",ui->comboBoxFormat->itemData(comboxformatindex));
-
-    int comboboxLanguage = ui->comboBoxLanguage->currentIndex();
-    ConfigurationFileClass->configurationfile.setValue("language",ui->comboBoxLanguage->itemData(comboboxLanguage));
-
-    ConfigurationFileClass->configurationfile.endGroup();
-    ConfigurationFileClass->configurationfile.sync();
-
-    delete ConfigurationFileClass;
-    ConfigurationFileClass = NULL;
-
 }
 
 void SettingsDialog::on_buttonBox_accepted()
@@ -145,9 +80,6 @@ void SettingsDialog::on_pushButtonRestore_clicked()
     msgBox.setDefaultButton(QMessageBox::Save);
     msgBox.setFixedWidth(520);
     int ret = msgBox.exec();
-
-
-
 
     switch (ret)  {
       case QMessageBox::Yes:
