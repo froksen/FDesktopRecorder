@@ -18,7 +18,7 @@
 # norootforbuild
 
 Name:           FDesktopRecorder
-Version:	20120209
+Version:	20120215
 Release:	1
 License:	GNU GPLv2
 Summary:	A program to record the screen
@@ -80,11 +80,18 @@ install -p %{SOURCE2} ${RPM_BUILD_ROOT}%{_datadir}/pixmaps/
 #/usr/share/kde4/apps/FDesktopRecorder/FDesktopRecorder.notifyrc*
 
 %changelog
+* Wed Feb 15 2012 Ole Holm Frandsen
+- Settings: Possible to change audiosource
+- Settings: Added support for -apre and -vpre statements
+- Fixed: Reads number of audiochannels propperly
+- Fixed: Writes "latest recording date" propperly
+- Alot of under-the-hood improvements.
+
 * Thu Feb 09 2012 Ole Holm Frandsen
 - Added: Settings: If resert button is pressed you will see a dialog where you have to accept.
 - Added: Settings: You can now change the application language.
 - Fixed: If recording, the statusbar will keep on showing this.
-- Fixed: When "stop" button is pressed, it will be enabled this prevens crashes.
+- Fixed: When "stop" button is pressed, it will be disabled this prevens crashes.
 - Fixed: In settings: If basename is blank it will use default.
 - Changed: If recording is successfull, the filename is visible in the Gui, makes it easy to find.
 - Changed: desktopfile description

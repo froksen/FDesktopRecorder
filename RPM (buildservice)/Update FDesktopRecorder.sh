@@ -5,6 +5,9 @@ newfoldername="FDesktopRecorder-"$currentdate
 
 updatetarball()
 {
+  #removes the old tarball
+  rm FDesktopRecorder.tar.gz
+
   #Copies the folder
   cp -rf $copyfrom $copyto
 

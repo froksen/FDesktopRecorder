@@ -1,4 +1,4 @@
-currentdate=$(date '+%y%m%d')
+currentdate=$(date '+%Y%m%d')
 copyfrom="../../FDesktopRecorder/source"
 copyto="FDesktopRecorder"
 newfoldername="FDesktopRecorder-"$currentdate

@@ -1,7 +1,8 @@
-*
+* Wed Feb 15 2012
 - Settings: Possible to change audiosource
 - Settings: Added support for -apre and -vpre statements
 - Fixed: Reads number of audiochannels propperly
+- Fixed: Writes "latest recording date" propperly
 - Alot of under-the-hood improvements.
 
 * Thu Feb 09 2012
