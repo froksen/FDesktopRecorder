@@ -278,8 +278,10 @@ void MainWindow::onProcessFinished(int Exitcode)
         ui->statusBar->showMessage(trUtf8("Successfully finished recording") + " (" + filename + ")");
 
         //CFG: Sets the new information
+        settings.readAll();
         QString currentdatetime = QDateTime::currentDateTime().toString();
         settings.setLatestrecording(currentdatetime);
+        settings.writeAll();
 
         //SystemTray: Reads information
         latestrecording->setText(trUtf8("Latest Recording") + ": " + currentdatetime);
