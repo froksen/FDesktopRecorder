@@ -1,6 +1,18 @@
 ..::Description::..
-FDesktopRecorder is a program that can video record a single window or your entire desktop using ffmpeq. 
-This can be handy if you are doing "How-To's",guides etc.
+FDesktopRecorder is a program that can video record a single window or your entire desktop using FFmpeg.
+
+This can be handy for:
+* "How-to's"
+* Product demoes
+* in-game videoes
+* Educational videoes
+* etc.
+
+Basic features:
+* Video record a single window
+* Video record your entire desktop
+
+Based on a script by Peter Lyberth from the danish GNU/Linux show "Kanal Tux" http://www.kanaltux.dk 
 
 ..::About::..
 Created by: Ole "Froksen" Holm Frandsen
@@ -8,7 +20,7 @@ You can contact me via kde-apps.org. Find me under the username "froksen".
 
 ..::Translated::..
 * Danish by Ole Holm Frandsen (froksen)
-* German by Christian Räss (saftsocken)
+* German by Christian Räss (saftsocken)
 
 ..::Requires to run::..
 * ffmpeq is used for the recording
