@@ -298,7 +298,15 @@ void MainWindow::onProcessFinished(int Exitcode)
     else
     {
         //StatusBar
-        ui->statusBar->showMessage(trUtf8("Failed to recording!"));
+        ui->statusBar->showMessage(trUtf8("Failed to start!"));
+
+        //Knotification
+        knotification = new KNotification("errorRecording");
+        knotification->setTitle("Failed to start!");
+        knotification->setText(trUtf8("View terminaloutput for more info."));
+        knotification->setPixmap(QPixmap(":images/icon.png"));
+        knotification->sendEvent();
+        delete knotification;
 
         //Shows the TerminalOutput Messagebox
         QMessageBox msgBox;    msgBox.setText(trUtf8("Failed to start recording!"));
