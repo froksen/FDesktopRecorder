@@ -277,6 +277,13 @@ void MainWindow::onProcessFinished(int Exitcode)
         //StatusBar
         ui->statusBar->showMessage(trUtf8("Successfully finished recording") + " (" + filename + ")");
 
+        //Knotification
+        knotification = new KNotification("doneRecording");
+        knotification->setTitle("Successfully finished recording");
+        knotification->setPixmap(QPixmap(":images/icon.png"));
+        knotification->sendEvent();
+        delete knotification;
+
         //CFG: Sets the new information
         settings.readAll();
         QString currentdatetime = QDateTime::currentDateTime().toString();

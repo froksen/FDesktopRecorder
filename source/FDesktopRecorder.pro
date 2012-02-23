@@ -6,6 +6,8 @@
 
 QT       += core gui
 
+LIBS += -lkdeui
+
 TARGET = FDesktopRecorder
 TEMPLATE = app
 

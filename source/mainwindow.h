@@ -8,6 +8,7 @@
 #include <QMainWindow>
 #include <process.h>
 #include <settingsmanager.h>
+#include <knotification.h>
 
 namespace Ui {
     class MainWindow;
@@ -72,6 +73,9 @@ private:
     QAction *latestrecording;
     QAction *startFullscreenrecording;
     QAction *startWindowrecording;
+
+    //KNotification
+    KNotification *knotification;
 
 
 };
