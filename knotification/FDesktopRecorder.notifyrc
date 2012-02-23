@@ -1,0 +1,46 @@
+[Global]
+Comment=Program til at optage skærmen med
+Name=FDesktopRecorder
+IconName=FDesktopRecorder
+
+[Event/newRecording]
+Name=New Recording
+Comment=When a new recording is started.
+Sound=/usr/share/sounds/KDE-Sys-Warning.ogg
+Action=Popup
+
+[Event/doneRecording]
+Name=done Recording
+Comment=When a recording is done.
+Sound=/usr/share/sounds/KDE-Sys-Warning.ogg
+Action=Popup
+
+[Event/noRecording]
+Name=No recording
+Comment=When NO is selected in the dialog
+Sound=/usr/share/sounds/KDE-Sys-Warning.ogg
+Action=Popup
+
+[Event/runBackground]
+Name=Run in Background
+Comment=When minimized to run in background
+Sound=/usr/share/sounds/KDE-Sys-Warning.ogg
+Action=Popup
+
+[Event/lateStart]
+Name=Delayed start
+Comment=When start is delayed
+Sound=/usr/share/sounds/KDE-Sys-Warning.ogg
+Action=Popup
+
+[Event/lateStartstopped]
+Name=Delayed start is stopped
+Comment=When start is delayed is stopped
+Sound=/usr/share/sounds/KDE-Sys-Warning.ogg
+Action=Popup
+
+[Event/errorRecording]
+Name=Delayed start
+Comment=When start is delayed
+Sound=/usr/share/sounds/KDE-Sys-Warning.ogg
+Action=Popup|Sound
