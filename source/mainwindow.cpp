@@ -432,7 +432,8 @@ void MainWindow::on_actionConsole_triggered()
     }
     else
     {
-        MainWindow::setGeometry(MainWindow::pos().x(),MainWindow::pos().y(),MainWindow::frameGeometry().width(),107);
+        //There is added 53.5 (107/2) to the Y-koordinat which prevents the window from "jumping" up and down console is opened an closed
+        MainWindow::setGeometry(MainWindow::pos().x(),MainWindow::pos().y()+53.5,MainWindow::frameGeometry().width(),107);
         MainWindow::setFixedHeight(107);
         ui->dockWidget->hide();
     }
