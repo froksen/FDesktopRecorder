@@ -426,13 +426,13 @@ void MainWindow::on_actionConsole_triggered()
 
     if(ui->dockWidget->isHidden())
     {
-        MainWindow::setGeometry(MainWindow::pos().x(),MainWindow::pos().y(),510,227);
+        MainWindow::setGeometry(MainWindow::pos().x(),MainWindow::pos().y(),MainWindow::frameGeometry().width(),227);
         MainWindow::setFixedHeight(227);
         ui->dockWidget->show();
     }
     else
     {
-        MainWindow::setGeometry(MainWindow::pos().x(),MainWindow::pos().y(),510,107);
+        MainWindow::setGeometry(MainWindow::pos().x(),MainWindow::pos().y(),MainWindow::frameGeometry().width(),107);
         MainWindow::setFixedHeight(107);
         ui->dockWidget->hide();
     }
