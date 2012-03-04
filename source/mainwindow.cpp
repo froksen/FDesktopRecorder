@@ -26,6 +26,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     //Reads settingsfile
     settings.readAll();
+    qDebug() << "Reading Settings";
 
     //Set the Startrecord PushButton menu
     QMenu *Recordbuttonmenu = new QMenu();
@@ -43,6 +44,7 @@ MainWindow::MainWindow(QWidget *parent) :
     if(settings.getMicrophonemuted() != "false")
     {
         ui->checkBoxRecordaudio->setChecked(1);
+        qDebug() << "Microphone: Enabled";
     }
 
     //Creates systemtrayp
@@ -60,12 +62,15 @@ MainWindow::~MainWindow()
 QString MainWindow::setFilename(QString path, QString basename, QString format)
 {
     QFileInfo Filename = path + "/" + basename + "." + format;
+    qDebug() << "..::Checking if file exists::..";
     int indexnumber = 1;
     while(Filename.exists())
     {
+        qDebug() << "File exists: " + Filename.absoluteFilePath();
         Filename = path + "/" + basename + QString::number(indexnumber) + "." + format;
         indexnumber += 1;
     }
+    qDebug() << "..::Done checking::.. \n New filename: " + Filename.absoluteFilePath();
     QString Filenamestr = Filename.absoluteFilePath();
     return Filenamestr;
 }
