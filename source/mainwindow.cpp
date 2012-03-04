@@ -24,9 +24,6 @@ MainWindow::MainWindow(QWidget *parent) :
     QRect r = MainWindow::geometry();
     r.moveCenter(QApplication::desktop()->availableGeometry().center());
 
-    //If there is no cfg file. it will be set.
-    settings.checkDefaults();
-
     //Reads settingsfile
     settings.readAll();
 

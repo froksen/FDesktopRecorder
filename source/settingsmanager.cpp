@@ -127,29 +127,30 @@ void SettingsManager::writeAll()
 void SettingsManager::readAll()
 {
     settings.beginGroup("record");
-    framerate = settings.value("fps").toInt();
-    videocodec = settings.value("videocodec").toString();
-    audiosource = settings.value("audiosource").toString();
-    audiocodec = settings.value("audiocodec").toString();
-    audiochannels = settings.value("audiochannels").toInt();
+    framerate = settings.value("fps",30).toInt();
+    videocodec = settings.value("videocodec","libx264").toString();
+    audiosource = settings.value("audiosource","alsa").toString();
+    audiocodec = settings.value("audiocodec","flac").toString();
+    audiochannels = settings.value("audiochannels",2).toInt();
     vpre = settings.value("vpre").toString();
     apre = settings.value("apre").toString();
-    usevpre = settings.value("usevpre").toString();
-    useapre = settings.value("useapre").toString();
+    usevpre = settings.value("usevpre","false").toString();
+    useapre = settings.value("useapre","false").toString();
     settings.endGroup();
 
     settings.beginGroup("startupbehavior");
-    microphonedevice = settings.value("defaultrecorddevice").toString();
-    microphonemuted = settings.value("defaultrecorddeviceMute").toString();
-    filenameBase = settings.value("defaultname").toString();
-    filenameUsedate = settings.value("defaultnametimedate").toString();
-    filenamePath = settings.value("defaultpath").toString();
-    format = settings.value("defaultformat").toString();
-    language = settings.value("language").toString();
+    recordingdevices.getRecorddevices();
+    microphonedevice = settings.value("defaultrecorddevice",recordingdevices.RecordDeviceHW[0]).toString();
+    microphonemuted = settings.value("defaultrecorddeviceMute","true").toString();
+    filenameBase = settings.value("defaultname",trUtf8("recording")).toString();
+    filenameUsedate = settings.value("defaultnametimedate","false").toString();
+    filenamePath = settings.value("defaultpath",QDir::homePath()).toString();
+    format = settings.value("defaultformat","avi").toString();
+    language = settings.value("language","default").toString();
     settings.endGroup();
 
     settings.beginGroup("misc");
-    latestrecording = settings.value("latestrecording").toString();
+    latestrecording = settings.value("latestrecording","Unknown").toString();
     settings.endGroup();
 }
 
