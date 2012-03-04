@@ -11,7 +11,7 @@ SettingsDialog::SettingsDialog(QWidget *parent) :
     ui(new Ui::SettingsDialog)
 {
     ui->setupUi(this);
-
+    qDebug() << "Settingsdialog: Reading settings";
     settings.readAll();
     readSettings();
 
@@ -91,7 +91,9 @@ void SettingsDialog::on_buttonBox_accepted()
     }
 
     //Writes the data
+    qDebug() << "Settingsdialog: Writting settings";
     settings.writeAll();
+    qDebug() << "Settingsdialog: Reading settings";
     settings.readAll();
 }
 
@@ -109,6 +111,7 @@ void SettingsDialog::on_pushButtonRestore_clicked()
     switch (ret)  {
       case QMessageBox::Yes:
             {
+                qDebug() << "Settingsdialog: Resetting settings";
                 ui->checkBoxMicMute->setChecked(1);
                 ui->comboBoxrecording->setEnabled(0);
 
@@ -117,7 +120,8 @@ void SettingsDialog::on_pushButtonRestore_clicked()
               break;
             }
       case QMessageBox::No:
-          // Don't Save was clicked
+            qDebug() << "Settingsdialog: Did NOT reset anything";
+
           break;
       case QMessageBox::Cancel:
           // Cancel was clicked

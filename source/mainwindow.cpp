@@ -26,7 +26,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     //Reads settingsfile
     settings.readAll();
-    qDebug() << "Reading Settings";
+    qDebug() << "Reading settings on startup";
 
     //Set the Startrecord PushButton menu
     QMenu *Recordbuttonmenu = new QMenu();
@@ -79,6 +79,7 @@ QString MainWindow::setFilename(QString path, QString basename, QString format)
 //This function handles what happens when Start Record is clicked!
 void MainWindow::on_pushButtonStartrecord_clicked()
 {
+    qDebug() << "Reading settings";
     settings.readAll();
 
     QStringList recordingargs;

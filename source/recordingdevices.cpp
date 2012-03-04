@@ -41,6 +41,6 @@ void RecordingDevices::getRecorddevices(){
           }
        }
 
-       RecordDeviceDesc << "Pulse Audio (might not work)";
+       RecordDeviceDesc << trUtf8("Pulse Audio (might not work)");
        RecordDeviceHW << "pulse";
 }
