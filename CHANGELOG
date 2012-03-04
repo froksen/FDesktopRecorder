@@ -3,6 +3,7 @@
 - Fixed some spellingmistakes
 - Fixed: MainWindow no longer is "squashed" when console is opened
 - Fixed: MainWindow no longer "jumps" up and down when consolewindow is opened and closed
+- Under-the-hood: Minor preformence improvements, better use of build-in Qt-methods
 
 * Wed Feb 15 2012
 - Settings: Possible to change audiosource
