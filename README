@@ -25,9 +25,16 @@ You can contact me via kde-apps.org. Find me under the username "froksen".
 ..::Requires to run::..
 * ffmpeq is used for the recording
 * libqt4
+* libkde4
 
 ..::Requires to build (NOTE: these are openSUSE 12.1 package names)::..
-desktop-file-utils, libqt4-devel, gcc-c++, make, gcc46
+desktop-file-utils, libqt4-devel, gcc-c++, make, gcc46, libkde4-devel
+
+..::KNotifications::..
+Please note, that for Knotfications to work the "FDesktopRecorder.notifyrc" file must be placed in "/usr/share/kde4/apps/FDesktopRecorder". If Folder does not exists then create it.
+This is currently beeing done for openSUSE by the RPM-file.
+
+This way of installing the *.notifyrc file might change in the future.. :-)
 
 ..::How to build/compile::..
 * cd source
