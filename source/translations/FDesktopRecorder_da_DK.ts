@@ -420,6 +420,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="281"/>
+        <location filename="../mainwindow.cpp" line="285"/>
         <source>Successfully finished recording</source>
         <translation>Afsluttede optagelsen korrekt</translation>
     </message>
@@ -431,6 +432,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="304"/>
+        <location filename="../mainwindow.cpp" line="308"/>
         <source>Failed to start!</source>
         <translation>Opstarten fejlede!</translation>
     </message>

@@ -282,7 +282,7 @@ void MainWindow::onProcessFinished(int Exitcode)
 
         //Knotification
         knotification = new KNotification("doneRecording");
-        knotification->setTitle("Successfully finished recording");
+        knotification->setTitle(trUtf8("Successfully finished recording"));
         knotification->setPixmap(QPixmap(":images/icon.png"));
         knotification->sendEvent();
         delete knotification;
@@ -305,7 +305,7 @@ void MainWindow::onProcessFinished(int Exitcode)
 
         //Knotification
         knotification = new KNotification("errorRecording");
-        knotification->setTitle("Failed to start!");
+        knotification->setTitle(trUtf8("Failed to start!"));
         knotification->setText(trUtf8("View terminaloutput for more info."));
         knotification->setPixmap(QPixmap(":images/icon.png"));
         knotification->sendEvent();
