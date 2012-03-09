@@ -316,7 +316,7 @@ p, li { white-space: pre-wrap; }
         <translation type="obsolete">Start der Aufnahme</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="35"/>
+        <location filename="../mainwindow.cpp" line="33"/>
         <source>Start recording</source>
         <translation>Beginn Aufnahme</translation>
     </message>
@@ -386,65 +386,65 @@ p, li { white-space: pre-wrap; }
         <translation>Einstellungen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="37"/>
+        <location filename="../mainwindow.cpp" line="35"/>
         <source>Minimize and start record</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="230"/>
-        <location filename="../mainwindow.cpp" line="449"/>
-        <location filename="../mainwindow.cpp" line="461"/>
+        <location filename="../mainwindow.cpp" line="233"/>
+        <location filename="../mainwindow.cpp" line="453"/>
+        <location filename="../mainwindow.cpp" line="465"/>
         <source>Recording started</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="241"/>
+        <location filename="../mainwindow.cpp" line="244"/>
         <source>Please wait while saving the recording. Might take some time.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="278"/>
+        <location filename="../mainwindow.cpp" line="281"/>
         <source>Successfully finished recording</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="294"/>
-        <location filename="../mainwindow.cpp" line="356"/>
+        <location filename="../mainwindow.cpp" line="297"/>
+        <location filename="../mainwindow.cpp" line="359"/>
         <source>Latest Recording</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="301"/>
+        <location filename="../mainwindow.cpp" line="304"/>
         <source>Failed to start!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="306"/>
+        <location filename="../mainwindow.cpp" line="309"/>
         <source>View terminaloutput for more info.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="312"/>
+        <location filename="../mainwindow.cpp" line="315"/>
         <source>Failed to start recording!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="313"/>
+        <location filename="../mainwindow.cpp" line="316"/>
         <source>Press &apos;show details&apos; to see console ouput.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="345"/>
+        <location filename="../mainwindow.cpp" line="348"/>
         <source>&amp;Show/Hide window</source>
         <translation>&amp;Zeige/Verstecke Fenster</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="348"/>
+        <location filename="../mainwindow.cpp" line="351"/>
         <source>&amp;Stop recording</source>
         <translation>&amp;Beende die Aufnahme</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="351"/>
+        <location filename="../mainwindow.cpp" line="354"/>
         <source>&amp;Latest recording: </source>
         <translation>&amp;Letzte Aufnahme:</translation>
     </message>
@@ -453,7 +453,7 @@ p, li { white-space: pre-wrap; }
         <translation type="obsolete">Letzte Aufnahme: </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="358"/>
+        <location filename="../mainwindow.cpp" line="361"/>
         <source>&amp;Quit program</source>
         <translation>&amp;Schliesse Programm</translation>
     </message>
@@ -553,6 +553,14 @@ p, li { white-space: pre-wrap; }
     <message>
         <source>The program finished recording</source>
         <translation type="obsolete">Das Programm hat die Aufnahme beendet</translation>
+    </message>
+</context>
+<context>
+    <name>RecordingDevices</name>
+    <message>
+        <location filename="../recordingdevices.cpp" line="44"/>
+        <source>Pulse Audio (might not work)</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -838,19 +846,19 @@ p, li { white-space: pre-wrap; }
         <translation type="obsolete">Aufnahme</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.cpp" line="101"/>
+        <location filename="../settingsdialog.cpp" line="103"/>
         <source>Restore everything to default?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settingsdialog.cpp" line="102"/>
+        <location filename="../settingsdialog.cpp" line="104"/>
         <source>If you press Yes everything will be restored to default. 
 
  Be aware that this can NOT be undone.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settingsdialog.cpp" line="231"/>
+        <location filename="../settingsdialog.cpp" line="235"/>
         <source>Open Directory</source>
         <translation type="unfinished"></translation>
     </message>
@@ -860,6 +868,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../settingsmanager.cpp" line="25"/>
         <location filename="../settingsmanager.cpp" line="63"/>
+        <location filename="../settingsmanager.cpp" line="145"/>
         <source>recording</source>
         <translation type="unfinished">Aufnahme</translation>
     </message>
