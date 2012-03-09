@@ -18,7 +18,7 @@
 # norootforbuild
 
 Name:           FDesktopRecorder
-Version:	20120215
+Version:	20120309
 Release:	1
 License:	GNU GPLv2
 Summary:	A program to record the screen
@@ -27,10 +27,10 @@ Summary:	A program to record the screen
 Source:		FDesktopRecorder.tar.gz
 Source2:	fdesktoprecorder.png
 Source3:	FDesktopRecorder.desktop
-#Source4: 	FDesktopRecorder.notifyrc
+Source4: 	FDesktopRecorder.notifyrc
 #Patch:
-BuildRequires:	desktop-file-utils, libqt4-devel, gcc-c++, make, gcc46
-#BuildRequires:	desktop-file-utils, libqt4-devel, gcc-c++, make, gcc46, libkde4-devel 
+#BuildRequires:	desktop-file-utils, libqt4-devel, gcc-c++, make, gcc46
+BuildRequires:	desktop-file-utils, libqt4-devel, gcc-c++, make, gcc46, libkde4-devel 
 Requires:	ffmpeg
 #PreReq:
 #Provides:
@@ -52,7 +52,7 @@ make
 mkdir -p $RPM_BUILD_ROOT/%{_bindir}
 mkdir -p ${RPM_BUILD_ROOT}%{_datadir}/applications
 mkdir -p ${RPM_BUILD_ROOT}%{_datadir}/pixmaps
-#mkdir -p ${RPM_BUILD_ROOT}%{_datadir}/kde4/apps/FDesktopRecorder
+mkdir -p ${RPM_BUILD_ROOT}%{_datadir}/kde4/apps/FDesktopRecorder
 
 install -p -m 755 FDesktopRecorder $RPM_BUILD_ROOT/%{_bindir}
 
@@ -61,7 +61,7 @@ desktop-file-install                                    \
 %{SOURCE3}
 
 install -p %{SOURCE2} ${RPM_BUILD_ROOT}%{_datadir}/pixmaps/
-#install -p %{SOURCE4}  ${RPM_BUILD_ROOT}%{_datadir}/kde4/apps/FDesktopRecorder/
+install -p %{SOURCE4}  ${RPM_BUILD_ROOT}%{_datadir}/kde4/apps/FDesktopRecorder/
 
 %clean
 %{?buildroot:%__rm -rf "%{buildroot}"}
@@ -74,12 +74,19 @@ install -p %{SOURCE2} ${RPM_BUILD_ROOT}%{_datadir}/pixmaps/
 /usr/bin/FDesktopRecorder*
 /usr/share/applications/FDesktopRecorder.desktop*
 /usr/share/pixmaps/fdesktoprecorder.png*
-#/usr/share/kde4
-#/usr/share/kde4/apps
-#/usr/share/kde4/apps/FDesktopRecorder
-#/usr/share/kde4/apps/FDesktopRecorder/FDesktopRecorder.notifyrc*
+/usr/share/kde4
+/usr/share/kde4/apps
+/usr/share/kde4/apps/FDesktopRecorder
+/usr/share/kde4/apps/FDesktopRecorder/FDesktopRecorder.notifyrc*
 
 %changelog
+* Fri Mar 9 2012 Ole Holm Frandsen
+- Added KNotification events if recording successfully finished or if it failes to start 
+- Fixed some spellingmistakes
+- Fixed: MainWindow no longer is "squashed" when console is opened
+- Fixed: MainWindow no longer "jumps" up and down when consolewindow is opened and closed
+- Under-the-hood: Minor preformence improvements, better use of build-in Qt-methods
+
 * Wed Feb 15 2012 Ole Holm Frandsen
 - Settings: Possible to change audiosource
 - Settings: Added support for -apre and -vpre statements

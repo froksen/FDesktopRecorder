@@ -1,4 +1,4 @@
-* 
+* Fri Mar 9 2012
 - Added KNotification events if recording successfully finished or if it failes to start 
 - Fixed some spellingmistakes
 - Fixed: MainWindow no longer is "squashed" when console is opened
