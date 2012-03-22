@@ -9,6 +9,7 @@
 #include <process.h>
 #include <settingsmanager.h>
 #include <knotification.h>
+#include <QPainter>
 
 namespace Ui {
     class MainWindow;

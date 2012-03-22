@@ -49,8 +49,6 @@ MainWindow::MainWindow(QWidget *parent) :
 
     //Creates systemtrayp
     createsystemtray();
-
-
 }
 
 MainWindow::~MainWindow()
@@ -226,8 +224,12 @@ void MainWindow::on_pushButtonStartrecord_clicked()
     ui->pushButtonStoprecord->setEnabled(1);
 
    //SystemTray
-   trayIcon->setIcon(QIcon(":/trolltech/styles/commonstyle/images/media-stop-16.png"));
+   //trayIcon->setIcon(QIcon(":/trolltech/styles/commonstyle/images/media-stop-16.png"));
+   trayIcon->setIcon(QIcon(":/images/recording.png"));
    stoprecord->setEnabled(true);
+
+   //Sets the MainWindow Icon
+   setWindowIcon(QPixmap(":/images/recording.png"));
 
    //StatusBar
    ui->statusBar->showMessage(trUtf8("Recording started") + " (" + filename + ")");
@@ -257,6 +259,9 @@ void MainWindow::onProcessFinished(int Exitcode)
     //SystemTray
     trayIcon->setIcon((QIcon)":/images/icon.png");
     stoprecord->setEnabled(false);
+
+    //MainWindow Icon
+    setWindowIcon(QPixmap(":/images/icon.png"));
 
     //Shows what needs to be shown on stop
     ui->pushButtonStartrecord->setVisible(1);
