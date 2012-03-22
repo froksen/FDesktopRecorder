@@ -3,5 +3,6 @@
         <file>images/icon.png</file>
         <file>translations/FDesktopRecorder_da_DK.qm</file>
         <file>translations/FDesktopRecorder_de_DE.qm</file>
+        <file>images/recording.png</file>
     </qresource>
 </RCC>
