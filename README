@@ -35,8 +35,17 @@ Please note, that for Knotfications to work the "FDesktopRecorder.notifyrc" file
 This is currently beeing done for openSUSE by the RPM-file.
 
 This way of installing the *.notifyrc file might change in the future.. :-)
+If you are using CMake then you can just type "make install" and it will take care of these steps :-)
 
-..::How to build/compile::..
+..::How to build/compile via qmake::..
 * cd source
 * qmake FDesktopRecorder.pro
 * make
+
+..::How to build/compile via CMake (EXPERIMENTAL)::..
+* cd source
+* mkdir build
+* cd build/
+* cmake ..
+* make
+(You can do "make install" after this)
