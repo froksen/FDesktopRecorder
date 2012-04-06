@@ -98,6 +98,7 @@ void MainWindow::on_pushButtonStartrecord_clicked()
         //Informing the user about how to proceed
         QMessageBox msgBox;
         msgBox.setText(trUtf8("<b> Recording a single window </b>"));
+        msgBox.setWindowTitle(trUtf8("Recording a single window"));
         msgBox.setInformativeText(trUtf8("When you click 'OK' a small crossair will appear. \n \nWith this you will have to select the window you want to record. \n\nHereafter the recording will start."));
         msgBox.setStandardButtons(QMessageBox::Ok);
         msgBox.setDetailedText(QString(ui->textEditConsole->toPlainText()));
