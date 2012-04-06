@@ -100,8 +100,9 @@ void SettingsDialog::on_buttonBox_accepted()
 void SettingsDialog::on_pushButtonRestore_clicked()
 {
     QMessageBox msgBox;
-    msgBox.setText("..::" + trUtf8("Restore everything to default?")+ "::..");
-    msgBox.setInformativeText(trUtf8("If you press Yes everything will be restored to default. \n\n Be aware that this can NOT be undone."));
+    msgBox.setWindowTitle(trUtf8("Restore everything to default?"));
+    msgBox.setText("<b>" + trUtf8("Restore everything to default?")+ "</b>");
+    msgBox.setInformativeText(trUtf8("If you press Yes everything will be restored to default. \n\nBe aware that this can NOT be undone."));
     msgBox.setStandardButtons(QMessageBox::Yes | QMessageBox::No);
     //msgBox.setDetailedText(QString(ui->textEditConsole->toPlainText()));
     msgBox.setDefaultButton(QMessageBox::Save);
