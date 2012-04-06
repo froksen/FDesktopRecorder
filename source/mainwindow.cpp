@@ -95,6 +95,17 @@ void MainWindow::on_pushButtonStartrecord_clicked()
     //If Single Window radio is checked, then to this. Else record fullscreen :-)
     if(ui->radioButtonSinglewindow->isChecked())
     {
+        //Informing the user about how to proceed
+        QMessageBox msgBox;
+        msgBox.setText(trUtf8("<b> Recording a single window </b>"));
+        msgBox.setInformativeText(trUtf8("When you click 'OK' a small crossair will appear. \n \nWith this you will have to select the window you want to record. \n\nHereafter the recording will start."));
+        msgBox.setStandardButtons(QMessageBox::Ok);
+        msgBox.setDetailedText(QString(ui->textEditConsole->toPlainText()));
+        msgBox.setDefaultButton(QMessageBox::Save);
+        msgBox.setFixedWidth(520);
+        int ret = msgBox.exec();
+
+        //Starting the singlewindow setup
         QProcess p;
         QStringList argsscript;
         argsscript << "-frame";
