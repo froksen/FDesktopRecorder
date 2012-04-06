@@ -328,12 +328,12 @@ void MainWindow::onProcessFinished(int Exitcode)
         delete knotification;
 
         //Shows the TerminalOutput Messagebox
-        QMessageBox msgBox;    msgBox.setText(trUtf8("Failed to start recording!"));
-        msgBox.setInformativeText(trUtf8("Press 'show details' to see console ouput."));
+        QMessageBox msgBox;    msgBox.setText(trUtf8("<b>Failed to start recording!</b>"));
+        msgBox.setInformativeText(trUtf8("Press <i>'show details'</i> to see console ouput."));
         msgBox.setStandardButtons(QMessageBox::Ok);
         msgBox.setDetailedText(QString(ui->textEditConsole->toPlainText()));
         msgBox.setDefaultButton(QMessageBox::Save);
-        msgBox.setFixedWidth(520);
+        msgBox.setWindowTitle(trUtf8("Failed to start recording!"));
         int ret = msgBox.exec();
     }
 
