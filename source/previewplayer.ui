@@ -39,14 +39,14 @@
    </item>
    <item>
     <layout class="QGridLayout" name="gridLayout">
-     <item row="1" column="2">
+     <item row="1" column="1">
       <widget class="QPushButton" name="pushButtonStop">
        <property name="text">
         <string>Stop</string>
        </property>
       </widget>
      </item>
-     <item row="1" column="3">
+     <item row="1" column="2">
       <spacer name="horizontalSpacer">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
@@ -59,27 +59,20 @@
        </property>
       </spacer>
      </item>
-     <item row="2" column="0" colspan="5">
+     <item row="2" column="0" colspan="4">
       <widget class="QPushButton" name="pushButtonClose">
        <property name="text">
         <string>Close</string>
        </property>
       </widget>
      </item>
-     <item row="1" column="4">
+     <item row="1" column="3">
       <widget class="Phonon::VolumeSlider" name="volumeSlider"/>
      </item>
      <item row="1" column="0">
       <widget class="QPushButton" name="pushButtonStart">
        <property name="text">
-        <string>Play</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="1">
-      <widget class="QPushButton" name="pushButtonPause">
-       <property name="text">
-        <string>Pause</string>
+        <string>Play/Pause</string>
        </property>
       </widget>
      </item>
