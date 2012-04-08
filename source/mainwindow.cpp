@@ -5,6 +5,7 @@
 #include <QtGui>
 #include <QtCore>
 #include <QSystemTrayIcon>
+#include "previewplayer.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -492,4 +493,30 @@ void MainWindow::startRecordandminimize()
 void MainWindow::on_actionOpen_recording_directory_triggered()
 {
     QDesktopServices::openUrl( QUrl::fromLocalFile(settings.getFilenamePath()) );
+}
+
+void MainWindow::on_actionPreviewrecording_triggered()
+{
+
+
+    if(!filename.isEmpty())
+    {
+        PreviewPlayer *playernew = new PreviewPlayer();
+        playernew->show();
+        playernew->setVideofile(filename);
+        playernew->playVideo();
+    }
+    else
+    {
+        QMessageBox msgBox;
+        msgBox.setText("<b>" + trUtf8(" No recording in this session") + "</b>");
+        msgBox.setInformativeText(trUtf8("You have not recorded anything yet, and therefore nothing to preview. \n\nRecord something and try again"));
+        msgBox.setStandardButtons(QMessageBox::Ok);
+        msgBox.setDetailedText(QString(ui->textEditConsole->toPlainText()));
+        msgBox.setDefaultButton(QMessageBox::Save);
+        msgBox.setWindowTitle(trUtf8("No recording in this session"));
+        int ret = msgBox.exec();
+        qDebug() << "No recording in this session";
+    }
+
 }

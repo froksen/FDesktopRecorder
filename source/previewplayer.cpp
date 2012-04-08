@@ -6,18 +6,26 @@ PreviewPlayer::PreviewPlayer(QWidget *parent) :
     ui(new Ui::PreviewPlayer)
 {
     ui->setupUi(this);
-    Phonon::VideoPlayer *player =
-             new Phonon::VideoPlayer(Phonon::VideoCategory,parent);
-//    player->play(Phonon::MediaSource("/home/froksen/optagelse.avi"));
+    player = new Phonon::VideoPlayer(Phonon::VideoCategory,parent);
 
-    ui->gridLayout_3->addWidget(player);
-
-    //Connecting to the Seekslider + volume
-    ui->seekSlider->setMediaObject(player->mediaObject());
-    ui->volumeSlider->setAudioOutput(player->audioOutput());
 }
 
 PreviewPlayer::~PreviewPlayer()
 {
     delete ui;
+}
+
+void PreviewPlayer::setVideofile(QString newVideofile)
+{
+    videofile = newVideofile;
+}
+
+void PreviewPlayer::playVideo()
+{
+    player->play(Phonon::MediaSource(videofile));
+    ui->gridLayout_3->addWidget(player);
+
+    //Connecting to the Seekslider + volume
+    ui->seekSlider->setMediaObject(player->mediaObject());
+    ui->volumeSlider->setAudioOutput(player->audioOutput());
 }

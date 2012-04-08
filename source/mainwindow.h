@@ -44,6 +44,8 @@ private slots:
 
     void on_actionOpen_recording_directory_triggered();
 
+    void on_actionPreviewrecording_triggered();
+
 private:
     Ui::MainWindow *ui;
 

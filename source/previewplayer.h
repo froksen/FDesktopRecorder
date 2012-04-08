@@ -15,11 +15,17 @@ class PreviewPlayer : public QWidget
 public:
     explicit PreviewPlayer(QWidget *parent = 0);
     ~PreviewPlayer();
-    
-private:
-    Ui::PreviewPlayer *ui;
 
+    void setVideofile(QString newVideofile);
+    void playVideo();
+
+private:
+    QString videofile;
+
+    Ui::PreviewPlayer *ui;
     Phonon::VideoPlayer *player;
+
+
 };
 
 #endif // PREVIEWPLAYER_H

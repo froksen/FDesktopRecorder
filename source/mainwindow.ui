@@ -124,7 +124,7 @@
      <x>0</x>
      <y>0</y>
      <width>510</width>
-     <height>21</height>
+     <height>20</height>
     </rect>
    </property>
   </widget>
@@ -141,6 +141,7 @@
    <addaction name="actionOpen_recording_directory"/>
    <addaction name="actionConsole"/>
    <addaction name="separator"/>
+   <addaction name="actionPreviewrecording"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <widget class="QDockWidget" name="dockWidget">
@@ -213,6 +214,14 @@
    </property>
    <property name="statusTip">
     <string>Open directory containing your recordings</string>
+   </property>
+  </action>
+  <action name="actionPreviewrecording">
+   <property name="text">
+    <string>Preview recording</string>
+   </property>
+   <property name="toolTip">
+    <string>Preview the recording</string>
    </property>
   </action>
  </widget>
