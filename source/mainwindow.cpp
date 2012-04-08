@@ -15,6 +15,7 @@ MainWindow::MainWindow(QWidget *parent) :
     //Makes sure that the program can run i bg
     //QApplication::setQuitOnLastWindowClosed(false);
 
+    ui->actionPreviewrecording->setEnabled(0);
 
     //Hides objects that needs to be hidden
     ui->dockWidget->hide();
@@ -232,6 +233,7 @@ void MainWindow::on_pushButtonStartrecord_clicked()
     ui->radioButtonEntirescreen->setEnabled(0);
     ui->actionAbout->setEnabled(0);
     ui->actionSettings->setEnabled(0);
+    ui->actionPreviewrecording->setEnabled(0);
 
     //Enables what needs to be enabled while recording
     ui->pushButtonStoprecord->setEnabled(1);
@@ -289,6 +291,7 @@ void MainWindow::onProcessFinished(int Exitcode)
     ui->actionAbout->setEnabled(1);
     ui->actionSettings->setEnabled(1);
     ui->pushButtonStartrecord->setEnabled(1);
+    ui->actionPreviewrecording->setEnabled(1);
 
 
     //------------------SECTION: SUCCESS OR UNSUCCESS---------------------
