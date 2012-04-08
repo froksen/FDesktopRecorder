@@ -5,6 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui
+QT += phonon
 
 LIBS += -lkdeui
 
@@ -19,7 +20,8 @@ SOURCES += main.cpp\
     recordingdevices.cpp \
     settingsdialog.cpp \
     process.cpp \
-    settingsmanager.cpp
+    settingsmanager.cpp \
+    previewplayer.cpp
 
 HEADERS  += mainwindow.h \
     aboutprog.h \
@@ -27,11 +29,13 @@ HEADERS  += mainwindow.h \
     recordingdevices.h \
     settingsdialog.h \
     process.h \
-    settingsmanager.h
+    settingsmanager.h \
+    previewplayer.h
 
 FORMS    += mainwindow.ui\
             aboutprog.ui \
-    settingsdialog.ui
+    settingsdialog.ui \
+    previewplayer.ui
 
 
 TRANSLATIONS    = translations/FDesktopRecorder_da_DK.ts \
