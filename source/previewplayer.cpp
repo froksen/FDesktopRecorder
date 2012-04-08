@@ -34,20 +34,29 @@ void PreviewPlayer::setVideofile(QString newVideofile)
 void PreviewPlayer::playVideo()
 {
     setWindowTitle("Preview: " + videofile);
-    if(player->isPaused())
+    if(!player->isPlaying())
     {
-        player->play();
+        if(player->isPaused())
+        {
+            player->play();
+        }
+        else
+        {
+            player->play(Phonon::MediaSource(videofile));
+
+        }
     }
     else
     {
         player->play(Phonon::MediaSource(videofile));
-
     }
+
+
 }
 
 void PreviewPlayer::on_pushButtonStart_clicked()
 {
-    playVideo();
+        playVideo();
 }
 
 void PreviewPlayer::on_pushButtonPause_clicked()
