@@ -19,6 +19,15 @@ public:
     void setVideofile(QString newVideofile);
     void playVideo();
 
+private slots:
+    void on_pushButtonStart_clicked();
+
+    void on_pushButtonPause_clicked();
+
+    void on_pushButtonStop_clicked();
+
+    void on_pushButtonClose_clicked();
+
 private:
     QString videofile;
 

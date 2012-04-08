@@ -6,10 +6,19 @@ PreviewPlayer::PreviewPlayer(QWidget *parent) :
     ui(new Ui::PreviewPlayer)
 {
     ui->setupUi(this);
+
+    //Creates the player
     player = new Phonon::VideoPlayer(Phonon::VideoCategory,parent);
 
+    //set Fixed with to the volumeslider
     ui->volumeSlider->setFixedWidth(150);
 
+    //adds the player to the grid
+    ui->gridLayout_3->addWidget(player);
+
+    //Connecting to the Seekslider + volume
+    ui->seekSlider->setMediaObject(player->mediaObject());
+    ui->volumeSlider->setAudioOutput(player->audioOutput());
 }
 
 PreviewPlayer::~PreviewPlayer()
@@ -24,10 +33,40 @@ void PreviewPlayer::setVideofile(QString newVideofile)
 
 void PreviewPlayer::playVideo()
 {
-    player->play(Phonon::MediaSource(videofile));
-    ui->gridLayout_3->addWidget(player);
+    setWindowTitle("Preview: " + videofile);
+    if(player->isPaused())
+    {
+        player->play();
+    }
+    else
+    {
+        player->play(Phonon::MediaSource(videofile));
 
-    //Connecting to the Seekslider + volume
-    ui->seekSlider->setMediaObject(player->mediaObject());
-    ui->volumeSlider->setAudioOutput(player->audioOutput());
+    }
+}
+
+void PreviewPlayer::on_pushButtonStart_clicked()
+{
+    playVideo();
+}
+
+void PreviewPlayer::on_pushButtonPause_clicked()
+{
+    if(player->isPaused())
+    {
+        player->play();
+    }
+    else
+    {
+        player->pause();
+    }
+}
+
+void PreviewPlayer::on_pushButtonStop_clicked()
+{
+    player->stop();
+}
+
+void PreviewPlayer::on_pushButtonClose_clicked()
+{
 }
