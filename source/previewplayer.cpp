@@ -8,6 +8,8 @@ PreviewPlayer::PreviewPlayer(QWidget *parent) :
     ui->setupUi(this);
     player = new Phonon::VideoPlayer(Phonon::VideoCategory,parent);
 
+    ui->volumeSlider->setFixedWidth(150);
+
 }
 
 PreviewPlayer::~PreviewPlayer()
