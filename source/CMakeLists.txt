@@ -23,12 +23,14 @@ set ( FDesktopRecorder_SRCS
 	settingsdialog.cpp
 	process.cpp
 	settingsmanager.cpp
+	previewplayer.cpp
 	)
 
 set ( FDesktopRecorder_UIS
 	mainwindow.ui
 	aboutprog.ui
 	settingsdialog.ui
+	previewplayer.ui
 	)
 QT4_WRAP_UI(UIS ${FDesktopRecorder_UIS})
 
@@ -52,11 +54,12 @@ set ( FDesktopRecorder_MOCS
 	settingsdialog.h
 	process.h
 	settingsmanager.h
+	previewplayer.h
 	)
 QT4_WRAP_CPP(MOCS ${FDesktopRecorder_MOCS})
 
 add_executable ( FDesktopRecorder ${FDesktopRecorder_SRCS} ${UIS} ${RSCS} ${TRS} ${MOCS} )
-target_link_libraries ( FDesktopRecorder  ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRARY} ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRARY} ${KDE4_KDEUI_LIBS} ${KDE4_KPARTS_LIBS})
+target_link_libraries ( FDesktopRecorder  ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRARY} ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRARY} ${KDE4_KDEUI_LIBS} ${KDE4_KPARTS_LIBS} phonon)
 
 # add the install targets
 install (TARGETS FDesktopRecorder DESTINATION bin)
