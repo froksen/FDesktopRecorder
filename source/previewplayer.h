@@ -20,12 +20,10 @@ public:
     void playVideo();
 
 private slots:
+    //Pushbuttons
     void on_pushButtonStart_clicked();
-
     void on_pushButtonPause_clicked();
-
     void on_pushButtonStop_clicked();
-
     void on_pushButtonClose_clicked();
 
 private:

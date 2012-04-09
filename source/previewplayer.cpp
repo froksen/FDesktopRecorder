@@ -16,6 +16,10 @@ PreviewPlayer::PreviewPlayer(QWidget *parent) :
     //adds the player to the grid
     ui->gridLayout_3->addWidget(player);
 
+    //Making connections
+    connect(player,SIGNAL(finished()),this,SLOT(on_pushButtonStop_clicked()));
+    connect(player,SIGNAL(destroyed()),this,SLOT(deleteLater()));
+
     //Connecting to the Seekslider + volume
     ui->seekSlider->setMediaObject(player->mediaObject());
     ui->volumeSlider->setAudioOutput(player->audioOutput());
@@ -45,10 +49,16 @@ void PreviewPlayer::on_pushButtonStart_clicked()
     {
         player->pause();
     }
-
-    if(player->isPaused())
+    else
     {
-        player->play();
+        if(player->isPaused())
+        {
+            player->play();
+        }
+        else
+        {
+            playVideo();
+        }
     }
 
 }
