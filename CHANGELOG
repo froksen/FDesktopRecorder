@@ -1,8 +1,10 @@
-* 
+* Mon Apr 09 2012
 - Added a simple player for previewing your latest recording
 - Added a Messagebox to help you out how to record a "single window"
 - Changed icon that is displayed when recording
 - Various layout changes 
+- Danish translation updated
+- Other minor changes
 
 * Fri Mar 9 2012
 - Added KNotification events if recording successfully finished or if it failes to start 
