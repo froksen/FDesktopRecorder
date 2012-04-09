@@ -18,7 +18,7 @@
 # norootforbuild
 
 Name:           FDesktopRecorder
-Version:	20120309
+Version:	20120409
 Release:	1
 License:	GNU GPLv2
 Summary:	A program to record the screen
@@ -80,6 +80,14 @@ install -p %{SOURCE4}  ${RPM_BUILD_ROOT}%{_datadir}/kde4/apps/FDesktopRecorder/
 /usr/share/kde4/apps/FDesktopRecorder/FDesktopRecorder.notifyrc*
 
 %changelog
+* Mon Apr 09 2012 Ole Holm Frandsen
+- Added a simple player for previewing your latest recording
+- Added a Messagebox to help you out how to record a "single window"
+- Changed icon that is displayed when recording
+- Various layout changes 
+- Danish translation updated
+- Other minor change
+s
 * Fri Mar 9 2012 Ole Holm Frandsen
 - Added KNotification events if recording successfully finished or if it failes to start 
 - Fixed some spellingmistakes

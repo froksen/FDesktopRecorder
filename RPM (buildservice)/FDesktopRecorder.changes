@@ -1,10 +1,77 @@
--------------------------------------------------------------------
-Fri Mar  9 09:33:08 UTC 2012 - o_frandsen@hotmail.com
+* Mon Apr 09 2012
+- Added a simple player for previewing your latest recording
+- Added a Messagebox to help you out how to record a "single window"
+- Changed icon that is displayed when recording
+- Various layout changes 
+- Danish translation updated
+- Other minor changes
 
--Updated to FDesktopRecorder v20120309 
+* Fri Mar 9 2012
+- Added KNotification events if recording successfully finished or if it failes to start 
+- Fixed some spellingmistakes
+- Fixed: MainWindow no longer is "squashed" when console is opened
+- Fixed: MainWindow no longer "jumps" up and down when consolewindow is opened and closed
+- Under-the-hood: Minor preformence improvements, better use of build-in Qt-methods
 
--------------------------------------------------------------------
-Wed Feb 15 07:02:00 UTC 2012 - o_frandsen@hotmail.com
-- Updated to FDesktopRecorder v20120215
-- 
+* Wed Feb 15 2012
+- Settings: Possible to change audiosource
+- Settings: Added support for -apre and -vpre statements
+- Fixed: Reads number of audiochannels propperly
+- Fixed: Writes "latest recording date" propperly
+- Alot of under-the-hood improvements.
 
+* Thu Feb 09 2012
+- Added: Settings: If resert button is pressed you will see a dialog where you have to accept.
+- Added: Settings: You can now change the application language.
+- Fixed: If recording, the statusbar will keep on showing this.
+- Fixed: When "stop" button is pressed, it will be disabled this prevens crashes.
+- Fixed: In settings: If basename is blank it will use default.
+- Changed: If recording is successfull, the filename is visible in the Gui, makes it easy to find.
+- Changed: desktopfile description
+- Minor changes.
+
+* Mon Feb 06 2012
+- Created a completly new GUI-design and a new way to think the program
+- Rewritten alot of the codebase
+- Fixed so programs saves the recordings propperly
+- Fixed problem with aspects of some resolutions
+- Added so that the filebasename can be the current date
+
+* Sat Jan 28 2012
+- MainWindow: Changed so that it uses buildin Qt function to determine fullscreen resolution.
+- MainWindow: Alerts if the filename/recording already exists
+- MainWindow: The "Browse button" is now named "Browse" WOW! :-D
+- Settings: Change default startup name
+- Settings: Change default startup format
+- Settings: Change default startup recording device
+- Systemtray: Remembers the latest recording.
+- Added German translation by Christian Räss (saftsocken)
+- Other minor fixes
+
+* Sat Jan 07 2012
+- Fixed program in "settings" which meant that you couldnt change audiocodec
+- Fixed so if want to record a "single window" the dimensions is correct
+- Added so you let ffmpeg auto-detect video and audio codec
+- Merged "Application settings" and "Settings" into one dialog. 
+
+
+* Wed Jan 04 2012
+- Added "Application settings" section
+- Fixed problem with "incorrect" resolutions
+- Fixed so that "custom resolution" works again
+- Updated danish translation
+- Fixed problem with QSettings
+- Minor fixes
+
+* Thu Dec 29 2011
+- No more temp-scripts, everything runs directly in Qt. This means better performance and alot of issues fixed.
+- Minor fixes
+
+* Thu Dec 29 2011
+- Fixed so that the program does not crash when opening the settingsdialog if settings.ini file does not exists.
+- Renamed the project to "FDesktopRecorder"
+- Fixes minor issues with the danish translation
+- Minor fixes
+
+* Wed Dec 28 2011
+- First english release
