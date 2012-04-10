@@ -4,7 +4,7 @@ set ( CMAKE_BUILD_TYPE Release )
 add_definitions ( -Wall )
 find_package ( Qt4 REQUIRED )
 find_package ( KDE4 REQUIRED) 
-include ( ${QT_USE_FILE} ${KDE4Defaults})
+include ( ${QT_USE_FILE} ${KDE4Defaults} ${QT_USE_PHONON})
 include_directories (
 	${CMAKE_SOURCE_DIR} ${CMAKE_CURRENT_BINARY_DIR}
 	${QT_QTCORE_INCLUDE_DIR} ${QT_QTGUI_INCLUDE_DIR} ${QT_QTCORE_INCLUDE_DIR} ${QT_QTGUI_INCLUDE_DIR}
