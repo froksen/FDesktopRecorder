@@ -307,6 +307,9 @@ void MainWindow::onProcessFinished(int Exitcode)
     ui->pushButtonStartrecord->setEnabled(1);
     ui->actionPreviewrecording->setEnabled(1);
 
+    //removes the red rectangle
+    rubberband.hide();
+
 
     //------------------SECTION: SUCCESS OR UNSUCCESS---------------------
     //Recording: Successful
