@@ -7,6 +7,7 @@
 #include <QSystemTrayIcon>
 #include "previewplayer.h"
 
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -119,6 +120,20 @@ void MainWindow::on_pushButtonStartrecord_clicked()
 
         geometry = WindowGrapperClass->Singlewindowgeometry(p_stdout);
         corners = WindowGrapperClass->Singlewindowcorners(p_stdout);
+
+        //Sets the red rectangle arround the area that is going to be recorded (QRubberband)
+
+        //The size of the window:
+        rubberband.setGeometry(0,0,WindowGrapperClass->SinglewindowWidth(p_stdout).toInt()+5,WindowGrapperClass->SinglewindowHeight(p_stdout).toInt()+5);
+
+        //The position of the window
+        QString singleCorners = corners;
+        singleCorners.remove(0,5);
+        QStringList singleCornersList = singleCorners.split(",");
+        rubberband.move(QString(singleCornersList[0]).toInt()-2,QString(singleCornersList[1]).toInt()-2);
+
+        //Shows the rectangle
+        rubberband.show();
     }
     else
     {

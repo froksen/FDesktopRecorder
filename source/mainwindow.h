@@ -10,6 +10,7 @@
 #include <settingsmanager.h>
 #include <knotification.h>
 #include <QPainter>
+#include "rubberband.h"
 
 namespace Ui {
     class MainWindow;
@@ -63,6 +64,7 @@ private:
     WindowGrapper *WindowGrapperClass;
     process mProcessClass;
     SettingsManager settings;
+    RubberBand rubberband;
 
     //Systemtray other
     QSystemTrayIcon *trayIcon;

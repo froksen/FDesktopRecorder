@@ -21,7 +21,8 @@ SOURCES += main.cpp\
     settingsdialog.cpp \
     process.cpp \
     settingsmanager.cpp \
-    previewplayer.cpp
+    previewplayer.cpp \
+    rubberband.cpp
 
 HEADERS  += mainwindow.h \
     aboutprog.h \
@@ -30,7 +31,8 @@ HEADERS  += mainwindow.h \
     settingsdialog.h \
     process.h \
     settingsmanager.h \
-    previewplayer.h
+    previewplayer.h \
+    rubberband.h
 
 FORMS    += mainwindow.ui\
             aboutprog.ui \
