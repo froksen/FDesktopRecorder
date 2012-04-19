@@ -35,29 +35,10 @@ QString WindowGrapper::Fullscreenaspects()
     return geometry;
 }
 
-QString WindowGrapper::Singlewindowgeometry(QString Text)
+QString WindowGrapper::SinglewindowHeight(QString Text)
 {
-    QString geometry;
-    QStringList argsscript;
-    QString geometryWidth;
     QString geometryHeight;
-    QString corners;
-    QString argcorners;
-
     QString p_stdout = Text;
-
-    //Gets the width of the screen.
-    QTextStream inw(&p_stdout);
-    while ( !inw.atEnd() )
-    {
-       QString widthline = inw.readLine();
-       if(widthline.left(8) == "  Width:")
-       {
-       geometryWidth = widthline.remove(0,9);
-       }
-    }
-    geometryWidth = QString::number(fixResolution(geometryWidth.toInt()));
-    qDebug() << "Width:" << geometryWidth;
 
     //Gets the height of the screen.
     QTextStream inh(&p_stdout);
@@ -71,6 +52,46 @@ QString WindowGrapper::Singlewindowgeometry(QString Text)
         }
     }
 
+    return geometryHeight;
+}
+
+QString WindowGrapper::SinglewindowWidth(QString Text)
+{
+    QString geometryWidth;
+    QString p_stdout = Text;
+
+    //Gets the width of the screen.
+    QTextStream inw(&p_stdout);
+    while ( !inw.atEnd() )
+    {
+       QString widthline = inw.readLine();
+       if(widthline.left(8) == "  Width:")
+       {
+       geometryWidth = widthline.remove(0,9);
+       }
+    }
+
+    return geometryWidth;
+}
+
+QString WindowGrapper::Singlewindowgeometry(QString Text)
+{
+    QString geometry;
+    QStringList argsscript;
+    QString geometryWidth;
+    QString geometryHeight;
+    QString corners;
+    QString argcorners;
+
+    QString p_stdout = Text;
+
+    //Width
+    geometryWidth = SinglewindowWidth(p_stdout);
+    geometryWidth = QString::number(fixResolution(geometryWidth.toInt()));
+    qDebug() << "Width:" << geometryWidth;
+
+    //Height
+    geometryHeight = SinglewindowHeight(p_stdout);
     geometryHeight = QString::number(fixResolution(geometryHeight.toInt()));
     qDebug() << "Height:" << geometryHeight;
 
@@ -112,3 +133,5 @@ QString WindowGrapper::Singlewindowcorners(QString Text)
 
     return argcorners;
 }
+
+
