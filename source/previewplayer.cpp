@@ -28,6 +28,11 @@ PreviewPlayer::PreviewPlayer(QWidget *parent) :
 PreviewPlayer::~PreviewPlayer()
 {
     delete ui;
+
+    if(player)
+    {
+        player->stop();
+    }
 }
 
 void PreviewPlayer::setVideofile(QString newVideofile)
