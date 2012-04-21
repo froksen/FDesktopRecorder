@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>435</width>
+    <width>479</width>
     <height>475</height>
    </rect>
   </property>
@@ -54,8 +54,8 @@
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>386</width>
-            <height>307</height>
+            <width>424</width>
+            <height>332</height>
            </rect>
           </property>
           <attribute name="label">
@@ -116,7 +116,7 @@
              <item row="4" column="1">
               <widget class="QSpinBox" name="spinBoxaudiochannels">
                <property name="toolTip">
-                <string>Changes the number of audiochannels used</string>
+                <string>Changes the number of audiochannels used. To record in mono set to 1, for stereo set to 2 etc.</string>
                </property>
               </widget>
              </item>
@@ -127,26 +127,26 @@
                </property>
               </widget>
              </item>
-             <item row="6" column="0" colspan="2">
+             <item row="7" column="0" colspan="2">
               <widget class="Line" name="line">
                <property name="orientation">
                 <enum>Qt::Horizontal</enum>
                </property>
               </widget>
              </item>
-             <item row="7" column="0">
+             <item row="8" column="0">
               <widget class="QLabel" name="labelbasename">
                <property name="text">
                 <string>Basename</string>
                </property>
               </widget>
              </item>
-             <item row="7" column="1">
+             <item row="8" column="1">
               <layout class="QGridLayout" name="gridLayout">
                <item row="0" column="0">
                 <widget class="QLineEdit" name="lineEditbasename">
                  <property name="toolTip">
-                  <string>Choose a basename.</string>
+                  <string>Choose a basename for your recordings.</string>
                  </property>
                 </widget>
                </item>
@@ -162,14 +162,14 @@
                </item>
               </layout>
              </item>
-             <item row="8" column="0">
+             <item row="9" column="0">
               <widget class="QLabel" name="labelpath">
                <property name="text">
                 <string>Default path</string>
                </property>
               </widget>
              </item>
-             <item row="8" column="1">
+             <item row="9" column="1">
               <layout class="QGridLayout" name="gridLayout_3">
                <item row="0" column="0">
                 <widget class="QLineEdit" name="lineEditpath">
@@ -193,14 +193,14 @@
                </item>
               </layout>
              </item>
-             <item row="9" column="0">
+             <item row="10" column="0">
               <widget class="QLabel" name="labelFormat">
                <property name="text">
                 <string>Default format</string>
                </property>
               </widget>
              </item>
-             <item row="9" column="1">
+             <item row="10" column="1">
               <widget class="QComboBox" name="comboBoxFormat">
                <property name="toolTip">
                 <string>Choose which format the recordings should be saved with. </string>
@@ -212,32 +212,36 @@
                <item row="0" column="0">
                 <widget class="QComboBox" name="comboBoxrecording">
                  <property name="toolTip">
-                  <string>Select a microphone input device</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="0" column="1">
-                <widget class="QCheckBox" name="checkBoxMicMute">
-                 <property name="toolTip">
-                  <string>Mute the microphone. (No audio will be recorded)</string>
-                 </property>
-                 <property name="text">
-                  <string>Mute</string>
-                 </property>
-                 <property name="checked">
-                  <bool>true</bool>
+                  <string>Select a microphone.</string>
                  </property>
                 </widget>
                </item>
               </layout>
              </item>
              <item row="2" column="1">
-              <widget class="QLineEdit" name="lineEditAudiosource"/>
+              <widget class="QLineEdit" name="lineEditAudiosource">
+               <property name="toolTip">
+                <string>Changes the sound architecture used in the recording. Thjs can be alsa, oss etc.</string>
+               </property>
+              </widget>
              </item>
              <item row="2" column="0">
               <widget class="QLabel" name="label_3">
                <property name="text">
-                <string>Audio source</string>
+                <string>Sound architecture</string>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="1">
+              <widget class="QCheckBox" name="checkBoxMicMute">
+               <property name="toolTip">
+                <string>The microphone is muted as default on startup</string>
+               </property>
+               <property name="text">
+                <string>Mute on startup</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
                </property>
               </widget>
              </item>
@@ -276,8 +280,8 @@
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>386</width>
-            <height>389</height>
+            <width>424</width>
+            <height>332</height>
            </rect>
           </property>
           <attribute name="label">
@@ -341,13 +345,6 @@
            </item>
           </layout>
          </widget>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label">
-         <property name="text">
-          <string>NOTE: Some changes might first apply after a restart of this program</string>
-         </property>
         </widget>
        </item>
       </layout>
