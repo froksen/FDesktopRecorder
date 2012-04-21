@@ -393,18 +393,22 @@ void MainWindow::createsystemtray()
     //Defines the actions
     viewhidewindow = new QAction(tr("&Show/Hide window"), this);
     connect(viewhidewindow, SIGNAL(triggered()), this, SLOT(showhidewindow()));
+    viewhidewindow->setIcon(QIcon::fromTheme("dashboard-show"));
 
     stoprecord = new QAction(tr("&Stop recording"), this);
+    stoprecord->setIcon(QIcon(":images/icon.png"));
     connect(stoprecord, SIGNAL(triggered()), this, SLOT(on_pushButtonStoprecord_clicked()));
 
     latestrecording = new QAction(trUtf8("&Latest recording: "),this);
     latestrecording->setEnabled(false);
+    latestrecording->setIcon(QIcon::fromTheme("dialog-information"));
 
     QString latestrecordingText = settings.getLatestrecording();
 
     latestrecording->setText(trUtf8("Latest Recording") + ": " + latestrecordingText);
 
     quitAction = new QAction(tr("&Quit program"), this);
+    quitAction->setIcon(QIcon::fromTheme("application-exit"));
     connect(quitAction, SIGNAL(triggered()), qApp , SLOT(quit()));
 
     // Makes the layout
