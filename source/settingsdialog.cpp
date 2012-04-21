@@ -257,14 +257,14 @@ void SettingsDialog::on_checkBoxbasenametimedate_clicked()
 
 void SettingsDialog::on_checkBoxMicMute_clicked()
 {
-    if(ui->checkBoxMicMute->isChecked())
-    {
-        ui->comboBoxrecording->setEnabled(0);
-    }
-    else
-    {
-        ui->comboBoxrecording->setEnabled(1);
-    }
+//    if(ui->checkBoxMicMute->isChecked())
+//    {
+//        ui->comboBoxrecording->setEnabled(0);
+//    }
+//    else
+//    {
+//        ui->comboBoxrecording->setEnabled(1);
+//    }
 }
 
 void SettingsDialog::findLanguages()
