@@ -52,12 +52,19 @@
     </spacer>
    </item>
    <item>
-    <widget class="Phonon::SeekSlider" name="seekSlider"/>
+    <widget class="Phonon::SeekSlider" name="seekSlider">
+     <property name="toolTip">
+      <string>Seek a specific position of your movie.</string>
+     </property>
+    </widget>
    </item>
    <item>
     <layout class="QGridLayout" name="gridLayout">
      <item row="1" column="1">
       <widget class="QPushButton" name="pushButtonStop">
+       <property name="toolTip">
+        <string>Stop playing your content</string>
+       </property>
        <property name="text">
         <string>Stop</string>
        </property>
@@ -78,16 +85,26 @@
      </item>
      <item row="2" column="0" colspan="4">
       <widget class="QPushButton" name="pushButtonClose">
+       <property name="toolTip">
+        <string>Closes this window</string>
+       </property>
        <property name="text">
         <string>Close</string>
        </property>
       </widget>
      </item>
      <item row="1" column="3">
-      <widget class="Phonon::VolumeSlider" name="volumeSlider"/>
+      <widget class="Phonon::VolumeSlider" name="volumeSlider">
+       <property name="toolTip">
+        <string>Change the volume</string>
+       </property>
+      </widget>
      </item>
      <item row="1" column="0">
       <widget class="QPushButton" name="pushButtonStart">
+       <property name="toolTip">
+        <string>Start/Pause playing your content</string>
+       </property>
        <property name="text">
         <string>Play/Pause</string>
        </property>
