@@ -212,7 +212,7 @@
                <item row="0" column="0">
                 <widget class="QComboBox" name="comboBoxrecording">
                  <property name="toolTip">
-                  <string>Select a microphone.</string>
+                  <string>Choose the microphone you want to use.</string>
                  </property>
                 </widget>
                </item>
