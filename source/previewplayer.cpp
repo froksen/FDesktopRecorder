@@ -27,8 +27,6 @@ PreviewPlayer::PreviewPlayer(QWidget *parent) :
     //Settings icons for buttons
     ui->pushButtonStart->setIcon(QIcon(QIcon::fromTheme("media-playback-start")));
     ui->pushButtonStop->setIcon(QIcon::fromTheme("media-playback-stop"));
-
-    connect(player,SIGNAL(finished()),this,SLOT(setIcons()));
 }
 
 PreviewPlayer::~PreviewPlayer()
@@ -57,9 +55,6 @@ void PreviewPlayer::playVideo()
 
 void PreviewPlayer::on_pushButtonStart_clicked()
 {
-    //Sets the propper icon
-    setIcons();
-
     //does the rest
     if(player->isPlaying())
     {
@@ -76,6 +71,9 @@ void PreviewPlayer::on_pushButtonStart_clicked()
             playVideo();
         }
     }
+
+    //Sets the propper icon
+    setIcons();
 
 }
 
@@ -94,6 +92,7 @@ void PreviewPlayer::on_pushButtonPause_clicked()
 void PreviewPlayer::on_pushButtonStop_clicked()
 {
     player->stop();
+    setIcons();
 }
 
 void PreviewPlayer::on_pushButtonClose_clicked()
@@ -102,13 +101,13 @@ void PreviewPlayer::on_pushButtonClose_clicked()
 
 void PreviewPlayer::setIcons()
 {
-    if(player->isPaused())
+
+    if(!player->isPlaying())
     {
-        ui->pushButtonStart->setIcon(QIcon(QIcon::fromTheme("media-playback-start")));
+        ui->pushButtonStart->setIcon(QIcon(QIcon::fromTheme("media-playback-pause")));
     }
     else
     {
-         ui->pushButtonStart->setIcon(QIcon(QIcon::fromTheme("media-playback-pause")));
-
+        ui->pushButtonStart->setIcon(QIcon(QIcon::fromTheme("media-playback-start")));
     }
 }

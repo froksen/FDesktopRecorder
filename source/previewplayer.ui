@@ -68,6 +68,9 @@
        <property name="text">
         <string>Stop</string>
        </property>
+       <property name="icon">
+        <iconset theme="media-playback-stop"/>
+       </property>
       </widget>
      </item>
      <item row="1" column="2">
@@ -107,6 +110,9 @@
        </property>
        <property name="text">
         <string>Play/Pause</string>
+       </property>
+       <property name="icon">
+        <iconset theme="media-playback-start"/>
        </property>
       </widget>
      </item>
