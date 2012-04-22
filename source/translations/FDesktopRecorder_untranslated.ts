@@ -194,27 +194,27 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="35"/>
+        <location filename="../mainwindow.cpp" line="36"/>
         <source>Start recording</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="37"/>
+        <location filename="../mainwindow.cpp" line="38"/>
         <source>Minimize and start record</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="102"/>
+        <location filename="../mainwindow.cpp" line="111"/>
         <source>&lt;b&gt; Recording a single window &lt;/b&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="103"/>
+        <location filename="../mainwindow.cpp" line="112"/>
         <source>Recording a single window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="104"/>
+        <location filename="../mainwindow.cpp" line="113"/>
         <source>When you click &apos;OK&apos; a small crossair will appear. 
  
 With this you will have to select the window you want to record. 
@@ -223,89 +223,89 @@ Hereafter the recording will start.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="250"/>
-        <location filename="../mainwindow.cpp" line="474"/>
-        <location filename="../mainwindow.cpp" line="486"/>
+        <location filename="../mainwindow.cpp" line="272"/>
+        <location filename="../mainwindow.cpp" line="503"/>
+        <location filename="../mainwindow.cpp" line="515"/>
         <source>Recording started</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="261"/>
+        <location filename="../mainwindow.cpp" line="283"/>
         <source>Please wait while saving the recording. Might take some time.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="302"/>
-        <location filename="../mainwindow.cpp" line="306"/>
+        <location filename="../mainwindow.cpp" line="327"/>
+        <location filename="../mainwindow.cpp" line="331"/>
         <source>Successfully finished recording</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="318"/>
-        <location filename="../mainwindow.cpp" line="380"/>
+        <location filename="../mainwindow.cpp" line="343"/>
+        <location filename="../mainwindow.cpp" line="408"/>
         <source>Latest Recording</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="325"/>
-        <location filename="../mainwindow.cpp" line="329"/>
+        <location filename="../mainwindow.cpp" line="350"/>
+        <location filename="../mainwindow.cpp" line="354"/>
         <source>Failed to start!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="330"/>
+        <location filename="../mainwindow.cpp" line="355"/>
         <source>View terminaloutput for more info.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="336"/>
+        <location filename="../mainwindow.cpp" line="361"/>
         <source>&lt;b&gt;Failed to start recording!&lt;/b&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="337"/>
+        <location filename="../mainwindow.cpp" line="362"/>
         <source>Press &lt;i&gt;&apos;show details&apos;&lt;/i&gt; to see console ouput.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="341"/>
+        <location filename="../mainwindow.cpp" line="366"/>
         <source>Failed to start recording!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="515"/>
+        <location filename="../mainwindow.cpp" line="544"/>
         <source> No recording in this session</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="516"/>
+        <location filename="../mainwindow.cpp" line="545"/>
         <source>You have not recorded anything yet, and therefore nothing to preview. 
 
 Record something and try again</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="520"/>
+        <location filename="../mainwindow.cpp" line="549"/>
         <source>No recording in this session</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="369"/>
+        <location filename="../mainwindow.cpp" line="394"/>
         <source>&amp;Show/Hide window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="372"/>
+        <location filename="../mainwindow.cpp" line="398"/>
         <source>&amp;Stop recording</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="375"/>
+        <location filename="../mainwindow.cpp" line="402"/>
         <source>&amp;Latest recording: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="382"/>
+        <location filename="../mainwindow.cpp" line="410"/>
         <source>&amp;Quit program</source>
         <translation type="unfinished"></translation>
     </message>
@@ -318,17 +318,42 @@ Record something and try again</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../previewplayer.ui" line="45"/>
+        <location filename="../previewplayer.ui" line="57"/>
+        <source>Seek a specific position of your movie.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../previewplayer.ui" line="66"/>
+        <source>Stop playing your content</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../previewplayer.ui" line="69"/>
         <source>Stop</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../previewplayer.ui" line="65"/>
+        <location filename="../previewplayer.ui" line="92"/>
+        <source>Closes this window</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../previewplayer.ui" line="95"/>
         <source>Close</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../previewplayer.ui" line="75"/>
+        <location filename="../previewplayer.ui" line="102"/>
+        <source>Change the volume</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../previewplayer.ui" line="109"/>
+        <source>Start/Pause playing your content</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../previewplayer.ui" line="112"/>
         <source>Play/Pause</source>
         <translation type="unfinished"></translation>
     </message>
@@ -338,6 +363,29 @@ Record something and try again</source>
     <message>
         <location filename="../recordingdevices.cpp" line="44"/>
         <source>Pulse Audio (might not work)</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>RubberBand</name>
+    <message>
+        <location filename="../rubberband.cpp" line="84"/>
+        <source>Scalability Failure Width</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../rubberband.cpp" line="85"/>
+        <source>Frame Width must be a multiple of 2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../rubberband.cpp" line="92"/>
+        <source>Scalability Failure Height</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../rubberband.cpp" line="93"/>
+        <source>Frame Height must be a multiple of 2</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -399,11 +447,6 @@ Record something and try again</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="119"/>
-        <source>Changes the number of audiochannels used</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../settingsdialog.ui" line="126"/>
         <source>Microphone</source>
         <translation type="unfinished"></translation>
@@ -411,11 +454,6 @@ Record something and try again</source>
     <message>
         <location filename="../settingsdialog.ui" line="140"/>
         <source>Basename</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../settingsdialog.ui" line="149"/>
-        <source>Choose a basename.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -459,84 +497,98 @@ Record something and try again</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="215"/>
-        <source>Select a microphone input device</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../settingsdialog.ui" line="222"/>
-        <source>Mute the microphone. (No audio will be recorded)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../settingsdialog.ui" line="225"/>
-        <source>Mute</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../settingsdialog.ui" line="240"/>
-        <source>Audio source</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../settingsdialog.ui" line="284"/>
+        <location filename="../settingsdialog.ui" line="288"/>
         <source>Advanced</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="292"/>
+        <location filename="../settingsdialog.ui" line="296"/>
         <source>-apre</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="302"/>
-        <location filename="../settingsdialog.ui" line="323"/>
+        <location filename="../settingsdialog.ui" line="306"/>
+        <location filename="../settingsdialog.ui" line="327"/>
         <source>Use</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="313"/>
+        <location filename="../settingsdialog.ui" line="317"/>
         <source>-vpre</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="349"/>
-        <location filename="../settingsdialog.ui" line="420"/>
+        <location filename="../settingsdialog.ui" line="417"/>
         <source>NOTE: Some changes might first apply after a restart of this program</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="357"/>
+        <location filename="../settingsdialog.ui" line="354"/>
         <source>Application Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="370"/>
+        <location filename="../settingsdialog.ui" line="119"/>
+        <source>Changes the number of audiochannels used. To record in mono set to 1, for stereo set to 2 etc.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../settingsdialog.ui" line="149"/>
+        <source>Choose a basename for your recordings.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../settingsdialog.ui" line="215"/>
+        <source>Choose the microphone you want to use.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../settingsdialog.ui" line="224"/>
+        <source>Changes the sound architecture used in the recording. Thjs can be alsa, oss etc.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../settingsdialog.ui" line="231"/>
+        <source>Sound architecture</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../settingsdialog.ui" line="238"/>
+        <source>The microphone is muted as default on startup</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../settingsdialog.ui" line="241"/>
+        <source>Mute on startup</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../settingsdialog.ui" line="367"/>
         <source>Application settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="382"/>
+        <location filename="../settingsdialog.ui" line="379"/>
         <source>Language</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="433"/>
+        <location filename="../settingsdialog.ui" line="430"/>
         <source>Save or decline changes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="446"/>
+        <location filename="../settingsdialog.ui" line="443"/>
         <source>Restores the settings to the defaults. Please note, these can not be undone!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="449"/>
+        <location filename="../settingsdialog.ui" line="446"/>
         <source>Restore to default. PLEASE NOTE: CAN NOT BE UNDONE!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="452"/>
+        <location filename="../settingsdialog.ui" line="449"/>
         <source>Restore to default</source>
         <translation type="unfinished"></translation>
     </message>
