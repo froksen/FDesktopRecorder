@@ -23,6 +23,12 @@ PreviewPlayer::PreviewPlayer(QWidget *parent) :
     //Connecting to the Seekslider + volume
     ui->seekSlider->setMediaObject(player->mediaObject());
     ui->volumeSlider->setAudioOutput(player->audioOutput());
+
+    //Settings icons for buttons
+    ui->pushButtonStart->setIcon(QIcon(QIcon::fromTheme("media-playback-start")));
+    ui->pushButtonStop->setIcon(QIcon::fromTheme("media-playback-stop"));
+
+    connect(player,SIGNAL(finished()),this,SLOT(setIcons()));
 }
 
 PreviewPlayer::~PreviewPlayer()
@@ -46,10 +52,15 @@ void PreviewPlayer::playVideo()
 
     player->play(Phonon::MediaSource(videofile));
 
+    setIcons();
 }
 
 void PreviewPlayer::on_pushButtonStart_clicked()
 {
+    //Sets the propper icon
+    setIcons();
+
+    //does the rest
     if(player->isPlaying())
     {
         player->pause();
@@ -87,4 +98,17 @@ void PreviewPlayer::on_pushButtonStop_clicked()
 
 void PreviewPlayer::on_pushButtonClose_clicked()
 {
+}
+
+void PreviewPlayer::setIcons()
+{
+    if(player->isPaused())
+    {
+        ui->pushButtonStart->setIcon(QIcon(QIcon::fromTheme("media-playback-start")));
+    }
+    else
+    {
+         ui->pushButtonStart->setIcon(QIcon(QIcon::fromTheme("media-playback-pause")));
+
+    }
 }
