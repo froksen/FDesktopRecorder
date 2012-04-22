@@ -15,7 +15,8 @@ SettingsDialog::SettingsDialog(QWidget *parent) :
     settings.readAll();
     readSettings();
 
-    on_checkBoxMicMute_clicked();
+    on_checkBoxMicMute_clicked();    
+
 }
 
 SettingsDialog::~SettingsDialog()
