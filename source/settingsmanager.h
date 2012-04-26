@@ -61,6 +61,12 @@ public:
     void setUsevpre(QString state);
     QString getUsevpre();
 
+    void setPreviewplayer(QString newPlayer);
+    QString getPreviewplayer();
+
+    void setPreviewplayerintegrated(QString newValue);
+    QString getPreviewplayerintegrated();
+
     //----------------SECTION: Common------------------
     void writeAll();
     void readAll();
@@ -98,6 +104,8 @@ private:
     QString format;
 //----------------SECTION: Application settings------------------
     QString language;
+    QString previewplayer;
+    QString previewplayerintegrated;
 //----------------SECTION: OTHER------------------
     QString latestrecording;
     RecordingDevices recordingdevices;

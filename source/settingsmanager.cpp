@@ -118,6 +118,8 @@ void SettingsManager::writeAll()
     settings.endGroup();
 
     settings.beginGroup("misc");
+    settings.setValue("previewplayer",previewplayer);
+    settings.setValue("previewplayerintegrated",previewplayerintegrated);
     settings.setValue("latestrecording",latestrecording);
     settings.endGroup();
 
@@ -150,6 +152,8 @@ void SettingsManager::readAll()
     settings.endGroup();
 
     settings.beginGroup("misc");
+    previewplayer = settings.value("previewplayer","mplayer").toString();
+    previewplayerintegrated = settings.value("previewplayerintegrated","true").toString();
     latestrecording = settings.value("latestrecording","Unknown").toString();
     settings.endGroup();
 }
@@ -324,6 +328,26 @@ void SettingsManager::setUsevpre(QString state)
 QString SettingsManager::getUsevpre()
 {
     return usevpre;
+}
+
+void SettingsManager::setPreviewplayer(QString newPlayer)
+{
+    previewplayer = newPlayer;
+}
+
+QString SettingsManager::getPreviewplayer()
+{
+    return previewplayer;
+}
+
+void SettingsManager::setPreviewplayerintegrated(QString newValue)
+{
+    previewplayerintegrated = newValue;
+}
+
+QString SettingsManager::getPreviewplayerintegrated()
+{
+    return previewplayerintegrated;
 }
 
 
