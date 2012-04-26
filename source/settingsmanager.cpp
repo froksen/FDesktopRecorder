@@ -152,7 +152,7 @@ void SettingsManager::readAll()
     settings.endGroup();
 
     settings.beginGroup("misc");
-    previewplayer = settings.value("previewplayer","mplayer").toString();
+    previewplayer = settings.value("previewplayer","kaffeine").toString();
     previewplayerintegrated = settings.value("previewplayerintegrated","true").toString();
     latestrecording = settings.value("latestrecording","Unknown").toString();
     settings.endGroup();
