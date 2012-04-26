@@ -327,8 +327,8 @@
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>424</width>
-            <height>332</height>
+            <width>127</width>
+            <height>64</height>
            </rect>
           </property>
           <attribute name="label">
@@ -420,17 +420,17 @@
        </item>
        <item>
         <layout class="QGridLayout" name="gridLayout_6">
-         <item row="0" column="1">
-          <widget class="QLabel" name="labelLanguage">
+         <item row="1" column="1">
+          <widget class="QLabel" name="labelPreviewPlayer">
            <property name="text">
-            <string>Language</string>
+            <string>Preview player</string>
            </property>
           </widget>
          </item>
-         <item row="0" column="2">
-          <widget class="QComboBox" name="comboBoxLanguage"/>
-         </item>
          <item row="1" column="2">
+          <widget class="QLineEdit" name="lineEditPreviewplayer"/>
+         </item>
+         <item row="3" column="2">
           <spacer name="horizontalSpacer">
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
@@ -443,6 +443,16 @@
            </property>
           </spacer>
          </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="labelLanguage">
+           <property name="text">
+            <string>Language</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QComboBox" name="comboBoxLanguage"/>
+         </item>
          <item row="0" column="0">
           <widget class="QLabel" name="Pixmaplabel_Language">
            <property name="text">
@@ -450,6 +460,13 @@
            </property>
            <property name="pixmap">
             <pixmap>../../../../../usr/share/icons/oxygen/22x22/categories/applications-education-language.png</pixmap>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QCheckBox" name="checkBoxPreviewplayer">
+           <property name="text">
+            <string>Use integrated player</string>
            </property>
           </widget>
          </item>
