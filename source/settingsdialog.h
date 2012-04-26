@@ -28,6 +28,8 @@ private slots:
 
     void on_checkBoxMicMute_clicked();
 
+    void on_checkBoxPreviewplayer_clicked();
+
 private:
     Ui::SettingsDialog *ui;
 

@@ -313,3 +313,15 @@ void SettingsDialog::findLanguages()
         ui->comboBoxLanguage->addItem(basename,localending);
     }
 }
+
+void SettingsDialog::on_checkBoxPreviewplayer_clicked()
+{
+    if(ui->checkBoxPreviewplayer->isChecked())
+    {
+        ui->lineEditPreviewplayer->setEnabled(false);
+    }
+    else
+    {
+        ui->lineEditPreviewplayer->setEnabled(true);
+    }
+}
