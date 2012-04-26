@@ -69,6 +69,16 @@ void SettingsDialog::on_buttonBox_accepted()
     int langindex = ui->comboBoxLanguage->currentIndex();
     settings.setLanguage(ui->comboBoxLanguage->itemData(langindex).toString());
 
+    //Preview player
+    settings.setPreviewplayer(ui->lineEditPreviewplayer->text());
+    if(!ui->checkBoxPreviewplayer->isChecked())
+    {
+        settings.setPreviewplayerintegrated("false");
+    }
+    else
+    {
+        settings.setPreviewplayerintegrated("true");
+    }
 
     //advanced
     settings.setVpre(ui->lineEditadvancedvpre->text());
@@ -187,6 +197,21 @@ void SettingsDialog::readSettings()
     QString languagecfg = settings.getLanguage();
     int comboboxIndexLanguage = ui->comboBoxLanguage->findData(languagecfg);
     ui->comboBoxLanguage->setCurrentIndex(comboboxIndexLanguage);
+
+    // -----------------SECTION: Previewplayer------------------------------
+
+    ui->lineEditPreviewplayer->setText(settings.getPreviewplayer());
+
+    if(settings.getPreviewplayerintegrated() == "false")
+    {
+        ui->checkBoxPreviewplayer->setChecked(false);
+        ui->lineEditPreviewplayer->setEnabled(true);
+    }
+    else
+    {
+        ui->checkBoxPreviewplayer->setChecked(true);
+        ui->lineEditPreviewplayer->setEnabled(false);
+    }
 
     // -----------------SECTION: Microphonemuted------------------------------
     if(settings.getMicrophonemuted() == "false")
