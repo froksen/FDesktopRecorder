@@ -1,6 +1,7 @@
 *
 - Added: When recording a single window, there will be a red rectangle arround this. Thanks to Juergen Heinemann (Undefined).
 - Added: Tooltips to the preview player
+- Added: Possible to use another player for previewing your recordings
 - Fixed: Text/Tooltips in Settingsdialog should now make more sense.
 - Fixed: In preview player the content is now always placed in the middle of the widget
 - Changed: Now uses icons from your KDE/GTK theme in the toolbar and systemtray.
