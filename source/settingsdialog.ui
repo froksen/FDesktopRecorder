@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>479</width>
-    <height>475</height>
+    <width>524</width>
+    <height>583</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -54,8 +54,8 @@
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>424</width>
-            <height>332</height>
+            <width>451</width>
+            <height>402</height>
            </rect>
           </property>
           <attribute name="label">
@@ -327,8 +327,8 @@
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>424</width>
-            <height>332</height>
+            <width>451</width>
+            <height>402</height>
            </rect>
           </property>
           <attribute name="label">
@@ -430,19 +430,6 @@
          <item row="1" column="2">
           <widget class="QLineEdit" name="lineEditPreviewplayer"/>
          </item>
-         <item row="3" column="2">
-          <spacer name="horizontalSpacer">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>278</width>
-             <height>17</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
          <item row="0" column="1">
           <widget class="QLabel" name="labelLanguage">
            <property name="text">
@@ -452,6 +439,16 @@
          </item>
          <item row="0" column="2">
           <widget class="QComboBox" name="comboBoxLanguage"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="Pixlabel_previewplayer">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>../../../../../usr/share/icons/oxygen/22x22/actions/player-time.png</pixmap>
+           </property>
+          </widget>
          </item>
          <item row="0" column="0">
           <widget class="QLabel" name="Pixmaplabel_Language">
@@ -470,13 +467,46 @@
            </property>
           </widget>
          </item>
-         <item row="1" column="0">
-          <widget class="QLabel" name="Pixlabel_previewplayer">
-           <property name="text">
-            <string/>
+         <item row="5" column="2">
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
            </property>
-           <property name="pixmap">
-            <pixmap>../../../../../usr/share/icons/oxygen/22x22/actions/player-time.png</pixmap>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>278</width>
+             <height>17</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="4" column="2">
+          <widget class="QCheckBox" name="checkBoxSinglewindowredrectangle">
+           <property name="text">
+            <string>Enable/Disable</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLabel" name="labelSinglewindowredrectangle">
+           <property name="text">
+            <string>Show red rectangle</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0" colspan="3">
+          <widget class="QLabel" name="labelSinglewindowHeader">
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Single Window</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
            </property>
           </widget>
          </item>
