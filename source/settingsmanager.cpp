@@ -30,6 +30,9 @@ void SettingsManager::setDefaults()
     language = "default";
     latestrecording = "Unknown";
 
+    previewplayer = "kaffeine";
+    previewplayerintegrated = "true";
+
     //Writes them
     writeAll();
 }
