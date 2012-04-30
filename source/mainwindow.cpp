@@ -141,7 +141,10 @@ void MainWindow::on_pushButtonStartrecord_clicked()
         rubberband.move(QString(singleCornersList[0]).toInt()-2,QString(singleCornersList[1]).toInt()-2);
 
         //Shows the rectangle
-        rubberband.show();
+        if(settings.getSinglewindow_redrectangle() != "false")
+        {
+            rubberband.show();
+        }
     }
     else
     {
