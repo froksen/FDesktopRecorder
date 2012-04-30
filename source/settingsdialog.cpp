@@ -80,6 +80,16 @@ void SettingsDialog::on_buttonBox_accepted()
         settings.setPreviewplayerintegrated("true");
     }
 
+    //Single window: use red rectangle
+    if(!ui->checkBoxSinglewindowredrectangle->isChecked())
+    {
+        settings.setSinglewindow_redrectangle("false");
+    }
+    else
+    {
+        settings.setSinglewindow_redrectangle("true");
+    }
+
     //advanced
     settings.setVpre(ui->lineEditadvancedvpre->text());
     if(ui->checkBoxadvancedvpreuse->isChecked())
@@ -211,6 +221,16 @@ void SettingsDialog::readSettings()
     {
         ui->checkBoxPreviewplayer->setChecked(true);
         ui->lineEditPreviewplayer->setEnabled(false);
+    }
+
+    // -----------------SECTION: Single window: Use red rectangle------------------------------
+    if(settings.getSinglewindow_redrectangle() == "false")
+    {
+        ui->checkBoxSinglewindowredrectangle->setChecked(false);
+    }
+    else
+    {
+        ui->checkBoxSinglewindowredrectangle->setChecked(true);
     }
 
     // -----------------SECTION: Microphonemuted------------------------------
