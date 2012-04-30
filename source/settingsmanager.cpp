@@ -33,6 +33,8 @@ void SettingsManager::setDefaults()
     previewplayer = "kaffeine";
     previewplayerintegrated = "true";
 
+    SingleWindow_redrectangle = "true";
+
     //Writes them
     writeAll();
 }
@@ -123,6 +125,7 @@ void SettingsManager::writeAll()
     settings.beginGroup("misc");
     settings.setValue("previewplayer",previewplayer);
     settings.setValue("previewplayerintegrated",previewplayerintegrated);
+    settings.setValue("Singlewindow_redrectangle",SingleWindow_redrectangle);
     settings.setValue("latestrecording",latestrecording);
     settings.endGroup();
 
@@ -157,6 +160,7 @@ void SettingsManager::readAll()
     settings.beginGroup("misc");
     previewplayer = settings.value("previewplayer","kaffeine").toString();
     previewplayerintegrated = settings.value("previewplayerintegrated","true").toString();
+    SingleWindow_redrectangle = settings.value("Singlewindow_redrectangle","true").toString();
     latestrecording = settings.value("latestrecording","Unknown").toString();
     settings.endGroup();
 }
@@ -351,6 +355,16 @@ void SettingsManager::setPreviewplayerintegrated(QString newValue)
 QString SettingsManager::getPreviewplayerintegrated()
 {
     return previewplayerintegrated;
+}
+
+void SettingsManager::setSinglewindow_redrectangle(QString newValue)
+{
+    SingleWindow_redrectangle = newValue;
+}
+
+QString SettingsManager::getSinglewindow_redrectangle()
+{
+    return SingleWindow_redrectangle;
 }
 
 

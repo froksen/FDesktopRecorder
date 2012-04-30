@@ -67,6 +67,9 @@ public:
     void setPreviewplayerintegrated(QString newValue);
     QString getPreviewplayerintegrated();
 
+    void setSinglewindow_redrectangle(QString newValue);
+    QString getSinglewindow_redrectangle();
+
     //----------------SECTION: Common------------------
     void writeAll();
     void readAll();
@@ -106,6 +109,7 @@ private:
     QString language;
     QString previewplayer;
     QString previewplayerintegrated;
+    QString SingleWindow_redrectangle;
 //----------------SECTION: OTHER------------------
     QString latestrecording;
     RecordingDevices recordingdevices;
