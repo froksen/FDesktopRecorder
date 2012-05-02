@@ -4,6 +4,7 @@
 - Added: Possible to use another player for previewing your recordings
 - Fixed: Text/Tooltips in Settingsdialog should now make more sense.
 - Fixed: In preview player the content is now always placed in the middle of the widget
+- Fixed: You can now only open one "preview player" at the time
 - Changed: Now uses icons from your KDE/GTK theme in the toolbar and systemtray.
 
 * Wed Apr 11 2012

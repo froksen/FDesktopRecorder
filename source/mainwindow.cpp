@@ -546,6 +546,7 @@ void MainWindow::on_actionPreviewrecording_triggered()
         playernew->setVideofile(filename);
         playernew->playVideo();
         playernew->exec();
+        connect(playernew,SIGNAL(finished(int)),playernew,SLOT(deleteLater()));
     }
 
 
