@@ -1,8 +1,8 @@
 #include "previewplayer.h"
 #include "ui_previewplayer.h"
 
-PreviewPlayer::PreviewPlayer(QWidget *parent) :
-    QWidget(parent),
+PreviewPlayer::PreviewPlayer(QDialog *parent) :
+    QDialog(parent),
     ui(new Ui::PreviewPlayer)
 {
     ui->setupUi(this);

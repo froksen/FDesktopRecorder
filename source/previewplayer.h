@@ -1,19 +1,19 @@
 #ifndef PREVIEWPLAYER_H
 #define PREVIEWPLAYER_H
 
-#include <QWidget>
+#include <QDialog>
 #include <phonon/VideoPlayer>
 
 namespace Ui {
 class PreviewPlayer;
 }
 
-class PreviewPlayer : public QWidget
+class PreviewPlayer : public QDialog
 {
     Q_OBJECT
     
 public:
-    explicit PreviewPlayer(QWidget *parent = 0);
+    explicit PreviewPlayer(QDialog *parent = 0);
     ~PreviewPlayer();
 
     void setVideofile(QString newVideofile);
