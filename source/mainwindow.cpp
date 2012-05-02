@@ -543,9 +543,9 @@ void MainWindow::on_actionPreviewrecording_triggered()
     else
     {
         PreviewPlayer *playernew = new PreviewPlayer();
-        playernew->show();
         playernew->setVideofile(filename);
         playernew->playVideo();
+        playernew->exec();
     }
 
 
