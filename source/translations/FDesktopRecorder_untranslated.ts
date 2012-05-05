@@ -223,89 +223,72 @@ Hereafter the recording will start.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="272"/>
-        <location filename="../mainwindow.cpp" line="503"/>
-        <location filename="../mainwindow.cpp" line="515"/>
+        <location filename="../mainwindow.cpp" line="275"/>
+        <location filename="../mainwindow.cpp" line="506"/>
+        <location filename="../mainwindow.cpp" line="518"/>
         <source>Recording started</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="283"/>
+        <location filename="../mainwindow.cpp" line="286"/>
         <source>Please wait while saving the recording. Might take some time.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="327"/>
-        <location filename="../mainwindow.cpp" line="331"/>
+        <location filename="../mainwindow.cpp" line="330"/>
+        <location filename="../mainwindow.cpp" line="334"/>
         <source>Successfully finished recording</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="343"/>
-        <location filename="../mainwindow.cpp" line="408"/>
+        <location filename="../mainwindow.cpp" line="346"/>
+        <location filename="../mainwindow.cpp" line="411"/>
         <source>Latest Recording</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="350"/>
-        <location filename="../mainwindow.cpp" line="354"/>
+        <location filename="../mainwindow.cpp" line="353"/>
+        <location filename="../mainwindow.cpp" line="357"/>
         <source>Failed to start!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="355"/>
+        <location filename="../mainwindow.cpp" line="358"/>
         <source>View terminaloutput for more info.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="361"/>
+        <location filename="../mainwindow.cpp" line="364"/>
         <source>&lt;b&gt;Failed to start recording!&lt;/b&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="362"/>
+        <location filename="../mainwindow.cpp" line="365"/>
         <source>Press &lt;i&gt;&apos;show details&apos;&lt;/i&gt; to see console ouput.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="366"/>
+        <location filename="../mainwindow.cpp" line="369"/>
         <source>Failed to start recording!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="544"/>
-        <source> No recording in this session</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="545"/>
-        <source>You have not recorded anything yet, and therefore nothing to preview. 
-
-Record something and try again</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="549"/>
-        <source>No recording in this session</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="394"/>
+        <location filename="../mainwindow.cpp" line="397"/>
         <source>&amp;Show/Hide window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="398"/>
+        <location filename="../mainwindow.cpp" line="401"/>
         <source>&amp;Stop recording</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="402"/>
+        <location filename="../mainwindow.cpp" line="405"/>
         <source>&amp;Latest recording: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="410"/>
+        <location filename="../mainwindow.cpp" line="413"/>
         <source>&amp;Quit program</source>
         <translation type="unfinished"></translation>
     </message>
@@ -333,27 +316,27 @@ Record something and try again</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../previewplayer.ui" line="92"/>
+        <location filename="../previewplayer.ui" line="89"/>
         <source>Closes this window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../previewplayer.ui" line="95"/>
+        <location filename="../previewplayer.ui" line="92"/>
         <source>Close</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../previewplayer.ui" line="102"/>
+        <location filename="../previewplayer.ui" line="99"/>
         <source>Change the volume</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../previewplayer.ui" line="109"/>
+        <location filename="../previewplayer.ui" line="106"/>
         <source>Start/Pause playing your content</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../previewplayer.ui" line="112"/>
+        <location filename="../previewplayer.ui" line="109"/>
         <source>Play/Pause</source>
         <translation type="unfinished"></translation>
     </message>
@@ -497,33 +480,68 @@ Record something and try again</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="288"/>
+        <location filename="../settingsdialog.ui" line="335"/>
         <source>Advanced</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="296"/>
+        <location filename="../settingsdialog.ui" line="343"/>
         <source>-apre</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="306"/>
-        <location filename="../settingsdialog.ui" line="327"/>
+        <location filename="../settingsdialog.ui" line="353"/>
+        <location filename="../settingsdialog.ui" line="374"/>
         <source>Use</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="317"/>
+        <location filename="../settingsdialog.ui" line="364"/>
         <source>-vpre</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="417"/>
+        <location filename="../settingsdialog.ui" line="426"/>
+        <source>Preview player</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../settingsdialog.ui" line="466"/>
+        <source>Use the integrated player rather than the player chosen above</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../settingsdialog.ui" line="469"/>
+        <source>Use integrated player</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../settingsdialog.ui" line="489"/>
+        <source>Show a red rectangle, that surrounds the area which is been recorded.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../settingsdialog.ui" line="492"/>
+        <source>Enable/Disable</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../settingsdialog.ui" line="499"/>
+        <source>Show red rectangle</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../settingsdialog.ui" line="512"/>
+        <source>Single Window</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../settingsdialog.ui" line="537"/>
         <source>NOTE: Some changes might first apply after a restart of this program</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="354"/>
+        <location filename="../settingsdialog.ui" line="401"/>
         <source>Application Settings</source>
         <translation type="unfinished"></translation>
     </message>
@@ -563,50 +581,50 @@ Record something and try again</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="367"/>
+        <location filename="../settingsdialog.ui" line="414"/>
         <source>Application settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="379"/>
+        <location filename="../settingsdialog.ui" line="436"/>
         <source>Language</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="430"/>
+        <location filename="../settingsdialog.ui" line="550"/>
         <source>Save or decline changes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="443"/>
+        <location filename="../settingsdialog.ui" line="563"/>
         <source>Restores the settings to the defaults. Please note, these can not be undone!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="446"/>
+        <location filename="../settingsdialog.ui" line="566"/>
         <source>Restore to default. PLEASE NOTE: CAN NOT BE UNDONE!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="449"/>
+        <location filename="../settingsdialog.ui" line="569"/>
         <source>Restore to default</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settingsdialog.cpp" line="103"/>
-        <location filename="../settingsdialog.cpp" line="104"/>
+        <location filename="../settingsdialog.cpp" line="124"/>
+        <location filename="../settingsdialog.cpp" line="125"/>
         <source>Restore everything to default?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settingsdialog.cpp" line="105"/>
+        <location filename="../settingsdialog.cpp" line="126"/>
         <source>If you press Yes everything will be restored to default. 
 
 Be aware that this can NOT be undone.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settingsdialog.cpp" line="236"/>
+        <location filename="../settingsdialog.cpp" line="282"/>
         <source>Open Directory</source>
         <translation type="unfinished"></translation>
     </message>
@@ -615,8 +633,8 @@ Be aware that this can NOT be undone.</source>
     <name>SettingsManager</name>
     <message>
         <location filename="../settingsmanager.cpp" line="25"/>
-        <location filename="../settingsmanager.cpp" line="63"/>
-        <location filename="../settingsmanager.cpp" line="145"/>
+        <location filename="../settingsmanager.cpp" line="68"/>
+        <location filename="../settingsmanager.cpp" line="153"/>
         <source>recording</source>
         <translation type="unfinished"></translation>
     </message>
