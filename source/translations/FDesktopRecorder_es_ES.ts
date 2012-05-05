@@ -689,22 +689,22 @@ Grabe algo y pruebe otra vez</translation>
     <message>
         <location filename="../rubberband.cpp" line="84"/>
         <source>Scalability Failure Width</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../rubberband.cpp" line="85"/>
         <source>Frame Width must be a multiple of 2</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../rubberband.cpp" line="92"/>
         <source>Scalability Failure Height</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../rubberband.cpp" line="93"/>
         <source>Frame Height must be a multiple of 2</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
 </context>
 <context>
