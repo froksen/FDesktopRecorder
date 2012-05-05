@@ -17,6 +17,8 @@ public:
 
 private:
     Ui::AboutProg *ui;
+
+    void appendTranslators();
 };
 
 #endif // ABOUTPROG_H
