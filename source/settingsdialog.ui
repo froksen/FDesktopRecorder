@@ -54,8 +54,8 @@
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>451</width>
-            <height>402</height>
+            <width>469</width>
+            <height>440</height>
            </rect>
           </property>
           <attribute name="label">
@@ -327,8 +327,8 @@
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>451</width>
-            <height>402</height>
+            <width>127</width>
+            <height>64</height>
            </rect>
           </property>
           <attribute name="label">
@@ -462,6 +462,9 @@
          </item>
          <item row="2" column="2">
           <widget class="QCheckBox" name="checkBoxPreviewplayer">
+           <property name="toolTip">
+            <string>Use the integrated player rather than the player chosen above</string>
+           </property>
            <property name="text">
             <string>Use integrated player</string>
            </property>
@@ -482,6 +485,9 @@
          </item>
          <item row="4" column="2">
           <widget class="QCheckBox" name="checkBoxSinglewindowredrectangle">
+           <property name="toolTip">
+            <string>Show a red rectangle, that surrounds the area which is been recorded.</string>
+           </property>
            <property name="text">
             <string>Enable/Disable</string>
            </property>
