@@ -1003,7 +1003,7 @@ genstart af programmet</translation>
     <message>
         <location filename="../settingsdialog.ui" line="426"/>
         <source>Preview player</source>
-        <translation type="unfinished"></translation>
+        <translation>Preview afspiller</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="436"/>
@@ -1013,32 +1013,32 @@ genstart af programmet</translation>
     <message>
         <location filename="../settingsdialog.ui" line="466"/>
         <source>Use the integrated player rather than the player chosen above</source>
-        <translation type="unfinished"></translation>
+        <translation>Brug den indbyggede  afspiller fremfor afspilleren som er valgt ovenfor</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="469"/>
         <source>Use integrated player</source>
-        <translation type="unfinished"></translation>
+        <translation>Brug den indbyggede afspiller</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="489"/>
         <source>Show a red rectangle, that surrounds the area which is been recorded.</source>
-        <translation type="unfinished"></translation>
+        <translation>Vis et rødt rektangel der omringer området som bliver optaget.</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="492"/>
         <source>Enable/Disable</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktivér/Deaktivér</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="499"/>
         <source>Show red rectangle</source>
-        <translation type="unfinished"></translation>
+        <translation>Vis rødt rektangel</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="512"/>
         <source>Single Window</source>
-        <translation type="unfinished">Enkelt vindue</translation>
+        <translation>Enkelt vindue</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="550"/>
