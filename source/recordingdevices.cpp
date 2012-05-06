@@ -15,8 +15,6 @@ void RecordingDevices::getRecorddevices(){
     QString p_stdout = p.readAllStandardOutput();
     QString p_stderr = p.readAllStandardError();
 
-    qDebug() << "Record devices found:";
-
     QTextStream in(&p_stdout);
        while ( !in.atEnd() )
        {
@@ -56,11 +54,14 @@ void RecordingDevices::getRecorddevices(){
 
               CardDesc = "(" + CardHW + ") " + CardDesc;
               RecordDeviceDesc << CardDesc;
-
-              qDebug() << "-" <<CardDesc;
           }
        }
 
        RecordDeviceDesc << trUtf8("Pulse Audio (might not work)");
        RecordDeviceHW << "pulse";
+
+       qDebug() << "Record devices found:";
+       foreach(QString device, RecordDeviceDesc){
+           qDebug() << "-" << device;
+       }
 }
