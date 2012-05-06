@@ -24,20 +24,40 @@ void RecordingDevices::getRecorddevices(){
           if(line.left(4) == "card"){
               QString orgline = line;
 
-              // Gets the HW name
+              // Gets the cardnumber
               QString CardHW;
               CardHW = line.remove(6,100);
               CardHW = line.remove(0,5);
-              CardHW = "hw:" + CardHW +",0";
+
+              //Gets the devicenumber
+              QRegExp devicepattern("(device\\s\\d)");
+              QString devicenumber;
+
+              int pos = devicepattern.indexIn(orgline);
+              if (pos > -1) {
+                  devicenumber = devicepattern.cap(1);
+
+                  QRegExp patternDVremove ("device\\s");
+                  devicenumber = devicenumber.remove(patternDVremove);
+              }
+
+
+              //Adding Cardnumber and devicenumber
+              CardHW = "hw:" + CardHW +","+devicenumber;
               RecordDeviceHW << CardHW;
 
               //Gets the Card Description
+              QRegExp patternCard ("^card\\s\\d:\\s");
+              QRegExp patternDV2remove ("device\\s\\d..");
+
               QString CardDesc;
-              CardDesc = orgline.remove(0,8);
+              CardDesc = orgline.remove(patternCard);
+              CardDesc = CardDesc.remove(patternDV2remove);
+
               CardDesc = "(" + CardHW + ") " + CardDesc;
               RecordDeviceDesc << CardDesc;
 
-              qDebug() << CardHW << "-" << CardDesc;
+              qDebug() << "-" <<CardDesc;
           }
        }
 
