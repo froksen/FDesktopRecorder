@@ -6,6 +6,7 @@
 - Fixed: In preview player the content is now always placed in the middle of the widget
 - Fixed: You can now only open one "preview player" at the time
 - Changed: Now uses icons from your KDE/GTK theme in the toolbar and systemtray.
+- Changed: Kaffeine is now the default player for previewing, until the integrated player gets more mature.
 - Other minor changes.
 
 * Wed Apr 11 2012
