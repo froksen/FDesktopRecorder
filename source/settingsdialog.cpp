@@ -12,7 +12,6 @@ SettingsDialog::SettingsDialog(QWidget *parent) :
 {
     ui->setupUi(this);
     qDebug() << "Settingsdialog: Reading settings";
-    settings.readAll();
     readSettings();
 
     on_checkBoxMicMute_clicked();    
@@ -156,6 +155,10 @@ void SettingsDialog::on_pushButtonRestore_clicked()
 
 void SettingsDialog::readSettings()
 {
+ //TODO: Merge settings.readAll() and recordingdevices.getRecorddevices() better together, so
+ // they make more sense.
+
+    settings.readAll();
 // -----------------SECTION: Recordingdevice------------------------------
     //Refreshes the list
     recordingdevices.getRecorddevices();

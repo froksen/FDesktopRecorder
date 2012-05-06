@@ -31,7 +31,7 @@ void SettingsManager::setDefaults()
     latestrecording = "Unknown";
 
     previewplayer = "kaffeine";
-    previewplayerintegrated = "true";
+    previewplayerintegrated = "false";
 
     SingleWindow_redrectangle = "true";
 
@@ -159,7 +159,7 @@ void SettingsManager::readAll()
 
     settings.beginGroup("misc");
     previewplayer = settings.value("previewplayer","kaffeine").toString();
-    previewplayerintegrated = settings.value("previewplayerintegrated","true").toString();
+    previewplayerintegrated = settings.value("previewplayerintegrated","false").toString();
     SingleWindow_redrectangle = settings.value("Singlewindow_redrectangle","true").toString();
     latestrecording = settings.value("latestrecording","Unknown").toString();
     settings.endGroup();
