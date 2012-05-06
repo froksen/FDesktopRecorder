@@ -134,7 +134,6 @@ void SettingsDialog::on_pushButtonRestore_clicked()
             {
                 qDebug() << "Settingsdialog: Resetting settings";
                 ui->checkBoxMicMute->setChecked(1);
-                ui->comboBoxrecording->setEnabled(0);
 
                 settings.setDefaults();
                 readSettings();
