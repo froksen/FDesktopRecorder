@@ -7,6 +7,7 @@ include in future releases.
 
 - Make it possible to record a custom area of the screen
 - Add so you can record the audiooutput (the sound from the desktop)
+- Make it possible to add "macroes" to the basename, like date and time
 
 ..::Done::..
 - Make it possible to see a preview within the program
