@@ -11,6 +11,8 @@
 #include <knotification.h>
 #include <QPainter>
 #include "rubberband.h"
+#include <QTime>
+#include <QTimer>
 
 namespace Ui {
     class MainWindow;
@@ -47,6 +49,9 @@ private slots:
 
     void on_actionPreviewrecording_triggered();
 
+    //The stopwatch
+    void updateStopwatch();
+
 private:
     Ui::MainWindow *ui;
 
@@ -81,6 +86,11 @@ private:
 
     //KNotification
     KNotification *knotification;
+
+    //The stopwatch
+    int stopwatchtimeest;
+    QTime stopwatchtime;
+    QTimer *stopwatchtimer;
 
 
 };

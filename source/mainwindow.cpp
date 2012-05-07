@@ -273,6 +273,12 @@ void MainWindow::on_pushButtonStartrecord_clicked()
 
    //StatusBar
    ui->statusBar->showMessage(trUtf8("Recording started") + " (" + filename + ")");
+
+   stopwatchtimer = new QTimer(this);
+   stopwatchtimeest = 0;
+   connect(stopwatchtimer,SIGNAL(timeout()),this,SLOT(updateStopwatch()));
+   stopwatchtimer->setInterval(1000);
+   stopwatchtimer->start();
 }
 
 
@@ -293,6 +299,10 @@ void MainWindow::on_pushButtonStoprecord_clicked()
 void MainWindow::onProcessFinished(int Exitcode)
 {  
     //------------------SECTION: COMMON---------------------
+    //Stopwatch
+    stopwatchtimer->stop();
+    delete stopwatchtimer;
+
     //StatusBar:
     ui->statusBar->setUpdatesEnabled(1);
 
@@ -576,4 +586,16 @@ void MainWindow::on_actionPreviewrecording_triggered()
     }
 
 
+}
+
+void MainWindow::updateStopwatch()
+{
+    stopwatchtimeest +=1;
+    QTime newtime;
+
+    newtime = stopwatchtime.addSecs(stopwatchtimeest) ;
+    QString text = newtime.toString("hh:mm:ss");
+    qDebug() << "Stopwatch:" << text;
+
+    setWindowTitle(trUtf8("FDesktopRecorder") + QString(" (%1)").arg(text));
 }
