@@ -2,6 +2,8 @@
 - Added: When recording a single window, there will be a red rectangle arround this. Created by Juergen Heinemann (Undefined).
 - Added: Tooltips to the preview player
 - Added: Possible to use another player for previewing your recordings, like Kaffeine or vlc.
+- Added: Stopwatch when recording, so you can see how long time how have been recording
+- Added: Size of recording to post recording text. So you can see how big your recording is
 - Fixed: Text/Tooltips in Settingsdialog should now make more sense.
 - Fixed: In preview player the content is now always placed in the middle of the widget
 - Fixed: You can now only open one "preview player" at the time
