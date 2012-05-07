@@ -323,11 +323,37 @@ void MainWindow::onProcessFinished(int Exitcode)
 
 
     //------------------SECTION: SUCCESS OR UNSUCCESS---------------------
+    int B = 1; //byte
+    int KB = 1024 * B; //kilobyte
+    int MB = 1024 * KB; //megabyte
+    int GB = 1024 * MB; //gigabyte
+    QFileInfo filenameInfo (filename);
+    double filesize = filenameInfo.size();
+    qDebug() << filenameInfo.size();
+    QString filesizestring;
+
+    if(filesize > GB)
+    {
+        filesizestring =  QString("%1 GB").arg(filesize/GB);
+    }
+    else if(filesize > MB)
+    {
+        filesizestring =  QString("%1 MB").arg(filesize/MB);
+    }
+    else if(filesize > KB)
+    {
+        filesizestring =  QString("%1 KB").arg(filesize/KB);
+    }
+    else
+    {
+        filesizestring =  QString("%1 K").arg(filesize);
+    }
+
     //Recording: Successful
     if(Exitcode == 0)
     {
         //StatusBar
-        ui->statusBar->showMessage(trUtf8("Successfully finished recording") + " (" + filename + ")");
+        ui->statusBar->showMessage(trUtf8("Successfully finished recording") + " (" + trUtf8("Size") + ": " + filesizestring + " - " + filename + ")");
 
         //Knotification
         knotification = new KNotification("doneRecording");
@@ -503,7 +529,7 @@ void MainWindow::readstderr()
     //If message in statusbar is changed, then this will change it back to the information, so the user knows that the program is recording.
     if (ui->statusBar->currentMessage().isEmpty())
     {
-         ui->statusBar->showMessage(trUtf8("Recording started") + " (" + filename + ")");
+        ui->statusBar->showMessage(trUtf8("Recording started") + " (" +filename + ")");
     }
 
 }
