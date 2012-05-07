@@ -475,8 +475,8 @@ Seleccione mediante la cruz la ventana que quiere grabar.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="275"/>
-        <location filename="../mainwindow.cpp" line="506"/>
-        <location filename="../mainwindow.cpp" line="518"/>
+        <location filename="../mainwindow.cpp" line="532"/>
+        <location filename="../mainwindow.cpp" line="544"/>
         <source>Recording started</source>
         <translation>Grabación iniciada</translation>
     </message>
@@ -486,35 +486,40 @@ Seleccione mediante la cruz la ventana que quiere grabar.</translation>
         <translation>Esperar mientras se guarda la grabación. Puede tomar algo de tiempo...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="330"/>
-        <location filename="../mainwindow.cpp" line="334"/>
+        <location filename="../mainwindow.cpp" line="356"/>
+        <location filename="../mainwindow.cpp" line="360"/>
         <source>Successfully finished recording</source>
         <translation>Grabación terminada correctamente</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="346"/>
-        <location filename="../mainwindow.cpp" line="411"/>
+        <location filename="../mainwindow.cpp" line="356"/>
+        <source>Size</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="372"/>
+        <location filename="../mainwindow.cpp" line="437"/>
         <source>Latest Recording</source>
         <translation>Ultima grabación</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="353"/>
-        <location filename="../mainwindow.cpp" line="357"/>
+        <location filename="../mainwindow.cpp" line="379"/>
+        <location filename="../mainwindow.cpp" line="383"/>
         <source>Failed to start!</source>
         <translation>Fallo al iniciar!</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="358"/>
+        <location filename="../mainwindow.cpp" line="384"/>
         <source>View terminaloutput for more info.</source>
         <translation>Ver la salida de terminal para mas información.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="364"/>
+        <location filename="../mainwindow.cpp" line="390"/>
         <source>&lt;b&gt;Failed to start recording!&lt;/b&gt;</source>
         <translation>&lt;b&gt;Fallo al iniciar la grabación!&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="365"/>
+        <location filename="../mainwindow.cpp" line="391"/>
         <source>Press &lt;i&gt;&apos;show details&apos;&lt;/i&gt; to see console ouput.</source>
         <translation>Pulse &lt;i&gt;&apos;Detalles&apos;&lt;/i&gt; para ver la salida de terminal.</translation>
     </message>
@@ -539,7 +544,7 @@ Grabe algo y pruebe otra vez</translation>
         <translation type="obsolete">Fallo de grabación!</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="369"/>
+        <location filename="../mainwindow.cpp" line="395"/>
         <source>Failed to start recording!</source>
         <translation>Fallo de grabación!</translation>
     </message>
@@ -548,17 +553,17 @@ Grabe algo y pruebe otra vez</translation>
         <translation type="obsolete">Pulse &quot;Detalles&quot; para ver la salida de consola.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="397"/>
+        <location filename="../mainwindow.cpp" line="423"/>
         <source>&amp;Show/Hide window</source>
         <translation>&amp;Mostrar/Ocultar ventana</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="401"/>
+        <location filename="../mainwindow.cpp" line="427"/>
         <source>&amp;Stop recording</source>
         <translation>&amp;Parar grabación</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="405"/>
+        <location filename="../mainwindow.cpp" line="431"/>
         <source>&amp;Latest recording: </source>
         <translation>&amp;Última grabación:</translation>
     </message>
@@ -567,7 +572,7 @@ Grabe algo y pruebe otra vez</translation>
         <translation type="obsolete">última grabación:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="413"/>
+        <location filename="../mainwindow.cpp" line="439"/>
         <source>&amp;Quit program</source>
         <translation>&amp;Salir</translation>
     </message>
@@ -720,7 +725,7 @@ Grabe algo y pruebe otra vez</translation>
 <context>
     <name>RecordingDevices</name>
     <message>
-        <location filename="../recordingdevices.cpp" line="44"/>
+        <location filename="../recordingdevices.cpp" line="60"/>
         <source>Pulse Audio (might not work)</source>
         <translation>Pulse Audio (puede que no funcione)</translation>
     </message>
@@ -1098,13 +1103,13 @@ Grabe algo y pruebe otra vez</translation>
         <translation type="obsolete">grabación</translation>
     </message>
     <message>
+        <location filename="../settingsdialog.cpp" line="123"/>
         <location filename="../settingsdialog.cpp" line="124"/>
-        <location filename="../settingsdialog.cpp" line="125"/>
         <source>Restore everything to default?</source>
         <translation>Restaurar todo a predeterminados?</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.cpp" line="126"/>
+        <location filename="../settingsdialog.cpp" line="125"/>
         <source>If you press Yes everything will be restored to default. 
 
 Be aware that this can NOT be undone.</source>
@@ -1121,7 +1126,7 @@ Tenga cuidado por que NO se puede deshacer.</translation>
 Tenga cuidado por que NO se puede deshacer.</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.cpp" line="282"/>
+        <location filename="../settingsdialog.cpp" line="284"/>
         <source>Open Directory</source>
         <translation>Abrir carpeta</translation>
     </message>

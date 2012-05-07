@@ -500,8 +500,8 @@ Herefter vil optagelsen påbegynde.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="275"/>
-        <location filename="../mainwindow.cpp" line="506"/>
-        <location filename="../mainwindow.cpp" line="518"/>
+        <location filename="../mainwindow.cpp" line="532"/>
+        <location filename="../mainwindow.cpp" line="544"/>
         <source>Recording started</source>
         <translation>Optagelse startet</translation>
     </message>
@@ -511,35 +511,40 @@ Herefter vil optagelsen påbegynde.</translation>
         <translation>Vent venligst mens optagelsen bliver gemt. Dette kan tage lidt tid.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="330"/>
-        <location filename="../mainwindow.cpp" line="334"/>
+        <location filename="../mainwindow.cpp" line="356"/>
+        <location filename="../mainwindow.cpp" line="360"/>
         <source>Successfully finished recording</source>
         <translation>Afsluttede optagelsen korrekt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="346"/>
-        <location filename="../mainwindow.cpp" line="411"/>
+        <location filename="../mainwindow.cpp" line="356"/>
+        <source>Size</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="372"/>
+        <location filename="../mainwindow.cpp" line="437"/>
         <source>Latest Recording</source>
         <translation>Seneste optagelse</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="353"/>
-        <location filename="../mainwindow.cpp" line="357"/>
+        <location filename="../mainwindow.cpp" line="379"/>
+        <location filename="../mainwindow.cpp" line="383"/>
         <source>Failed to start!</source>
         <translation>Opstarten fejlede!</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="358"/>
+        <location filename="../mainwindow.cpp" line="384"/>
         <source>View terminaloutput for more info.</source>
         <translation>Vis terminal output for mere info.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="364"/>
+        <location filename="../mainwindow.cpp" line="390"/>
         <source>&lt;b&gt;Failed to start recording!&lt;/b&gt;</source>
         <translation>&lt;b&gt;Optagelse fejlede!&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="365"/>
+        <location filename="../mainwindow.cpp" line="391"/>
         <source>Press &lt;i&gt;&apos;show details&apos;&lt;/i&gt; to see console ouput.</source>
         <translation>Tryk på &lt;i&gt;&apos;show details&apos;&lt;/i&gt; for at se terminal output.</translation>
     </message>
@@ -564,7 +569,7 @@ Optag noget og prøv igen</translation>
         <translation type="obsolete">Optagelse fejlede!</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="369"/>
+        <location filename="../mainwindow.cpp" line="395"/>
         <source>Failed to start recording!</source>
         <translation>Optagelse fejlede!</translation>
     </message>
@@ -573,17 +578,17 @@ Optag noget og prøv igen</translation>
         <translation type="obsolete">Tryk på &quot;show details&quot; for at se konsol ouput.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="397"/>
+        <location filename="../mainwindow.cpp" line="423"/>
         <source>&amp;Show/Hide window</source>
         <translation>&amp;Vis/Gem vindue</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="401"/>
+        <location filename="../mainwindow.cpp" line="427"/>
         <source>&amp;Stop recording</source>
         <translation>&amp;Stop optagelse</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="405"/>
+        <location filename="../mainwindow.cpp" line="431"/>
         <source>&amp;Latest recording: </source>
         <translation>&amp;Seneste optagelse:</translation>
     </message>
@@ -592,7 +597,7 @@ Optag noget og prøv igen</translation>
         <translation type="obsolete">Seneste optagelse:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="413"/>
+        <location filename="../mainwindow.cpp" line="439"/>
         <source>&amp;Quit program</source>
         <translation>&amp;Afslut program</translation>
     </message>
@@ -745,7 +750,7 @@ Optag noget og prøv igen</translation>
 <context>
     <name>RecordingDevices</name>
     <message>
-        <location filename="../recordingdevices.cpp" line="44"/>
+        <location filename="../recordingdevices.cpp" line="60"/>
         <source>Pulse Audio (might not work)</source>
         <translation>Pulse Audio (Virker måske ikke)</translation>
     </message>
@@ -1124,13 +1129,13 @@ genstart af programmet</translation>
         <translation type="obsolete">optagelse</translation>
     </message>
     <message>
+        <location filename="../settingsdialog.cpp" line="123"/>
         <location filename="../settingsdialog.cpp" line="124"/>
-        <location filename="../settingsdialog.cpp" line="125"/>
         <source>Restore everything to default?</source>
         <translation>Gendan alt tilbage til standard?</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.cpp" line="126"/>
+        <location filename="../settingsdialog.cpp" line="125"/>
         <source>If you press Yes everything will be restored to default. 
 
 Be aware that this can NOT be undone.</source>
@@ -1147,7 +1152,7 @@ Vær obmærksom på at dette IKKE kan tilbage gøres.</translation>
  Vær opmærksom på at dette ikke kan fortrydes.</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.cpp" line="282"/>
+        <location filename="../settingsdialog.cpp" line="284"/>
         <source>Open Directory</source>
         <translation>Åben mappe</translation>
     </message>
