@@ -1,4 +1,4 @@
-*
+* Thu May 10 2012
 - Added: When recording a single window, there will be a red rectangle arround this. Created by Juergen Heinemann (Undefined).
 - Added: Tooltips to the preview player
 - Added: Possible to use another player for previewing your recordings, like Kaffeine or vlc.
