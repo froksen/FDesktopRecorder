@@ -9,6 +9,11 @@
         <translation>Sobre kTffmpeqQt</translation>
     </message>
     <message>
+        <location filename="../aboutprog.ui" line="34"/>
+        <source>About FDesktopRecorder</source>
+        <translation>Acerca de FDesktopRecorder</translation>
+    </message>
+    <message>
         <location filename="../aboutprog.ui" line="48"/>
         <source>About</source>
         <translation>Acerca de</translation>
@@ -27,7 +32,18 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Based on:&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;A ffmpeq script by Peter Lybeth from the danish GNU/Linux show &amp;quot;Kanal Tux&amp;quot;: &lt;a href=&quot;http://www.kanaltux.dk&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0057ae;&quot;&gt;http://www.kanaltux.dk&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Licencia: &lt;/span&gt;GPLv2 - &lt;a href=&quot;http://www.gnu.org/licenses/gpl-2.0.html&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0057ae;&quot;&gt;http://www.gnu.org/licenses/gpl-2.0.html&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Creado por:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Nickname: Froksen&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Navn: Ole Holm Frandsen&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Basado en:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Un script ffmpeg de Peter Lybeth, del programa danes &amp;quot;Kanal Tux&amp;quot;: &lt;a href=&quot;http://www.kanaltux.dk&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0057ae;&quot;&gt;http://www.kanaltux.dk&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../aboutprog.ui" line="88"/>
@@ -39,7 +55,14 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Translated by&lt;/span&gt;:&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;FDesktopRecorder está traducido en algunos idiomas. Si quieres traducirlo a tu idioma, puedes contactar conmigo en opendesktop.org, enviando un mensaje.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Traducido por&lt;/span&gt;:&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
@@ -98,24 +121,19 @@ p, li { white-space: pre-wrap; }
         <translation>Cerrar</translation>
     </message>
     <message>
-        <location filename="../aboutprog.ui" line="34"/>
-        <source>About FDesktopRecorder</source>
-        <translation>Acerca de FDesktopRecorder</translation>
-    </message>
-    <message>
         <location filename="../aboutprog.cpp" line="21"/>
         <source>Danish - Ole &apos;Froksen&apos; Holm Frandsen</source>
-        <translation type="unfinished"></translation>
+        <translation>Danés - Ole &apos;Froksen&apos; Holm Frandsen</translation>
     </message>
     <message utf8="true">
         <location filename="../aboutprog.cpp" line="22"/>
         <source>German - Chris &apos;saftsocken&apos; Räss</source>
-        <translation type="unfinished"></translation>
+        <translation>Alemán - Chris &apos;saftsocken&apos; Räss</translation>
     </message>
     <message>
         <location filename="../aboutprog.cpp" line="23"/>
         <source>Spanish - Javi</source>
-        <translation type="unfinished"></translation>
+        <translation>Español - JaviDLF</translation>
     </message>
 </context>
 <context>
@@ -170,6 +188,11 @@ p, li { white-space: pre-wrap; }
         <translation>Captura el escritorio completo</translation>
     </message>
     <message>
+        <location filename="../mainwindow.ui" line="42"/>
+        <source>Entire screen</source>
+        <translation>Pantalla completa</translation>
+    </message>
+    <message>
         <location filename="../mainwindow.ui" line="55"/>
         <source>When you start the recording, you will have to choose the window that you want to record</source>
         <extracomment>dsfdsfds</extracomment>
@@ -185,6 +208,11 @@ p, li { white-space: pre-wrap; }
         <translation type="obsolete">Ventana única</translation>
     </message>
     <message>
+        <location filename="../mainwindow.ui" line="61"/>
+        <source>Single Window</source>
+        <translation>Ventana única</translation>
+    </message>
+    <message>
         <location filename="../mainwindow.ui" line="71"/>
         <source>Start a recording</source>
         <translation>Iniciar grabación</translation>
@@ -193,6 +221,11 @@ p, li { white-space: pre-wrap; }
         <location filename="../mainwindow.ui" line="74"/>
         <source>Record</source>
         <translation>Grabar</translation>
+    </message>
+     <message>
+        <location filename="../mainwindow.ui" line="94"/>
+        <source>Stop the recording</source>
+        <translation>Parar la grabación</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="97"/>
@@ -215,14 +248,35 @@ p, li { white-space: pre-wrap; }
         <translation>Silenciar micrófono</translation>
     </message>
     <message>
+        <location filename="../mainwindow.ui" line="177"/>
+        <source>About</source>
+        <translation>Acerca de</translation>
+    </message>
+    <message>
         <location filename="../mainwindow.ui" line="180"/>
         <source>Shows information about this program</source>
         <translation>Muestra información sobre este programa</translation>
+    </message>
+     <message>
+        <location filename="../mainwindow.ui" line="183"/>
+        <source>About FDesktopRecorder</source>
+        <translation>Acerca de FDesktopRecorder</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="188"/>
+        <location filename="../mainwindow.ui" line="194"/>
+        <source>Settings</source>
+        <translation>Opciones</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="191"/>
         <source>Let you change an amount of different settings like recording framerate etc.</source>
         <translation>Permite cambiar opciones diferentes como la grabación de imágenes por segundo, etc.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="199"/>
+        <source>Console</source>
+        <translation>Consola</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="202"/>
@@ -495,7 +549,7 @@ Seleccione mediante la cruz la ventana que quiere grabar.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="366"/>
         <source>Size</source>
-        <translation type="unfinished"></translation>
+        <translation>Tamaño</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="382"/>
@@ -685,12 +739,12 @@ Grabe algo y pruebe otra vez</translation>
     <message>
         <location filename="../previewplayer.ui" line="57"/>
         <source>Seek a specific position of your movie.</source>
-        <translation type="unfinished"></translation>
+        <translation>Buscar posicion especifica en el video</translation>
     </message>
     <message>
         <location filename="../previewplayer.ui" line="66"/>
         <source>Stop playing your content</source>
-        <translation type="unfinished"></translation>
+        <translation>Parar la reproducción</translation>
     </message>
     <message>
         <location filename="../previewplayer.ui" line="69"/>
@@ -700,7 +754,7 @@ Grabe algo y pruebe otra vez</translation>
     <message>
         <location filename="../previewplayer.ui" line="89"/>
         <source>Closes this window</source>
-        <translation type="unfinished"></translation>
+        <translation>Cerrar la ventana</translation>
     </message>
     <message>
         <location filename="../previewplayer.ui" line="92"/>
@@ -710,12 +764,12 @@ Grabe algo y pruebe otra vez</translation>
     <message>
         <location filename="../previewplayer.ui" line="99"/>
         <source>Change the volume</source>
-        <translation type="unfinished"></translation>
+        <translation>Cambiar el volumen</translation>
     </message>
     <message>
         <location filename="../previewplayer.ui" line="106"/>
         <source>Start/Pause playing your content</source>
-        <translation type="unfinished"></translation>
+        <translation>Iniciar/Parar la reproducción</translation>
     </message>
     <message>
         <location filename="../previewplayer.ui" line="109"/>
@@ -989,6 +1043,41 @@ Grabe algo y pruebe otra vez</translation>
         <source>-vpre</source>
         <translation></translation>
     </message>
+        <message>
+        <location filename="../settingsdialog.ui" line="426"/>
+        <source>Preview player</source>
+        <translation>Previsualizar</translation>
+    </message>
+    <message>
+        <location filename="../settingsdialog.ui" line="466"/>
+        <source>Use the integrated player rather than the player chosen above</source>
+        <translation>Usar el reproductor integrado en lugar del indicado</translation>
+    </message>
+    <message>
+        <location filename="../settingsdialog.ui" line="469"/>
+        <source>Use integrated player</source>
+        <translation>Usar el reproductor integrado</translation>
+    </message>
+    <message>
+        <location filename="../settingsdialog.ui" line="489"/>
+        <source>Show a red rectangle, that surrounds the area which is been recorded.</source>
+        <translation>Mostrar un rectangulo rojo para marcar la zona de grabación</translation>
+    </message>
+    <message>
+        <location filename="../settingsdialog.ui" line="492"/>
+        <source>Enable/Disable</source>
+        <translation>Activado/Desactivado</translation>
+    </message>
+    <message>
+        <location filename="../settingsdialog.ui" line="499"/>
+        <source>Show red rectangle</source>
+        <translation>Mostrar rectangulo rojo</translation>
+    </message>
+    <message>
+        <location filename="../settingsdialog.ui" line="512"/>
+        <source>Single Window</source>
+        <translation>Ventana única</translation>
+    </message>    
     <message>
         <location filename="../settingsdialog.ui" line="537"/>
         <source>NOTE: Some changes might first apply after a restart of this program</source>
@@ -1002,37 +1091,37 @@ Grabe algo y pruebe otra vez</translation>
     <message>
         <location filename="../settingsdialog.ui" line="119"/>
         <source>Changes the number of audiochannels used. To record in mono set to 1, for stereo set to 2 etc.</source>
-        <translation type="unfinished"></translation>
+        <translation>Cambiar el número de canales de grabación. Mono 1 canal, estereo 2 canales</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="149"/>
         <source>Choose a basename for your recordings.</source>
-        <translation type="unfinished"></translation>
+        <translation>Elija el nombre base para las grabaciones</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="215"/>
         <source>Choose the microphone you want to use.</source>
-        <translation type="unfinished"></translation>
+        <translation>Elija el microfono que desea usar</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="224"/>
         <source>Changes the sound architecture used in the recording. Thjs can be alsa, oss etc.</source>
-        <translation type="unfinished"></translation>
+        <translation>Cambiar el sistema de sonido. Puede ser ALSA, OSS, etc...</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="231"/>
         <source>Sound architecture</source>
-        <translation type="unfinished"></translation>
+        <translation>Sistema de sonido</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="238"/>
         <source>The microphone is muted as default on startup</source>
-        <translation type="unfinished"></translation>
+        <translation>El microfono está silenciado por defecto al iniciar</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="241"/>
         <source>Mute on startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Silencio al iniciar</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="414"/>
@@ -1042,7 +1131,7 @@ Grabe algo y pruebe otra vez</translation>
     <message>
         <location filename="../settingsdialog.ui" line="426"/>
         <source>Preview player</source>
-        <translation type="unfinished"></translation>
+        <translation>Previsualizar</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="436"/>
@@ -1052,32 +1141,32 @@ Grabe algo y pruebe otra vez</translation>
     <message>
         <location filename="../settingsdialog.ui" line="466"/>
         <source>Use the integrated player rather than the player chosen above</source>
-        <translation type="unfinished"></translation>
+        <translation>Use el reproductor integrado en lugar de el indicado</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="469"/>
         <source>Use integrated player</source>
-        <translation type="unfinished"></translation>
+        <translation>Use el reproductor integrado</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="489"/>
         <source>Show a red rectangle, that surrounds the area which is been recorded.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar un rectangulo rojo para marcar la zona de grabación</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="492"/>
         <source>Enable/Disable</source>
-        <translation type="unfinished"></translation>
+        <translation>Activado/Desactivado</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="499"/>
         <source>Show red rectangle</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar rectangulo rojo</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="512"/>
         <source>Single Window</source>
-        <translation type="unfinished">Ventana única</translation>
+        <translation>Ventana única</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="550"/>
