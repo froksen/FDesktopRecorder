@@ -1,7 +1,7 @@
 #!/usr/bin/env xdg-open
 [Desktop Entry]
 Exec=FDesktopRecorder
-Icon=/usr/share/pixmaps/fdesktoprecorder.png
+Icon=fdesktoprecorder
 Terminal=false
 Type=Application
 
