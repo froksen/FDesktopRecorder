@@ -65,6 +65,6 @@ target_link_libraries ( FDesktopRecorder  ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRAR
 
 # add the install targets
 install (TARGETS FDesktopRecorder DESTINATION bin)
-install( FILES ../knotification/FDesktopRecorder.notifyrc DESTINATION /usr/share/kde4/apps/FDesktopRecorder)
-install( FILES ../Desktop/FDesktopRecorder.desktop DESTINATION /usr/share/applications/)
-install( FILES ../Desktop/fdesktoprecorder.png DESTINATION /usr/share/pixmaps/)
+install( FILES ../knotification/FDesktopRecorder.notifyrc DESTINATION share/kde4/apps/FDesktopRecorder)
+install( FILES ../Desktop/FDesktopRecorder.desktop DESTINATION share/applications/)
+install( FILES ../Desktop/fdesktoprecorder.png DESTINATION share/pixmaps/)
