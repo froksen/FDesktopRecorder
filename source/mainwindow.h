@@ -10,7 +10,7 @@
 #include <settingsmanager.h>
 #include <knotification.h>
 #include <QPainter>
-#include "rubberband.h"
+#include "utils/rubberband.h"
 #include <QTime>
 #include <QTimer>
 

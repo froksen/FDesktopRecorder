@@ -24,7 +24,7 @@ set ( FDesktopRecorder_SRCS
 	process.cpp
 	settingsmanager.cpp
 	previewplayer.cpp
-	rubberband.cpp
+	utils/rubberband.cpp
 	)
 
 set ( FDesktopRecorder_UIS
@@ -56,7 +56,7 @@ set ( FDesktopRecorder_MOCS
 	process.h
 	settingsmanager.h
 	previewplayer.h
-	rubberband.h
+	utils/rubberband.h
 	)
 QT4_WRAP_CPP(MOCS ${FDesktopRecorder_MOCS})
 
