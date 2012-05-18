@@ -18,7 +18,7 @@ set ( FDesktopRecorder_SRCS
 	main.cpp
 	mainwindow.cpp
 	dialogs/about/aboutprog.cpp
-	windowgrapper.cpp
+	utils/windowgrapper.cpp
 	module/recordingdevices.cpp
 	dialogs/settingsdialog/settingsdialog.cpp
 	module/process.cpp
@@ -50,7 +50,7 @@ QT4_ADD_TRANSLATION(TRS ${FDesktopRecorder_TRS})
 set ( FDesktopRecorder_MOCS
 	mainwindow.h
 	dialogs/about/aboutprog.h
-	windowgrapper.h
+	utils/windowgrapper.h
 	module/recordingdevices.h
 	dialogs/settingsdialog/settingsdialog.h
 	module/process.h
