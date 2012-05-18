@@ -1,6 +1,6 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-#include <aboutprog.h>
+#include <dialogs/about/aboutprog.h>
 #include <windowgrapper.h>
 #include <dialogs/settingsdialog/settingsdialog.h>
 #include <QtGui>
