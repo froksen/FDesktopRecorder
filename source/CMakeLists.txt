@@ -19,9 +19,9 @@ set ( FDesktopRecorder_SRCS
 	mainwindow.cpp
 	aboutprog.cpp
 	windowgrapper.cpp
-	recordingdevices.cpp
+	module/recordingdevices.cpp
 	settingsdialog.cpp
-	process.cpp
+	module/process.cpp
 	settingsmanager.cpp
 	previewplayer.cpp
 	utils/rubberband.cpp
@@ -51,9 +51,9 @@ set ( FDesktopRecorder_MOCS
 	mainwindow.h
 	aboutprog.h
 	windowgrapper.h
-	recordingdevices.h
+	module/recordingdevices.h
 	settingsdialog.h
-	process.h
+	module/process.h
 	settingsmanager.h
 	previewplayer.h
 	utils/rubberband.h

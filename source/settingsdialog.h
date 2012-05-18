@@ -3,7 +3,7 @@
 
 #include <QDialog>
 #include <settingsmanager.h>
-#include <recordingdevices.h>
+#include <module/recordingdevices.h>
 
 namespace Ui {
     class SettingsDialog;

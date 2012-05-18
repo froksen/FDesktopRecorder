@@ -6,7 +6,7 @@
 #include <QtGui>
 #include <QtCore>
 #include <QMainWindow>
-#include <process.h>
+#include <module/process.h>
 #include <settingsmanager.h>
 #include <knotification.h>
 #include <QPainter>
