@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 #include <aboutprog.h>
 #include <windowgrapper.h>
-#include <settingsdialog.h>
+#include <dialogs/settingsdialog/settingsdialog.h>
 #include <QtGui>
 #include <QtCore>
 #include <QMainWindow>

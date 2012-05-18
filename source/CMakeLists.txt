@@ -20,7 +20,7 @@ set ( FDesktopRecorder_SRCS
 	aboutprog.cpp
 	windowgrapper.cpp
 	module/recordingdevices.cpp
-	settingsdialog.cpp
+	dialogs/settingsdialog/settingsdialog.cpp
 	module/process.cpp
 	settingsmanager.cpp
 	previewplayer.cpp
@@ -30,7 +30,7 @@ set ( FDesktopRecorder_SRCS
 set ( FDesktopRecorder_UIS
 	mainwindow.ui
 	aboutprog.ui
-	settingsdialog.ui
+	dialogs/settingsdialog/settingsdialog.ui
 	previewplayer.ui
 	)
 QT4_WRAP_UI(UIS ${FDesktopRecorder_UIS})
@@ -52,7 +52,7 @@ set ( FDesktopRecorder_MOCS
 	aboutprog.h
 	windowgrapper.h
 	module/recordingdevices.h
-	settingsdialog.h
+	dialogs/settingsdialog/settingsdialog.h
 	module/process.h
 	settingsmanager.h
 	previewplayer.h
