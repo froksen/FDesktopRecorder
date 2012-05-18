@@ -15,29 +15,29 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    aboutprog.cpp \
-    windowgrapper.cpp \
-    recordingdevices.cpp \
-    settingsdialog.cpp \
-    process.cpp \
-    settingsmanager.cpp \
-    previewplayer.cpp \
-    rubberband.cpp
+    dialogs/about/aboutprog.cpp \
+    utils/windowgrapper.cpp \
+    module/recordingdevices.cpp \
+    dialogs/settingsdialog/settingsdialog.cpp \
+    module/process.cpp \
+    module/settingsmanager.cpp \
+    previewplayer/previewplayer.cpp \
+    utils/rubberband.cpp
 
 HEADERS  += mainwindow.h \
-    aboutprog.h \
-    windowgrapper.h \
-    recordingdevices.h \
-    settingsdialog.h \
-    process.h \
-    settingsmanager.h \
-    previewplayer.h \
-    rubberband.h
+    dialogs/about/aboutprog.h \
+    utils/windowgrapper.h \
+    module/recordingdevices.h \
+    dialogs/settingsdialog/settingsdialog.h \
+    module/process.h \
+    module/settingsmanager.h \
+    previewplayer/previewplayer.h \
+    utils/rubberband.h
 
 FORMS    += mainwindow.ui\
-            aboutprog.ui \
-    settingsdialog.ui \
-    previewplayer.ui
+            dialogs/about/aboutprog.ui \
+    dialogs/settingsdialog/settingsdialog.ui \
+    previewplayer/previewplayer.ui
 
 
 TRANSLATIONS    = translations/FDesktopRecorder_da_DK.ts \
