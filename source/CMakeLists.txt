@@ -22,7 +22,7 @@ set ( FDesktopRecorder_SRCS
 	module/recordingdevices.cpp
 	dialogs/settingsdialog/settingsdialog.cpp
 	module/process.cpp
-	settingsmanager.cpp
+	module/settingsmanager.cpp
 	previewplayer/previewplayer.cpp
 	utils/rubberband.cpp
 	)
@@ -54,7 +54,7 @@ set ( FDesktopRecorder_MOCS
 	module/recordingdevices.h
 	dialogs/settingsdialog/settingsdialog.h
 	module/process.h
-	settingsmanager.h
+	module/settingsmanager.h
 	previewplayer/previewplayer.h
 	utils/rubberband.h
 	)

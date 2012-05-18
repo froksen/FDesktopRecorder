@@ -7,7 +7,7 @@
 #include <QtCore>
 #include <QMainWindow>
 #include <module/process.h>
-#include <settingsmanager.h>
+#include <module/settingsmanager.h>
 #include <knotification.h>
 #include <QPainter>
 #include "utils/rubberband.h"
