@@ -5,7 +5,7 @@
 #include <QtGui>
 #include <QtCore>
 #include <QSystemTrayIcon>
-#include "previewplayer.h"
+#include "previewplayer/previewplayer.h"
 
 
 MainWindow::MainWindow(QWidget *parent) :
