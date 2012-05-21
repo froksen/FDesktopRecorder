@@ -1,5 +1,6 @@
 #include "aboutprog.h"
 #include "ui_aboutprog.h"
+#include <QDesktopWidget>
 
 AboutProg::AboutProg(QWidget *parent) :
     QWidget(parent),
@@ -7,6 +8,10 @@ AboutProg::AboutProg(QWidget *parent) :
 {
     ui->setupUi(this);
 
+//    QRect r = AboutProg::geometry();
+//    r.moveCenter(QApplication::desktop()->availableGeometry().center());
+
+    //Append texts
     appendTranslators();
     appendSpecialThanks();
 }

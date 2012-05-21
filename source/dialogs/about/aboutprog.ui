@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>About kTffmpeqQt</string>
+   <string>About FDesktopRecorder</string>
   </property>
   <property name="windowIcon">
    <iconset resource="../../resources.qrc">
