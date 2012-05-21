@@ -19,6 +19,7 @@ private:
     Ui::AboutProg *ui;
 
     void appendTranslators();
+    void appendSpecialThanks();
 };
 
 #endif // ABOUTPROG_H
