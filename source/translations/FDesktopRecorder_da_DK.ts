@@ -4,17 +4,65 @@
 <context>
     <name>AboutProg</name>
     <message>
-        <location filename="../aboutprog.ui" line="14"/>
         <source>About kTffmpeqQt</source>
-        <translation>Om kTffmpeqQt</translation>
+        <translation type="obsolete">Om kTffmpeqQt</translation>
     </message>
     <message>
-        <location filename="../aboutprog.ui" line="48"/>
+        <location filename="../dialogs/about/aboutprog.ui" line="48"/>
         <source>About</source>
         <translation>Om</translation>
     </message>
     <message>
-        <location filename="../aboutprog.ui" line="63"/>
+        <location filename="../dialogs/about/aboutprog.ui" line="63"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Licence: &lt;/span&gt;GPLv2 - &lt;a href=&quot;http://www.gnu.org/licenses/gpl-2.0.html&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0057ae;&quot;&gt;http://www.gnu.org/licenses/gpl-2.0.html&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Created by:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Nickname: Froksen&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Navn: Ole Holm Frandsen&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Based on:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;A ffmpeq script by Peter Lybeth from the danish GNU/Linux show &amp;quot;Kanal Tux&amp;quot;: &lt;a href=&quot;http://www.kanaltux.dk&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0057ae;&quot;&gt;http://www.kanaltux.dk&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/about/aboutprog.ui" line="93"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;FDesktopRecorder have been translated into some languages. If you want to translate it into your language you can contact me on opendesktop.org by sending me a message.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Translated by&lt;/span&gt;:&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/about/aboutprog.ui" line="110"/>
+        <source>Thanks</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/about/aboutprog.ui" line="119"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;The FDesktopRecorder has received valuable contributions from a lot of different people. &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- Thanks alot everyone.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Special Thanks:&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;  &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
@@ -27,7 +75,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Based on:&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;A ffmpeq script by Peter Lybeth from the danish GNU/Linux show &amp;quot;Kanal Tux&amp;quot;: &lt;a href=&quot;http://www.kanaltux.dk&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0057ae;&quot;&gt;http://www.kanaltux.dk&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+        <translation type="obsolete">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
@@ -41,7 +89,6 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;A ffmpeq script by Peter Lybeth from the danish GNU/Linux show &amp;quot;Kanal Tux&amp;quot;: &lt;a href=&quot;http://www.kanaltux.dk&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0057ae;&quot;&gt;http://www.kanaltux.dk&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../aboutprog.ui" line="88"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
@@ -50,7 +97,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Translated by&lt;/span&gt;:&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+        <translation type="obsolete">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
@@ -86,7 +133,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Et ffmpeq script af Peter Lybeth fra det danske GNU/Linux show &amp;quot;Kanal Tux&amp;quot;: &lt;a href=&quot;http://www.kanaltux.dk&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0057ae;&quot;&gt;http://www.kanaltux.dk&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../aboutprog.ui" line="82"/>
+        <location filename="../dialogs/about/aboutprog.ui" line="84"/>
         <source>Translations</source>
         <translation>Oversættelser</translation>
     </message>
@@ -111,27 +158,28 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;German - Chris &amp;quot;&lt;span style=&quot; font-family:&apos;arial,sans-serif&apos;; color:#222222; background-color:#ffffff;&quot;&gt;saftsocken&amp;quot; Räss&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../aboutprog.ui" line="106"/>
+        <location filename="../dialogs/about/aboutprog.ui" line="138"/>
         <source>OK</source>
         <translation>OK</translation>
     </message>
     <message>
-        <location filename="../aboutprog.ui" line="34"/>
+        <location filename="../dialogs/about/aboutprog.ui" line="14"/>
+        <location filename="../dialogs/about/aboutprog.ui" line="34"/>
         <source>About FDesktopRecorder</source>
         <translation>Om FDesktopRecorder</translation>
     </message>
     <message>
-        <location filename="../aboutprog.cpp" line="21"/>
+        <location filename="../dialogs/about/aboutprog.cpp" line="27"/>
         <source>Danish - Ole &apos;Froksen&apos; Holm Frandsen</source>
         <translation></translation>
     </message>
     <message utf8="true">
-        <location filename="../aboutprog.cpp" line="22"/>
+        <location filename="../dialogs/about/aboutprog.cpp" line="28"/>
         <source>German - Chris &apos;saftsocken&apos; Räss</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../aboutprog.cpp" line="23"/>
+        <location filename="../dialogs/about/aboutprog.cpp" line="29"/>
         <source>Spanish - Javi</source>
         <translation></translation>
     </message>
@@ -703,47 +751,47 @@ Optag noget og prøv igen</translation>
 <context>
     <name>PreviewPlayer</name>
     <message>
-        <location filename="../previewplayer.ui" line="14"/>
+        <location filename="../previewplayer/previewplayer.ui" line="14"/>
         <source>Preview</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../previewplayer.ui" line="57"/>
+        <location filename="../previewplayer/previewplayer.ui" line="57"/>
         <source>Seek a specific position of your movie.</source>
         <translation>Søg en specifik posision i din film.</translation>
     </message>
     <message>
-        <location filename="../previewplayer.ui" line="66"/>
+        <location filename="../previewplayer/previewplayer.ui" line="66"/>
         <source>Stop playing your content</source>
         <translation>Stop afspillingen af din film</translation>
     </message>
     <message>
-        <location filename="../previewplayer.ui" line="69"/>
+        <location filename="../previewplayer/previewplayer.ui" line="69"/>
         <source>Stop</source>
         <translation>Stop</translation>
     </message>
     <message>
-        <location filename="../previewplayer.ui" line="89"/>
+        <location filename="../previewplayer/previewplayer.ui" line="89"/>
         <source>Closes this window</source>
         <translation>Lukker dette vindue</translation>
     </message>
     <message>
-        <location filename="../previewplayer.ui" line="92"/>
+        <location filename="../previewplayer/previewplayer.ui" line="92"/>
         <source>Close</source>
         <translation>Luk</translation>
     </message>
     <message>
-        <location filename="../previewplayer.ui" line="99"/>
+        <location filename="../previewplayer/previewplayer.ui" line="99"/>
         <source>Change the volume</source>
         <translation>Ændre volumen</translation>
     </message>
     <message>
-        <location filename="../previewplayer.ui" line="106"/>
+        <location filename="../previewplayer/previewplayer.ui" line="106"/>
         <source>Start/Pause playing your content</source>
         <translation>Start/Pause afspillingen af din film</translation>
     </message>
     <message>
-        <location filename="../previewplayer.ui" line="109"/>
+        <location filename="../previewplayer/previewplayer.ui" line="109"/>
         <source>Play/Pause</source>
         <translation>Afspil/Pause</translation>
     </message>
@@ -751,7 +799,7 @@ Optag noget og prøv igen</translation>
 <context>
     <name>RecordingDevices</name>
     <message>
-        <location filename="../recordingdevices.cpp" line="60"/>
+        <location filename="../module/recordingdevices.cpp" line="60"/>
         <source>Pulse Audio (might not work)</source>
         <translation>Pulse Audio (Virker måske ikke)</translation>
     </message>
@@ -759,22 +807,22 @@ Optag noget og prøv igen</translation>
 <context>
     <name>RubberBand</name>
     <message>
-        <location filename="../rubberband.cpp" line="84"/>
+        <location filename="../utils/rubberband.cpp" line="84"/>
         <source>Scalability Failure Width</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../rubberband.cpp" line="85"/>
+        <location filename="../utils/rubberband.cpp" line="85"/>
         <source>Frame Width must be a multiple of 2</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../rubberband.cpp" line="92"/>
+        <location filename="../utils/rubberband.cpp" line="92"/>
         <source>Scalability Failure Height</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../rubberband.cpp" line="93"/>
+        <location filename="../utils/rubberband.cpp" line="93"/>
         <source>Frame Height must be a multiple of 2</source>
         <translation></translation>
     </message>
@@ -861,17 +909,17 @@ Optag noget og prøv igen</translation>
 <context>
     <name>SettingsDialog</name>
     <message>
-        <location filename="../settingsdialog.ui" line="14"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="14"/>
         <source>Settings</source>
         <translation>Indstillinger</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="27"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="27"/>
         <source>Record settings (ffmpeg)</source>
         <translation>Optage indstillinger (ffmpeg)</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="40"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="40"/>
         <source>Record settings</source>
         <translation>Optage indstillinger</translation>
     </message>
@@ -880,42 +928,42 @@ Optag noget og prøv igen</translation>
         <translation type="obsolete">Billeder i sekundet</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="62"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="62"/>
         <source>Basic</source>
         <translation>Basal</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="70"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="70"/>
         <source>Frames pr. sec</source>
         <translation>Billeder i sekundet</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="77"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="77"/>
         <source>Changes the framerate in the recording</source>
         <translation>Ændre billedraten i optagelsen</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="84"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="84"/>
         <source>Video codec</source>
         <translation>Video codec</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="91"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="91"/>
         <source>Changes the video codec used in the recording</source>
         <translation>Ændre det video codec der bliver brugt i optagelsen</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="98"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="98"/>
         <source>Audio codec</source>
         <translation>Lyd codec</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="105"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="105"/>
         <source>Changes the audio codec used in the recording</source>
         <translation>Ændre det lyd codec der bliver brugt i optagelsen</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="112"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="112"/>
         <source>Audiochannels</source>
         <translation>Lyd kanaler</translation>
     </message>
@@ -924,12 +972,12 @@ Optag noget og prøv igen</translation>
         <translation type="obsolete">Ændre antallet af lydkanaler der bliver brugt</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="126"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="126"/>
         <source>Microphone</source>
         <translation>Microfon</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="140"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="140"/>
         <source>Basename</source>
         <translation>Grundnavn</translation>
     </message>
@@ -938,42 +986,42 @@ Optag noget og prøv igen</translation>
         <translation type="obsolete">Vælg et grundnavn.</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="156"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="156"/>
         <source>Use the time and date as the basename.</source>
         <translation>Brug tid og dato som grundnavn.</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="159"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="159"/>
         <source>Time/Date</source>
         <translation>Tid/dato</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="168"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="168"/>
         <source>Default path</source>
         <translation>Standard sti</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="177"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="177"/>
         <source>Choose where to save your recordings</source>
         <translation>Vælg hvor dine optagelser skal gemmes</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="187"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="187"/>
         <source>Change the default path.</source>
         <translation>Ændre standard stien.</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="190"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="190"/>
         <source>Change</source>
         <translation>Ændre</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="199"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="199"/>
         <source>Default format</source>
         <translation>Standard format</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="206"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="206"/>
         <source>Choose which format the recordings should be saved with. </source>
         <translation>Vælg hvilket format optagelserne skal gemmes i.</translation>
     </message>
@@ -994,134 +1042,134 @@ Optag noget og prøv igen</translation>
         <translation type="obsolete">Lydkilde</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="335"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="335"/>
         <source>Advanced</source>
         <translation>Advanceret</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="343"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="343"/>
         <source>-apre</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="353"/>
-        <location filename="../settingsdialog.ui" line="374"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="353"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="374"/>
         <source>Use</source>
         <translation>Brug</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="364"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="364"/>
         <source>-vpre</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="537"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="537"/>
         <source>NOTE: Some changes might first apply after a restart of this program</source>
         <translation>NOTE: Nogle ændringer har måske først virkning efter en 
 genstart af programmet</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="401"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="401"/>
         <source>Application Settings</source>
         <translation>Program indstillinger</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="119"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="119"/>
         <source>Changes the number of audiochannels used. To record in mono set to 1, for stereo set to 2 etc.</source>
         <translation>Ændre antallet af lyd kanaler der bliver brugt. For at optage i mono set denne til 1, for at optage i stereo set til 2 etc.</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="149"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="149"/>
         <source>Choose a basename for your recordings.</source>
         <translation>Vælg et grundnavn for dine optagelser.</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="215"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="215"/>
         <source>Choose the microphone you want to use.</source>
         <translation>Vælg hvilken mikrofon du vil bruge.</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="224"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="224"/>
         <source>Changes the sound architecture used in the recording. Thjs can be alsa, oss etc.</source>
         <translation>Ændre lyd arkitekturen der bliver brugt til optagelsen. Dette kan være alsa, oss etc.</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="231"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="231"/>
         <source>Sound architecture</source>
         <translation>Lyd arkitektur</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="238"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="238"/>
         <source>The microphone is muted as default on startup</source>
         <translation>Mikrofonen vil være slukket som standard ved opstart</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="241"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="241"/>
         <source>Mute on startup</source>
         <translation>Sluk ved opstart</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="414"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="414"/>
         <source>Application settings</source>
         <translation>Program indstillinger</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="426"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="426"/>
         <source>Preview player</source>
         <translation>Preview afspiller</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="436"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="436"/>
         <source>Language</source>
         <translation>Sprog</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="466"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="466"/>
         <source>Use the integrated player rather than the player chosen above</source>
         <translation>Brug den indbyggede  afspiller fremfor afspilleren som er valgt ovenfor</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="469"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="469"/>
         <source>Use integrated player</source>
         <translation>Brug den indbyggede afspiller</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="489"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="489"/>
         <source>Show a red rectangle, that surrounds the area which is been recorded.</source>
         <translation>Vis et rødt rektangel der omringer området som bliver optaget.</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="492"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="492"/>
         <source>Enable/Disable</source>
         <translation>Aktivér/Deaktivér</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="499"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="499"/>
         <source>Show red rectangle</source>
         <translation>Vis rødt rektangel</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="512"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="512"/>
         <source>Single Window</source>
         <translation>Enkelt vindue</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="550"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="550"/>
         <source>Save or decline changes</source>
         <translation>Gem eller afvis ændringerne</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="563"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="563"/>
         <source>Restores the settings to the defaults. Please note, these can not be undone!</source>
         <translation>Gendanner standard indstillingerne. Vær OBS på at dette ikke kan fortrydes!</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="566"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="566"/>
         <source>Restore to default. PLEASE NOTE: CAN NOT BE UNDONE!</source>
         <translation>Gendan til standard. OBS: Kan ikke fortrydes!</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="569"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="569"/>
         <source>Restore to default</source>
         <translation>Gendan til standard</translation>
     </message>
@@ -1130,13 +1178,13 @@ genstart af programmet</translation>
         <translation type="obsolete">optagelse</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.cpp" line="123"/>
-        <location filename="../settingsdialog.cpp" line="124"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="123"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="124"/>
         <source>Restore everything to default?</source>
         <translation>Gendan alt tilbage til standard?</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.cpp" line="125"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="125"/>
         <source>If you press Yes everything will be restored to default. 
 
 Be aware that this can NOT be undone.</source>
@@ -1153,7 +1201,7 @@ Vær obmærksom på at dette IKKE kan tilbage gøres.</translation>
  Vær opmærksom på at dette ikke kan fortrydes.</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.cpp" line="284"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="284"/>
         <source>Open Directory</source>
         <translation>Åben mappe</translation>
     </message>
@@ -1161,9 +1209,9 @@ Vær obmærksom på at dette IKKE kan tilbage gøres.</translation>
 <context>
     <name>SettingsManager</name>
     <message>
-        <location filename="../settingsmanager.cpp" line="25"/>
-        <location filename="../settingsmanager.cpp" line="68"/>
-        <location filename="../settingsmanager.cpp" line="153"/>
+        <location filename="../module/settingsmanager.cpp" line="25"/>
+        <location filename="../module/settingsmanager.cpp" line="68"/>
+        <location filename="../module/settingsmanager.cpp" line="153"/>
         <source>recording</source>
         <translation>optagelse</translation>
     </message>
