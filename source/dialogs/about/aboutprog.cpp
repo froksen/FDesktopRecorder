@@ -27,6 +27,8 @@ void AboutProg::appendTranslators()
     ui->textEdit_2->append(trUtf8("Danish - Ole 'Froksen' Holm Frandsen"));
     ui->textEdit_2->append(trUtf8("German - Chris 'saftsocken' Räss"));
     ui->textEdit_2->append(trUtf8("Spanish - Javi"));
+    ui->textEdit_2->append(trUtf8("Italian - Symbian flo"));
+
 }
 
 void AboutProg::appendSpecialThanks()
