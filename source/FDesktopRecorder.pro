@@ -43,6 +43,7 @@ FORMS    += mainwindow.ui\
 TRANSLATIONS    = translations/FDesktopRecorder_da_DK.ts \
                   translations/FDesktopRecorder_de_DE.ts \
                   translations/FDesktopRecorder_es_ES.ts \
+                  translations/FDesktopRecorder_it_IT.ts \
                   translations/FDesktopRecorder_untranslated.ts \
 
 

@@ -5,5 +5,6 @@
         <file>translations/FDesktopRecorder_de_DE.qm</file>
         <file>images/recording.png</file>
         <file>translations/FDesktopRecorder_es_ES.qm</file>
+        <file>translations/FDesktopRecorder_it_IT.qm</file>
     </qresource>
 </RCC>
