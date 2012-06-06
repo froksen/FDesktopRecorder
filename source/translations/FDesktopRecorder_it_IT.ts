@@ -88,6 +88,11 @@ p, li { white-space: pre-wrap; }
         <source>Spanish - Javi</source>
         <translation></translation>
     </message>
+    <message>
+        <location filename="../dialogs/about/aboutprog.cpp" line="30"/>
+        <source>Italian - Symbian flo</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
