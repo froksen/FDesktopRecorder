@@ -48,12 +48,12 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;FDesktopRecorder have been translated into some languages. If you want to translate it into your language you can contact me on opendesktop.org by sending me a message.&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Translated by&lt;/span&gt;:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../dialogs/about/aboutprog.ui" line="105"/>
         <source>Thanks</source>
-        <translation type="unfinished"></translation>
+        <translation>Grazie</translation>
     </message>
     <message>
         <location filename="../dialogs/about/aboutprog.ui" line="114"/>
@@ -65,8 +65,8 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- Thanks alot everyone.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Special Thanks:&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;  &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Special Thanks:&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation></translation>
     </message>
     <message>
         <location filename="../dialogs/about/aboutprog.ui" line="133"/>
@@ -91,7 +91,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../dialogs/about/aboutprog.cpp" line="30"/>
         <source>Italian - Symbian flo</source>
-        <translation type="unfinished"></translation>
+        <translation>Italiano SymbianFlo</translation>
     </message>
 </context>
 <context>
@@ -252,9 +252,9 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="113"/>
-        <source>When you click &apos;OK&apos; a small crossair will appear. 
+        <source>When you click &apos;OK&apos; a small crossair will appear.
  
-With this you will have to select the window you want to record. 
+With this you will have to select the window you want to record.
 
 Hereafter the recording will start.</source>
         <translation>Quando si fa clic su &apos;OK&apos; apparirà una crocetta apparirà.
@@ -284,7 +284,7 @@ Di seguito la registrazione avrà inizio.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="366"/>
         <source>Size</source>
-        <translation type="unfinished"></translation>
+        <translation>Dimensione</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="382"/>
@@ -323,7 +323,7 @@ Di seguito la registrazione avrà inizio.</translation>
         <translation type="obsolete"> Nessuna registrazione in questa sessione</translation>
     </message>
     <message>
-        <source>You have not recorded anything yet, and therefore nothing to preview. 
+        <source>You have not recorded anything yet, and therefore nothing to preview.
 
 Record something and try again</source>
         <translation type="obsolete">Non è stato registrato ancora nulla, e dunque nulla in anteprima.
@@ -365,12 +365,12 @@ Registrare qualcosa e provare di nuovo</translation>
     <message>
         <location filename="../previewplayer/previewplayer.ui" line="57"/>
         <source>Seek a specific position of your movie.</source>
-        <translation type="unfinished"></translation>
+        <translation>Cercate una posizione specifica del filmato.</translation>
     </message>
     <message>
         <location filename="../previewplayer/previewplayer.ui" line="66"/>
         <source>Stop playing your content</source>
-        <translation type="unfinished"></translation>
+        <translation>Ferma la riproduzione del contenuto</translation>
     </message>
     <message>
         <location filename="../previewplayer/previewplayer.ui" line="69"/>
@@ -380,7 +380,7 @@ Registrare qualcosa e provare di nuovo</translation>
     <message>
         <location filename="../previewplayer/previewplayer.ui" line="89"/>
         <source>Closes this window</source>
-        <translation type="unfinished"></translation>
+        <translation>Chiude questa finestra</translation>
     </message>
     <message>
         <location filename="../previewplayer/previewplayer.ui" line="92"/>
@@ -390,12 +390,12 @@ Registrare qualcosa e provare di nuovo</translation>
     <message>
         <location filename="../previewplayer/previewplayer.ui" line="99"/>
         <source>Change the volume</source>
-        <translation type="unfinished"></translation>
+        <translation>Modificare il volume</translation>
     </message>
     <message>
         <location filename="../previewplayer/previewplayer.ui" line="106"/>
         <source>Start/Pause playing your content</source>
-        <translation type="unfinished"></translation>
+        <translation>Avvio/Pausa la riproduzione del contenuto</translation>
     </message>
     <message>
         <location filename="../previewplayer/previewplayer.ui" line="109"/>
@@ -416,22 +416,22 @@ Registrare qualcosa e provare di nuovo</translation>
     <message>
         <location filename="../utils/rubberband.cpp" line="84"/>
         <source>Scalability Failure Width</source>
-        <translation type="unfinished"></translation>
+        <translation>Scalabilità Larghezza Fallito </translation>
     </message>
     <message>
         <location filename="../utils/rubberband.cpp" line="85"/>
         <source>Frame Width must be a multiple of 2</source>
-        <translation type="unfinished"></translation>
+        <translation>Larghezza Frame deve essere un multiplo di 2</translation>
     </message>
     <message>
         <location filename="../utils/rubberband.cpp" line="92"/>
         <source>Scalability Failure Height</source>
-        <translation type="unfinished"></translation>
+        <translation>Scalabilità Altezza Fallito </translation>
     </message>
     <message>
         <location filename="../utils/rubberband.cpp" line="93"/>
         <source>Frame Height must be a multiple of 2</source>
-        <translation type="unfinished"></translation>
+        <translation>Altezza Frame deve essere un multiplo di 2  </translation>
     </message>
 </context>
 <context>
@@ -599,37 +599,37 @@ Registrare qualcosa e provare di nuovo</translation>
     <message>
         <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="119"/>
         <source>Changes the number of audiochannels used. To record in mono set to 1, for stereo set to 2 etc.</source>
-        <translation type="unfinished"></translation>
+        <translation>Cambia il numero di audiochannels utilizzati. Per registrare in mono impostato a 1, per impostazionit stereo a 2 ecc.</translation>
     </message>
     <message>
         <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="149"/>
         <source>Choose a basename for your recordings.</source>
-        <translation type="unfinished"></translation>
+        <translation>Scegli un nome per le registrazioni.</translation>
     </message>
     <message>
         <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="215"/>
         <source>Choose the microphone you want to use.</source>
-        <translation type="unfinished"></translation>
+        <translation>Scegliere il microfono che si desidera utilizzare.</translation>
     </message>
     <message>
         <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="224"/>
         <source>Changes the sound architecture used in the recording. Thjs can be alsa, oss etc.</source>
-        <translation type="unfinished"></translation>
+        <translation>Cambia l&apos;architettura audio utilizzata nella registrazione. Questa può essere alsa, oss ecc.</translation>
     </message>
     <message>
         <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="231"/>
         <source>Sound architecture</source>
-        <translation type="unfinished"></translation>
+        <translation>Architettura audio</translation>
     </message>
     <message>
         <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="238"/>
         <source>The microphone is muted as default on startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Il microfono è disattivato di default all&apos;avvio</translation>
     </message>
     <message>
         <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="241"/>
         <source>Mute on startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Disattivato all&apos;avvio</translation>
     </message>
     <message>
         <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="414"/>
@@ -639,7 +639,7 @@ Registrare qualcosa e provare di nuovo</translation>
     <message>
         <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="426"/>
         <source>Preview player</source>
-        <translation type="unfinished"></translation>
+        <translation>Player Anteprima </translation>
     </message>
     <message>
         <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="436"/>
@@ -649,32 +649,32 @@ Registrare qualcosa e provare di nuovo</translation>
     <message>
         <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="466"/>
         <source>Use the integrated player rather than the player chosen above</source>
-        <translation type="unfinished"></translation>
+        <translation>Utilizzare il player integrato, piuttosto che quello scelto sopra</translation>
     </message>
     <message>
         <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="469"/>
         <source>Use integrated player</source>
-        <translation type="unfinished"></translation>
+        <translation>Utilizza il lettore integrato</translation>
     </message>
     <message>
         <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="489"/>
         <source>Show a red rectangle, that surrounds the area which is been recorded.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostra un rettangolo rosso, che circonda la zona che è stata registrata.</translation>
     </message>
     <message>
         <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="492"/>
         <source>Enable/Disable</source>
-        <translation type="unfinished"></translation>
+        <translation>Attiva/Disattiva</translation>
     </message>
     <message>
         <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="499"/>
         <source>Show red rectangle</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostra rettangolo rosso</translation>
     </message>
     <message>
         <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="512"/>
         <source>Single Window</source>
-        <translation type="unfinished">Singola finestra</translation>
+        <translation>Singola Finestra</translation>
     </message>
     <message>
         <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="550"/>
@@ -704,10 +704,10 @@ Registrare qualcosa e provare di nuovo</translation>
     </message>
     <message>
         <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="125"/>
-        <source>If you press Yes everything will be restored to default. 
+        <source>If you press Yes everything will be restored to default.
 
 Be aware that this can NOT be undone.</source>
-        <translation>Se si preme Sì tutto sarà ripristinato alle impostazioni predefinite. 
+        <translation>Se si preme Sì tutto sarà ripristinato alle impostazioni predefinite.
 
 Tenere presente che questo NON può essere annullato.</translation>
     </message>
