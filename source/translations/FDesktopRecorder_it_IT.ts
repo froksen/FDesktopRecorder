@@ -65,8 +65,8 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- Thanks alot everyone.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Special Thanks:&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation></translation>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Special Thanks:&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;  &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs/about/aboutprog.ui" line="133"/>
@@ -251,17 +251,25 @@ p, li { white-space: pre-wrap; }
         <translation>Registrazione di una singola finestra</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="113"/>
         <source>When you click &apos;OK&apos; a small crossair will appear.
  
 With this you will have to select the window you want to record.
 
 Hereafter the recording will start.</source>
-        <translation>Quando si fa clic su &apos;OK&apos; apparirà una crocetta apparirà.
+        <translation type="obsolete">Quando si fa clic su &apos;OK&apos; apparirà una crocetta apparirà.
  
 Con questa si dovrà selezionare la finestra che si desidera registrare.
 
 Di seguito la registrazione avrà inizio.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="113"/>
+        <source>When you click &apos;OK&apos; a small crossair will appear. 
+ 
+With this you will have to select the window you want to record. 
+
+Hereafter the recording will start.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="275"/>
@@ -704,10 +712,16 @@ Registrare qualcosa e provare di nuovo</translation>
     </message>
     <message>
         <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="125"/>
+        <source>If you press Yes everything will be restored to default. 
+
+Be aware that this can NOT be undone.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>If you press Yes everything will be restored to default.
 
 Be aware that this can NOT be undone.</source>
-        <translation>Se si preme Sì tutto sarà ripristinato alle impostazioni predefinite.
+        <translation type="obsolete">Se si preme Sì tutto sarà ripristinato alle impostazioni predefinite.
 
 Tenere presente che questo NON può essere annullato.</translation>
     </message>
