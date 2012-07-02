@@ -197,6 +197,8 @@ void MainWindow::on_pushButtonStartrecord_clicked()
         recordingargs << settings.getApre();
     }
 
+
+
     //Argument: what to grap
     recordingargs << "-f";
     recordingargs << "x11grab";
@@ -220,6 +222,12 @@ void MainWindow::on_pushButtonStartrecord_clicked()
     {
         recordingargs << "-vpre";
         recordingargs << settings.getVpre();
+    }
+    //Argument: preset
+    if(settings.getsetUsePreset() == "true")
+    {
+        recordingargs << "-preset";
+        recordingargs << settings.getPreset();
     }
 
     //Argument: Filename
