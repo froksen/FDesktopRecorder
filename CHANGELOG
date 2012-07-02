@@ -1,3 +1,7 @@
+*
+- Added: Possible to set and use a ffmpeg 'preset'. By default 'ultrafast' is used
+- Fixed: Video and audio is sometimes out-of-sync. See ffmpeg preset feature.
+
 * Fri Jun 15 2012
 - Added: "Thanks" section to About dialog
 - Added: Italian translation by Symbian flo
