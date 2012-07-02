@@ -61,6 +61,12 @@ public:
     void setUsevpre(QString state);
     QString getUsevpre();
 
+    void setPreset(QString newString);
+    QString getPreset();
+
+    void setUsePreset(QString state);
+    QString getsetUsePreset();
+
     void setPreviewplayer(QString newPlayer);
     QString getPreviewplayer();
 
@@ -99,6 +105,8 @@ private:
     QString usevpre;
     QString apre;
     QString useapre;
+    QString Preset;
+    QString usePreset;
     //Filename
     QString filenameBase;
     QString filenameUsedate;

@@ -337,6 +337,26 @@ QString SettingsManager::getUsevpre()
     return usevpre;
 }
 
+void SettingsManager::setPreset(QString newString)
+{
+    Preset = newString;
+}
+
+QString SettingsManager::getPreset()
+{
+    return Preset;
+}
+
+void SettingsManager::setUsePreset(QString state)
+{
+    usePreset = state;
+}
+
+QString SettingsManager::getsetUsePreset()
+{
+    return usePreset;
+}
+
 void SettingsManager::setPreviewplayer(QString newPlayer)
 {
     previewplayer = newPlayer;
