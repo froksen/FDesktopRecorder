@@ -15,8 +15,10 @@ void SettingsManager::setDefaults()
     audiosource = "alsa";
     vpre = "";
     apre = "";
+    Preset = "ultrafast";
     usevpre = "false";
     useapre = "false";
+    usePreset = "true";
 
     recordingdevices.getRecorddevices();
     microphonedevice = recordingdevices.RecordDeviceHW[0];
@@ -144,10 +146,10 @@ void SettingsManager::readAll()
     audiochannels = settings.value("audiochannels",2).toInt();
     vpre = settings.value("vpre").toString();
     apre = settings.value("apre").toString();
-    Preset = settings.value("Preset").toString();
+    Preset = settings.value("Preset","ultrafast").toString();
     usevpre = settings.value("usevpre","false").toString();
     useapre = settings.value("useapre","false").toString();
-    usePreset = settings.value("usePreset","false").toString();
+    usePreset = settings.value("usePreset","true").toString();
     settings.endGroup();
 
     settings.beginGroup("startupbehavior");
