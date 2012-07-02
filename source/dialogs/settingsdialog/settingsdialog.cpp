@@ -168,7 +168,7 @@ void SettingsDialog::readSettings()
     settings.readAll();
 // -----------------SECTION: Recordingdevice------------------------------
     //Refreshes the list
-    recordingdevices.getRecorddeviclineEditadvancedaprees();
+    recordingdevices.getRecorddevices();
 
     //Creates the combobox containing the recording devices that are on the machine.
     int index = 0;
