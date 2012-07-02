@@ -110,6 +110,14 @@ void SettingsDialog::on_buttonBox_accepted()
         settings.setUseapre("false");
     }
 
+    settings.setPreset(ui->lineEditadvancedpreset->text());
+    if(ui->checkBoxadvancepreset->isChecked()){
+        settings.setUsePreset("true");
+    }
+    else {
+        settings.setUsePreset("false");
+    }
+
     //Writes the data
     qDebug() << "Settingsdialog: Writting settings";
     settings.writeAll();
@@ -160,7 +168,7 @@ void SettingsDialog::readSettings()
     settings.readAll();
 // -----------------SECTION: Recordingdevice------------------------------
     //Refreshes the list
-    recordingdevices.getRecorddevices();
+    recordingdevices.getRecorddeviclineEditadvancedaprees();
 
     //Creates the combobox containing the recording devices that are on the machine.
     int index = 0;
@@ -275,6 +283,13 @@ void SettingsDialog::readSettings()
     if(settings.getUseapre() == "true")
     {
         ui->checkBoxadvancedapre->setChecked(1);
+    }
+
+    //preset
+    ui->lineEditadvancedpreset->setText(settings.getPreset());
+    if(settings.getsetUsePreset() == "true")
+    {
+        ui->checkBoxadvancepreset->setChecked(1);
     }
 }
 
