@@ -336,8 +336,8 @@ void SettingsDialog::findLanguages()
     QStringList translationsfiles = translationfilepath.entryList(QDir::Files);
     qDebug() << "Files found:" << translationsfiles;
 
-    ui->comboBoxLanguage->addItem("Use system default","default");
-    ui->comboBoxLanguage->addItem("English (Original)","STANDARD");
+    ui->comboBoxLanguage->addItem(trUtf8("Use system default"),"default");
+    ui->comboBoxLanguage->addItem(QString("English (%1)").arg(trUtf8("Original")),"STANDARD");
 
     QStringList localeName;
     localeName<< QString::fromUtf8("Dansk") << QString::fromUtf8("Deutch") << QString::fromUtf8("Romantism") << QString::fromUtf8("Italiano") << QString::fromUtf8("Español");
