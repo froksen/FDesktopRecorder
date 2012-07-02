@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>524</width>
+    <width>525</width>
     <height>583</height>
    </rect>
   </property>
@@ -54,8 +54,8 @@
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>469</width>
-            <height>440</height>
+            <width>452</width>
+            <height>404</height>
            </rect>
           </property>
           <attribute name="label">
@@ -327,8 +327,8 @@
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>127</width>
-            <height>64</height>
+            <width>452</width>
+            <height>404</height>
            </rect>
           </property>
           <attribute name="label">
@@ -358,6 +358,16 @@
            </item>
            <item>
             <layout class="QGridLayout" name="gridLayout_8">
+             <item row="0" column="2">
+              <widget class="QCheckBox" name="checkBoxadvancedvpreuse">
+               <property name="text">
+                <string>Use</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="lineEditadvancedvpre"/>
+             </item>
              <item row="0" column="0">
               <widget class="QLabel" name="labeladvancedvpre">
                <property name="text">
@@ -365,15 +375,22 @@
                </property>
               </widget>
              </item>
-             <item row="0" column="1">
-              <widget class="QLineEdit" name="lineEditadvancedvpre"/>
+             <item row="1" column="0">
+              <widget class="QLabel" name="labeladvancedpreset">
+               <property name="text">
+                <string>-preset</string>
+               </property>
+              </widget>
              </item>
-             <item row="0" column="2">
-              <widget class="QCheckBox" name="checkBoxadvancedvpreuse">
+             <item row="1" column="2">
+              <widget class="QCheckBox" name="checkBoxadvancepreset">
                <property name="text">
                 <string>Use</string>
                </property>
               </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="lineEditadvancedpreset"/>
              </item>
             </layout>
            </item>
