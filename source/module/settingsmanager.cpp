@@ -108,8 +108,10 @@ void SettingsManager::writeAll()
     settings.setValue("audiochannels",audiochannels);
     settings.setValue("vpre",vpre);
     settings.setValue("apre",apre);
+    settings.setValue("Preset",Preset);
     settings.setValue("usevpre",usevpre);
     settings.setValue("useapre",useapre);
+    settings.setValue("usePreset",usePreset);
     settings.endGroup();
 
     settings.beginGroup("startupbehavior");
@@ -142,8 +144,10 @@ void SettingsManager::readAll()
     audiochannels = settings.value("audiochannels",2).toInt();
     vpre = settings.value("vpre").toString();
     apre = settings.value("apre").toString();
+    Preset = settings.value("Preset").toString();
     usevpre = settings.value("usevpre","false").toString();
     useapre = settings.value("useapre","false").toString();
+    usePreset = settings.value("usePreset","false").toString();
     settings.endGroup();
 
     settings.beginGroup("startupbehavior");
