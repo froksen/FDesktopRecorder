@@ -374,11 +374,8 @@ void MainWindow::onProcessFinished(int Exitcode)
         ui->statusBar->showMessage(trUtf8("Successfully finished recording") + " (" + trUtf8("Size") + ": " + filesizestring + " - " + filename + ")");
 
         //Knotification
-        knotification = new KNotification("doneRecording");
-        knotification->setTitle(trUtf8("Successfully finished recording"));
-        knotification->setPixmap(QPixmap(":images/icon.png"));
-        knotification->sendEvent();
-        delete knotification;
+        doKnotification(trUtf8("Successfully finished recording"),"","normal","doneRecording");
+
 
         //CFG: Sets the new information
         settings.readAll();
@@ -397,12 +394,7 @@ void MainWindow::onProcessFinished(int Exitcode)
         ui->statusBar->showMessage(trUtf8("Failed to start!"));
 
         //Knotification
-        knotification = new KNotification("errorRecording");
-        knotification->setTitle(trUtf8("Failed to start!"));
-        knotification->setText(trUtf8("View terminaloutput for more info."));
-        knotification->setPixmap(QPixmap(":images/icon.png"));
-        knotification->sendEvent();
-        delete knotification;
+        doKnotification(trUtf8("Failed to start!"),trUtf8("View terminaloutput for more info."),"normal","errorRecording");
 
         //Shows the TerminalOutput Messagebox
         QMessageBox msgBox;    msgBox.setText(trUtf8("<b>Failed to start recording!</b>"));
@@ -478,6 +470,37 @@ void MainWindow::createsystemtray()
 
     //Shows the icon
     trayIcon->show();
+}
+
+void MainWindow::doKnotification(QString title, QString text, QString iconType, QString EventName)
+{
+    //Creates the notification
+    knotification = new KNotification(EventName);
+
+    //Sets the title
+    knotification->setTitle(title);
+
+    //Sets the text
+    knotification->setText(text);
+
+    //Sets the pixmap
+    if(iconType == "recording")
+    {
+        knotification->setPixmap(QPixmap(":images/recording.png"));
+    }
+    else if (iconType == "normal") {
+        knotification->setPixmap(QPixmap(":images/icon.png"));
+    }
+    else {
+        knotification->setPixmap(QPixmap(":images/icon.png"));
+    }
+
+
+    //Sends the event
+    knotification->sendEvent();
+
+    //Deletes it
+    delete knotification;
 }
 
 // Handles what happens when the systemtray icon is clicked!

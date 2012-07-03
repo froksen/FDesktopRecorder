@@ -44,9 +44,7 @@ private slots:
 
     //Systemtray slots
     void iconActivated(QSystemTrayIcon::ActivationReason reason);
-
     void on_actionOpen_recording_directory_triggered();
-
     void on_actionPreviewrecording_triggered();
 
     //The stopwatch
@@ -85,6 +83,8 @@ private:
     QAction *startWindowrecording;
 
     //KNotification
+    void doKnotification(QString title,QString text,QString iconType,QString EventName);
+
     KNotification *knotification;
 
     //The stopwatch
