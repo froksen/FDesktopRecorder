@@ -512,7 +512,9 @@ void MainWindow::iconActivated(QSystemTrayIcon::ActivationReason reason)
         {
             qDebug() << "Recording stopped";
             on_pushButtonStoprecord_clicked();
-            showhidewindow();
+            if(MainWindow::isHidden()){
+                showhidewindow();
+            }
         }
         else
         {
