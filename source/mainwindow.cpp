@@ -637,7 +637,5 @@ void MainWindow::updateStopwatch()
 
     newtime = stopwatchtime.addSecs(stopwatchtimeest) ;
     QString text = newtime.toString("hh:mm:ss");
-    qDebug() << "Stopwatch:" << text;
-
     setWindowTitle(trUtf8("FDesktopRecorder") + QString(" (%1)").arg(text));
 }
