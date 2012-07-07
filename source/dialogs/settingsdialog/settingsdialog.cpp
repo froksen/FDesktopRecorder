@@ -15,7 +15,6 @@ SettingsDialog::SettingsDialog(QWidget *parent) :
     readSettings();
 
     on_checkBoxMicMute_clicked();    
-
 }
 
 SettingsDialog::~SettingsDialog()
@@ -68,6 +67,7 @@ void SettingsDialog::on_buttonBox_accepted()
     int langindex = ui->comboBoxLanguage->currentIndex();
     settings.setLanguage(ui->comboBoxLanguage->itemData(langindex).toString());
 
+    //TODO: Remove this option. since the player is buggy and yeah no need to redo work others have done.
     //Preview player
     settings.setPreviewplayer(ui->lineEditPreviewplayer->text());
     if(!ui->checkBoxPreviewplayer->isChecked())
@@ -377,4 +377,16 @@ void SettingsDialog::on_checkBoxPreviewplayer_clicked()
     {
         ui->lineEditPreviewplayer->setEnabled(true);
     }
+}
+
+
+void SettingsDialog::on_comboBoxLanguage_activated(const QString &arg1)
+{
+    QPalette labelLanguagePalette = ui->labelLanguage->palette();
+    labelLanguagePalette.setColor(ui->labelLanguage->foregroundRole(),Qt::red);
+    ui->labelLanguage->setPalette(labelLanguagePalette);
+
+    QPalette label2Palette = ui->label_2->palette();
+    label2Palette.setColor(ui->label_2->foregroundRole(),Qt::red);
+    ui->label_2->setPalette(label2Palette);
 }

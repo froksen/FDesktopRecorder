@@ -30,6 +30,8 @@ private slots:
 
     void on_checkBoxPreviewplayer_clicked();
 
+    void on_comboBoxLanguage_activated(const QString &arg1);
+
 private:
     Ui::SettingsDialog *ui;
 
