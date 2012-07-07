@@ -93,6 +93,30 @@ private:
     QTimer *stopwatchtimer;
 
 
+
+protected:
+    struct recordinginfo{
+
+            //Basic things
+            QString title;
+            int audiochannels;
+            int fps;
+            QString recordingdevice;
+
+            //Codecs
+            QString videocodec;
+            QString audiocodec;
+
+            //Geometry
+            QString geometry;
+            QString corners;
+
+            //Fileinformation
+            QString defaultpath;
+            QString defaultname;
+            QString defaultformat;
+        };
+
 };
 
 #endif // MAINWINDOW_H

@@ -8,10 +8,12 @@
 #include "previewplayer/previewplayer.h"
 
 
+
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
-{
+{   
     ui->setupUi(this);
     //Makes sure that the program can run i bg
     //QApplication::setQuitOnLastWindowClosed(false);
@@ -88,20 +90,26 @@ QString MainWindow::setFilename(QString path, QString basename, QString format)
 //This function handles what happens when Start Record is clicked!
 void MainWindow::on_pushButtonStartrecord_clicked()
 {
+    //TODO: clean up this method so its not so confusing and so ugly
+
     qDebug() << "Reading settings";
     settings.readAll();
 
     QStringList recordingargs;
     recordingargs.clear();
+
+    //Creates the struct element
+    recordinginfo mrecordinginfo;
+
     //------------------------SECTION: Other--------------------------------
-    QString videocodec = settings.getVideocodec();
-    QString audiocodec = settings.getAudiocodec();
-    int audiochannels = settings.getAudiochannles();
-    int fps = settings.getFramerate();
+    mrecordinginfo.videocodec = settings.getVideocodec();
+    mrecordinginfo.audiocodec = settings.getAudiocodec();
+    mrecordinginfo.audiochannels = settings.getAudiochannles();
+    mrecordinginfo.fps = settings.getFramerate();
 
     //------------------------SECTION: Geometry--------------------------------
-    QString geometry;
-    QString corners;
+    mrecordinginfo.geometry;
+    mrecordinginfo.corners;
 
     //If Single Window radio is checked, then to this. Else record fullscreen :-)
     if(ui->radioButtonSinglewindow->isChecked())
@@ -126,8 +134,8 @@ void MainWindow::on_pushButtonStartrecord_clicked()
         QString p_stdout = p.readAllStandardOutput();
         QString p_stderr = p.readAllStandardError();
 
-        geometry = WindowGrapperClass->Singlewindowgeometry(p_stdout);
-        corners = WindowGrapperClass->Singlewindowcorners(p_stdout);
+        mrecordinginfo.geometry = WindowGrapperClass->Singlewindowgeometry(p_stdout);
+        mrecordinginfo.corners = WindowGrapperClass->Singlewindowcorners(p_stdout);
 
         //Sets the red rectangle arround the area that is going to be recorded (QRubberband)
 
@@ -135,7 +143,7 @@ void MainWindow::on_pushButtonStartrecord_clicked()
         rubberband.setGeometry(0,0,WindowGrapperClass->SinglewindowWidth(p_stdout).toInt()+5,WindowGrapperClass->SinglewindowHeight(p_stdout).toInt()+5);
 
         //The position of the window
-        QString singleCorners = corners;
+        QString singleCorners = mrecordinginfo.corners;
         singleCorners.remove(0,5);
         QStringList singleCornersList = singleCorners.split(",");
         rubberband.move(QString(singleCornersList[0]).toInt()-2,QString(singleCornersList[1]).toInt()-2);
@@ -148,8 +156,8 @@ void MainWindow::on_pushButtonStartrecord_clicked()
     }
     else
     {
-        geometry = WindowGrapperClass->Fullscreenaspects();
-        corners = ":0.0";
+        mrecordinginfo.geometry = WindowGrapperClass->Fullscreenaspects();
+        mrecordinginfo.corners = ":0.0";
     }
 
 
@@ -157,27 +165,28 @@ void MainWindow::on_pushButtonStartrecord_clicked()
 
     //------------------------SECTION: Filename--------------------------------
     //Reads some defaults from CFG file
-    QString defaultpath = settings.getFilenamePath();
+    mrecordinginfo.defaultpath = settings.getFilenamePath();
     QString defaultnamedatetime = settings.getFilenameUsedate();
-    QString defaultname;
-    QString defaultformat = settings.getFormat();
+    mrecordinginfo.defaultname;
+    mrecordinginfo.defaultformat = settings.getFormat();
 
     if(defaultnamedatetime != "true")
     {
-       defaultname = settings.getFilenameBase();
+       mrecordinginfo.defaultname = settings.getFilenameBase();
     }
     else
     {
-        defaultname = QDateTime::currentDateTime().toString();
+        mrecordinginfo.defaultname = QDateTime::currentDateTime().toString();
     }
 
     //Sets the final filname!
-    filename = setFilename(defaultpath,defaultname,defaultformat);
+    filename = setFilename(mrecordinginfo.defaultpath,mrecordinginfo.defaultname,mrecordinginfo.defaultformat);
+
 
 
     //------------------------SECTION: Microphone--------------------------------
     //Microphone: reads the CFG file to find which is predefined!
-    QString recordingdevice = settings.getMicrophonedevice();
+    mrecordinginfo.recordingdevice = settings.getMicrophonedevice();
 
     //if NOT Mute-Microphone checkbox is checked, then it will add this section.
     if(! ui->checkBoxRecordaudio->isChecked())
@@ -185,9 +194,9 @@ void MainWindow::on_pushButtonStartrecord_clicked()
         recordingargs << "-f";
         recordingargs << settings.getAudiosource();
         recordingargs << "-ac";
-        recordingargs << QString::number(audiochannels);
+        recordingargs << QString::number(mrecordinginfo.audiochannels);
         recordingargs << "-i";
-        recordingargs << recordingdevice;
+        recordingargs << mrecordinginfo.recordingdevice;
     }
 
     //Argument: apre
@@ -205,17 +214,17 @@ void MainWindow::on_pushButtonStartrecord_clicked()
 
     //Argument: Framerate
     recordingargs << "-r";
-    recordingargs << QString::number(fps);
+    recordingargs << QString::number(mrecordinginfo.fps);
 
     //Argument: Geometry/Corners
     recordingargs << "-s";
-    recordingargs << geometry;
+    recordingargs << mrecordinginfo.geometry;
     recordingargs << "-i";
-    recordingargs << corners;
+    recordingargs << mrecordinginfo.corners;
 
     //Argument: VideoCodec
     recordingargs << "-vcodec";
-    recordingargs << videocodec;
+    recordingargs << mrecordinginfo.videocodec;
 
     //Argument: vpre
     if(settings.getUsevpre() == "true")
