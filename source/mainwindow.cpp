@@ -5,7 +5,9 @@
 #include <QtGui>
 #include <QtCore>
 #include <QSystemTrayIcon>
-#include "previewplayer/previewplayer.h"
+
+/*NOTE: Removed the PreviewPlayer. Keept intence since I might add it again in a later version  */
+//#include "previewplayer/previewplayer.h"
 
 
 
@@ -612,20 +614,21 @@ void MainWindow::on_actionPreviewrecording_triggered()
 {
 
 
-    if(settings.getPreviewplayerintegrated() == "false")
-    {
+//NOTE: Removed previewplayer. Kept the code, since I might add it again some day.
+//    if(settings.getPreviewplayerintegrated() == "false")
+//    {
         mProcessClass.setCommand(settings.getPreviewplayer());
         mProcessClass.setArguments(QStringList() << filename);
         mProcessClass.startCommand();
-    }
-    else
-    {
-        PreviewPlayer *playernew = new PreviewPlayer();
-        playernew->setVideofile(filename);
-        playernew->playVideo();
-        playernew->exec();
-        connect(playernew,SIGNAL(finished(int)),playernew,SLOT(deleteLater()));
-    }
+//    }
+//    else
+//    {
+//        PreviewPlayer *playernew = new PreviewPlayer();
+//        playernew->setVideofile(filename);
+//        playernew->playVideo();
+//        playernew->exec();
+//        connect(playernew,SIGNAL(finished(int)),playernew,SLOT(deleteLater()));
+//    }
 
 
 }
