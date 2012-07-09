@@ -70,6 +70,7 @@ void SettingsDialog::on_buttonBox_accepted()
     //TODO: Remove this option. since the player is buggy and yeah no need to redo work others have done.
     //NOTE: Removed previewplayer. Kept code since I might include it again someday. PLEASE NOTE, that the hide option is simply an easy
     // way to remove the checkbox.
+
     ui->checkBoxPreviewplayer->hide();
     //Preview player
 //    settings.setPreviewplayer(ui->lineEditPreviewplayer->text());
