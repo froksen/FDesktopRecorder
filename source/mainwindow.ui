@@ -73,6 +73,10 @@
         <property name="text">
          <string>Record</string>
         </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/images/recording.png</normaloff>:/images/recording.png</iconset>
+        </property>
        </widget>
       </item>
       <item row="1" column="2">
@@ -95,6 +99,10 @@
         </property>
         <property name="text">
          <string>Stop</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/images/icon.png</normaloff>:/images/icon.png</iconset>
         </property>
        </widget>
       </item>
