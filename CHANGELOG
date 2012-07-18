@@ -1,8 +1,9 @@
 *
 - Added: Possible to set and use a ffmpeg 'preset'. By default 'ultrafast' is used
 - Fixed: Video and audio is sometimes out-of-sync. See ffmpeg preset feature.
-Fixed: If trayIcon-stop-button is pressed while recording and mainwindow …
+- Fixed: If trayIcon-stop-button is pressed while recording and mainwindow …
 is not hidden. It will now stay so.
+- Fixed: When changes are made in the settingsdialog they will now be read when the dialog is closed. 
 - Removed: The integrated previewplayer, since it was too buggy and no need to redo work others have done with better result. If enabled it will be ingored and the program will use the previewplayer selected (Default: Kaffeine)
 
 * Fri Jun 15 2012
