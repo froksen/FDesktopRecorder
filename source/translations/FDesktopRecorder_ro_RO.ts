@@ -89,12 +89,22 @@ p, li { white-space: pre-wrap; }
         <source>Italian - Symbian flo</source>
         <translation>Italiană - Symbian flo</translation>
     </message>
+    <message>
+        <location filename="../dialogs/about/aboutprog.cpp" line="31"/>
+        <source>Romanian - Mamut R. Ghiunhan (aka V3n3RiX)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/about/aboutprog.cpp" line="43"/>
+        <source>Mamut R. Ghiunhan (aka V3n3RiX)</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
     <message>
         <location filename="../mainwindow.ui" line="20"/>
-        <location filename="../mainwindow.cpp" line="600"/>
+        <location filename="../mainwindow.cpp" line="644"/>
         <source>FDesktopRecorder</source>
         <translation>FDesktopRecorder</translation>
     </message>
@@ -140,114 +150,114 @@ p, li { white-space: pre-wrap; }
         <translation>Înregistrează</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="94"/>
+        <location filename="../mainwindow.ui" line="98"/>
         <source>Stop the recording</source>
         <translation>Oprește înregistrarea</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="97"/>
+        <location filename="../mainwindow.ui" line="101"/>
         <source>Stop</source>
         <translation>Oprește</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="104"/>
+        <location filename="../mainwindow.ui" line="112"/>
         <source>If checked, it will record no audio from the microphone</source>
         <translation>Dacă este bifat, nu va înregistra niciun sunet de la microfon</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="107"/>
+        <location filename="../mainwindow.ui" line="115"/>
         <source>Mute the microphone</source>
         <translation>Dezactivează microfonul</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="110"/>
+        <location filename="../mainwindow.ui" line="118"/>
         <source>Mute microphone</source>
         <translation>Dezactivează microfonul</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="177"/>
+        <location filename="../mainwindow.ui" line="185"/>
         <source>About</source>
         <translation>Despre</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="180"/>
+        <location filename="../mainwindow.ui" line="188"/>
         <source>Shows information about this program</source>
         <translation>Afișează informații despre acest program</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="183"/>
+        <location filename="../mainwindow.ui" line="191"/>
         <source>About FDesktopRecorder</source>
         <translation>Despre FDesktopRecorder</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="188"/>
-        <location filename="../mainwindow.ui" line="194"/>
+        <location filename="../mainwindow.ui" line="196"/>
+        <location filename="../mainwindow.ui" line="202"/>
         <source>Settings</source>
         <translation>Setări</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="191"/>
+        <location filename="../mainwindow.ui" line="199"/>
         <source>Let you change an amount of different settings like recording framerate etc.</source>
         <translation>Permite modificarea anumitor setări precum calitatea inregistrării etc.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="199"/>
+        <location filename="../mainwindow.ui" line="207"/>
         <source>Console</source>
         <translation>Consolă</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="202"/>
+        <location filename="../mainwindow.ui" line="210"/>
         <source>Shows a console where you can see the output. Usefull if recording fails.</source>
         <translation>Afișează o consolă în care poți urmări progresul. Folositor dacă înregistrarea eșuează.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="205"/>
+        <location filename="../mainwindow.ui" line="213"/>
         <source>Show/Hide console output</source>
         <translation>Arată/Ascunde progresul în consolă</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="210"/>
+        <location filename="../mainwindow.ui" line="218"/>
         <source>Open recording directory</source>
         <translation>Deschide dosarul de înregistrare</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="213"/>
-        <location filename="../mainwindow.ui" line="216"/>
+        <location filename="../mainwindow.ui" line="221"/>
+        <location filename="../mainwindow.ui" line="224"/>
         <source>Open directory containing your recordings</source>
         <translation>Deschide dosarul care conține înregistrările tale</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="221"/>
+        <location filename="../mainwindow.ui" line="229"/>
         <source>Preview recording</source>
         <translation>Previzualizează înregistrarea</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="224"/>
+        <location filename="../mainwindow.ui" line="232"/>
         <source>Preview the recording</source>
         <translation>Previzualizează înregistrarea</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="36"/>
+        <location filename="../mainwindow.cpp" line="40"/>
         <source>Start recording</source>
         <translation>Pornește înregistrarea</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="38"/>
+        <location filename="../mainwindow.cpp" line="42"/>
         <source>Minimize and start record</source>
         <translation>Minimalizează și pornește înregistrarea</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="111"/>
+        <location filename="../mainwindow.cpp" line="121"/>
         <source>&lt;b&gt; Recording a single window &lt;/b&gt;</source>
         <translation>&lt;b&gt;Se înregistrează o singură fereastră&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="112"/>
+        <location filename="../mainwindow.cpp" line="122"/>
         <source>Recording a single window</source>
         <translation>Se înregistrează o singură fereastră</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="113"/>
+        <location filename="../mainwindow.cpp" line="123"/>
         <source>When you click &apos;OK&apos; a small crossair will appear. 
  
 With this you will have to select the window you want to record. 
@@ -256,77 +266,77 @@ Hereafter the recording will start.</source>
         <translation>Cănd dați click pe &apos;OK&apos; va apărea o mică cruciuliță. Cu aceasta va trebui să selectați fereastra pe care doriți să o înregistrați. Înregistrarea va porni imediat dupa aceea.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="275"/>
-        <location filename="../mainwindow.cpp" line="542"/>
-        <location filename="../mainwindow.cpp" line="554"/>
+        <location filename="../mainwindow.cpp" line="294"/>
+        <location filename="../mainwindow.cpp" line="587"/>
+        <location filename="../mainwindow.cpp" line="599"/>
         <source>Recording started</source>
         <translation>Înregistrarea a pornit</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="292"/>
+        <location filename="../mainwindow.cpp" line="311"/>
         <source>Please wait while saving the recording. Might take some time.</source>
         <translation>Vă rugăm așteptați salvarea înregistrării. Ar putea dura câteva minute.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="366"/>
-        <location filename="../mainwindow.cpp" line="370"/>
+        <location filename="../mainwindow.cpp" line="385"/>
+        <location filename="../mainwindow.cpp" line="388"/>
         <source>Successfully finished recording</source>
         <translation>Înregistrare încheiată cu succes</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="366"/>
+        <location filename="../mainwindow.cpp" line="385"/>
         <source>Size</source>
         <translation>Mărime</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="382"/>
-        <location filename="../mainwindow.cpp" line="447"/>
+        <location filename="../mainwindow.cpp" line="398"/>
+        <location filename="../mainwindow.cpp" line="459"/>
         <source>Latest Recording</source>
         <translation>Ultima înregistrare</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="389"/>
-        <location filename="../mainwindow.cpp" line="393"/>
+        <location filename="../mainwindow.cpp" line="405"/>
+        <location filename="../mainwindow.cpp" line="408"/>
         <source>Failed to start!</source>
         <translation>Eroare la pornire!</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="394"/>
+        <location filename="../mainwindow.cpp" line="408"/>
         <source>View terminaloutput for more info.</source>
         <translation>Afișează progresul în consolă pentru mai multe informații.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="400"/>
+        <location filename="../mainwindow.cpp" line="411"/>
         <source>&lt;b&gt;Failed to start recording!&lt;/b&gt;</source>
         <translation>&lt;b&gt;Eroare la pornirea înregistrării!&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="401"/>
+        <location filename="../mainwindow.cpp" line="412"/>
         <source>Press &lt;i&gt;&apos;show details&apos;&lt;/i&gt; to see console ouput.</source>
         <translation>Apasă &lt;i&gt;arată detalii&lt;/i&gt; pentru a vedea progresul în consolă.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="405"/>
+        <location filename="../mainwindow.cpp" line="416"/>
         <source>Failed to start recording!</source>
         <translation>Eroare la pornirea înregistrării!</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="433"/>
+        <location filename="../mainwindow.cpp" line="445"/>
         <source>&amp;Show/Hide window</source>
         <translation>&amp;Arată/Ascunde fereastra</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="437"/>
+        <location filename="../mainwindow.cpp" line="449"/>
         <source>&amp;Stop recording</source>
         <translation>&amp;Oprește înregistrarea</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="441"/>
+        <location filename="../mainwindow.cpp" line="453"/>
         <source>&amp;Latest recording: </source>
         <translation>&amp;Ultima înregistrare:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="449"/>
+        <location filename="../mainwindow.cpp" line="461"/>
         <source>&amp;Quit program</source>
         <translation>&amp;Ieșire din program</translation>
     </message>
@@ -334,49 +344,40 @@ Hereafter the recording will start.</source>
 <context>
     <name>PreviewPlayer</name>
     <message>
-        <location filename="../previewplayer/previewplayer.ui" line="14"/>
         <source>Preview</source>
-        <translation>Previzualizează</translation>
+        <translation type="obsolete">Previzualizează</translation>
     </message>
     <message>
-        <location filename="../previewplayer/previewplayer.ui" line="57"/>
         <source>Seek a specific position of your movie.</source>
-        <translation>Caută o anumită poziție pentru filmul tău.</translation>
+        <translation type="obsolete">Caută o anumită poziție pentru filmul tău.</translation>
     </message>
     <message>
-        <location filename="../previewplayer/previewplayer.ui" line="66"/>
         <source>Stop playing your content</source>
-        <translation>Oprește redarea conținutului</translation>
+        <translation type="obsolete">Oprește redarea conținutului</translation>
     </message>
     <message>
-        <location filename="../previewplayer/previewplayer.ui" line="69"/>
         <source>Stop</source>
-        <translation>Oprește</translation>
+        <translation type="obsolete">Oprește</translation>
     </message>
     <message>
-        <location filename="../previewplayer/previewplayer.ui" line="89"/>
         <source>Closes this window</source>
-        <translation>Închide această fereastră</translation>
+        <translation type="obsolete">Închide această fereastră</translation>
     </message>
     <message>
-        <location filename="../previewplayer/previewplayer.ui" line="92"/>
         <source>Close</source>
-        <translation>Închide</translation>
+        <translation type="obsolete">Închide</translation>
     </message>
     <message>
-        <location filename="../previewplayer/previewplayer.ui" line="99"/>
         <source>Change the volume</source>
-        <translation>Schimbă nivelul volumului</translation>
+        <translation type="obsolete">Schimbă nivelul volumului</translation>
     </message>
     <message>
-        <location filename="../previewplayer/previewplayer.ui" line="106"/>
         <source>Start/Pause playing your content</source>
-        <translation>Pornește/Pauză redarea conținutului</translation>
+        <translation type="obsolete">Pornește/Pauză redarea conținutului</translation>
     </message>
     <message>
-        <location filename="../previewplayer/previewplayer.ui" line="109"/>
         <source>Play/Pause</source>
-        <translation>Pornește/Pauză</translation>
+        <translation type="obsolete">Pornește/Pauză</translation>
     </message>
 </context>
 <context>
@@ -529,57 +530,63 @@ Hereafter the recording will start.</source>
     </message>
     <message>
         <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="353"/>
-        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="374"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="364"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="388"/>
         <source>Use</source>
         <translation>Folosește</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="364"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="374"/>
         <source>-vpre</source>
         <translation>-vpre</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="426"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="381"/>
+        <source>-preset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="443"/>
         <source>Preview player</source>
         <translation>Previzualizează player</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="466"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="483"/>
         <source>Use the integrated player rather than the player chosen above</source>
         <translation>Folosește playerul integrat în locul playerului ales mai sus</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="469"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="486"/>
         <source>Use integrated player</source>
         <translation>Folosește playerul integrat</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="489"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="506"/>
         <source>Show a red rectangle, that surrounds the area which is been recorded.</source>
         <translation>Arată un dreptungi roșu, care înconjoară zona care este înregistrată.</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="492"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="509"/>
         <source>Enable/Disable</source>
         <translation>Activează/Dezactivează</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="499"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="516"/>
         <source>Show red rectangle</source>
         <translation>Arată un dreptungi roșu</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="512"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="529"/>
         <source>Single Window</source>
         <translation>O singură fereastră</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="537"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="554"/>
         <source>NOTE: Some changes might first apply after a restart of this program</source>
         <translation>NOTĂ: unele modificări vor fi aplicate la repornirea aplicației</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="401"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="418"/>
         <source>Application Settings</source>
         <translation>Setări Aplicație</translation>
     </message>
@@ -619,60 +626,70 @@ Hereafter the recording will start.</source>
         <translation>Dezactivat la pornire</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="414"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="431"/>
         <source>Application settings</source>
         <translation>Setări aplicație</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="436"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="453"/>
         <source>Language</source>
         <translation>Limbă</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="550"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="567"/>
         <source>Save or decline changes</source>
         <translation>Salvează sau anulează modificările</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="563"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="580"/>
         <source>Restores the settings to the defaults. Please note, these can not be undone!</source>
         <translation>Resetează setările la cele implicite. Această operațiune nu poate fi anulată!</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="566"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="583"/>
         <source>Restore to default. PLEASE NOTE: CAN NOT BE UNDONE!</source>
         <translation>Resetează la valorile implicite. NU POATE FI ANULATĂ!</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="569"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="586"/>
         <source>Restore to default</source>
         <translation>Resetează la valorile implicite</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="123"/>
-        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="124"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="135"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="136"/>
         <source>Restore everything to default?</source>
         <translation>Resetează totul la valorile implicite?</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="125"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="137"/>
         <source>If you press Yes everything will be restored to default. 
 
 Be aware that this can NOT be undone.</source>
         <translation>Dacă apeși Yes, toate setările vor fi resetate la valorile implicite. Acest lucru NU poate fi anulat.</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="284"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="306"/>
         <source>Open Directory</source>
         <translation>Deschide Dosar</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="346"/>
+        <source>Use system default</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="347"/>
+        <source>Original</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>SettingsManager</name>
     <message>
-        <location filename="../module/settingsmanager.cpp" line="25"/>
-        <location filename="../module/settingsmanager.cpp" line="68"/>
-        <location filename="../module/settingsmanager.cpp" line="153"/>
+        <location filename="../module/settingsmanager.cpp" line="27"/>
+        <location filename="../module/settingsmanager.cpp" line="70"/>
+        <location filename="../module/settingsmanager.cpp" line="159"/>
         <source>recording</source>
         <translation>înregistrare</translation>
     </message>
