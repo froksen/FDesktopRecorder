@@ -73,7 +73,7 @@ void SettingsDialog::on_buttonBox_accepted()
 
     ui->checkBoxPreviewplayer->hide();
     //Preview player
-//    settings.setPreviewplayer(ui->lineEditPreviewplayer->text());
+    settings.setPreviewplayer(ui->lineEditPreviewplayer->text());
 //    if(!ui->checkBoxPreviewplayer->isChecked())
 //    {
 //        settings.setPreviewplayerintegrated("false");
