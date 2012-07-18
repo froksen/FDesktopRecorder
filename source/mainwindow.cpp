@@ -436,6 +436,7 @@ void MainWindow::on_actionSettings_triggered()
 {
     SettingsDialog *dialogsettings = new SettingsDialog();
     dialogsettings->exec();
+    settings.readAll();
 }
 
 void MainWindow::createsystemtray()
