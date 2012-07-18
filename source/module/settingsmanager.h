@@ -76,13 +76,13 @@ public:
     void setSinglewindow_redrectangle(QString newValue);
     QString getSinglewindow_redrectangle();
 
-    //----------------SECTION: Common------------------
-    void writeAll();
-    void readAll();
+    //----------------SECTION: Common-----------------
     void setDefaults();
     void checkDefaults();
 
 public slots:
+    void writeAll();
+    void readAll();
 
 private slots:
 
