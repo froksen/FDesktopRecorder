@@ -66,7 +66,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;- Thanks alot everyone.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Special Thanks:&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;  &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../dialogs/about/aboutprog.ui" line="133"/>
@@ -96,12 +96,12 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../dialogs/about/aboutprog.cpp" line="31"/>
         <source>Romanian - Mamut R. Ghiunhan (aka V3n3RiX)</source>
-        <translation type="unfinished"></translation>
+        <translation>Rumeno- Mamut R. Ghiunhan (aka V3n3RiX)</translation>
     </message>
     <message>
         <location filename="../dialogs/about/aboutprog.cpp" line="43"/>
         <source>Mamut R. Ghiunhan (aka V3n3RiX)</source>
-        <translation type="unfinished"></translation>
+        <translation>Mamut R. Ghiunhan (aka V3n3RiX)</translation>
     </message>
 </context>
 <context>
@@ -279,7 +279,11 @@ Di seguito la registrazione avrà inizio.</translation>
 With this you will have to select the window you want to record. 
 
 Hereafter the recording will start.</source>
-        <translation type="unfinished"></translation>
+        <translation>Quando si fa clic su &apos;OK&apos; una piccola crocetta apparirà.
+ 
+Con questa si dovrà selezionare la finestra che si desidera registrare.
+
+Di seguito la registrazione avrà inizio.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="294"/>
@@ -644,7 +648,7 @@ Registrare qualcosa e provare di nuovo</translation>
     <message>
         <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="381"/>
         <source>-preset</source>
-        <translation type="unfinished"></translation>
+        <translation>-preselezioni</translation>
     </message>
     <message>
         <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="431"/>
@@ -722,17 +726,19 @@ Registrare qualcosa e provare di nuovo</translation>
         <source>If you press Yes everything will be restored to default. 
 
 Be aware that this can NOT be undone.</source>
-        <translation type="unfinished"></translation>
+        <translation>Se si sceglie &quot;Sì&quot; tutto verrà ripristinato al default.
+
+Questa azione non può essere annullata.</translation>
     </message>
     <message>
         <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="346"/>
         <source>Use system default</source>
-        <translation type="unfinished"></translation>
+        <translation>Usa ivalori predefiniti del sistema</translation>
     </message>
     <message>
         <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="347"/>
         <source>Original</source>
-        <translation type="unfinished"></translation>
+        <translation>Originale</translation>
     </message>
     <message>
         <source>If you press Yes everything will be restored to default.
