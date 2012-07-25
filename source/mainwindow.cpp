@@ -5,6 +5,9 @@
 #include <QtGui>
 #include <QtCore>
 #include <QSystemTrayIcon>
+#include <math.h>
+#include <iomanip>
+
 
 /*NOTE: Removed the PreviewPlayer. Keept intence since I might add it again in a later version  */
 //#include "previewplayer/previewplayer.h"
@@ -363,19 +366,19 @@ void MainWindow::onProcessFinished(int Exitcode)
 
     if(filesize > GB)
     {
-        filesizestring =  QString("%1 GB").arg(filesize/GB);
+        filesizestring =  QString("%1 GB").arg(QString::number(filesize/GB, 'f',2));
     }
     else if(filesize > MB)
     {
-        filesizestring =  QString("%1 MB").arg(filesize/MB);
+        filesizestring =  QString("%1 MB").arg(QString::number(filesize/MB, 'f',2));
     }
     else if(filesize > KB)
     {
-        filesizestring =  QString("%1 KB").arg(filesize/KB);
+        filesizestring =  QString("%1 KB").arg(QString::number(filesize/KB, 'f',2));
     }
     else
     {
-        filesizestring =  QString("%1 K").arg(filesize);
+        filesizestring =  QString("%1 K").arg(QString::number(filesize, 'f',2));
     }
 
     //Recording: Successful
