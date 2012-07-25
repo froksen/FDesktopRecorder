@@ -3,7 +3,9 @@
 - Fixed: Video and audio is sometimes out-of-sync. See ffmpeg preset feature.
 - Fixed: If trayIcon-stop-button is pressed while recording and mainwindow …
 is not hidden. It will now stay so.
-- Fixed: When changes are made in the settingsdialog they will now be read when the dialog is closed. 
+- Fixed: When closing the settingsdialog, it will read/update with the latest changes.
+- Fixed: The aboutdialog is now shown on top of the "MainWindow".
+- Fixed: The MainWindow is opened in the middle of the screen by default. 
 - Removed: The integrated previewplayer, since it was too buggy and no need to redo work others have done with better result. If enabled it will be ingored and the program will use the previewplayer selected (Default: Kaffeine)
 
 * Fri Jun 15 2012
