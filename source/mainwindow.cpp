@@ -33,6 +33,7 @@ MainWindow::MainWindow(QWidget *parent) :
     MainWindow::setFixedHeight(107);
     QRect r = MainWindow::geometry();
     r.moveCenter(QApplication::desktop()->availableGeometry().center());
+    MainWindow::setGeometry(r);
 
     //Reads settingsfile
     settings.readAll();
