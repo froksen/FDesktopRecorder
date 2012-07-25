@@ -23,9 +23,10 @@ You can contact me via kde-apps.org. Find me under the username "froksen".
 
 ###Translated
 * Danish by Ole Holm Frandsen (froksen)
-* German by Christian Räss (saftsocken)
+* German by Christian Räss (saftsocken)
 * Spanish by Javi
-* Italian by Symbian Flo
+* Romanian translation by Mamut R. Ghiunhan (aka V3n3RiX)
+* Italian translation by Symbian flo
 
 ##Build and Install
 
