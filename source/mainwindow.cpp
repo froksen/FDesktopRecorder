@@ -434,8 +434,10 @@ void MainWindow::onProcessFinished(int Exitcode)
 
     //------------------SECTION: Final---------------------
     //Disconnections!
-    //disconnect(mProcessClass.mprocess, SIGNAL(readyReadStandardError()),this,SLOT(readstderr()));
-    //disconnect(mProcessClass.mprocess,SIGNAL(finished(int)),this,SLOT(onProcessFinished(int)));
+    disconnect(mProcessClass,SIGNAL(stderrText(QString)),ui->textEditConsole,SLOT(append(QString)));
+    disconnect(mProcessClass,SIGNAL(stdoutText(QString)),ui->textEditConsole,SLOT(append(QString)));
+    disconnect(mProcessClass, SIGNAL(FinishedExitCode(int)),this, SLOT(onProcessFinished(int)));
+    disconnect(mProcessClass,SIGNAL(stderrText(QString)),this,SLOT(setRecordingStatusbarText()));
 }
 
 
