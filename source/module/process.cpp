@@ -26,6 +26,7 @@ void process::startCommand()
 void process::readstdout()
 {
     stdoutdata = mprocess->readAllStandardOutput();
+    emit stdoutText(stdoutdata);
     qDebug() << "Standard output:" << stdoutdata;
 }
 
@@ -33,6 +34,7 @@ void process::readstdout()
 void process::readstderr()
 {
     stderrdata = mprocess->readAllStandardError();
+    emit stderrText(stderrdata);
     qDebug() << "Standard Error:" << stderrdata;
 }
 

@@ -24,6 +24,10 @@ public:
     void startCommand();
     void stopCommand();
 
+signals:
+    void stdoutText(QString text);
+    void stderrText(QString text);
+
 private slots:
     void readstdout();
     void readstderr();
