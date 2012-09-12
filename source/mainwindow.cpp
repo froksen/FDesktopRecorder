@@ -264,11 +264,20 @@ void MainWindow::on_pushButtonStartrecord_clicked()
     //Starts the command
     mProcessClass->startCommand();
 
+    //------------------SECTION: Connections---------------------
     //Connections used by the QProcess
+    //This will clear the terminaltext
     ui->textEditConsole->clear();
+    //These two lines posts the QProcess text to the GUI
     connect(mProcessClass,SIGNAL(stderrText(QString)),ui->textEditConsole,SLOT(append(QString)));
     connect(mProcessClass,SIGNAL(stdoutText(QString)),ui->textEditConsole,SLOT(append(QString)));
+
+    //When recording is finished it will send the exitCode, wether its succesfull or not.
     connect(mProcessClass, SIGNAL(FinishedExitCode(int)),this, SLOT(onProcessFinished(int)));
+
+    //This makes sure that the user knows that a recording is happening (The Statusbar text)
+    connect(mProcessClass,SIGNAL(stderrText(QString)),this,SLOT(setRecordingStatusbarText()));
+
     //------------------------SECTION: GUI things--------------------------------
 
     //Hides what needs to be hidden while recording
@@ -569,9 +578,6 @@ void MainWindow::showhidewindow()
 
 void MainWindow::on_actionConsole_triggered()
 {
-//    TerminalWindowDialog = new TerminalWindow();
-//    TerminalWindowDialog->show();
-
     if(ui->dockWidget->isHidden())
     {
         MainWindow::setGeometry(MainWindow::pos().x(),MainWindow::pos().y(),MainWindow::frameGeometry().width(),227);
@@ -587,11 +593,8 @@ void MainWindow::on_actionConsole_triggered()
     }
 }
 
-void MainWindow::readstderr()
+void MainWindow::setRecordingStatusbarText()
 {
-    QByteArray stderrdata = mProcessClass->stderrdata;
-    ui->textEditConsole->append(stderrdata);
-
     //If message in statusbar is changed, then this will change it back to the information, so the user knows that the program is recording.
     if (ui->statusBar->currentMessage().isEmpty())
     {
@@ -600,16 +603,6 @@ void MainWindow::readstderr()
 
 }
 
-void MainWindow::readstdout()
-{
-    QByteArray stdoutdata = mProcessClass->stdoutdata;
-    ui->textEditConsole->append(stdoutdata);
-
-    if (ui->statusBar->currentMessage().isEmpty())
-    {
-         ui->statusBar->showMessage(trUtf8("Recording started") + " (" + filename + ")");
-    }
-}
 
 void MainWindow::startRecordandminimize()
 {
@@ -654,3 +647,4 @@ void MainWindow::updateStopwatch()
     QString text = newtime.toString("hh:mm:ss");
     setWindowTitle(trUtf8("FDesktopRecorder") + QString(" (%1)").arg(text));
 }
+

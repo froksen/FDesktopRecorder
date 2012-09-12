@@ -35,10 +35,6 @@ private slots:
     void showhidewindow();
     void on_actionConsole_triggered();
 
-    //Todo with the process
-    void readstderr();
-    void readstdout();
-
     //Pushbutton Menu slots
     void startRecordandminimize();
 
@@ -49,6 +45,9 @@ private slots:
 
     //The stopwatch
     void updateStopwatch();
+
+    //Process stuff
+    void setRecordingStatusbarText();
 
 private:
     Ui::MainWindow *ui;
