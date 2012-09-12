@@ -96,6 +96,8 @@ QString MainWindow::setFilename(QString path, QString basename, QString format)
 //This function handles what happens when Start Record is clicked!
 void MainWindow::on_pushButtonStartrecord_clicked()
 {
+    mProcessClass = new process(this);
+
     //TODO: clean up this method so its not so confusing and so ugly
 
     qDebug() << "Reading settings";
@@ -253,20 +255,20 @@ void MainWindow::on_pushButtonStartrecord_clicked()
 
     //------------------------SECTION: Set and run the recording--------------------------------
     //Sets the arguments to the program
-    mProcessClass.setArguments(recordingargs);
+    mProcessClass->setArguments(recordingargs);
     recordingargs.clear();
 
     //Sets the program
-    mProcessClass.setCommand("ffmpeg");
+    mProcessClass->setCommand("ffmpeg");
 
     //Starts the command
-    mProcessClass.startCommand();
+    mProcessClass->startCommand();
 
     //Connections used by the QProcess
     ui->textEditConsole->clear();
-    connect(mProcessClass.mprocess, SIGNAL(readyReadStandardError()),this,SLOT(readstderr()));
-    connect(mProcessClass.mprocess,SIGNAL(finished(int)),this,SLOT(onProcessFinished(int)));
-
+    connect(mProcessClass,SIGNAL(stderrText(QString)),ui->textEditConsole,SLOT(append(QString)));
+    connect(mProcessClass,SIGNAL(stdoutText(QString)),ui->textEditConsole,SLOT(append(QString)));
+    connect(mProcessClass, SIGNAL(FinishedExitCode(int)),this, SLOT(onProcessFinished(int)));
     //------------------------SECTION: GUI things--------------------------------
 
     //Hides what needs to be hidden while recording
@@ -316,7 +318,7 @@ void MainWindow::on_pushButtonStoprecord_clicked()
     ui->statusBar->setUpdatesEnabled(0);
 
     //Run the stop command
-    mProcessClass.stopCommand();
+    mProcessClass->stopCommand();
 }
 
 void MainWindow::onProcessFinished(int Exitcode)
@@ -423,8 +425,8 @@ void MainWindow::onProcessFinished(int Exitcode)
 
     //------------------SECTION: Final---------------------
     //Disconnections!
-    disconnect(mProcessClass.mprocess, SIGNAL(readyReadStandardError()),this,SLOT(readstderr()));
-    disconnect(mProcessClass.mprocess,SIGNAL(finished(int)),this,SLOT(onProcessFinished(int)));
+    //disconnect(mProcessClass.mprocess, SIGNAL(readyReadStandardError()),this,SLOT(readstderr()));
+    //disconnect(mProcessClass.mprocess,SIGNAL(finished(int)),this,SLOT(onProcessFinished(int)));
 }
 
 
@@ -587,7 +589,7 @@ void MainWindow::on_actionConsole_triggered()
 
 void MainWindow::readstderr()
 {
-    QByteArray stderrdata = mProcessClass.stderrdata;
+    QByteArray stderrdata = mProcessClass->stderrdata;
     ui->textEditConsole->append(stderrdata);
 
     //If message in statusbar is changed, then this will change it back to the information, so the user knows that the program is recording.
@@ -600,7 +602,7 @@ void MainWindow::readstderr()
 
 void MainWindow::readstdout()
 {
-    QByteArray stdoutdata = mProcessClass.stdoutdata;
+    QByteArray stdoutdata = mProcessClass->stdoutdata;
     ui->textEditConsole->append(stdoutdata);
 
     if (ui->statusBar->currentMessage().isEmpty())
@@ -627,9 +629,9 @@ void MainWindow::on_actionPreviewrecording_triggered()
 //NOTE: Removed previewplayer. Kept the code, since I might add it again some day.
 //    if(settings.getPreviewplayerintegrated() == "false")
 //    {
-        mProcessClass.setCommand(settings.getPreviewplayer());
-        mProcessClass.setArguments(QStringList() << filename);
-        mProcessClass.startCommand();
+        mProcessClass->setCommand(settings.getPreviewplayer());
+        mProcessClass->setArguments(QStringList() << filename);
+        mProcessClass->startCommand();
 //    }
 //    else
 //    {

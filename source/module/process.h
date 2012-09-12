@@ -27,6 +27,7 @@ public:
 signals:
     void stdoutText(QString text);
     void stderrText(QString text);
+    void FinishedExitCode(int code);
 
 private slots:
     void readstdout();

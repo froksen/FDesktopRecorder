@@ -42,6 +42,7 @@ void process::onProcessFinished(int exitCode, QProcess::ExitStatus status)
 {
     qDebug() << "Exitcode:" << exitCode;
     qDebug() << "Exitstatus:" << status;
+    emit FinishedExitCode(exitCode);
 
     delete mprocess;
     mprocess = NULL;

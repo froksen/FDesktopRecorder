@@ -65,7 +65,7 @@ private:
 
     //Other
     WindowGrapper *WindowGrapperClass;
-    process mProcessClass;
+    process *mProcessClass;
     SettingsManager settings;
     RubberBand rubberband;
 
