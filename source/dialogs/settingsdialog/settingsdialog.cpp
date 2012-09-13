@@ -144,9 +144,14 @@ void SettingsDialog::on_pushButtonRestore_clicked()
     switch (ret)  {
       case QMessageBox::Yes:
             {
-                qDebug() << "Settingsdialog: Resetting settings";
+                qDebug() << "Settingsdialog: Restoring settings to defaults";
+                //in the GUI
                 ui->checkBoxMicMute->setChecked(1);
+                ui->comboBoxFormat->clear();
+                ui->comboBoxLanguage->clear();
+                ui->comboBoxrecording->clear();
 
+                //Restores the defaults
                 settings.setDefaults();
                 readSettings();
               break;

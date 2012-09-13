@@ -8,6 +8,10 @@ RecordingDevices::RecordingDevices(QObject *parent) :
 }
 
 void RecordingDevices::getRecorddevices(){
+    //Clears old values
+    RecordDeviceDesc.clear();
+    RecordDeviceHW.clear();
+
     QProcess p;
     p.start("arecord -l");
     p.waitForFinished(-1);
