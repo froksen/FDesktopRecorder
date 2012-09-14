@@ -152,7 +152,7 @@ void SettingsDialog::on_pushButtonRestore_clicked()
                 ui->comboBoxrecording->clear();
 
                 //Restores the defaults
-                settings.setDefaults();
+                settings.removeSettingsfile();
                 readSettings();
               break;
             }

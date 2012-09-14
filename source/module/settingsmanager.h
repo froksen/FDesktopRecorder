@@ -76,7 +76,10 @@ public:
     void setSinglewindow_redrectangle(QString newValue);
     QString getSinglewindow_redrectangle();
 
+
     //----------------SECTION: Common-----------------
+    void removeSettingsfile();
+
     void setDefaults();
     void checkDefaults();
 

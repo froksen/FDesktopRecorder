@@ -393,4 +393,11 @@ QString SettingsManager::getSinglewindow_redrectangle()
     return SingleWindow_redrectangle;
 }
 
+void SettingsManager::removeSettingsfile()
+{
+    QFile settingsfile (settings.fileName());
+    settingsfile.remove();
+    settings.sync();
+}
+
 
