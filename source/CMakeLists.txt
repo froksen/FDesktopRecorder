@@ -23,7 +23,6 @@ set ( FDesktopRecorder_SRCS
 	dialogs/settingsdialog/settingsdialog.cpp
 	module/process.cpp
 	module/settingsmanager.cpp
-        #previewplayer/previewplayer.cpp
 	utils/rubberband.cpp
 	)
 
@@ -31,7 +30,6 @@ set ( FDesktopRecorder_UIS
 	mainwindow.ui
 	dialogs/about/aboutprog.ui
 	dialogs/settingsdialog/settingsdialog.ui
-        #previewplayer/previewplayer.ui
 	)
 QT4_WRAP_UI(UIS ${FDesktopRecorder_UIS})
 
@@ -57,7 +55,6 @@ set ( FDesktopRecorder_MOCS
 	dialogs/settingsdialog/settingsdialog.h
 	module/process.h
 	module/settingsmanager.h
-        #previewplayer/previewplayer.h
 	utils/rubberband.h
 	)
 QT4_WRAP_CPP(MOCS ${FDesktopRecorder_MOCS})
