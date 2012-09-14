@@ -13,6 +13,7 @@
 #include "utils/rubberband.h"
 #include <QTime>
 #include <QTimer>
+#include <QClipboard>
 
 namespace Ui {
     class MainWindow;
@@ -48,6 +49,8 @@ private slots:
 
     //Process stuff
     void setRecordingStatusbarText();
+
+    void on_pushButton_clicked();
 
 private:
     Ui::MainWindow *ui;
@@ -90,7 +93,6 @@ private:
     int stopwatchtimeest;
     QTime stopwatchtime;
     QTimer *stopwatchtimer;
-
 
 
 protected:

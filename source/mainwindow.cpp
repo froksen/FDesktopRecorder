@@ -25,6 +25,11 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->actionPreviewrecording->setEnabled(0);
 
+    //Connections used by "Copy to clipboard" button
+    connect(ui->pushButtonConsoleCopyToClipboard,SIGNAL(clicked()),ui->textEditConsole,SLOT(selectAll()));
+    connect(ui->pushButtonConsoleCopyToClipboard,SIGNAL(clicked()),ui->textEditConsole,SLOT(copy()));
+
+
     //Hides objects that needs to be hidden
     ui->dockWidget->hide();
     ui->pushButtonStoprecord->hide();
@@ -582,8 +587,8 @@ void MainWindow::on_actionConsole_triggered()
 {
     if(ui->dockWidget->isHidden())
     {
-        MainWindow::setGeometry(MainWindow::pos().x(),MainWindow::pos().y(),MainWindow::frameGeometry().width(),227);
-        MainWindow::setFixedHeight(227);
+        MainWindow::setGeometry(MainWindow::pos().x(),MainWindow::pos().y(),MainWindow::frameGeometry().width(),250);
+        MainWindow::setFixedHeight(250);
         ui->dockWidget->show();
     }
     else
@@ -650,3 +655,8 @@ void MainWindow::updateStopwatch()
     setWindowTitle(trUtf8("FDesktopRecorder") + QString(" (%1)").arg(text));
 }
 
+
+void MainWindow::on_pushButton_clicked()
+{
+
+}
