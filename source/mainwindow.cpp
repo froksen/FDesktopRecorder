@@ -452,9 +452,10 @@ void MainWindow::on_actionAbout_triggered()
     //Gets where to place the Dialog.
     // Gets pos of MainWindow, adds the half of the width of the mainwindow (the middle) and then subtracts the haft of the width of the About dialog (the middle)
     int xWindowPos = MainWindow::pos().x() + (MainWindow::width()/2)-(AboutProgDialog->width()/2);
+    int yWindowPos = MainWindow::pos().y() + (MainWindow::height()/2)-(AboutProgDialog->height()/2);
 
-    AboutProgDialog->setGeometry(xWindowPos,MainWindow::pos().y(),AboutProgDialog->width(),AboutProgDialog->height());
-    AboutProgDialog->show();
+    AboutProgDialog->setGeometry(xWindowPos,yWindowPos,AboutProgDialog->width(),AboutProgDialog->height());
+    AboutProgDialog->exec();
 }
 
 

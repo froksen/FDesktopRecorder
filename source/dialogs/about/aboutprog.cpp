@@ -2,8 +2,8 @@
 #include "ui_aboutprog.h"
 #include <QDesktopWidget>
 
-AboutProg::AboutProg(QWidget *parent) :
-    QWidget(parent),
+AboutProg::AboutProg(QDialog *parent) :
+    QDialog(parent),
     ui(new Ui::AboutProg)
 {
     ui->setupUi(this);
