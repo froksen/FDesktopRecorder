@@ -80,9 +80,6 @@ public:
     //----------------SECTION: Common-----------------
     void removeSettingsfile();
 
-    void setDefaults();
-    void checkDefaults();
-
 public slots:
     void writeAll();
     void readAll();
