@@ -50,6 +50,9 @@ private slots:
     //Process stuff
     void setRecordingStatusbarText();
 
+    //Gets the FPS from the terminaloutput
+    void getFPS(QString text);
+
 
 private:
     Ui::MainWindow *ui;
@@ -92,6 +95,9 @@ private:
     int stopwatchtimeest;
     QTime stopwatchtime;
     QTimer *stopwatchtimer;
+
+    //FPS
+    int recordingFPS;
 
 
 protected:

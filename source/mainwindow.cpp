@@ -276,6 +276,8 @@ void MainWindow::on_pushButtonStartrecord_clicked()
     //These two lines posts the QProcess text to the GUI
     connect(mProcessClass,SIGNAL(stderrText(QString)),ui->textEditConsole,SLOT(append(QString)));
     connect(mProcessClass,SIGNAL(stdoutText(QString)),ui->textEditConsole,SLOT(append(QString)));
+    connect(mProcessClass,SIGNAL(stderrText(QString)),this,SLOT(getFPS(QString)));
+    connect(mProcessClass,SIGNAL(stdoutText(QString)),this,SLOT(getFPS(QString)));
 
     //When recording is finished it will send the exitCode, wether its succesfull or not.
     connect(mProcessClass, SIGNAL(FinishedExitCode(int)),this, SLOT(onProcessFinished(int)));
@@ -611,6 +613,21 @@ void MainWindow::setRecordingStatusbarText()
 
 }
 
+void MainWindow::getFPS(QString text)
+{
+    QRegExp rx("^frame");
+    if(text.contains(rx)){
+        QStringList wordlist = text.split(" ");
+        for(int i=0;i<wordlist.count();i++){
+            if(wordlist.at(i) == "fps="){
+                qDebug() << "FPS" << wordlist.at(i+1);
+                recordingFPS = wordlist.at(i+1).toInt();
+            }
+        }
+    }
+
+}
+
 
 void MainWindow::startRecordandminimize()
 {
@@ -653,5 +670,5 @@ void MainWindow::updateStopwatch()
 
     newtime = stopwatchtime.addSecs(stopwatchtimeest) ;
     QString text = newtime.toString("hh:mm:ss");
-    setWindowTitle(trUtf8("FDesktopRecorder") + QString(" (%1)").arg(text));
+    setWindowTitle(QString("FDesktopRecorder") + QString(" (%1, FPS: %2)").arg(text,QString::number(recordingFPS)));
 }
