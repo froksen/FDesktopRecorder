@@ -41,8 +41,8 @@ MainWindow::MainWindow(QWidget *parent) :
     MainWindow::setGeometry(r);
 
     //Reads settingsfile
+    qDebug() << "-----  Reading settings on startup -----";
     settings.readAll();
-    qDebug() << "Reading settings on startup";
 
     //Set the Startrecord PushButton menu
     QMenu *Recordbuttonmenu = new QMenu();
@@ -654,10 +654,4 @@ void MainWindow::updateStopwatch()
     newtime = stopwatchtime.addSecs(stopwatchtimeest) ;
     QString text = newtime.toString("hh:mm:ss");
     setWindowTitle(trUtf8("FDesktopRecorder") + QString(" (%1)").arg(text));
-}
-
-
-void MainWindow::on_pushButton_clicked()
-{
-
 }

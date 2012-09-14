@@ -50,7 +50,6 @@ private slots:
     //Process stuff
     void setRecordingStatusbarText();
 
-    void on_pushButton_clicked();
 
 private:
     Ui::MainWindow *ui;

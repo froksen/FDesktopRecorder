@@ -13,6 +13,7 @@ int main(int argc, char *argv[])
     QCoreApplication::setApplicationName("fdesktoprecorder");
 
     QString locale = QLocale::system().name();
+    qDebug() << "-----  Localization setup  -----";
     qDebug() << "System default locale:" << locale;
 
     //Reads startup behavoir
