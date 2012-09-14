@@ -54,6 +54,8 @@ private slots:
     void getFPS(QString text);
 
 
+    void on_pushButtonConsoleCopyToClipboard_clicked();
+
 private:
     Ui::MainWindow *ui;
 

@@ -696,3 +696,7 @@ void MainWindow::updateStopwatch()
 
     setWindowTitle(QString("FDesktopRecorder") + QString(" (%1, FPS: %2)").arg(text,fpstext));
 }
+
+void MainWindow::on_pushButtonConsoleCopyToClipboard_clicked()
+{
+}
