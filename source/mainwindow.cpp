@@ -615,14 +615,31 @@ void MainWindow::setRecordingStatusbarText()
 
 void MainWindow::getFPS(QString text)
 {
+
     QRegExp rx("^frame");
     if(text.contains(rx)){
         QStringList wordlist = text.split(" ");
+
+        QRegExp rx2("fps=");
         for(int i=0;i<wordlist.count();i++){
-            if(wordlist.at(i) == "fps="){
-                qDebug() << "FPS" << wordlist.at(i+1);
-                recordingFPS = wordlist.at(i+1).toInt();
+            if(wordlist.at(i).contains(rx2)){
+
+                //for numbers above 10
+                recordingFPS = wordlist.at(i+1).toDouble();
+
+                //For numbers under 10
+                QRegExp rx3("(\\d+)");
+                QStringList list;
+                int pos = 0;
+
+                while ((pos = rx3.indexIn(wordlist.at(i), pos)) != -1) {
+                    list << rx3.cap(1);
+                    pos += rx3.matchedLength();
+                    recordingFPS = list.at(0).toDouble();
+                }
+
             }
+
         }
     }
 
@@ -670,5 +687,12 @@ void MainWindow::updateStopwatch()
 
     newtime = stopwatchtime.addSecs(stopwatchtimeest) ;
     QString text = newtime.toString("hh:mm:ss");
-    setWindowTitle(QString("FDesktopRecorder") + QString(" (%1, FPS: %2)").arg(text,QString::number(recordingFPS)));
+
+    QString fpstext = QString::number(recordingFPS);
+
+    if(recordingFPS<10){
+        fpstext = QString("~ ") + QString::number(recordingFPS);
+    }
+
+    setWindowTitle(QString("FDesktopRecorder") + QString(" (%1, FPS: %2)").arg(text,fpstext));
 }

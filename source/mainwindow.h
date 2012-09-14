@@ -97,7 +97,7 @@ private:
     QTimer *stopwatchtimer;
 
     //FPS
-    int recordingFPS;
+    double recordingFPS;
 
 
 protected:
