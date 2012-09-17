@@ -21,6 +21,11 @@ Comment=When NO is selected in the dialog
 Sound=/usr/share/sounds/KDE-Sys-Warning.ogg
 Action=Popup
 
+[Event/consoleCopyClipboard]
+Name=Console CopyClipboard
+Comment=Happens when the user presses to copytoclipboard button.
+Action=Popup
+
 [Event/runBackground]
 Name=Run in Background
 Comment=When minimized to run in background

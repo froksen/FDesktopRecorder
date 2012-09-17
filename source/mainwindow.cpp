@@ -533,6 +533,9 @@ void MainWindow::doKnotification(QString title, QString text, QString iconType, 
     else if (iconType == "normal") {
         knotification->setPixmap(QPixmap(":images/icon.png"));
     }
+    else if (iconType == "none") {
+        knotification->setPixmap(QIcon::fromTheme("edit-copy").pixmap(22));
+    }
     else {
         knotification->setPixmap(QPixmap(":images/icon.png"));
     }
@@ -699,4 +702,5 @@ void MainWindow::updateStopwatch()
 
 void MainWindow::on_pushButtonConsoleCopyToClipboard_clicked()
 {
+    doKnotification(trUtf8("Current output copied to clipboard"),"","none","consoleCopyClipboard");
 }
