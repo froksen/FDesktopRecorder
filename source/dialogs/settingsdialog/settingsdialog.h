@@ -19,19 +19,12 @@ public:
 
 private slots:
     void on_buttonBox_accepted();
-
     void on_pushButtonRestore_clicked();
-
     void on_pushButtonpathBrowse_clicked();
-
     void on_checkBoxbasenametimedate_clicked();
-
     void on_checkBoxMicMute_clicked();
-
     void on_checkBoxPreviewplayer_clicked();
-
     void on_comboBoxLanguage_activated(const QString &arg1);
-
     void on_pushButtonFFmpegbrowse_clicked();
 
 private:
