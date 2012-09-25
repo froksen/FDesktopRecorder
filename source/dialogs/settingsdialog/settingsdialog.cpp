@@ -409,3 +409,14 @@ void SettingsDialog::on_comboBoxLanguage_activated(const QString &arg1)
     label2Palette.setColor(ui->label_2->foregroundRole(),Qt::red);
     ui->label_2->setPalette(label2Palette);
 }
+
+void SettingsDialog::on_pushButtonFFmpegbrowse_clicked()
+{
+     QFileDialog dialog;
+     QString fileName = dialog.getOpenFileName(this, tr("FFmpeg location"),
+                                               QDir::rootPath(),"FFmpeg (ffmpeg)");
+
+    if(!fileName.isEmpty()){
+        ui->lineEditFFmpeg->setText(fileName);
+    }
+}

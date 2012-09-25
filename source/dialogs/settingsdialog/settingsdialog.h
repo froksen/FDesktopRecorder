@@ -32,6 +32,8 @@ private slots:
 
     void on_comboBoxLanguage_activated(const QString &arg1);
 
+    void on_pushButtonFFmpegbrowse_clicked();
+
 private:
     Ui::SettingsDialog *ui;
 
