@@ -122,6 +122,11 @@ void SettingsDialog::on_buttonBox_accepted()
         settings.setUsePreset("false");
     }
 
+    //FFmpeg location
+    if(!ui->lineEditFFmpeg->text().isEmpty()){
+        settings.setFFmpeglocation(ui->lineEditFFmpeg->text());
+    }
+
     //Writes the data
     qDebug() << "-----  Settingsdialog: Writting settings -----";
     settings.writeAll();
@@ -271,6 +276,9 @@ void SettingsDialog::readSettings()
         ui->checkBoxbasenametimedate->setChecked(false);
         ui->lineEditbasename->setEnabled(1);
     }    
+
+    // -----------------SECTION: FFmpeg location------------------------------
+    ui->lineEditFFmpeg->setText(settings.FFmpeglocation());
 
     // -----------------SECTION: Other------------------------------
     ui->lineEditaudiocodec->setText(settings.getAudiocodec());
