@@ -63,7 +63,7 @@ void SettingsManager::readAll()
     settings.beginGroup("startupbehavior");
     recordingdevices.getRecorddevices();
     microphonedevice = settings.value("defaultrecorddevice",recordingdevices.RecordDeviceHW[0]).toString();
-    microphonemuted = settings.value("defaultrecorddeviceMute","true").toString();
+    microphonemuted = settings.value("defaultrecorddeviceMute","true").toBool();
     filenameBase = settings.value("defaultname",trUtf8("recording")).toString();
     filenameUsedate = settings.value("defaultnametimedate","false").toString();
     filenamePath = settings.value("defaultpath",QDir::homePath()).toString();
@@ -142,12 +142,12 @@ QString SettingsManager::getMicrophonedevice()
     return microphonedevice;
 }
 
-void SettingsManager::setMicrophonemuted(QString state)
+void SettingsManager::setMicrophonemuted(bool state)
 {
     microphonemuted = state;
 }
 
-QString SettingsManager::getMicrophonemuted()
+bool SettingsManager::getMicrophonemuted()
 {
     return microphonemuted;
 }

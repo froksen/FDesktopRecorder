@@ -36,14 +36,8 @@ void SettingsDialog::on_buttonBox_accepted()
     settings.setMicrophonedevice(ui->comboBoxrecording->itemData(MicIndex).toString());
 
     //Microphone: Mute?
-    if(ui->checkBoxMicMute->isChecked())
-    {
-        settings.setMicrophonemuted("true");
-    }
-    else
-    {
-        settings.setMicrophonemuted("false");
-    }
+    settings.setMicrophonemuted(ui->checkBoxMicMute->isChecked());
+
 
     settings.setFilenameBase(ui->lineEditbasename->text());
 
@@ -260,10 +254,7 @@ void SettingsDialog::readSettings()
     }
 
     // -----------------SECTION: Microphonemuted------------------------------
-    if(settings.getMicrophonemuted() == "false")
-    {
-        ui->checkBoxMicMute->setChecked(0);
-    }
+    ui->checkBoxMicMute->setChecked(settings.getMicrophonemuted());
 
     // -----------------SECTION: Filename use time and date------------------------------
     if(settings.getFilenameUsedate() == "true")

@@ -28,8 +28,8 @@ public:
     void setMicrophonedevice(QString newDevice);
     QString getMicrophonedevice();
 
-    void setMicrophonemuted(QString state);
-    QString getMicrophonemuted();
+    void setMicrophonemuted(bool state);
+    bool getMicrophonemuted();
 
     void setFilenameBase(QString newBasename);
     QString getFilenameBase();
@@ -102,7 +102,7 @@ private:
     int audiochannels;
     //Microphone
     QString microphonedevice;
-    QString microphonemuted;
+    bool microphonemuted;
     //Advanced
     QString vpre;
     QString usevpre;

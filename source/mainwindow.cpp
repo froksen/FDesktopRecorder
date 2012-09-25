@@ -57,11 +57,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
 
     //Reads from cfg file
-    if(settings.getMicrophonemuted() != "false")
-    {
-        ui->checkBoxRecordaudio->setChecked(1);
-        qDebug() << "Microphone: Enabled";
-    }
+    ui->checkBoxRecordaudio->setChecked(settings.getMicrophonemuted());
 
     //Creates systemtrayp
     createsystemtray();
