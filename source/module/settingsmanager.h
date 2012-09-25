@@ -76,6 +76,9 @@ public:
     void setSinglewindow_redrectangle(QString newValue);
     QString getSinglewindow_redrectangle();
 
+    void setFFmpeglocation(QString location);
+    QString FFmpeglocation();
+
 
     //----------------SECTION: Common-----------------
     void removeSettingsfile();
@@ -118,6 +121,7 @@ private:
     QString previewplayer;
     QString previewplayerintegrated;
     QString SingleWindow_redrectangle;
+    QString ffmpeglocation;
 //----------------SECTION: OTHER------------------
     QString latestrecording;
     RecordingDevices recordingdevices;

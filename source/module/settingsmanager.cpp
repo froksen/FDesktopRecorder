@@ -31,6 +31,7 @@ void SettingsManager::writeAll()
     settings.setValue("defaultpath",filenamePath);
     settings.setValue("defaultformat",format);
     settings.setValue("language",language);
+    settings.setValue("ffmpeglocation",ffmpeglocation);
     settings.endGroup();
 
     settings.beginGroup("misc");
@@ -68,6 +69,7 @@ void SettingsManager::readAll()
     filenamePath = settings.value("defaultpath",QDir::homePath()).toString();
     format = settings.value("defaultformat","avi").toString();
     language = settings.value("language","default").toString();
+    ffmpeglocation = settings.value("ffmpeglocation","ffmpeg").toString();
     settings.endGroup();
 
     settings.beginGroup("misc");
@@ -298,6 +300,16 @@ void SettingsManager::setSinglewindow_redrectangle(QString newValue)
 QString SettingsManager::getSinglewindow_redrectangle()
 {
     return SingleWindow_redrectangle;
+}
+
+void SettingsManager::setFFmpeglocation(QString location)
+{
+   ffmpeglocation = location;
+}
+
+QString SettingsManager::FFmpeglocation()
+{
+    return ffmpeglocation;
 }
 
 void SettingsManager::removeSettingsfile()
