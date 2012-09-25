@@ -264,7 +264,7 @@ void MainWindow::on_pushButtonStartrecord_clicked()
     recordingargs.clear();
 
     //Sets the program
-    mProcessClass->setCommand("ffmpeg");
+    mProcessClass->setCommand(settings.FFmpeglocation());
 
     //Starts the command
     mProcessClass->startCommand();
