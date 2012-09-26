@@ -24,108 +24,7 @@ SettingsDialog::~SettingsDialog()
 
 void SettingsDialog::on_buttonBox_accepted()
 {
-    //other
-    settings.setFramerate(ui->spinBoxfps->value());
-    settings.setVideocodec(ui->lineEditvideocodec->text());
-    settings.setAudiocodec(ui->lineEditaudiocodec->text());
-    settings.setAudiochannels(ui->spinBoxaudiochannels->value());
-    settings.setAudiosource(ui->lineEditAudiosource->text());
-
-    //Microphone
-    int MicIndex = ui->comboBoxrecording->currentIndex();
-    settings.setMicrophonedevice(ui->comboBoxrecording->itemData(MicIndex).toString());
-
-    //Microphone: Mute?
-    settings.setMicrophonemuted(ui->checkBoxMicMute->isChecked());
-
-
-    settings.setFilenameBase(ui->lineEditbasename->text());
-
-    //Filename: use date and time
-    if(ui->checkBoxbasenametimedate->isChecked())
-    {
-        settings.setFilenameUsedate("true");
-    }
-    else
-    {
-        settings.setFilenameUsedate("false");
-    }
-
-    settings.setFilenamePath(ui->lineEditpath->text());
-
-    //Format
-    int formatindex = ui->comboBoxFormat->currentIndex();
-    settings.setFormat(ui->comboBoxFormat->itemData(formatindex).toString());
-
-    //Language
-    int langindex = ui->comboBoxLanguage->currentIndex();
-    settings.setLanguage(ui->comboBoxLanguage->itemData(langindex).toString());
-
-    //TODO: Remove this option. since the player is buggy and yeah no need to redo work others have done.
-    //NOTE: Removed previewplayer. Kept code since I might include it again someday. PLEASE NOTE, that the hide option is simply an easy
-    // way to remove the checkbox.
-
-    ui->checkBoxPreviewplayer->hide();
-    //Preview player
-    settings.setPreviewplayer(ui->lineEditPreviewplayer->text());
-//    if(!ui->checkBoxPreviewplayer->isChecked())
-//    {
-//        settings.setPreviewplayerintegrated("false");
-//    }
-//    else
-//    {
-//        settings.setPreviewplayerintegrated("true");
-//    }
-
-    //Single window: use red rectangle
-    if(!ui->checkBoxSinglewindowredrectangle->isChecked())
-    {
-        settings.setSinglewindow_redrectangle("false");
-    }
-    else
-    {
-        settings.setSinglewindow_redrectangle("true");
-    }
-
-    //advanced
-    settings.setVpre(ui->lineEditadvancedvpre->text());
-    if(ui->checkBoxadvancedvpreuse->isChecked())
-    {
-        settings.setUsevpre("true");
-    }
-    else
-    {
-        settings.setUsevpre("false");
-    }
-
-    settings.setApre(ui->lineEditadvancedapre->text());
-    if(ui->checkBoxadvancedapre->isChecked())
-    {
-        settings.setUseapre("true");
-    }
-    else
-    {
-        settings.setUseapre("false");
-    }
-
-    settings.setPreset(ui->lineEditadvancedpreset->text());
-    if(ui->checkBoxadvancepreset->isChecked()){
-        settings.setUsePreset("true");
-    }
-    else {
-        settings.setUsePreset("false");
-    }
-
-    //FFmpeg location
-    if(!ui->lineEditFFmpeg->text().isEmpty()){
-        settings.setFFmpeglocation(ui->lineEditFFmpeg->text());
-    }
-
-    //Writes the data
-    qDebug() << "-----  Settingsdialog: Writting settings -----";
-    settings.writeAll();
-    qDebug() << "-----  Settingsdialog: Reading settings -----";
-    settings.readAll();
+    writeSettings();
 }
 
 void SettingsDialog::on_pushButtonRestore_clicked()
@@ -410,4 +309,111 @@ void SettingsDialog::on_pushButtonFFmpegbrowse_clicked()
     if(!fileName.isEmpty()){
         ui->lineEditFFmpeg->setText(fileName);
     }
+}
+
+void SettingsDialog::writeSettings()
+{
+    //other
+    settings.setFramerate(ui->spinBoxfps->value());
+    settings.setVideocodec(ui->lineEditvideocodec->text());
+    settings.setAudiocodec(ui->lineEditaudiocodec->text());
+    settings.setAudiochannels(ui->spinBoxaudiochannels->value());
+    settings.setAudiosource(ui->lineEditAudiosource->text());
+
+    //Microphone
+    int MicIndex = ui->comboBoxrecording->currentIndex();
+    settings.setMicrophonedevice(ui->comboBoxrecording->itemData(MicIndex).toString());
+
+    //Microphone: Mute?
+    settings.setMicrophonemuted(ui->checkBoxMicMute->isChecked());
+
+
+    settings.setFilenameBase(ui->lineEditbasename->text());
+
+    //Filename: use date and time
+    if(ui->checkBoxbasenametimedate->isChecked())
+    {
+        settings.setFilenameUsedate("true");
+    }
+    else
+    {
+        settings.setFilenameUsedate("false");
+    }
+
+    settings.setFilenamePath(ui->lineEditpath->text());
+
+    //Format
+    int formatindex = ui->comboBoxFormat->currentIndex();
+    settings.setFormat(ui->comboBoxFormat->itemData(formatindex).toString());
+
+    //Language
+    int langindex = ui->comboBoxLanguage->currentIndex();
+    settings.setLanguage(ui->comboBoxLanguage->itemData(langindex).toString());
+
+    //TODO: Remove this option. since the player is buggy and yeah no need to redo work others have done.
+    //NOTE: Removed previewplayer. Kept code since I might include it again someday. PLEASE NOTE, that the hide option is simply an easy
+    // way to remove the checkbox.
+
+    ui->checkBoxPreviewplayer->hide();
+    //Preview player
+    settings.setPreviewplayer(ui->lineEditPreviewplayer->text());
+//    if(!ui->checkBoxPreviewplayer->isChecked())
+//    {
+//        settings.setPreviewplayerintegrated("false");
+//    }
+//    else
+//    {
+//        settings.setPreviewplayerintegrated("true");
+//    }
+
+    //Single window: use red rectangle
+    if(!ui->checkBoxSinglewindowredrectangle->isChecked())
+    {
+        settings.setSinglewindow_redrectangle("false");
+    }
+    else
+    {
+        settings.setSinglewindow_redrectangle("true");
+    }
+
+    //advanced
+    settings.setVpre(ui->lineEditadvancedvpre->text());
+    if(ui->checkBoxadvancedvpreuse->isChecked())
+    {
+        settings.setUsevpre("true");
+    }
+    else
+    {
+        settings.setUsevpre("false");
+    }
+
+    settings.setApre(ui->lineEditadvancedapre->text());
+    if(ui->checkBoxadvancedapre->isChecked())
+    {
+        settings.setUseapre("true");
+    }
+    else
+    {
+        settings.setUseapre("false");
+    }
+
+    settings.setPreset(ui->lineEditadvancedpreset->text());
+    if(ui->checkBoxadvancepreset->isChecked()){
+        settings.setUsePreset("true");
+    }
+    else {
+        settings.setUsePreset("false");
+    }
+
+    //FFmpeg location
+    if(!ui->lineEditFFmpeg->text().isEmpty()){
+        settings.setFFmpeglocation(ui->lineEditFFmpeg->text());
+    }
+
+    //Writes the data
+    qDebug() << "-----  Settingsdialog: Writting settings -----";
+    settings.writeAll();
+    qDebug() << "-----  Settingsdialog: Reading settings -----";
+    settings.readAll();
+
 }
