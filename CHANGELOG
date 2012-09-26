@@ -1,3 +1,8 @@
+*
+- Added: When recording you can see the FPS you are recording with. 
+- Added: You can choose the location of FFmpeg. Usefull if FFmpeg is not placed in the typical locations. 
+- Many "under-the-hood" improvements, like better use of Qt Signals and Slots
+
 *Thu Jul 26 2012
 - Added: Possible to set and use a ffmpeg 'preset'. By default 'ultrafast' is used
 - Fixed: Video and audio is sometimes out-of-sync. See ffmpeg preset feature.
