@@ -36,6 +36,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     //Sets the MainWindow size
     MainWindow::setFixedHeight(107);
+    MainWindow::setGeometry(MainWindow::geometry().x(),MainWindow::geometry().y(),625,MainWindow::geometry().height());
     QRect r = MainWindow::geometry();
     r.moveCenter(QApplication::desktop()->availableGeometry().center());
     MainWindow::setGeometry(r);
@@ -131,7 +132,7 @@ void MainWindow::on_pushButtonStartrecord_clicked()
         msgBox.setStandardButtons(QMessageBox::Ok);
         msgBox.setDefaultButton(QMessageBox::Ok);
         msgBox.setFixedWidth(520);
-        int ret = msgBox.exec();
+        msgBox.exec();
 
         //Starting the singlewindow setup
         QProcess p;
