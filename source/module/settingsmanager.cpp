@@ -65,7 +65,7 @@ void SettingsManager::readAll()
     microphonedevice = settings.value("defaultrecorddevice",recordingdevices.RecordDeviceHW[0]).toString();
     microphonemuted = settings.value("defaultrecorddeviceMute","true").toBool();
     filenameBase = settings.value("defaultname",trUtf8("recording")).toString();
-    filenameUsedate = settings.value("defaultnametimedate","false").toString();
+    filenameUsedate = settings.value("defaultnametimedate","false").toBool();
     filenamePath = settings.value("defaultpath",QDir::homePath()).toString();
     format = settings.value("defaultformat","avi").toString();
     language = settings.value("language","default").toString();
@@ -162,12 +162,12 @@ QString SettingsManager::getFilenameBase()
     return filenameBase;
 }
 
-void SettingsManager::setFilenameUsedate(QString state)
+void SettingsManager::setFilenameUsedate(bool state)
 {
     filenameUsedate = state;
 }
 
-QString SettingsManager::getFilenameUsedate()
+bool SettingsManager::getFilenameUsedate()
 {
     return filenameUsedate;
 }

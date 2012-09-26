@@ -14,7 +14,8 @@ SettingsDialog::SettingsDialog(QWidget *parent) :
     qDebug() << "-----  Settingsdialog: Reading settings -----";
     readSettings();
 
-    on_checkBoxMicMute_clicked();    
+    on_checkBoxMicMute_clicked();
+
 }
 
 SettingsDialog::~SettingsDialog()
@@ -156,14 +157,13 @@ void SettingsDialog::readSettings()
     ui->checkBoxMicMute->setChecked(settings.getMicrophonemuted());
 
     // -----------------SECTION: Filename use time and date------------------------------
-    if(settings.getFilenameUsedate() == "true")
+    ui->checkBoxbasenametimedate->setChecked(settings.getFilenameUsedate());
+    if(settings.getFilenameUsedate())
     {
-        ui->checkBoxbasenametimedate->setChecked(true);
         ui->lineEditbasename->setEnabled(0);
     }
     else
     {
-        ui->checkBoxbasenametimedate->setChecked(false);
         ui->lineEditbasename->setEnabled(1);
     }    
 
@@ -331,14 +331,15 @@ void SettingsDialog::writeSettings()
     settings.setFilenameBase(ui->lineEditbasename->text());
 
     //Filename: use date and time
-    if(ui->checkBoxbasenametimedate->isChecked())
-    {
-        settings.setFilenameUsedate("true");
-    }
-    else
-    {
-        settings.setFilenameUsedate("false");
-    }
+//    if(ui->checkBoxbasenametimedate->isChecked())
+//    {
+//        settings.setFilenameUsedate("true");
+//    }
+//    else
+//    {
+//        settings.setFilenameUsedate("false");
+//    }
+    settings.setFilenameUsedate(ui->checkBoxbasenametimedate->isChecked());
 
     settings.setFilenamePath(ui->lineEditpath->text());
 

@@ -34,8 +34,8 @@ public:
     void setFilenameBase(QString newBasename);
     QString getFilenameBase();
 
-    void setFilenameUsedate(QString state);
-    QString getFilenameUsedate();
+    void setFilenameUsedate(bool state);
+    bool getFilenameUsedate();
 
     void setFilenamePath(QString newPath);
     QString getFilenamePath();
@@ -112,7 +112,7 @@ private:
     QString usePreset;
     //Filename
     QString filenameBase;
-    QString filenameUsedate;
+    bool filenameUsedate;
     QString filenamePath;
     //Format
     QString format;

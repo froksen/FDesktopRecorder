@@ -175,17 +175,12 @@ void MainWindow::on_pushButtonStartrecord_clicked()
     //------------------------SECTION: Filename--------------------------------
     //Reads some defaults from CFG file
     mrecordinginfo.defaultpath = settings.getFilenamePath();
-    QString defaultnamedatetime = settings.getFilenameUsedate();
-    mrecordinginfo.defaultname;
+    mrecordinginfo.defaultname = QDateTime::currentDateTime().toString();
     mrecordinginfo.defaultformat = settings.getFormat();
 
-    if(defaultnamedatetime != "true")
+    if(!settings.getFilenameUsedate())
     {
        mrecordinginfo.defaultname = settings.getFilenameBase();
-    }
-    else
-    {
-        mrecordinginfo.defaultname = QDateTime::currentDateTime().toString();
     }
 
     //Sets the final filname!
