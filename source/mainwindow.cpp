@@ -69,7 +69,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->actionConsole->setIcon(QIcon::fromTheme("utilities-terminal"));
     ui->actionSettings->setIcon(QIcon::fromTheme("preferences-system"));
     ui->actionOpen_recording_directory->setIcon(QIcon::fromTheme("system-file-manager"));
-    ui->actionPreviewrecording->setIcon(QIcon::fromTheme("package_multimedia_tv"));
+    ui->actionPreviewrecording->setIcon(QIcon::fromTheme("video-display"));
 }
 
 MainWindow::~MainWindow()
