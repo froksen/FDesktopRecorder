@@ -292,7 +292,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../mainwindow.ui" line="183"/>
         <source>Copy to Clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopier til udklipsholder</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="195"/>
@@ -613,7 +613,7 @@ Herefter vil optagelsen påbegynde.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="696"/>
         <source>Current output copied to clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation>Nuværrende output kopieret til udklipsholder</translation>
     </message>
     <message>
         <source> No recording in this session</source>
@@ -1137,7 +1137,7 @@ genstart af programmet</translation>
     <message>
         <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="507"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="514"/>
@@ -1172,7 +1172,7 @@ genstart af programmet</translation>
     <message>
         <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="553"/>
         <source>FFmpeg</source>
-        <translation type="unfinished"></translation>
+        <translation>FFmpeg</translation>
     </message>
     <message>
         <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="588"/>
@@ -1226,7 +1226,7 @@ Vær obmærksom på at dette IKKE kan tilbage gøres.</translation>
     <message>
         <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="306"/>
         <source>FFmpeg location</source>
-        <translation type="unfinished"></translation>
+        <translation>FFmpeg placering</translation>
     </message>
     <message>
         <source>If you press Yes everything will be restored to default. 
