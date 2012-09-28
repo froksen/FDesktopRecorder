@@ -216,7 +216,6 @@ p, li { white-space: pre-wrap; }
     <name>MainWindow</name>
     <message>
         <location filename="../mainwindow.ui" line="20"/>
-        <location filename="../mainwindow.cpp" line="644"/>
         <source>FDesktopRecorder</source>
         <translation>FDesktopRecorder</translation>
     </message>
@@ -291,64 +290,69 @@ p, li { white-space: pre-wrap; }
         <translation>Silenciar micrófono</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="185"/>
+        <location filename="../mainwindow.ui" line="183"/>
+        <source>Copy to Clipboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="192"/>
         <source>About</source>
         <translation>Acerca de</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="188"/>
+        <location filename="../mainwindow.ui" line="195"/>
         <source>Shows information about this program</source>
         <translation>Muestra información sobre este programa</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="191"/>
+        <location filename="../mainwindow.ui" line="198"/>
         <source>About FDesktopRecorder</source>
         <translation>Acerca de FDesktopRecorder</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="196"/>
-        <location filename="../mainwindow.ui" line="202"/>
+        <location filename="../mainwindow.ui" line="203"/>
+        <location filename="../mainwindow.ui" line="209"/>
         <source>Settings</source>
         <translation>Opciones</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="199"/>
+        <location filename="../mainwindow.ui" line="206"/>
         <source>Let you change an amount of different settings like recording framerate etc.</source>
         <translation>Permite cambiar opciones diferentes como la grabación de imágenes por segundo, etc.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="207"/>
+        <location filename="../mainwindow.ui" line="214"/>
         <source>Console</source>
         <translation>Consola</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="210"/>
+        <location filename="../mainwindow.ui" line="217"/>
         <source>Shows a console where you can see the output. Usefull if recording fails.</source>
         <translation>Muestra una consola donde se puede ver la salida. Útil si la grabación falla.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="213"/>
+        <location filename="../mainwindow.ui" line="220"/>
         <source>Show/Hide console output</source>
         <translation>Muestra/Oculta la consola</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="218"/>
+        <location filename="../mainwindow.ui" line="225"/>
         <source>Open recording directory</source>
         <translation>Abrir carpeta de captura</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="221"/>
-        <location filename="../mainwindow.ui" line="224"/>
+        <location filename="../mainwindow.ui" line="228"/>
+        <location filename="../mainwindow.ui" line="231"/>
         <source>Open directory containing your recordings</source>
         <translation>Abrir la carpeta que contiene las grabaciónes</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="229"/>
+        <location filename="../mainwindow.ui" line="236"/>
         <source>Preview recording</source>
         <translation>Ver la grabación</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="232"/>
+        <location filename="../mainwindow.ui" line="239"/>
         <source>Preview the recording</source>
         <translation>Ver la grabación</translation>
     </message>
@@ -461,7 +465,7 @@ p, li { white-space: pre-wrap; }
         <translation type="obsolete">Iniciar la grabación</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="40"/>
+        <location filename="../mainwindow.cpp" line="50"/>
         <source>Start recording</source>
         <translation>Iniciar grabación</translation>
     </message>
@@ -510,22 +514,22 @@ p, li { white-space: pre-wrap; }
         <translation type="obsolete">Acerca de Qt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="42"/>
+        <location filename="../mainwindow.cpp" line="52"/>
         <source>Minimize and start record</source>
         <translation>Minimizar e iniciar grabación</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="121"/>
+        <location filename="../mainwindow.cpp" line="128"/>
         <source>&lt;b&gt; Recording a single window &lt;/b&gt;</source>
         <translation>&lt;b&gt; Grabar una única ventana &lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="122"/>
+        <location filename="../mainwindow.cpp" line="129"/>
         <source>Recording a single window</source>
         <translation>Grabar una única ventana</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="123"/>
+        <location filename="../mainwindow.cpp" line="130"/>
         <source>When you click &apos;OK&apos; a small crossair will appear. 
  
 With this you will have to select the window you want to record. 
@@ -536,54 +540,58 @@ Hereafter the recording will start.</source>
 Seleccione mediante la cruz la ventana que quiere grabar.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="294"/>
-        <location filename="../mainwindow.cpp" line="587"/>
-        <location filename="../mainwindow.cpp" line="599"/>
+        <location filename="../mainwindow.cpp" line="307"/>
+        <location filename="../mainwindow.cpp" line="605"/>
         <source>Recording started</source>
         <translation>Grabación iniciada</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="311"/>
+        <location filename="../mainwindow.cpp" line="324"/>
         <source>Please wait while saving the recording. Might take some time.</source>
         <translation>Esperar mientras se guarda la grabación. Puede tomar algo de tiempo...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="385"/>
-        <location filename="../mainwindow.cpp" line="388"/>
+        <location filename="../mainwindow.cpp" line="398"/>
+        <location filename="../mainwindow.cpp" line="401"/>
         <source>Successfully finished recording</source>
         <translation>Grabación terminada correctamente</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="385"/>
+        <location filename="../mainwindow.cpp" line="398"/>
         <source>Size</source>
         <translation>Tamaño</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="398"/>
-        <location filename="../mainwindow.cpp" line="459"/>
+        <location filename="../mainwindow.cpp" line="411"/>
+        <location filename="../mainwindow.cpp" line="480"/>
         <source>Latest Recording</source>
         <translation>Ultima grabación</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="405"/>
-        <location filename="../mainwindow.cpp" line="408"/>
+        <location filename="../mainwindow.cpp" line="418"/>
+        <location filename="../mainwindow.cpp" line="421"/>
         <source>Failed to start!</source>
         <translation>Fallo al iniciar!</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="408"/>
+        <location filename="../mainwindow.cpp" line="421"/>
         <source>View terminaloutput for more info.</source>
         <translation>Ver la salida de terminal para mas información.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="411"/>
+        <location filename="../mainwindow.cpp" line="424"/>
         <source>&lt;b&gt;Failed to start recording!&lt;/b&gt;</source>
         <translation>&lt;b&gt;Fallo al iniciar la grabación!&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="412"/>
+        <location filename="../mainwindow.cpp" line="425"/>
         <source>Press &lt;i&gt;&apos;show details&apos;&lt;/i&gt; to see console ouput.</source>
         <translation>Pulse &lt;i&gt;&apos;Detalles&apos;&lt;/i&gt; para ver la salida de terminal.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="696"/>
+        <source>Current output copied to clipboard</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source> No recording in this session</source>
@@ -606,7 +614,7 @@ Grabe algo y pruebe otra vez</translation>
         <translation type="obsolete">Fallo de grabación!</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="416"/>
+        <location filename="../mainwindow.cpp" line="429"/>
         <source>Failed to start recording!</source>
         <translation>Fallo de grabación!</translation>
     </message>
@@ -615,17 +623,17 @@ Grabe algo y pruebe otra vez</translation>
         <translation type="obsolete">Pulse &quot;Detalles&quot; para ver la salida de consola.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="445"/>
+        <location filename="../mainwindow.cpp" line="466"/>
         <source>&amp;Show/Hide window</source>
         <translation>&amp;Mostrar/Ocultar ventana</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="449"/>
+        <location filename="../mainwindow.cpp" line="470"/>
         <source>&amp;Stop recording</source>
         <translation>&amp;Parar grabación</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="453"/>
+        <location filename="../mainwindow.cpp" line="474"/>
         <source>&amp;Latest recording: </source>
         <translation>&amp;Última grabación:</translation>
     </message>
@@ -634,7 +642,7 @@ Grabe algo y pruebe otra vez</translation>
         <translation type="obsolete">última grabación:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="461"/>
+        <location filename="../mainwindow.cpp" line="482"/>
         <source>&amp;Quit program</source>
         <translation>&amp;Salir</translation>
     </message>
@@ -778,7 +786,7 @@ Grabe algo y pruebe otra vez</translation>
 <context>
     <name>RecordingDevices</name>
     <message>
-        <location filename="../module/recordingdevices.cpp" line="60"/>
+        <location filename="../module/recordingdevices.cpp" line="64"/>
         <source>Pulse Audio (might not work)</source>
         <translation>Pulse Audio (puede que no funcione)</translation>
     </message>
@@ -1043,42 +1051,42 @@ Grabe algo y pruebe otra vez</translation>
         <translation></translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="443"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="450"/>
         <source>Preview player</source>
         <translation>Previsualizar</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="483"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="514"/>
         <source>Use the integrated player rather than the player chosen above</source>
         <translation>Usar el reproductor integrado en lugar del indicado</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="486"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="517"/>
         <source>Use integrated player</source>
         <translation>Usar el reproductor integrado</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="506"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="530"/>
         <source>Show a red rectangle, that surrounds the area which is been recorded.</source>
         <translation>Mostrar un rectangulo rojo para marcar la zona de grabación</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="509"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="533"/>
         <source>Enable/Disable</source>
         <translation>Activado/Desactivado</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="516"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="484"/>
         <source>Show red rectangle</source>
         <translation>Mostrar rectangulo rojo</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="529"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="497"/>
         <source>Single Window</source>
         <translation>Ventana única</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="554"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="575"/>
         <source>NOTE: Some changes might first apply after a restart of this program</source>
         <translation>NOTA: Algunos cambios no serán efectivos hasta reiniciar la aplicación</translation>
     </message>
@@ -1133,27 +1141,37 @@ Grabe algo y pruebe otra vez</translation>
         <translation>Opciones aplicación</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="453"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="457"/>
         <source>Language</source>
         <translation>Idiomas</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="567"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="507"/>
+        <source>...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="553"/>
+        <source>FFmpeg</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="588"/>
         <source>Save or decline changes</source>
         <translation>Guardar o descartar cambios</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="580"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="601"/>
         <source>Restores the settings to the defaults. Please note, these can not be undone!</source>
         <translation>Restaura a los valores predeterminados. Tenga en cuenta que no se puede deshacer!</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="583"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="604"/>
         <source>Restore to default. PLEASE NOTE: CAN NOT BE UNDONE!</source>
         <translation>Valores por defecto. NOTA: NO SE PUEDE DESHACER!</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="586"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="607"/>
         <source>Restore to default</source>
         <translation>Restaurar por defecto</translation>
     </message>
@@ -1162,13 +1180,13 @@ Grabe algo y pruebe otra vez</translation>
         <translation type="obsolete">grabación</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="135"/>
-        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="136"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="34"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="35"/>
         <source>Restore everything to default?</source>
         <translation>Restaurar todo a predeterminados?</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="137"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="36"/>
         <source>If you press Yes everything will be restored to default. 
 
 Be aware that this can NOT be undone.</source>
@@ -1177,13 +1195,18 @@ Be aware that this can NOT be undone.</source>
 Tenga cuidado por que NO se puede deshacer.</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="346"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="248"/>
         <source>Use system default</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="347"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="249"/>
         <source>Original</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="306"/>
+        <source>FFmpeg location</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1195,7 +1218,7 @@ Tenga cuidado por que NO se puede deshacer.</translation>
 Tenga cuidado por que NO se puede deshacer.</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="306"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="208"/>
         <source>Open Directory</source>
         <translation>Abrir carpeta</translation>
     </message>
@@ -1203,9 +1226,7 @@ Tenga cuidado por que NO se puede deshacer.</translation>
 <context>
     <name>SettingsManager</name>
     <message>
-        <location filename="../module/settingsmanager.cpp" line="27"/>
-        <location filename="../module/settingsmanager.cpp" line="70"/>
-        <location filename="../module/settingsmanager.cpp" line="159"/>
+        <location filename="../module/settingsmanager.cpp" line="67"/>
         <source>recording</source>
         <translation>grabación</translation>
     </message>
