@@ -118,8 +118,7 @@ void MainWindow::on_pushButtonStartrecord_clicked()
     mrecordinginfo.fps = settings.getFramerate();
 
     //------------------------SECTION: Geometry--------------------------------
-    mrecordinginfo.geometry;
-    mrecordinginfo.corners;
+
 
     //If Single Window radio is checked, then to this. Else record fullscreen :-)
     if(ui->radioButtonSinglewindow->isChecked())
@@ -428,7 +427,7 @@ void MainWindow::onProcessFinished(int Exitcode)
         msgBox.setDetailedText(QString(ui->textEditConsole->toPlainText()));
         msgBox.setDefaultButton(QMessageBox::Save);
         msgBox.setWindowTitle(trUtf8("Failed to start recording!"));
-        int ret = msgBox.exec();
+        msgBox.exec();
     }
 
     //------------------SECTION: Final---------------------
