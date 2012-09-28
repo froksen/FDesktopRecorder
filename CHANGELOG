@@ -1,6 +1,7 @@
-*
+* Fri Sep 28 2012
 - Added: When recording you can see the FPS you are recording with. 
 - Added: You can choose the location of FFmpeg. Usefull if FFmpeg is not placed in the typical locations. 
+- Minor GUI changes
 - Many "under-the-hood" improvements, like better use of Qt Signals and Slots
 
 *Thu Jul 26 2012
