@@ -4,6 +4,10 @@
 <context>
     <name>AboutProg</name>
     <message>
+        <source>About kTffmpeqQt</source>
+        <translation type="obsolete">Riguardo a kTffmpeqQt</translation>
+    </message>
+    <message>
         <location filename="../../dialogs/about/aboutprog.ui" line="14"/>
         <location filename="../../dialogs/about/aboutprog.ui" line="34"/>
         <source>About FDesktopRecorder</source>
@@ -13,11 +17,6 @@
         <location filename="../../dialogs/about/aboutprog.ui" line="48"/>
         <source>About</source>
         <translation>Informazioni</translation>
-    </message>
-    <message>
-        <location filename="../../dialogs/about/aboutprog.ui" line="82"/>
-        <source>Translations</source>
-        <translation>Traduzioni</translation>
     </message>
     <message>
         <location filename="../../dialogs/about/aboutprog.ui" line="63"/>
@@ -45,6 +44,11 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Basato su:&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Uno script ffmpeg di Peter Lybeth del sito danese GNU/Linux &amp;quot;Kanal Tux&amp;quot;: &lt;a href=&quot;http://www.kanaltux.dk&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0057ae;&quot;&gt;http://www.kanaltux.dk&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/about/aboutprog.ui" line="82"/>
+        <source>Translations</source>
+        <translation>Traduzioni</translation>
     </message>
     <message>
         <location filename="../../dialogs/about/aboutprog.ui" line="91"/>
@@ -97,17 +101,17 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../../dialogs/about/aboutprog.cpp" line="27"/>
         <source>Danish - Ole &apos;Froksen&apos; Holm Frandsen</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message utf8="true">
         <location filename="../../dialogs/about/aboutprog.cpp" line="28"/>
         <source>German - Chris &apos;saftsocken&apos; Räss</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../dialogs/about/aboutprog.cpp" line="29"/>
         <source>Spanish - Javi</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../dialogs/about/aboutprog.cpp" line="30"/>
@@ -286,6 +290,18 @@ p, li { white-space: pre-wrap; }
         <translation>Registrazione di una singola finestra</translation>
     </message>
     <message>
+        <source>When you click &apos;OK&apos; a small crossair will appear.
+ 
+With this you will have to select the window you want to record.
+
+Hereafter the recording will start.</source>
+        <translation type="obsolete">Quando si fa clic su &apos;OK&apos; apparirà una crocetta apparirà.
+ 
+Con questa si dovrà selezionare la finestra che si desidera registrare.
+
+Di seguito la registrazione avrà inizio.</translation>
+    </message>
+    <message>
         <location filename="../../mainwindow.cpp" line="130"/>
         <source>When you click &apos;OK&apos; a small crossair will appear. 
  
@@ -353,6 +369,27 @@ Di seguito, la registrazione avrà inizio.</translation>
         <translation>Impossibile avviare la registrazione!</translation>
     </message>
     <message>
+        <location filename="../../mainwindow.cpp" line="696"/>
+        <source>Current output copied to clipboard</source>
+        <translation>Esito attuale copiato negli appunti</translation>
+    </message>
+    <message>
+        <source> No recording in this session</source>
+        <translation type="obsolete"> Nessuna registrazione in questa sessione</translation>
+    </message>
+    <message>
+        <source>You have not recorded anything yet, and therefore nothing to preview.
+
+Record something and try again</source>
+        <translation type="obsolete">Non è stato registrato ancora nulla, e dunque nulla in anteprima.
+
+Registrare qualcosa e provare di nuovo</translation>
+    </message>
+    <message>
+        <source>No recording in this session</source>
+        <translation type="obsolete">Nessuna registrazione in questa sessione</translation>
+    </message>
+    <message>
         <location filename="../../mainwindow.cpp" line="466"/>
         <source>&amp;Show/Hide window</source>
         <translation>&amp;Mostra/Nascondi finestra</translation>
@@ -372,10 +409,44 @@ Di seguito, la registrazione avrà inizio.</translation>
         <source>&amp;Quit program</source>
         <translation>&amp;Esci dal programma</translation>
     </message>
+</context>
+<context>
+    <name>PreviewPlayer</name>
     <message>
-        <location filename="../../mainwindow.cpp" line="696"/>
-        <source>Current output copied to clipboard</source>
-        <translation>Esito attuale copiato negli appunti</translation>
+        <source>Preview</source>
+        <translation type="obsolete">Anteprima</translation>
+    </message>
+    <message>
+        <source>Seek a specific position of your movie.</source>
+        <translation type="obsolete">Cercate una posizione specifica del filmato.</translation>
+    </message>
+    <message>
+        <source>Stop playing your content</source>
+        <translation type="obsolete">Ferma la riproduzione del contenuto</translation>
+    </message>
+    <message>
+        <source>Stop</source>
+        <translation type="obsolete">Arrestare</translation>
+    </message>
+    <message>
+        <source>Closes this window</source>
+        <translation type="obsolete">Chiude questa finestra</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation type="obsolete">Uscita</translation>
+    </message>
+    <message>
+        <source>Change the volume</source>
+        <translation type="obsolete">Modificare il volume</translation>
+    </message>
+    <message>
+        <source>Start/Pause playing your content</source>
+        <translation type="obsolete">Avvio/Pausa la riproduzione del contenuto</translation>
+    </message>
+    <message>
+        <source>Play/Pause</source>
+        <translation type="obsolete">Play/Pausa</translation>
     </message>
 </context>
 <context>
@@ -467,6 +538,10 @@ Di seguito, la registrazione avrà inizio.</translation>
         <translation>Canali audio</translation>
     </message>
     <message>
+        <source>Changes the number of audiochannels used</source>
+        <translation type="obsolete">Modifica il numero di canali audio utilizzati</translation>
+    </message>
+    <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="126"/>
         <source>Microphone</source>
         <translation>Microfono</translation>
@@ -475,6 +550,10 @@ Di seguito, la registrazione avrà inizio.</translation>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="140"/>
         <source>Basename</source>
         <translation>Nome di base</translation>
+    </message>
+    <message>
+        <source>Choose a basename.</source>
+        <translation type="obsolete">Scegliere un basename.</translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="156"/>
@@ -517,6 +596,22 @@ Di seguito, la registrazione avrà inizio.</translation>
         <translation>Scegli con quale formato devono essere salvate le registrazioni. </translation>
     </message>
     <message>
+        <source>Select a microphone input device</source>
+        <translation type="obsolete">Selezionare un dispositivo di ingresso microfono</translation>
+    </message>
+    <message>
+        <source>Mute the microphone. (No audio will be recorded)</source>
+        <translation type="obsolete">Disattivare il microfono. (Nessun audio sarà registrato)</translation>
+    </message>
+    <message>
+        <source>Mute</source>
+        <translation type="obsolete">Disattivare</translation>
+    </message>
+    <message>
+        <source>Audio source</source>
+        <translation type="obsolete">Sorgente Audio</translation>
+    </message>
+    <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="335"/>
         <source>Advanced</source>
         <translation>Avanzate</translation>
@@ -537,51 +632,6 @@ Di seguito, la registrazione avrà inizio.</translation>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="374"/>
         <source>-vpre</source>
         <translation>-vpre</translation>
-    </message>
-    <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="381"/>
-        <source>-preset</source>
-        <translation>-preset</translation>
-    </message>
-    <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="450"/>
-        <source>Preview player</source>
-        <translation>Lettore per l&apos;anteprima</translation>
-    </message>
-    <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="507"/>
-        <source>...</source>
-        <translation>...</translation>
-    </message>
-    <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="514"/>
-        <source>Use the integrated player rather than the player chosen above</source>
-        <translation>Utilizza il lettore integrato, piuttosto che quello scelto sopra</translation>
-    </message>
-    <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="517"/>
-        <source>Use integrated player</source>
-        <translation>Utilizza il lettore integrato</translation>
-    </message>
-    <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="530"/>
-        <source>Show a red rectangle, that surrounds the area which is been recorded.</source>
-        <translation>Mostra un rettangolo rosso, che circonda la zona che è stata registrata.</translation>
-    </message>
-    <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="533"/>
-        <source>Enable/Disable</source>
-        <translation>Abilita/Disabilita</translation>
-    </message>
-    <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="484"/>
-        <source>Show red rectangle</source>
-        <translation>Mostra rettangolo rosso</translation>
-    </message>
-    <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="497"/>
-        <source>Single Window</source>
-        <translation>Singola finestra</translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="575"/>
@@ -629,14 +679,59 @@ Di seguito, la registrazione avrà inizio.</translation>
         <translation>Disattivato all&apos;avvio</translation>
     </message>
     <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="381"/>
+        <source>-preset</source>
+        <translation>-preset</translation>
+    </message>
+    <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="431"/>
         <source>Application settings</source>
         <translation>Impostazioni dell&apos;applicazione</translation>
     </message>
     <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="450"/>
+        <source>Preview player</source>
+        <translation>Lettore per l&apos;anteprima</translation>
+    </message>
+    <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="457"/>
         <source>Language</source>
         <translation>Lingua</translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="507"/>
+        <source>...</source>
+        <translation>...</translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="514"/>
+        <source>Use the integrated player rather than the player chosen above</source>
+        <translation>Utilizza il lettore integrato, piuttosto che quello scelto sopra</translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="517"/>
+        <source>Use integrated player</source>
+        <translation>Utilizza il lettore integrato</translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="530"/>
+        <source>Show a red rectangle, that surrounds the area which is been recorded.</source>
+        <translation>Mostra un rettangolo rosso, che circonda la zona che è stata registrata.</translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="533"/>
+        <source>Enable/Disable</source>
+        <translation>Abilita/Disabilita</translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="484"/>
+        <source>Show red rectangle</source>
+        <translation>Mostra rettangolo rosso</translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="497"/>
+        <source>Single Window</source>
+        <translation>Singola finestra</translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="553"/>
@@ -679,11 +774,6 @@ Be aware that this can NOT be undone.</source>
 Questa azione non può essere annullata.</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="208"/>
-        <source>Open Directory</source>
-        <translation>Apri cartella</translation>
-    </message>
-    <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="248"/>
         <source>Use system default</source>
         <translation>Usa i valori predefiniti di sistema</translation>
@@ -697,6 +787,19 @@ Questa azione non può essere annullata.</translation>
         <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="318"/>
         <source>FFmpeg location</source>
         <translation>Posizione FFmpeg</translation>
+    </message>
+    <message>
+        <source>If you press Yes everything will be restored to default.
+
+Be aware that this can NOT be undone.</source>
+        <translation type="obsolete">Se si preme Sì tutto sarà ripristinato alle impostazioni predefinite.
+
+Tenere presente che questo NON può essere annullato.</translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="208"/>
+        <source>Open Directory</source>
+        <translation>Apri cartella</translation>
     </message>
 </context>
 <context>
