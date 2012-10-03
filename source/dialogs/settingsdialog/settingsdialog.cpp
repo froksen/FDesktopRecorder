@@ -241,7 +241,7 @@ void SettingsDialog::on_checkBoxMicMute_clicked()
 
 void SettingsDialog::findLanguages()
 {
-    QDir translationfilepath(":/translations");
+    QDir translationfilepath(":/translations/FDesktopRecorder.main");
     QStringList translationsfiles = translationfilepath.entryList(QDir::Files);
     qDebug() << "Files found:" << translationsfiles;
 
@@ -255,25 +255,37 @@ void SettingsDialog::findLanguages()
     localeEnding << "da_DK" << "de_DE" << "ro_RO" << "it_IT" << "es_ES";
 
 
-
-    foreach(QFileInfo file,translationsfiles)
-    {
-        QString basename = file.baseName();
-        QString localending = file.baseName().remove(0,17);
+    foreach(QString filename, translationsfiles){
+        QString filebasename = QFileInfo(filename).baseName();
 
         for(int i=0;i<localeEnding.count();i++){
-            if(localeEnding.at(i) == localending){
-                basename = localeName.at(i);
+            if(filebasename == localeEnding.at(i)){
+                qDebug() << "Locale:" << localeEnding.at(i) << localeName.at(i);
+                ui->comboBoxLanguage->addItem(localeName.at(i),localeEnding.at(i));
             }
         }
-
-
-        qDebug() << "Translation basename:" << basename;
-        qDebug() << "Translation ending:" << localending;
-
-        ui->comboBoxLanguage->addItem(basename,localending);
-
     }
+
+
+
+//    foreach(QFileInfo file,translationsfiles)
+//    {
+////        QString basename = file.baseName();
+////        QString localending = file.baseName().remove(0,17);
+
+//        for(int i=0;i<localeEnding.count();i++){
+//            if(localeEnding.at(i) == localending){
+//                basename = localeName.at(i);
+//            }
+//        }
+
+
+//        qDebug() << "Translation file:" << basename;
+////        qDebug() << "Translation ending:" << localending;
+
+//        ui->comboBoxLanguage->addItem(basename,localending);
+
+//    }
 }
 
 void SettingsDialog::on_checkBoxPreviewplayer_clicked()
