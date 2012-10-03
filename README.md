@@ -28,6 +28,9 @@ You can contact me via kde-apps.org. Find me under the username "froksen".
 * Romanian translation by Mamut R. Ghiunhan (aka V3n3RiX)
 * Italian translation by Symbian flo
 
+###Help with translation?
+All translation is done via Transifex, please visit the project page at: https://www.transifex.com/projects/p/FDesktopRecorder/
+
 ##Build and Install
 
 ###Requires to run
