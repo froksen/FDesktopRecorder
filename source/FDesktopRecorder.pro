@@ -37,11 +37,11 @@ FORMS    += mainwindow.ui\
     dialogs/settingsdialog/settingsdialog.ui \
 
 
-TRANSLATIONS    = translations/FDesktopRecorder_da_DK.ts \
-                  translations/FDesktopRecorder_de_DE.ts \
-                  translations/FDesktopRecorder_es_ES.ts \
-                  translations/FDesktopRecorder_it_IT.ts \
-		  translations/FDesktopRecorder_ro_RO.ts \
+TRANSLATIONS    = translations/FDesktopRecorder.main/FDesktopRecorder_da_DK.ts \
+                  translations/FDesktopRecorder.main/FDesktopRecorder_de_DE.ts \
+                  translations/FDesktopRecorder.main/FDesktopRecorder_es_ES.ts \
+                  translations/FDesktopRecorder.main/FDesktopRecorder_it_IT.ts \
+		  translations/FDesktopRecorder.main/FDesktopRecorder_ro_RO.ts \
                   translations/FDesktopRecorder_untranslated.ts \
 
 
