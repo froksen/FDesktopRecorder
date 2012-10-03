@@ -1,0 +1,9 @@
+[main]
+host = https://www.transifex.net
+
+[FDesktopRecorder.main]
+file_filter = translations/FDesktopRecorder.main/<lang>.ts
+host = https://www.transifex.com
+source_file = translations/FDesktopRecorder_untranslated.ts
+source_lang = en
+
