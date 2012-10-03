@@ -2,10 +2,10 @@
     <qresource prefix="/">
         <file>images/icon.png</file>
         <file>images/recording.png</file>
-        <file>translations/FDesktopRecorder.main/ro_RO.ts</file>
-        <file>translations/FDesktopRecorder.main/da_DK.ts</file>
-        <file>translations/FDesktopRecorder.main/de_DE.ts</file>
-        <file>translations/FDesktopRecorder.main/es_ES.ts</file>
-        <file>translations/FDesktopRecorder.main/it_IT.ts</file>
+        <file>translations/FDesktopRecorder.main/da_DK.qm</file>
+        <file>translations/FDesktopRecorder.main/de_DE.qm</file>
+        <file>translations/FDesktopRecorder.main/es_ES.qm</file>
+        <file>translations/FDesktopRecorder.main/it_IT.qm</file>
+        <file>translations/FDesktopRecorder.main/ro_RO.qm</file>
     </qresource>
 </RCC>
