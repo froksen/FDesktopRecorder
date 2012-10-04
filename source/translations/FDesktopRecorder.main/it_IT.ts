@@ -97,31 +97,27 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../../dialogs/about/aboutprog.cpp" line="27"/>
         <source>Danish</source>
-        <translation type="unfinished">Olandese</translation>
+        <translation>Olandese</translation>
     </message>
     <message>
         <location filename="../../dialogs/about/aboutprog.cpp" line="28"/>
         <source>German</source>
-        <translation type="unfinished">Tedesco</translation>
+        <translation>Tedesco</translation>
     </message>
     <message>
         <location filename="../../dialogs/about/aboutprog.cpp" line="29"/>
         <source>Spanish</source>
-        <translation type="unfinished">Spagnolo</translation>
+        <translation>Spagnolo</translation>
     </message>
     <message>
         <location filename="../../dialogs/about/aboutprog.cpp" line="30"/>
         <source>Italian</source>
-        <translation type="unfinished">Italiano</translation>
+        <translation>Italiano</translation>
     </message>
     <message>
         <location filename="../../dialogs/about/aboutprog.cpp" line="31"/>
         <source>Romanian</source>
-        <translation type="unfinished">Rumeno</translation>
-    </message>
-    <message>
-        <source>Mamut R. Ghiunhan (aka V3n3RiX)</source>
-        <translation type="obsolete">Mamut R. Ghiunhan (aka V3n3RiX)</translation>
+        <translation>Rumeno</translation>
     </message>
 </context>
 <context>
@@ -556,23 +552,11 @@ Di seguito, la registrazione avrà inizio.</translation>
         <translation>Avanzate</translation>
     </message>
     <message>
-        <source>-apre</source>
-        <translation type="obsolete">-apre</translation>
-    </message>
-    <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="353"/>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="364"/>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="388"/>
         <source>Use</source>
         <translation>Utilizza</translation>
-    </message>
-    <message>
-        <source>-vpre</source>
-        <translation type="obsolete">-vpre</translation>
-    </message>
-    <message>
-        <source>-preset</source>
-        <translation type="obsolete">-preset</translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="418"/>

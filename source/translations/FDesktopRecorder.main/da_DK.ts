@@ -98,27 +98,27 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../../dialogs/about/aboutprog.cpp" line="27"/>
         <source>Danish</source>
-        <translation type="unfinished">Dansk</translation>
+        <translation>Dansk</translation>
     </message>
     <message>
         <location filename="../../dialogs/about/aboutprog.cpp" line="28"/>
         <source>German</source>
-        <translation type="unfinished">Tysk</translation>
+        <translation>Tysk</translation>
     </message>
     <message>
         <location filename="../../dialogs/about/aboutprog.cpp" line="29"/>
         <source>Spanish</source>
-        <translation type="unfinished">Spansk</translation>
+        <translation>Spansk</translation>
     </message>
     <message>
         <location filename="../../dialogs/about/aboutprog.cpp" line="30"/>
         <source>Italian</source>
-        <translation type="unfinished">Italiensk</translation>
+        <translation>Italiensk</translation>
     </message>
     <message>
         <location filename="../../dialogs/about/aboutprog.cpp" line="31"/>
         <source>Romanian</source>
-        <translation type="unfinished">Romænsk</translation>
+        <translation>Romænsk</translation>
     </message>
 </context>
 <context>
@@ -388,17 +388,17 @@ Herefter vil optagelsen påbegynde.</translation>
     <message>
         <location filename="../../utils/rubberband.cpp" line="84"/>
         <source>Scalability Failure Width</source>
-        <translation type="unfinished"></translation>
+        <translation>Skalérbar fejl ved bredde</translation>
     </message>
     <message>
         <location filename="../../utils/rubberband.cpp" line="85"/>
         <source>Frame Width must be a multiple of 2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ramme bredde skal være gangbar med 2</translation>
     </message>
     <message>
         <location filename="../../utils/rubberband.cpp" line="92"/>
         <source>Scalability Failure Height</source>
-        <translation type="unfinished"></translation>
+        <translation>Skalérbar fejl ved højde</translation>
     </message>
     <message>
         <location filename="../../utils/rubberband.cpp" line="93"/>
@@ -554,23 +554,11 @@ Herefter vil optagelsen påbegynde.</translation>
         <translation>Advanceret</translation>
     </message>
     <message>
-        <source>-apre</source>
-        <translation type="obsolete">-apre</translation>
-    </message>
-    <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="353"/>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="364"/>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="388"/>
         <source>Use</source>
         <translation>Brug</translation>
-    </message>
-    <message>
-        <source>-vpre</source>
-        <translation type="obsolete">-vpre</translation>
-    </message>
-    <message>
-        <source>-preset</source>
-        <translation type="obsolete">-preset</translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="418"/>

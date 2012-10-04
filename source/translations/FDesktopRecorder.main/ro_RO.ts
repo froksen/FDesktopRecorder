@@ -523,19 +523,11 @@ Hereafter the recording will start.</source>
         <translation>Avansat</translation>
     </message>
     <message>
-        <source>-apre</source>
-        <translation type="obsolete">-apre</translation>
-    </message>
-    <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="353"/>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="364"/>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="388"/>
         <source>Use</source>
         <translation>Folosește</translation>
-    </message>
-    <message>
-        <source>-vpre</source>
-        <translation type="obsolete">-vpre</translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="418"/>
