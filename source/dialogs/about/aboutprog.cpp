@@ -24,12 +24,27 @@ AboutProg::~AboutProg()
 //This method makes it eaiser to add new translators, without having to retranste the entire textedit.
 void AboutProg::appendTranslators()
 {
-    ui->textEdit_2->append(trUtf8("Danish") + QString(" - ") + QString("Ole 'Froksen' Holm Frandsen"));
-    ui->textEdit_2->append(trUtf8("German") + QString(" - ") + QString("Chris 'saftsocken' Räss"));
-    ui->textEdit_2->append(trUtf8("Spanish")+ QString(" - ") + QString("Javi"));
-    ui->textEdit_2->append(trUtf8("Italian")+ QString(" - ") + QString("Symbian flo"));
-    ui->textEdit_2->append(trUtf8("Romanian")+ QString(" - ") + QString("Mamut R. Ghiunhan (aka V3n3RiX)"));
+    ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("Danish")));
+    ui->textEdit_2->append(QString::fromUtf8("Ole 'Froksen' Holm Frandsen"));
+    ui->textEdit_2->append("<br>");
 
+    ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("German")));
+    ui->textEdit_2->append(QString::fromUtf8("mx01"));
+    ui->textEdit_2->append(QString::fromUtf8("Chris 'saftsocken' Räss"));
+    ui->textEdit_2->append("<br>");
+
+    ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("Spanish")));
+    ui->textEdit_2->append(QString::fromUtf8("Javi"));
+    ui->textEdit_2->append("<br>");
+
+    ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("Italian")));
+    ui->textEdit_2->append(QString::fromUtf8("Vincenzo 'smart2128' Reale"));
+    ui->textEdit_2->append(QString::fromUtf8("Symbian flo"));
+    ui->textEdit_2->append("<br>");
+
+    ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("Romanian")));
+    ui->textEdit_2->append(QString::fromUtf8("Mamut R. 'V3n3RiX' Ghiunhan"));
+    ui->textEdit_2->append("<br>");
 }
 
 void AboutProg::appendSpecialThanks()
