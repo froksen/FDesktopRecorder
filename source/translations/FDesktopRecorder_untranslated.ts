@@ -100,22 +100,22 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished">Danish</translation>
     </message>
     <message>
-        <location filename="../dialogs/about/aboutprog.cpp" line="28"/>
+        <location filename="../dialogs/about/aboutprog.cpp" line="31"/>
         <source>German</source>
         <translation type="unfinished">German</translation>
     </message>
     <message>
-        <location filename="../dialogs/about/aboutprog.cpp" line="29"/>
+        <location filename="../dialogs/about/aboutprog.cpp" line="36"/>
         <source>Spanish</source>
         <translation type="unfinished">Spanish</translation>
     </message>
     <message>
-        <location filename="../dialogs/about/aboutprog.cpp" line="30"/>
+        <location filename="../dialogs/about/aboutprog.cpp" line="40"/>
         <source>Italian</source>
         <translation type="unfinished">Italian</translation>
     </message>
     <message>
-        <location filename="../dialogs/about/aboutprog.cpp" line="31"/>
+        <location filename="../dialogs/about/aboutprog.cpp" line="45"/>
         <source>Romanian</source>
         <translation type="unfinished">Romanian</translation>
     </message>
@@ -660,13 +660,13 @@ Hereafter the recording will start.</translation>
         <translation>Restore to default</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="34"/>
-        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="35"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="37"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="38"/>
         <source>Restore everything to default?</source>
         <translation>Restore everything to default?</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="36"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="39"/>
         <source>If you press Yes everything will be restored to default. 
 
 Be aware that this can NOT be undone.</source>
@@ -675,22 +675,22 @@ Be aware that this can NOT be undone.</source>
 Be aware that this can NOT be undone.</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="208"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="211"/>
         <source>Open Directory</source>
         <translation>Open Directory</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="248"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="251"/>
         <source>Use system default</source>
         <translation>Use system default</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="249"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="252"/>
         <source>Original</source>
         <translation>Original</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="318"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="321"/>
         <source>FFmpeg location</source>
         <translation>FFmpeg location</translation>
     </message>
