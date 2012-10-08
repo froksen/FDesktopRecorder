@@ -11,6 +11,9 @@ SettingsDialog::SettingsDialog(QWidget *parent) :
     ui(new Ui::SettingsDialog)
 {
     ui->setupUi(this);
+
+    ui->toolBox->setCurrentIndex(0);
+
     qDebug() << "-----  Settingsdialog: Reading settings -----";
     readSettings();
 
