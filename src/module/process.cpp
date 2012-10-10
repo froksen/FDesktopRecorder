@@ -1,7 +1,6 @@
 #include "process.h"
 #include <QtGui>
 #include <QtCore>
-#include <mainwindow.h>
 
 process::process(QObject *parent) :
     QObject(parent)

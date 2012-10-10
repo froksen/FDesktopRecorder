@@ -3,7 +3,7 @@
 
 #include <QObject>
 #include <QSettings>
-#include <module/recordingdevices.h>
+#include "recordingdevices.h"
 
 class SettingsManager : public QObject
 {

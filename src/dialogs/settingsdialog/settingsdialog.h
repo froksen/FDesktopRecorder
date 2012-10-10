@@ -2,8 +2,8 @@
 #define SETTINGSDIALOG_H
 
 #include <QDialog>
-#include <module/settingsmanager.h>
-#include <module/recordingdevices.h>
+#include "../module/settingsmanager.h"
+#include "../module/recordingdevices.h"
 
 namespace Ui {
     class SettingsDialog;

@@ -1,6 +1,6 @@
 #include "settingsdialog.h"
 #include "ui_settingsdialog.h"
-#include <module/recordingdevices.h>
+#include "../module/recordingdevices.h"
 #include <QDebug>
 #include <QFile>
 #include <QFileDialog>
