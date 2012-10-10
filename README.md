@@ -71,7 +71,6 @@ This will install the *.notifyrc file in the correct place. If you are building 
 
 ###How to build/compile via CMake
   ```
-    $ cd source
     $ mkdir build
     $ cd build/
     $ cmake ..
