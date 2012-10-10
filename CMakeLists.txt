@@ -4,6 +4,9 @@ set ( CMAKE_BUILD_TYPE Release )
 add_definitions ( -Wall )
 find_package ( Qt4 REQUIRED )
 find_package ( KDE4 REQUIRED) 
+find_package (FFmpeg REQUIRED)
+find_package (ALSA REQUIRED)
+
 include ( ${QT_USE_FILE} ${KDE4Defaults})
 include_directories (
 	${CMAKE_SOURCE_DIR} 
@@ -11,3 +14,5 @@ include_directories (
 	)
 	
 add_subdirectory(src)
+add_subdirectory(desktop)
+add_subdirectory(knotification)
