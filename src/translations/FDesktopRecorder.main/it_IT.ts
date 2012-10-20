@@ -659,22 +659,22 @@ Be aware that this can NOT be undone.</source>
 Questa azione non può essere annullata.</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="211"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="212"/>
         <source>Open Directory</source>
         <translation>Apri cartella</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="251"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="252"/>
         <source>Use system default</source>
         <translation>Usa i valori predefiniti di sistema</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="252"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="253"/>
         <source>Original</source>
         <translation>Originale</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="321"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="297"/>
         <source>FFmpeg location</source>
         <translation>Posizione FFmpeg</translation>
     </message>

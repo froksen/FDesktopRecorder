@@ -632,22 +632,22 @@ Be aware that this can NOT be undone.</source>
 Tenga cuidado por que NO se puede deshacer.</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="211"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="212"/>
         <source>Open Directory</source>
         <translation>Abrir carpeta</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="251"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="252"/>
         <source>Use system default</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="252"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="253"/>
         <source>Original</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="321"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="297"/>
         <source>FFmpeg location</source>
         <translation type="unfinished"></translation>
     </message>
