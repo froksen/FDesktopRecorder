@@ -1,3 +1,7 @@
+*Fri Oct 20 2012
+- Updated translations: German by Max 'mx01' Huber, Italian by Vincenzo 'smart2128' Reale and Symbian flo
+- Very minor under-the-hood improvements
+
 * Fri Sep 28 2012
 - Added: When recording you can see the FPS you are recording with. 
 - Added: You can choose the location of FFmpeg. Usefull if FFmpeg is not placed in the typical locations. 
