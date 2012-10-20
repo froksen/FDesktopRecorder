@@ -106,11 +106,12 @@ void SettingsDialog::readSettings()
     ItemDescList << "MKV - Matroska Multimedia Container";
     ItemDescList << "AVI - Audio Video Interleaver";
 
-    int Indexnumber = 0;
-    foreach(QString format,ItemFormatList)
-    {
-        ui->comboBoxFormat->addItem(ItemDescList[Indexnumber],format);
-        Indexnumber += 1;
+    QMap<QString,QString> formatMap;
+    formatMap.insert("mkv","MKV - Matroska Multimedia Container");
+    formatMap.insert("avi","AVI - Audio Video Interleaver");
+
+    foreach(QString format, formatMap.keys()){
+        ui->comboBoxFormat->addItem(formatMap.value(format),format);
     }
 
     //Reads the prefered value
