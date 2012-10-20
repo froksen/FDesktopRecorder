@@ -251,44 +251,19 @@ void SettingsDialog::findLanguages()
     ui->comboBoxLanguage->addItem(trUtf8("Use system default"),"default");
     ui->comboBoxLanguage->addItem(QString("English (%1)").arg(trUtf8("Original")),"STANDARD");
 
-    QStringList localeName;
-    localeName<< QString::fromUtf8("Dansk") << QString::fromUtf8("Deutch") << QString::fromUtf8("Romantism") << QString::fromUtf8("Italiano") << QString::fromUtf8("Español");
+    QMap <QString,QString> localeMap;
+    localeMap.insert("da_DK",QString::fromUtf8("Dansk"));
+    localeMap.insert("de_DE",QString::fromUtf8("Deutch"));
+    localeMap.insert("ro_RO",QString::fromUtf8("Romantism"));
+    localeMap.insert("it_IT",QString::fromUtf8("Italiano"));
+    localeMap.insert("es_Es",QString::fromUtf8("Español"));
 
-    QStringList localeEnding;
-    localeEnding << "da_DK" << "de_DE" << "ro_RO" << "it_IT" << "es_ES";
 
+    foreach (QString locale, localeMap.keys()){
+        qDebug() << "Locale:" << locale << localeMap.value(locale);
+       ui->comboBoxLanguage->addItem(localeMap.value(locale),locale);
 
-    foreach(QString filename, translationsfiles){
-        QString filebasename = QFileInfo(filename).baseName();
-
-        for(int i=0;i<localeEnding.count();i++){
-            if(filebasename == localeEnding.at(i)){
-                qDebug() << "Locale:" << localeEnding.at(i) << localeName.at(i);
-                ui->comboBoxLanguage->addItem(localeName.at(i),localeEnding.at(i));
-            }
-        }
     }
-
-
-
-//    foreach(QFileInfo file,translationsfiles)
-//    {
-////        QString basename = file.baseName();
-////        QString localending = file.baseName().remove(0,17);
-
-//        for(int i=0;i<localeEnding.count();i++){
-//            if(localeEnding.at(i) == localending){
-//                basename = localeName.at(i);
-//            }
-//        }
-
-
-//        qDebug() << "Translation file:" << basename;
-////        qDebug() << "Translation ending:" << localending;
-
-//        ui->comboBoxLanguage->addItem(basename,localending);
-
-//    }
 }
 
 void SettingsDialog::on_checkBoxPreviewplayer_clicked()
