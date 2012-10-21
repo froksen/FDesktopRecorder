@@ -24,13 +24,17 @@ You can contact me via kde-apps.org. Find me under the username "froksen".
 ##Translations
 ###Danish
 * Ole 'froksen' Holm Frandsen
+
 ###German
 * Max 'mx01' Huber
 * Christian 'saftsocken' Räss 
+
 ###Spanish
 * Javi
+
 ###Romanian translation
 * Mamut 'V3n3RiX' R. Ghiunhan
+
 ###Italian translation
 * Vincenzo 'smart2128' Reale
 * Symbian flo
