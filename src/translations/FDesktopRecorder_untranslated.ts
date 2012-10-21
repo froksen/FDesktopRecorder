@@ -299,7 +299,7 @@ Hereafter the recording will start.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="307"/>
-        <location filename="../mainwindow.cpp" line="605"/>
+        <location filename="../mainwindow.cpp" line="617"/>
         <source>Recording started</source>
         <translation>Recording started</translation>
     </message>
@@ -321,7 +321,7 @@ Hereafter the recording will start.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="411"/>
-        <location filename="../mainwindow.cpp" line="480"/>
+        <location filename="../mainwindow.cpp" line="492"/>
         <source>Latest Recording</source>
         <translation>Latest Recording</translation>
     </message>
@@ -337,42 +337,51 @@ Hereafter the recording will start.</translation>
         <translation>View terminaloutput for more info.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="424"/>
+        <location filename="../mainwindow.cpp" line="427"/>
+        <source>Show output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="430"/>
         <source>&lt;b&gt;Failed to start recording!&lt;/b&gt;</source>
         <translation>&lt;b&gt;Failed to start recording!&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="425"/>
-        <source>Press &lt;i&gt;&apos;show details&apos;&lt;/i&gt; to see console ouput.</source>
-        <translation>Press &lt;i&gt;&apos;show details&apos;&lt;/i&gt; to see console ouput.</translation>
+        <location filename="../mainwindow.cpp" line="431"/>
+        <source>Press &lt;i&gt;&apos;Show output&apos;&lt;/i&gt; to see console ouput.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="429"/>
+        <source>Press &lt;i&gt;&apos;show details&apos;&lt;/i&gt; to see console ouput.</source>
+        <translation type="obsolete">Press &lt;i&gt;&apos;show details&apos;&lt;/i&gt; to see console ouput.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="435"/>
         <source>Failed to start recording!</source>
         <translation>Failed to start recording!</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="466"/>
+        <location filename="../mainwindow.cpp" line="478"/>
         <source>&amp;Show/Hide window</source>
         <translation>&amp;Show/Hide window</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="470"/>
+        <location filename="../mainwindow.cpp" line="482"/>
         <source>&amp;Stop recording</source>
         <translation>&amp;Stop recording</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="474"/>
+        <location filename="../mainwindow.cpp" line="486"/>
         <source>&amp;Latest recording: </source>
         <translation>&amp;Latest recording: </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="482"/>
+        <location filename="../mainwindow.cpp" line="494"/>
         <source>&amp;Quit program</source>
         <translation>&amp;Quit program</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="696"/>
+        <location filename="../mainwindow.cpp" line="708"/>
         <source>Current output copied to clipboard</source>
         <translation>Current output copied to clipboard</translation>
     </message>

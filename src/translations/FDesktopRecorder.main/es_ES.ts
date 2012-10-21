@@ -268,7 +268,7 @@ Seleccione mediante la cruz la ventana que quiere grabar.</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="307"/>
-        <location filename="../../mainwindow.cpp" line="605"/>
+        <location filename="../../mainwindow.cpp" line="617"/>
         <source>Recording started</source>
         <translation>Grabación iniciada</translation>
     </message>
@@ -290,7 +290,7 @@ Seleccione mediante la cruz la ventana que quiere grabar.</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="411"/>
-        <location filename="../../mainwindow.cpp" line="480"/>
+        <location filename="../../mainwindow.cpp" line="492"/>
         <source>Latest Recording</source>
         <translation>Ultima grabación</translation>
     </message>
@@ -306,42 +306,51 @@ Seleccione mediante la cruz la ventana que quiere grabar.</translation>
         <translation>Ver la salida de terminal para mas información.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="424"/>
+        <location filename="../../mainwindow.cpp" line="427"/>
+        <source>Show output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../mainwindow.cpp" line="430"/>
         <source>&lt;b&gt;Failed to start recording!&lt;/b&gt;</source>
         <translation>&lt;b&gt;Fallo al iniciar la grabación!&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="425"/>
-        <source>Press &lt;i&gt;&apos;show details&apos;&lt;/i&gt; to see console ouput.</source>
-        <translation>Pulse &lt;i&gt;&apos;Detalles&apos;&lt;/i&gt; para ver la salida de terminal.</translation>
+        <location filename="../../mainwindow.cpp" line="431"/>
+        <source>Press &lt;i&gt;&apos;Show output&apos;&lt;/i&gt; to see console ouput.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="429"/>
+        <source>Press &lt;i&gt;&apos;show details&apos;&lt;/i&gt; to see console ouput.</source>
+        <translation type="obsolete">Pulse &lt;i&gt;&apos;Detalles&apos;&lt;/i&gt; para ver la salida de terminal.</translation>
+    </message>
+    <message>
+        <location filename="../../mainwindow.cpp" line="435"/>
         <source>Failed to start recording!</source>
         <translation>Fallo de grabación!</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="466"/>
+        <location filename="../../mainwindow.cpp" line="478"/>
         <source>&amp;Show/Hide window</source>
         <translation>&amp;Mostrar/Ocultar ventana</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="470"/>
+        <location filename="../../mainwindow.cpp" line="482"/>
         <source>&amp;Stop recording</source>
         <translation>&amp;Parar grabación</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="474"/>
+        <location filename="../../mainwindow.cpp" line="486"/>
         <source>&amp;Latest recording: </source>
         <translation>&amp;Última grabación:</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="482"/>
+        <location filename="../../mainwindow.cpp" line="494"/>
         <source>&amp;Quit program</source>
         <translation>&amp;Salir</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="696"/>
+        <location filename="../../mainwindow.cpp" line="708"/>
         <source>Current output copied to clipboard</source>
         <translation type="unfinished"></translation>
     </message>

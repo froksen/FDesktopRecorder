@@ -266,7 +266,7 @@ Hereafter the recording will start.</source>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="307"/>
-        <location filename="../../mainwindow.cpp" line="605"/>
+        <location filename="../../mainwindow.cpp" line="617"/>
         <source>Recording started</source>
         <translation>Înregistrarea a pornit</translation>
     </message>
@@ -288,7 +288,7 @@ Hereafter the recording will start.</source>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="411"/>
-        <location filename="../../mainwindow.cpp" line="480"/>
+        <location filename="../../mainwindow.cpp" line="492"/>
         <source>Latest Recording</source>
         <translation>Ultima înregistrare</translation>
     </message>
@@ -304,42 +304,51 @@ Hereafter the recording will start.</source>
         <translation>Afișează progresul în consolă pentru mai multe informații.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="424"/>
+        <location filename="../../mainwindow.cpp" line="427"/>
+        <source>Show output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../mainwindow.cpp" line="430"/>
         <source>&lt;b&gt;Failed to start recording!&lt;/b&gt;</source>
         <translation>&lt;b&gt;Eroare la pornirea înregistrării!&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="425"/>
-        <source>Press &lt;i&gt;&apos;show details&apos;&lt;/i&gt; to see console ouput.</source>
-        <translation>Apasă &lt;i&gt;arată detalii&lt;/i&gt; pentru a vedea progresul în consolă.</translation>
+        <location filename="../../mainwindow.cpp" line="431"/>
+        <source>Press &lt;i&gt;&apos;Show output&apos;&lt;/i&gt; to see console ouput.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="429"/>
+        <source>Press &lt;i&gt;&apos;show details&apos;&lt;/i&gt; to see console ouput.</source>
+        <translation type="obsolete">Apasă &lt;i&gt;arată detalii&lt;/i&gt; pentru a vedea progresul în consolă.</translation>
+    </message>
+    <message>
+        <location filename="../../mainwindow.cpp" line="435"/>
         <source>Failed to start recording!</source>
         <translation>Eroare la pornirea înregistrării!</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="466"/>
+        <location filename="../../mainwindow.cpp" line="478"/>
         <source>&amp;Show/Hide window</source>
         <translation>&amp;Arată/Ascunde fereastra</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="470"/>
+        <location filename="../../mainwindow.cpp" line="482"/>
         <source>&amp;Stop recording</source>
         <translation>&amp;Oprește înregistrarea</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="474"/>
+        <location filename="../../mainwindow.cpp" line="486"/>
         <source>&amp;Latest recording: </source>
         <translation>&amp;Ultima înregistrare:</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="482"/>
+        <location filename="../../mainwindow.cpp" line="494"/>
         <source>&amp;Quit program</source>
         <translation>&amp;Ieșire din program</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="696"/>
+        <location filename="../../mainwindow.cpp" line="708"/>
         <source>Current output copied to clipboard</source>
         <translation type="unfinished"></translation>
     </message>

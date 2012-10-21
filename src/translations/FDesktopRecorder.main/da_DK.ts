@@ -297,7 +297,7 @@ Herefter vil optagelsen påbegynde.</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="307"/>
-        <location filename="../../mainwindow.cpp" line="605"/>
+        <location filename="../../mainwindow.cpp" line="617"/>
         <source>Recording started</source>
         <translation>Optagelse startet</translation>
     </message>
@@ -319,7 +319,7 @@ Herefter vil optagelsen påbegynde.</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="411"/>
-        <location filename="../../mainwindow.cpp" line="480"/>
+        <location filename="../../mainwindow.cpp" line="492"/>
         <source>Latest Recording</source>
         <translation>Seneste optagelse</translation>
     </message>
@@ -335,42 +335,51 @@ Herefter vil optagelsen påbegynde.</translation>
         <translation>Vis terminal output for mere info.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="424"/>
+        <location filename="../../mainwindow.cpp" line="427"/>
+        <source>Show output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../mainwindow.cpp" line="430"/>
         <source>&lt;b&gt;Failed to start recording!&lt;/b&gt;</source>
         <translation>&lt;b&gt;Fejl ved start af optagelse!&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="425"/>
-        <source>Press &lt;i&gt;&apos;show details&apos;&lt;/i&gt; to see console ouput.</source>
-        <translation>Tryk på &lt;i&gt;&apos;show details&apos;&lt;/i&gt; for at se terminal output.</translation>
+        <location filename="../../mainwindow.cpp" line="431"/>
+        <source>Press &lt;i&gt;&apos;Show output&apos;&lt;/i&gt; to see console ouput.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="429"/>
+        <source>Press &lt;i&gt;&apos;show details&apos;&lt;/i&gt; to see console ouput.</source>
+        <translation type="obsolete">Tryk på &lt;i&gt;&apos;show details&apos;&lt;/i&gt; for at se terminal output.</translation>
+    </message>
+    <message>
+        <location filename="../../mainwindow.cpp" line="435"/>
         <source>Failed to start recording!</source>
         <translation>Optagelse fejlede!</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="466"/>
+        <location filename="../../mainwindow.cpp" line="478"/>
         <source>&amp;Show/Hide window</source>
         <translation>&amp;Vis/Gem vindue</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="470"/>
+        <location filename="../../mainwindow.cpp" line="482"/>
         <source>&amp;Stop recording</source>
         <translation>&amp;Stop optagelse</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="474"/>
+        <location filename="../../mainwindow.cpp" line="486"/>
         <source>&amp;Latest recording: </source>
         <translation>&amp;Seneste optagelse:</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="482"/>
+        <location filename="../../mainwindow.cpp" line="494"/>
         <source>&amp;Quit program</source>
         <translation>&amp;Afslut program</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="696"/>
+        <location filename="../../mainwindow.cpp" line="708"/>
         <source>Current output copied to clipboard</source>
         <translation>Nuværrende output kopieret til udklipsholder</translation>
     </message>
