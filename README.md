@@ -21,17 +21,17 @@ Based on a script by Peter Lyberth from the danish GNU/Linux show "Kanal Tux" ht
 Created by: Ole "Froksen" Holm Frandsen
 You can contact me via kde-apps.org. Find me under the username "froksen".
 
-==Translated
-===Danish
+##Translations
+###Danish
 * Ole 'froksen' Holm Frandsen
-===German
+###German
 * Max 'mx01' Huber
 * Christian 'saftsocken' Räss 
-===Spanish
+###Spanish
 * Javi
-===Romanian translation
+###Romanian translation
 * Mamut 'V3n3RiX' R. Ghiunhan
-===Italian translation
+###Italian translation
 * Vincenzo 'smart2128' Reale
 * Symbian flo
 
