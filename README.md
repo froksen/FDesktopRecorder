@@ -75,13 +75,25 @@ This will install the *.notifyrc file in the correct place. If you are building 
 
 ###How to build/compile via qmake
   ```
+    $ cd <FDesktopRecorder-folder>
     $ cd source
     $ qmake FDesktopRecorder.pro
     $ make
   ```
-
-###How to build/compile via CMake
+###How to build/compile via CMake from/in version 20121012
   ```
+    $ cd <FDesktopRecorder-folder>
+    $ mkdir build
+    $ cd build/
+    $ cmake ..
+    $ make
+  ```
+  (You can do "make install" after this to install)
+  
+###How to build/compile via CMake before version 20121012
+  ```
+    $ cd <FDesktopRecorder-folder>
+    $ cd source
     $ mkdir build
     $ cd build/
     $ cmake ..
