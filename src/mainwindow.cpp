@@ -421,13 +421,25 @@ void MainWindow::onProcessFinished(int Exitcode)
         doKnotification(trUtf8("Failed to start!"),trUtf8("View terminaloutput for more info."),"normal","errorRecording");
 
         //Shows the TerminalOutput Messagebox
-        QMessageBox msgBox;    msgBox.setText(trUtf8("<b>Failed to start recording!</b>"));
-        msgBox.setInformativeText(trUtf8("Press <i>'show details'</i> to see console ouput."));
+        QMessageBox msgBox;
+
+        //Creates the custom button
+        QPushButton *showDetails = msgBox.addButton(trUtf8("Show output"), QMessageBox::ActionRole);
+
+        //The rest of the combobox
+        msgBox.setText(trUtf8("<b>Failed to start recording!</b>"));
+        msgBox.setInformativeText(trUtf8("Press <i>'Show output'</i> to see console ouput."));
         msgBox.setStandardButtons(QMessageBox::Ok);
-        msgBox.setDetailedText(QString(ui->textEditConsole->toPlainText()));
-        msgBox.setDefaultButton(QMessageBox::Save);
+        //msgBox.setDetailedText(QString(ui->textEditConsole->toPlainText()));
+        msgBox.setDefaultButton(QMessageBox::Ok);
         msgBox.setWindowTitle(trUtf8("Failed to start recording!"));
         msgBox.exec();
+
+        if(msgBox.clickedButton() == showDetails){
+            if(ui->dockWidget->isHidden()){
+                on_actionConsole_triggered();
+            }
+        }
     }
 
     //------------------SECTION: Final---------------------
