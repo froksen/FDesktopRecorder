@@ -21,12 +21,19 @@ Based on a script by Peter Lyberth from the danish GNU/Linux show "Kanal Tux" ht
 Created by: Ole "Froksen" Holm Frandsen
 You can contact me via kde-apps.org. Find me under the username "froksen".
 
-###Translated
-* Danish by Ole Holm Frandsen (froksen)
-* German by Christian Räss (saftsocken)
-* Spanish by Javi
-* Romanian translation by Mamut R. Ghiunhan (aka V3n3RiX)
-* Italian translation by Symbian flo
+==Translated
+===Danish
+* Ole 'froksen' Holm Frandsen
+===German
+* Max 'mx01' Huber
+* Christian 'saftsocken' Räss 
+===Spanish
+* Javi
+===Romanian translation
+* Mamut 'V3n3RiX' R. Ghiunhan
+===Italian translation
+* Vincenzo 'smart2128' Reale
+* Symbian flo
 
 ###Help with translation?
 All translation is done via Transifex, please visit the project page at: https://www.transifex.com/projects/p/FDesktopRecorder/
