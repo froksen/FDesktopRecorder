@@ -48,6 +48,7 @@ All translation is done via Transifex, please visit the project page at: https:/
 * ffmpeq is used for the recording
 * libqt4
 * libkde4
+* xwininfo
 * Optional:
   - kaffeine (the default preview player)
 
