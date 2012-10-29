@@ -302,8 +302,12 @@ Seleccione mediante la cruz la ventana que quiere grabar.</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="421"/>
+        <source>View console output for more info.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>View terminaloutput for more info.</source>
-        <translation>Ver la salida de terminal para mas información.</translation>
+        <translation type="obsolete">Ver la salida de terminal para mas información.</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="427"/>
@@ -364,29 +368,6 @@ Seleccione mediante la cruz la ventana que quiere grabar.</translation>
     </message>
 </context>
 <context>
-    <name>RubberBand</name>
-    <message>
-        <location filename="../../utils/rubberband.cpp" line="84"/>
-        <source>Scalability Failure Width</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../utils/rubberband.cpp" line="85"/>
-        <source>Frame Width must be a multiple of 2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../utils/rubberband.cpp" line="92"/>
-        <source>Scalability Failure Height</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../utils/rubberband.cpp" line="93"/>
-        <source>Frame Height must be a multiple of 2</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>SettingsDialog</name>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="14"/>
@@ -394,9 +375,8 @@ Seleccione mediante la cruz la ventana que quiere grabar.</translation>
         <translation>Opciones</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="27"/>
         <source>Record settings (ffmpeg)</source>
-        <translation>Opciones de grabación (ffmpeg)</translation>
+        <translation type="obsolete">Opciones de grabación (ffmpeg)</translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="40"/>
@@ -414,9 +394,8 @@ Seleccione mediante la cruz la ventana que quiere grabar.</translation>
         <translation>Imágenes por segundo</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="77"/>
         <source>Changes the framerate in the recording</source>
-        <translation>Cambiar el numero de imágenes por segundo</translation>
+        <translation type="obsolete">Cambiar el numero de imágenes por segundo</translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="84"/>
@@ -424,9 +403,8 @@ Seleccione mediante la cruz la ventana que quiere grabar.</translation>
         <translation>Codec video</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="91"/>
         <source>Changes the video codec used in the recording</source>
-        <translation>Cambia el codec de video utilizado en la grabación</translation>
+        <translation type="obsolete">Cambia el codec de video utilizado en la grabación</translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="98"/>
@@ -434,9 +412,8 @@ Seleccione mediante la cruz la ventana que quiere grabar.</translation>
         <translation>Codec audio</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="105"/>
         <source>Changes the audio codec used in the recording</source>
-        <translation>Cambia el codec de audio utilizado en la grabación</translation>
+        <translation type="obsolete">Cambia el codec de audio utilizado en la grabación</translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="112"/>
@@ -444,9 +421,8 @@ Seleccione mediante la cruz la ventana que quiere grabar.</translation>
         <translation>Canales audio</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="119"/>
         <source>Changes the number of audiochannels used. To record in mono set to 1, for stereo set to 2 etc.</source>
-        <translation>Cambiar el número de canales de grabación. Mono 1 canal, estereo 2 canales</translation>
+        <translation type="obsolete">Cambiar el número de canales de grabación. Mono 1 canal, estereo 2 canales</translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="126"/>
@@ -459,14 +435,12 @@ Seleccione mediante la cruz la ventana que quiere grabar.</translation>
         <translation>Nombre base</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="149"/>
         <source>Choose a basename for your recordings.</source>
-        <translation>Elija el nombre base para las grabaciones</translation>
+        <translation type="obsolete">Elija el nombre base para las grabaciones</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="156"/>
         <source>Use the time and date as the basename.</source>
-        <translation>Utilizar la fecha y hora para el nombre de archivo.</translation>
+        <translation type="obsolete">Utilizar la fecha y hora para el nombre de archivo.</translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="159"/>
@@ -479,14 +453,12 @@ Seleccione mediante la cruz la ventana que quiere grabar.</translation>
         <translation>Ruta por defecto</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="177"/>
         <source>Choose where to save your recordings</source>
-        <translation>Seleccione el lugar donde se guardarán las grabaciones</translation>
+        <translation type="obsolete">Seleccione el lugar donde se guardarán las grabaciones</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="187"/>
         <source>Change the default path.</source>
-        <translation>Cambia la ruta por defecto.</translation>
+        <translation type="obsolete">Cambia la ruta por defecto.</translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="190"/>
@@ -499,19 +471,16 @@ Seleccione mediante la cruz la ventana que quiere grabar.</translation>
         <translation>Formato por defecto</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="206"/>
         <source>Choose which format the recordings should be saved with. </source>
-        <translation>Elegir el formato de las grabaciones que se guardarán.</translation>
+        <translation type="obsolete">Elegir el formato de las grabaciones que se guardarán.</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="215"/>
         <source>Choose the microphone you want to use.</source>
-        <translation>Elija el microfono que desea usar</translation>
+        <translation type="obsolete">Elija el microfono que desea usar</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="224"/>
         <source>Changes the sound architecture used in the recording. Thjs can be alsa, oss etc.</source>
-        <translation>Cambiar el sistema de sonido. Puede ser ALSA, OSS, etc...</translation>
+        <translation type="obsolete">Cambiar el sistema de sonido. Puede ser ALSA, OSS, etc...</translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="231"/>
@@ -519,9 +488,73 @@ Seleccione mediante la cruz la ventana que quiere grabar.</translation>
         <translation>Sistema de sonido</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="238"/>
         <source>The microphone is muted as default on startup</source>
-        <translation>El microfono está silenciado por defecto al iniciar</translation>
+        <translation type="obsolete">El microfono está silenciado por defecto al iniciar</translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="27"/>
+        <source>Record settings (FFmpeg)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="77"/>
+        <source>Framerate in recording.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="91"/>
+        <source>Video codec used in recording</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="105"/>
+        <source>Audio codec used in the recording</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="119"/>
+        <source>Number of audiochannels used. To record in mono set to 1, for stereo set to 2 etc.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="149"/>
+        <source>Basename of recordings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="156"/>
+        <source>Use time and date as the basename.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="177"/>
+        <source>Location of recordings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="187"/>
+        <source>Change default path.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="206"/>
+        <source>File format of the recording</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="215"/>
+        <source>Microphone used for audioinput</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="224"/>
+        <source>Sound architecture used in recording. Thjs can be alsa, oss etc.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="238"/>
+        <source>If selected the microphone is muted on startup</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="241"/>
@@ -587,8 +620,12 @@ Seleccione mediante la cruz la ventana que quiere grabar.</translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="530"/>
+        <source>Show a red rectangle that marks the area which is beeing recorded.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Show a red rectangle, that surrounds the area which is been recorded.</source>
-        <translation>Mostrar un rectangulo rojo para marcar la zona de grabación</translation>
+        <translation type="obsolete">Mostrar un rectangulo rojo para marcar la zona de grabación</translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="533"/>
@@ -664,8 +701,9 @@ Tenga cuidado por que NO se puede deshacer.</translation>
 <context>
     <name>SettingsManager</name>
     <message>
-        <location filename="../../module/settingsmanager.cpp" line="67"/>
+        <location filename="../../module/settingsmanager.cpp" line="68"/>
         <source>recording</source>
+        <extracomment>Translate this into what a good basename for a recording would be in your language</extracomment>
         <translation>grabación</translation>
     </message>
 </context>

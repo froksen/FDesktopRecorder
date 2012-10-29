@@ -331,8 +331,12 @@ Herefter vil optagelsen påbegynde.</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="421"/>
+        <source>View console output for more info.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>View terminaloutput for more info.</source>
-        <translation>Vis terminal output for mere info.</translation>
+        <translation type="obsolete">Vis terminal output for mere info.</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="427"/>
@@ -395,24 +399,20 @@ Herefter vil optagelsen påbegynde.</translation>
 <context>
     <name>RubberBand</name>
     <message>
-        <location filename="../../utils/rubberband.cpp" line="84"/>
         <source>Scalability Failure Width</source>
-        <translation>Skalérbar fejl ved bredde</translation>
+        <translation type="obsolete">Skalérbar fejl ved bredde</translation>
     </message>
     <message>
-        <location filename="../../utils/rubberband.cpp" line="85"/>
         <source>Frame Width must be a multiple of 2</source>
-        <translation>Ramme bredde skal være gangbar med 2</translation>
+        <translation type="obsolete">Ramme bredde skal være gangbar med 2</translation>
     </message>
     <message>
-        <location filename="../../utils/rubberband.cpp" line="92"/>
         <source>Scalability Failure Height</source>
-        <translation>Skalérbar fejl ved højde</translation>
+        <translation type="obsolete">Skalérbar fejl ved højde</translation>
     </message>
     <message>
-        <location filename="../../utils/rubberband.cpp" line="93"/>
         <source>Frame Height must be a multiple of 2</source>
-        <translation>Ramme højde skal være gangbar med 2</translation>
+        <translation type="obsolete">Ramme højde skal være gangbar med 2</translation>
     </message>
 </context>
 <context>
@@ -423,9 +423,8 @@ Herefter vil optagelsen påbegynde.</translation>
         <translation>Indstillinger</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="27"/>
         <source>Record settings (ffmpeg)</source>
-        <translation>Optage indstillinger (ffmpeg)</translation>
+        <translation type="obsolete">Optage indstillinger (ffmpeg)</translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="40"/>
@@ -443,9 +442,8 @@ Herefter vil optagelsen påbegynde.</translation>
         <translation>Billeder i sekundet</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="77"/>
         <source>Changes the framerate in the recording</source>
-        <translation>Ændre billedraten i optagelsen</translation>
+        <translation type="obsolete">Ændre billedraten i optagelsen</translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="84"/>
@@ -453,9 +451,8 @@ Herefter vil optagelsen påbegynde.</translation>
         <translation>Video codec</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="91"/>
         <source>Changes the video codec used in the recording</source>
-        <translation>Ændre det video codec der bliver brugt i optagelsen</translation>
+        <translation type="obsolete">Ændre det video codec der bliver brugt i optagelsen</translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="98"/>
@@ -463,9 +460,8 @@ Herefter vil optagelsen påbegynde.</translation>
         <translation>Lyd codec</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="105"/>
         <source>Changes the audio codec used in the recording</source>
-        <translation>Ændre det lyd codec der bliver brugt i optagelsen</translation>
+        <translation type="obsolete">Ændre det lyd codec der bliver brugt i optagelsen</translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="112"/>
@@ -473,9 +469,8 @@ Herefter vil optagelsen påbegynde.</translation>
         <translation>Lyd kanaler</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="119"/>
         <source>Changes the number of audiochannels used. To record in mono set to 1, for stereo set to 2 etc.</source>
-        <translation>Ændre antallet af lyd kanaler der bliver brugt. For at optage i mono set denne til 1, for at optage i stereo set til 2 etc.</translation>
+        <translation type="obsolete">Ændre antallet af lyd kanaler der bliver brugt. For at optage i mono set denne til 1, for at optage i stereo set til 2 etc.</translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="126"/>
@@ -488,14 +483,12 @@ Herefter vil optagelsen påbegynde.</translation>
         <translation>Grundnavn</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="149"/>
         <source>Choose a basename for your recordings.</source>
-        <translation>Vælg et grundnavn for dine optagelser.</translation>
+        <translation type="obsolete">Vælg et grundnavn for dine optagelser.</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="156"/>
         <source>Use the time and date as the basename.</source>
-        <translation>Brug tid og dato som grundnavn.</translation>
+        <translation type="obsolete">Brug tid og dato som grundnavn.</translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="159"/>
@@ -508,14 +501,12 @@ Herefter vil optagelsen påbegynde.</translation>
         <translation>Standard sti</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="177"/>
         <source>Choose where to save your recordings</source>
-        <translation>Vælg hvor dine optagelser skal gemmes</translation>
+        <translation type="obsolete">Vælg hvor dine optagelser skal gemmes</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="187"/>
         <source>Change the default path.</source>
-        <translation>Ændre standard stien.</translation>
+        <translation type="obsolete">Ændre standard stien.</translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="190"/>
@@ -528,19 +519,16 @@ Herefter vil optagelsen påbegynde.</translation>
         <translation>Standard format</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="206"/>
         <source>Choose which format the recordings should be saved with. </source>
-        <translation>Vælg hvilket format optagelserne skal gemmes i.</translation>
+        <translation type="obsolete">Vælg hvilket format optagelserne skal gemmes i.</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="215"/>
         <source>Choose the microphone you want to use.</source>
-        <translation>Vælg hvilken mikrofon du vil bruge.</translation>
+        <translation type="obsolete">Vælg hvilken mikrofon du vil bruge.</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="224"/>
         <source>Changes the sound architecture used in the recording. Thjs can be alsa, oss etc.</source>
-        <translation>Ændre lyd arkitekturen der bliver brugt til optagelsen. Dette kan være alsa, oss etc.</translation>
+        <translation type="obsolete">Ændre lyd arkitekturen der bliver brugt til optagelsen. Dette kan være alsa, oss etc.</translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="231"/>
@@ -548,9 +536,73 @@ Herefter vil optagelsen påbegynde.</translation>
         <translation>Lyd arkitektur</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="238"/>
         <source>The microphone is muted as default on startup</source>
-        <translation>Mikrofonen vil være slukket som standard ved opstart</translation>
+        <translation type="obsolete">Mikrofonen vil være slukket som standard ved opstart</translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="27"/>
+        <source>Record settings (FFmpeg)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="77"/>
+        <source>Framerate in recording.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="91"/>
+        <source>Video codec used in recording</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="105"/>
+        <source>Audio codec used in the recording</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="119"/>
+        <source>Number of audiochannels used. To record in mono set to 1, for stereo set to 2 etc.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="149"/>
+        <source>Basename of recordings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="156"/>
+        <source>Use time and date as the basename.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="177"/>
+        <source>Location of recordings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="187"/>
+        <source>Change default path.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="206"/>
+        <source>File format of the recording</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="215"/>
+        <source>Microphone used for audioinput</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="224"/>
+        <source>Sound architecture used in recording. Thjs can be alsa, oss etc.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="238"/>
+        <source>If selected the microphone is muted on startup</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="241"/>
@@ -616,8 +668,12 @@ Herefter vil optagelsen påbegynde.</translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="530"/>
+        <source>Show a red rectangle that marks the area which is beeing recorded.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Show a red rectangle, that surrounds the area which is been recorded.</source>
-        <translation>Vis et rødt rektangel der omringer området som bliver optaget.</translation>
+        <translation type="obsolete">Vis et rødt rektangel der omringer området som bliver optaget.</translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="533"/>
@@ -694,8 +750,9 @@ Vær obmærksom på at dette IKKE kan tilbage gøres.</translation>
 <context>
     <name>SettingsManager</name>
     <message>
-        <location filename="../../module/settingsmanager.cpp" line="67"/>
+        <location filename="../../module/settingsmanager.cpp" line="68"/>
         <source>recording</source>
+        <extracomment>Translate this into what a good basename for a recording would be in your language</extracomment>
         <translation>optagelse</translation>
     </message>
 </context>

@@ -300,8 +300,12 @@ Hereafter the recording will start.</source>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="421"/>
+        <source>View console output for more info.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>View terminaloutput for more info.</source>
-        <translation>Afișează progresul în consolă pentru mai multe informații.</translation>
+        <translation type="obsolete">Afișează progresul în consolă pentru mai multe informații.</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="427"/>
@@ -364,24 +368,20 @@ Hereafter the recording will start.</source>
 <context>
     <name>RubberBand</name>
     <message>
-        <location filename="../../utils/rubberband.cpp" line="84"/>
         <source>Scalability Failure Width</source>
-        <translation>Eșec scalare lățime</translation>
+        <translation type="obsolete">Eșec scalare lățime</translation>
     </message>
     <message>
-        <location filename="../../utils/rubberband.cpp" line="85"/>
         <source>Frame Width must be a multiple of 2</source>
-        <translation>Lățimea cadrului trebuie să fie multiplul lui 2</translation>
+        <translation type="obsolete">Lățimea cadrului trebuie să fie multiplul lui 2</translation>
     </message>
     <message>
-        <location filename="../../utils/rubberband.cpp" line="92"/>
         <source>Scalability Failure Height</source>
-        <translation>Eșec scalare înălțime</translation>
+        <translation type="obsolete">Eșec scalare înălțime</translation>
     </message>
     <message>
-        <location filename="../../utils/rubberband.cpp" line="93"/>
         <source>Frame Height must be a multiple of 2</source>
-        <translation>Cadrul înălțimii trebuie să fie multiplul lui 2</translation>
+        <translation type="obsolete">Cadrul înălțimii trebuie să fie multiplul lui 2</translation>
     </message>
 </context>
 <context>
@@ -392,9 +392,8 @@ Hereafter the recording will start.</source>
         <translation>Setări</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="27"/>
         <source>Record settings (ffmpeg)</source>
-        <translation>Setări înregistrare (ffmpeg)</translation>
+        <translation type="obsolete">Setări înregistrare (ffmpeg)</translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="40"/>
@@ -412,9 +411,8 @@ Hereafter the recording will start.</source>
         <translation>Cadre pe secundă</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="77"/>
         <source>Changes the framerate in the recording</source>
-        <translation>Modifică numărul de cadre pe secundă în înregistrare</translation>
+        <translation type="obsolete">Modifică numărul de cadre pe secundă în înregistrare</translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="84"/>
@@ -422,9 +420,8 @@ Hereafter the recording will start.</source>
         <translation>Codec Video</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="91"/>
         <source>Changes the video codec used in the recording</source>
-        <translation>Modifică codecul video folosit în înregistrare</translation>
+        <translation type="obsolete">Modifică codecul video folosit în înregistrare</translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="98"/>
@@ -432,9 +429,8 @@ Hereafter the recording will start.</source>
         <translation>Codec Audio</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="105"/>
         <source>Changes the audio codec used in the recording</source>
-        <translation>Modifică codecul audio folosit în înregistrare</translation>
+        <translation type="obsolete">Modifică codecul audio folosit în înregistrare</translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="112"/>
@@ -442,9 +438,8 @@ Hereafter the recording will start.</source>
         <translation>Canale audio</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="119"/>
         <source>Changes the number of audiochannels used. To record in mono set to 1, for stereo set to 2 etc.</source>
-        <translation>Modifică numărul de canale audio folosit. Alege 1 pentru înregistrare mono, 2 pentru stereo etc.</translation>
+        <translation type="obsolete">Modifică numărul de canale audio folosit. Alege 1 pentru înregistrare mono, 2 pentru stereo etc.</translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="126"/>
@@ -457,14 +452,12 @@ Hereafter the recording will start.</source>
         <translation>Nume de bază</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="149"/>
         <source>Choose a basename for your recordings.</source>
-        <translation>Alege un nume de bază pentru înregistrările tale.</translation>
+        <translation type="obsolete">Alege un nume de bază pentru înregistrările tale.</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="156"/>
         <source>Use the time and date as the basename.</source>
-        <translation>Folosește ora și data ca nume de bază.</translation>
+        <translation type="obsolete">Folosește ora și data ca nume de bază.</translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="159"/>
@@ -477,14 +470,12 @@ Hereafter the recording will start.</source>
         <translation>Calea implicită</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="177"/>
         <source>Choose where to save your recordings</source>
-        <translation>Alege unde salvezi înregistrările tale</translation>
+        <translation type="obsolete">Alege unde salvezi înregistrările tale</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="187"/>
         <source>Change the default path.</source>
-        <translation>Modifică calea implicită.</translation>
+        <translation type="obsolete">Modifică calea implicită.</translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="190"/>
@@ -497,19 +488,16 @@ Hereafter the recording will start.</source>
         <translation>Formatul implicit</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="206"/>
         <source>Choose which format the recordings should be saved with. </source>
-        <translation>Alege formatul pentru a salva înregistrările.</translation>
+        <translation type="obsolete">Alege formatul pentru a salva înregistrările.</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="215"/>
         <source>Choose the microphone you want to use.</source>
-        <translation>Alege microfonul pe care dorești să îl folosești.</translation>
+        <translation type="obsolete">Alege microfonul pe care dorești să îl folosești.</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="224"/>
         <source>Changes the sound architecture used in the recording. Thjs can be alsa, oss etc.</source>
-        <translation>Modifică arhitectura sunetului folosită în înregistrare. Aceasta poate fi alsa, oss etc.</translation>
+        <translation type="obsolete">Modifică arhitectura sunetului folosită în înregistrare. Aceasta poate fi alsa, oss etc.</translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="231"/>
@@ -517,9 +505,73 @@ Hereafter the recording will start.</source>
         <translation>Arhitectura sunetului</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="238"/>
         <source>The microphone is muted as default on startup</source>
-        <translation>Microfonul este dezactivat în mod implicit la pornire</translation>
+        <translation type="obsolete">Microfonul este dezactivat în mod implicit la pornire</translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="27"/>
+        <source>Record settings (FFmpeg)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="77"/>
+        <source>Framerate in recording.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="91"/>
+        <source>Video codec used in recording</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="105"/>
+        <source>Audio codec used in the recording</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="119"/>
+        <source>Number of audiochannels used. To record in mono set to 1, for stereo set to 2 etc.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="149"/>
+        <source>Basename of recordings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="156"/>
+        <source>Use time and date as the basename.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="177"/>
+        <source>Location of recordings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="187"/>
+        <source>Change default path.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="206"/>
+        <source>File format of the recording</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="215"/>
+        <source>Microphone used for audioinput</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="224"/>
+        <source>Sound architecture used in recording. Thjs can be alsa, oss etc.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="238"/>
+        <source>If selected the microphone is muted on startup</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="241"/>
@@ -585,8 +637,12 @@ Hereafter the recording will start.</source>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="530"/>
+        <source>Show a red rectangle that marks the area which is beeing recorded.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Show a red rectangle, that surrounds the area which is been recorded.</source>
-        <translation>Arată un dreptungi roșu, care înconjoară zona care este înregistrată.</translation>
+        <translation type="obsolete">Arată un dreptungi roșu, care înconjoară zona care este înregistrată.</translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="533"/>
@@ -660,8 +716,9 @@ Be aware that this can NOT be undone.</source>
 <context>
     <name>SettingsManager</name>
     <message>
-        <location filename="../../module/settingsmanager.cpp" line="67"/>
+        <location filename="../../module/settingsmanager.cpp" line="68"/>
         <source>recording</source>
+        <extracomment>Translate this into what a good basename for a recording would be in your language</extracomment>
         <translation>înregistrare</translation>
     </message>
 </context>
