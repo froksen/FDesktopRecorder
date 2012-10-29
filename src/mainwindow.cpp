@@ -418,9 +418,9 @@ void MainWindow::onProcessFinished(int Exitcode)
         ui->statusBar->showMessage(trUtf8("Failed to start!"));
 
         //Knotification
-        doKnotification(trUtf8("Failed to start!"),trUtf8("View terminaloutput for more info."),"normal","errorRecording");
+        doKnotification(trUtf8("Failed to start!"),trUtf8("View console output for more info."),"normal","errorRecording");
 
-        //Shows the TerminalOutput Messagebox
+        //Shows the Console output Messagebox
         QMessageBox msgBox;
 
         //Creates the custom button
