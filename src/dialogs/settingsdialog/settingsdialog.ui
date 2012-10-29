@@ -74,7 +74,7 @@
              <item row="0" column="2">
               <widget class="QSpinBox" name="spinBoxfps">
                <property name="toolTip">
-                <string>Changes the framerate in the recording</string>
+                <string>Framerate in recording.</string>
                </property>
               </widget>
              </item>
@@ -88,7 +88,7 @@
              <item row="1" column="2">
               <widget class="QLineEdit" name="lineEditvideocodec">
                <property name="toolTip">
-                <string>Changes the video codec used in the recording</string>
+                <string>Video codec used in recording</string>
                </property>
               </widget>
              </item>
@@ -102,7 +102,7 @@
              <item row="3" column="2">
               <widget class="QLineEdit" name="lineEditaudiocodec">
                <property name="toolTip">
-                <string>Changes the audio codec used in the recording</string>
+                <string>Audio codec used in the recording</string>
                </property>
               </widget>
              </item>
@@ -116,7 +116,7 @@
              <item row="4" column="2">
               <widget class="QSpinBox" name="spinBoxaudiochannels">
                <property name="toolTip">
-                <string>Changes the number of audiochannels used. To record in mono set to 1, for stereo set to 2 etc.</string>
+                <string>Number of audiochannels used. To record in mono set to 1, for stereo set to 2 etc.</string>
                </property>
               </widget>
              </item>
@@ -146,14 +146,14 @@
                <item row="0" column="0">
                 <widget class="QLineEdit" name="lineEditbasename">
                  <property name="toolTip">
-                  <string>Choose a basename for your recordings.</string>
+                  <string>Basename of recordings</string>
                  </property>
                 </widget>
                </item>
                <item row="0" column="1">
                 <widget class="QCheckBox" name="checkBoxbasenametimedate">
                  <property name="toolTip">
-                  <string>Use the time and date as the basename.</string>
+                  <string>Use time and date as the basename.</string>
                  </property>
                  <property name="text">
                   <string>Time/Date</string>
@@ -174,7 +174,7 @@
                <item row="0" column="0">
                 <widget class="QLineEdit" name="lineEditpath">
                  <property name="toolTip">
-                  <string>Choose where to save your recordings</string>
+                  <string>Location of recordings</string>
                  </property>
                  <property name="readOnly">
                   <bool>true</bool>
@@ -184,7 +184,7 @@
                <item row="0" column="1">
                 <widget class="QPushButton" name="pushButtonpathBrowse">
                  <property name="toolTip">
-                  <string>Change the default path.</string>
+                  <string>Change default path.</string>
                  </property>
                  <property name="text">
                   <string>Change</string>
@@ -203,7 +203,7 @@
              <item row="10" column="2">
               <widget class="QComboBox" name="comboBoxFormat">
                <property name="toolTip">
-                <string>Choose which format the recordings should be saved with. </string>
+                <string>File format of the recording</string>
                </property>
               </widget>
              </item>
@@ -212,7 +212,7 @@
                <item row="0" column="0">
                 <widget class="QComboBox" name="comboBoxrecording">
                  <property name="toolTip">
-                  <string>Choose the microphone you want to use.</string>
+                  <string>Microphone used for audioinput</string>
                  </property>
                 </widget>
                </item>
@@ -221,7 +221,7 @@
              <item row="2" column="2">
               <widget class="QLineEdit" name="lineEditAudiosource">
                <property name="toolTip">
-                <string>Changes the sound architecture used in the recording. Thjs can be alsa, oss etc.</string>
+                <string>Sound architecture used in recording. Thjs can be alsa, oss etc.</string>
                </property>
               </widget>
              </item>
@@ -235,7 +235,7 @@
              <item row="6" column="2">
               <widget class="QCheckBox" name="checkBoxMicMute">
                <property name="toolTip">
-                <string>The microphone is muted as default on startup</string>
+                <string>If selected the microphone is muted on startup</string>
                </property>
                <property name="text">
                 <string>Mute on startup</string>
@@ -527,7 +527,7 @@
          <item row="5" column="2" colspan="2">
           <widget class="QCheckBox" name="checkBoxSinglewindowredrectangle">
            <property name="toolTip">
-            <string>Show a red rectangle, that surrounds the area which is been recorded.</string>
+            <string>Show a red rectangle that marks the area which is beeing recorded.</string>
            </property>
            <property name="text">
             <string>Enable/Disable</string>
