@@ -271,11 +271,11 @@ p, li { white-space: pre-wrap; }
         <translation>Minimizza e avvia la registrazione</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="128"/>
         <source>&lt;b&gt; Recording a single window &lt;/b&gt;</source>
-        <translation>&lt;b&gt; Registrazione di una singola finestra &lt;/b&gt;</translation>
+        <translation type="obsolete">&lt;b&gt; Registrazione di una singola finestra &lt;/b&gt;</translation>
     </message>
     <message>
+        <location filename="../../mainwindow.cpp" line="128"/>
         <location filename="../../mainwindow.cpp" line="129"/>
         <source>Recording a single window</source>
         <translation>Registrazione di una singola finestra</translation>

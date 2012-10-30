@@ -246,11 +246,11 @@ p, li { white-space: pre-wrap; }
         <translation>Minimalizează și pornește înregistrarea</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="128"/>
         <source>&lt;b&gt; Recording a single window &lt;/b&gt;</source>
-        <translation>&lt;b&gt;Se înregistrează o singură fereastră&lt;/b&gt;</translation>
+        <translation type="obsolete">&lt;b&gt;Se înregistrează o singură fereastră&lt;/b&gt;</translation>
     </message>
     <message>
+        <location filename="../../mainwindow.cpp" line="128"/>
         <location filename="../../mainwindow.cpp" line="129"/>
         <source>Recording a single window</source>
         <translation>Se înregistrează o singură fereastră</translation>

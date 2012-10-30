@@ -273,11 +273,11 @@ p, li { white-space: pre-wrap; }
         <translation>Minimér og start optagelse</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="128"/>
         <source>&lt;b&gt; Recording a single window &lt;/b&gt;</source>
-        <translation>&lt;b&gt; Optagelse af et enkelt vindue &lt;/b&gt;</translation>
+        <translation type="obsolete">&lt;b&gt; Optagelse af et enkelt vindue &lt;/b&gt;</translation>
     </message>
     <message>
+        <location filename="../../mainwindow.cpp" line="128"/>
         <location filename="../../mainwindow.cpp" line="129"/>
         <source>Recording a single window</source>
         <translation>Optagelse af et enkelt vindue</translation>
