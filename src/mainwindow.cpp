@@ -427,12 +427,12 @@ void MainWindow::onProcessFinished(int Exitcode)
         QPushButton *showDetails = msgBox.addButton(trUtf8("Show output"), QMessageBox::ActionRole);
 
         //The rest of the combobox
-        msgBox.setText(trUtf8("<b>Failed to start recording!</b>"));
+        msgBox.setText(QString("<b>%1</b>").arg(trUtf8("Failed to start!")));
         msgBox.setInformativeText(trUtf8("Press <i>'Show output'</i> to see console ouput."));
         msgBox.setStandardButtons(QMessageBox::Ok);
         //msgBox.setDetailedText(QString(ui->textEditConsole->toPlainText()));
         msgBox.setDefaultButton(QMessageBox::Ok);
-        msgBox.setWindowTitle(trUtf8("Failed to start recording!"));
+        msgBox.setWindowTitle(trUtf8("Failed to start!"));
         msgBox.exec();
 
         if(msgBox.clickedButton() == showDetails){
