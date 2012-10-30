@@ -297,6 +297,8 @@ Seleccione mediante la cruz la ventana que quiere grabar.</translation>
     <message>
         <location filename="../../mainwindow.cpp" line="418"/>
         <location filename="../../mainwindow.cpp" line="421"/>
+        <location filename="../../mainwindow.cpp" line="430"/>
+        <location filename="../../mainwindow.cpp" line="435"/>
         <source>Failed to start!</source>
         <translation>Fallo al iniciar!</translation>
     </message>
@@ -315,9 +317,8 @@ Seleccione mediante la cruz la ventana que quiere grabar.</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="430"/>
         <source>&lt;b&gt;Failed to start recording!&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Fallo al iniciar la grabación!&lt;/b&gt;</translation>
+        <translation type="obsolete">&lt;b&gt;Fallo al iniciar la grabación!&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="431"/>
@@ -329,9 +330,8 @@ Seleccione mediante la cruz la ventana que quiere grabar.</translation>
         <translation type="obsolete">Pulse &lt;i&gt;&apos;Detalles&apos;&lt;/i&gt; para ver la salida de terminal.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="435"/>
         <source>Failed to start recording!</source>
-        <translation>Fallo de grabación!</translation>
+        <translation type="obsolete">Fallo de grabación!</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="478"/>

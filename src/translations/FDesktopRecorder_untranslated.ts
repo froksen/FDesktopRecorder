@@ -328,6 +328,8 @@ Hereafter the recording will start.</translation>
     <message>
         <location filename="../mainwindow.cpp" line="418"/>
         <location filename="../mainwindow.cpp" line="421"/>
+        <location filename="../mainwindow.cpp" line="430"/>
+        <location filename="../mainwindow.cpp" line="435"/>
         <source>Failed to start!</source>
         <translation>Failed to start!</translation>
     </message>
@@ -346,9 +348,8 @@ Hereafter the recording will start.</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="430"/>
         <source>&lt;b&gt;Failed to start recording!&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Failed to start recording!&lt;/b&gt;</translation>
+        <translation type="obsolete">&lt;b&gt;Failed to start recording!&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="431"/>
@@ -360,9 +361,8 @@ Hereafter the recording will start.</translation>
         <translation type="obsolete">Press &lt;i&gt;&apos;show details&apos;&lt;/i&gt; to see console ouput.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="435"/>
         <source>Failed to start recording!</source>
-        <translation>Failed to start recording!</translation>
+        <translation type="obsolete">Failed to start recording!</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="478"/>

@@ -324,6 +324,8 @@ Di seguito, la registrazione avrà inizio.</translation>
     <message>
         <location filename="../../mainwindow.cpp" line="418"/>
         <location filename="../../mainwindow.cpp" line="421"/>
+        <location filename="../../mainwindow.cpp" line="430"/>
+        <location filename="../../mainwindow.cpp" line="435"/>
         <source>Failed to start!</source>
         <translation>Impossibile iniziare!</translation>
     </message>
@@ -342,9 +344,8 @@ Di seguito, la registrazione avrà inizio.</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="430"/>
         <source>&lt;b&gt;Failed to start recording!&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Impossibile avviare la registrazione!&lt;/b&gt;</translation>
+        <translation type="obsolete">&lt;b&gt;Impossibile avviare la registrazione!&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="431"/>
@@ -356,9 +357,8 @@ Di seguito, la registrazione avrà inizio.</translation>
         <translation type="obsolete">Premi &lt;i&gt;&apos;mostra dettagli&apos;&lt;/i&gt; per vedere l&apos;esito della console.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="435"/>
         <source>Failed to start recording!</source>
-        <translation>Impossibile avviare la registrazione!</translation>
+        <translation type="obsolete">Impossibile avviare la registrazione!</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="478"/>

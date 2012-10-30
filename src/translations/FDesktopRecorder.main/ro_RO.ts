@@ -295,6 +295,8 @@ Hereafter the recording will start.</source>
     <message>
         <location filename="../../mainwindow.cpp" line="418"/>
         <location filename="../../mainwindow.cpp" line="421"/>
+        <location filename="../../mainwindow.cpp" line="430"/>
+        <location filename="../../mainwindow.cpp" line="435"/>
         <source>Failed to start!</source>
         <translation>Eroare la pornire!</translation>
     </message>
@@ -313,9 +315,8 @@ Hereafter the recording will start.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="430"/>
         <source>&lt;b&gt;Failed to start recording!&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Eroare la pornirea înregistrării!&lt;/b&gt;</translation>
+        <translation type="obsolete">&lt;b&gt;Eroare la pornirea înregistrării!&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="431"/>
@@ -327,9 +328,8 @@ Hereafter the recording will start.</source>
         <translation type="obsolete">Apasă &lt;i&gt;arată detalii&lt;/i&gt; pentru a vedea progresul în consolă.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="435"/>
         <source>Failed to start recording!</source>
-        <translation>Eroare la pornirea înregistrării!</translation>
+        <translation type="obsolete">Eroare la pornirea înregistrării!</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="478"/>

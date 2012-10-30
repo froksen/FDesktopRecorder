@@ -324,6 +324,8 @@ Unmittelbar danach startet die Aufnahme.</translation>
     <message>
         <location filename="../../mainwindow.cpp" line="418"/>
         <location filename="../../mainwindow.cpp" line="421"/>
+        <location filename="../../mainwindow.cpp" line="430"/>
+        <location filename="../../mainwindow.cpp" line="435"/>
         <source>Failed to start!</source>
         <translation>Konnte nicht starten!</translation>
     </message>
@@ -342,9 +344,8 @@ Unmittelbar danach startet die Aufnahme.</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="430"/>
         <source>&lt;b&gt;Failed to start recording!&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Aufnahme konnte nicht gestartet werden!&lt;/b&gt;</translation>
+        <translation type="obsolete">&lt;b&gt;Aufnahme konnte nicht gestartet werden!&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="431"/>
@@ -356,9 +357,8 @@ Unmittelbar danach startet die Aufnahme.</translation>
         <translation type="obsolete">Klicken Sie für die Konsolenausgabe auf &apos;Details anzeigen&apos;.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="435"/>
         <source>Failed to start recording!</source>
-        <translation>Konnte Aufnahme nicht starten!</translation>
+        <translation type="obsolete">Konnte Aufnahme nicht starten!</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="478"/>

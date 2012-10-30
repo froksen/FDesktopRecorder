@@ -326,6 +326,8 @@ Herefter vil optagelsen påbegynde.</translation>
     <message>
         <location filename="../../mainwindow.cpp" line="418"/>
         <location filename="../../mainwindow.cpp" line="421"/>
+        <location filename="../../mainwindow.cpp" line="430"/>
+        <location filename="../../mainwindow.cpp" line="435"/>
         <source>Failed to start!</source>
         <translation>Opstarten fejlede!</translation>
     </message>
@@ -344,9 +346,8 @@ Herefter vil optagelsen påbegynde.</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="430"/>
         <source>&lt;b&gt;Failed to start recording!&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Fejl ved start af optagelse!&lt;/b&gt;</translation>
+        <translation type="obsolete">&lt;b&gt;Fejl ved start af optagelse!&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="431"/>
@@ -358,9 +359,8 @@ Herefter vil optagelsen påbegynde.</translation>
         <translation type="obsolete">Tryk på &lt;i&gt;&apos;show details&apos;&lt;/i&gt; for at se terminal output.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="435"/>
         <source>Failed to start recording!</source>
-        <translation>Optagelse fejlede!</translation>
+        <translation type="obsolete">Optagelse fejlede!</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="478"/>
