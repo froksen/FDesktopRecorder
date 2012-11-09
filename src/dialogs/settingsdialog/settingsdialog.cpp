@@ -257,7 +257,7 @@ void SettingsDialog::findLanguages()
     localeMap.insert("de_DE",QString::fromUtf8("Deutch"));
     localeMap.insert("ro_RO",QString::fromUtf8("Romantism"));
     localeMap.insert("it_IT",QString::fromUtf8("Italiano"));
-    localeMap.insert("es_Es",QString::fromUtf8("Español"));
+    localeMap.insert("es_ES",QString::fromUtf8("Español"));
 
 
     foreach (QString locale, localeMap.keys()){
