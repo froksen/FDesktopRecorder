@@ -548,7 +548,7 @@ Seleccione mediante la cruz la ventana que quiere grabar.</translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="224"/>
-        <source>Sound architecture used in recording. Thjs can be alsa, oss etc.</source>
+        <source>Sound architecture used in recording. This can be alsa, oss etc.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
