@@ -76,21 +76,31 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="../../dialogs/about/aboutprog.cpp" line="31"/>
+        <source>French</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/about/aboutprog.cpp" line="35"/>
         <source>German</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="36"/>
+        <location filename="../../dialogs/about/aboutprog.cpp" line="40"/>
+        <source>Greek</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/about/aboutprog.cpp" line="44"/>
         <source>Spanish</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="40"/>
+        <location filename="../../dialogs/about/aboutprog.cpp" line="48"/>
         <source>Italian</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="45"/>
+        <location filename="../../dialogs/about/aboutprog.cpp" line="53"/>
         <source>Romanian</source>
         <translation type="unfinished"></translation>
     </message>
@@ -693,7 +703,7 @@ Tenga cuidado por que NO se puede deshacer.</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="297"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="299"/>
         <source>FFmpeg location</source>
         <translation type="unfinished"></translation>
     </message>
