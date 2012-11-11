@@ -25,9 +25,15 @@ You can contact me via kde-apps.org. Find me under the username "froksen".
 ###Danish
 * Ole 'froksen' Holm Frandsen
 
+###French
+* 'aishen'
+
 ###German
 * Max 'mx01' Huber
 * Christian 'saftsocken' Räss 
+
+###Greek
+* Γιάννης 'Evropi' Ανθυμίδης
 
 ###Spanish
 * Javi
