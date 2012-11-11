@@ -282,7 +282,7 @@ void SettingsDialog::on_checkBoxPreviewplayer_clicked()
 }
 
 
-void SettingsDialog::on_comboBoxLanguage_activated(const QString &arg1)
+void SettingsDialog::on_comboBoxLanguage_activated()
 {
     QPalette labelLanguagePalette = ui->labelLanguage->palette();
     labelLanguagePalette.setColor(ui->labelLanguage->foregroundRole(),Qt::red);

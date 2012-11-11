@@ -24,7 +24,7 @@ private slots:
     void on_checkBoxbasenametimedate_clicked();
     void on_checkBoxMicMute_clicked();
     void on_checkBoxPreviewplayer_clicked();
-    void on_comboBoxLanguage_activated(const QString &arg1);
+    void on_comboBoxLanguage_activated();
     void on_pushButtonFFmpegbrowse_clicked();
 
 private:
