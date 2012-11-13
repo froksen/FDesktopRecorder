@@ -92,7 +92,7 @@ This will install the *.notifyrc file in the correct place. If you are building 
     $ cd <FDesktopRecorder-folder>
     $ mkdir build
     $ cd build/
-    $ cmake ..
+    $ cmake .. -DCMAKE_INSTALL_PREFIX=/usr
     $ make
   ```
   (You can do "make install" after this to install)
