@@ -20,6 +20,8 @@ set ( FDesktopRecorder_SRCS
 	module/process.cpp
 	module/settingsmanager.cpp
 	utils/rubberband.cpp
+        plugins/pluginmanager.cpp
+
 	)
 
 set ( FDesktopRecorder_UIS
@@ -55,6 +57,8 @@ set ( FDesktopRecorder_MOCS
 	dialogs/settingsdialog/settingsdialog.h
 	module/process.h
 	utils/rubberband.h
+        plugins/pluginmanager.h
+        plugins/PluginInterface.h
 	)
 QT4_WRAP_CPP(MOCS ${FDesktopRecorder_MOCS})
 
