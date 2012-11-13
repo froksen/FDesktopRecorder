@@ -85,6 +85,9 @@ public:
     void setEnabledPlugins(QStringList listofplugins);
     QStringList EnabledPlugins();
 
+    void setPluginpath(QString path);
+    QString pluginPath();
+
     //----------------SECTION: Common-----------------
     void removeSettingsfile();
 
@@ -131,6 +134,7 @@ private:
 //----------------SECTION: Plugins------------------
     bool usePlugins;
     QStringList enabledpluginnames;
+    QString pluginspath;
 //----------------SECTION: OTHER------------------
     QString latestrecording;
     RecordingDevices recordingdevices;

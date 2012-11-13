@@ -220,9 +220,8 @@ void SettingsDialog::readSettings()
     //Sets the pluginpath
     //QFileInfo settingsfileInfo (settings.getQSettingsFilename());
     //QString pluginpath = settingsfileInfo.absolutePath() + "/plugins";
-    QString pluginpath = "/usr/share/fdesktoprecorder/plugins";
-    mPluginManger->setPluginpath(pluginpath);
-    ui->lineEditPluginsPath->setText(pluginpath);
+    mPluginManger->setPluginpath(settings.pluginPath());
+    ui->lineEditPluginsPath->setText(settings.pluginPath());
 
     //Loads them
     mPluginManger->LoadAllPlugins();
@@ -253,7 +252,7 @@ void SettingsDialog::readSettings()
     for (int i=0;i<ui->treeWidgetPlugIns->columnCount()-1;i++) {
         ui->treeWidgetPlugIns->resizeColumnToContents(i);
     }
-
+    delete mPluginManger;
 
 
 }
@@ -458,6 +457,8 @@ void SettingsDialog::writeSettings()
 
 
     // -----------------SECTION: PlugIns------------------------------
+    settings.setPluginpath(ui->lineEditPluginsPath->text());
+
     //Enable/Disable plugins
     if(ui->checkBoxPluginsEnabled->isChecked()){
         settings.enablePlugins(true);

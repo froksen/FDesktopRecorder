@@ -44,6 +44,7 @@ void SettingsManager::writeAll()
     settings.beginGroup("plugins");
     settings.setValue("usePlugins",usePlugins);
     settings.setValue("enabledplugins",enabledpluginnames);
+    settings.setValue("pluginpath",pluginspath);
     settings.endGroup();
 
     settings.sync();
@@ -88,6 +89,7 @@ void SettingsManager::readAll()
     settings.beginGroup("plugins");
     usePlugins = settings.value("usePlugins","false").toBool();
     enabledpluginnames = settings.value("enabledplugins","").toStringList();
+    pluginspath = settings.value("pluginspath","/usr/share/fdesktoprecorder/plugins").toString();
     settings.endGroup();
 }
 
@@ -349,4 +351,14 @@ void SettingsManager::setEnabledPlugins(QStringList listofplugins)
 QStringList SettingsManager::EnabledPlugins()
 {
     return enabledpluginnames;
+}
+
+void SettingsManager::setPluginpath(QString path)
+{
+    pluginspath = path;
+}
+
+QString SettingsManager::pluginPath()
+{
+    return pluginspath;
 }
