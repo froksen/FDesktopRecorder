@@ -32,7 +32,7 @@ private:
 
 public slots:
     void LoadAllPlugins();
-    void LoadPlugin(QString Filename, QString KindOf,QString absolutFilepath = "", int recordingduration_s = 0);
+    void LoadPlugin(QString Filename, QString plugintype,QString absolutFilepath = "", int recordingduration_s = 0);
     void LoadPostRecPluings(QString recordingFilename="", int recordingduration_s=0);
     int setPluginpath(QString PluginPath);
     int createPluginPath(QString PluginPath);

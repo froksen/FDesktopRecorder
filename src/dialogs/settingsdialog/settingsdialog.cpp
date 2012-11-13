@@ -5,6 +5,8 @@
 #include <QFile>
 #include <QFileDialog>
 #include <QMessageBox>
+#include "../plugins/pluginmanager.h"
+
 
 SettingsDialog::SettingsDialog(QWidget *parent) :
     QDialog(parent),
@@ -204,6 +206,56 @@ void SettingsDialog::readSettings()
     {
         ui->checkBoxadvancepreset->setChecked(1);
     }
+
+    // -----------------SECTION: PlugIns------------------------------
+    //Sets the headerText
+//    ui->labelHeaderPlugins->setText(trUtf8("PlugIns") + " (" + trUtf8("Experimental") + ")");
+
+    //Sets if the checkbox should be checked or not.
+    ui->checkBoxPluginsEnabled->setChecked(settings.pluginsEnabled());
+
+    //Scan for plugins and show then in GUI
+    PluginManager *mPluginManger = new PluginManager();
+
+    //Sets the pluginpath
+    //QFileInfo settingsfileInfo (settings.getQSettingsFilename());
+    //QString pluginpath = settingsfileInfo.absolutePath() + "/plugins";
+    QString pluginpath = "/usr/share/fdesktoprecorder/plugins";
+    mPluginManger->setPluginpath(pluginpath);
+    ui->lineEditPluginsPath->setText(pluginpath);
+
+    //Loads them
+    mPluginManger->LoadAllPlugins();
+    QMap <QString, QString> pluginformation = mPluginManger->PluginInformation();
+    qDebug() << "PluginsFound" << pluginformation.keys();
+
+    QStringList enabledPlugins = settings.EnabledPlugins();
+    qDebug() << "Enabled Plugins" << enabledPlugins;
+
+    for (int i=0;i<pluginformation.keys().count();i++) {
+        QString desc =  pluginformation.value(pluginformation.keys().at(i));
+        QString name = pluginformation.keys().at(i);
+
+        QTreeWidgetItem *pluginItem = new QTreeWidgetItem(ui->treeWidgetPlugIns);
+           pluginItem->setText(0, name);
+           pluginItem->setText(2,desc);
+
+           //Checks if the plugin should be enabled
+           if(enabledPlugins.contains(name)){
+               pluginItem->setCheckState(1,Qt::Checked);
+           }
+           else {
+               pluginItem->setCheckState(1,Qt::Unchecked);
+           }
+    }
+
+    //Fixes til UI
+    for (int i=0;i<ui->treeWidgetPlugIns->columnCount()-1;i++) {
+        ui->treeWidgetPlugIns->resizeColumnToContents(i);
+    }
+
+
+
 }
 
 void SettingsDialog::on_pushButtonpathBrowse_clicked()
@@ -403,6 +455,30 @@ void SettingsDialog::writeSettings()
     if(!ui->lineEditFFmpeg->text().isEmpty()){
         settings.setFFmpeglocation(ui->lineEditFFmpeg->text());
     }
+
+
+    // -----------------SECTION: PlugIns------------------------------
+    //Enable/Disable plugins
+    if(ui->checkBoxPluginsEnabled->isChecked()){
+        settings.enablePlugins(true);
+    }
+    else {
+        settings.enablePlugins(false);
+    }
+
+    //Which plugins is enabled
+    QStringList pluginstobeenabled;
+
+    for (int i=0; i<ui->treeWidgetPlugIns->topLevelItemCount();i++){
+        qDebug() << "......." << i;
+        int Plugincheckstate = ui->treeWidgetPlugIns->topLevelItem(i)->checkState(1);
+
+        if(Plugincheckstate == 2){
+            qDebug() << "Saving enabled:" << ui->treeWidgetPlugIns->topLevelItem(i)->text(0);
+            pluginstobeenabled << ui->treeWidgetPlugIns->topLevelItem(i)->text(0);
+        }
+    }
+    settings.setEnabledPlugins(pluginstobeenabled);
 
     //Writes the data
     qDebug() << "-----  Settingsdialog: Writting settings -----";

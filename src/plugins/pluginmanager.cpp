@@ -60,7 +60,7 @@ void PluginManager::LoadAllPlugins()
 
 }
 
-void PluginManager::LoadPlugin(QString pluginFilename,QString KindOf,QString absolutFilepath,int recordingduration_s)
+void PluginManager::LoadPlugin(QString pluginFilename,QString plugintype,QString absolutFilepath,int recordingduration_s)
 {
 
     qDebug() << "PluginFile: " << pluginFilename;
@@ -69,7 +69,6 @@ void PluginManager::LoadPlugin(QString pluginFilename,QString KindOf,QString abs
 
     if(possiblePlugin)
     {
-
         PluginInterface *plugin = qobject_cast<PluginInterface*>( possiblePlugin );
         if( plugin )
         {
@@ -79,10 +78,10 @@ void PluginManager::LoadPlugin(QString pluginFilename,QString KindOf,QString abs
             if(enabledpluginslist.contains(pluginname)){
                 qDebug() << "Plugin found and enabled: " << pluginname;
 
-                if(KindOf == "postrec"){
+                if(plugintype == "postrec"){
                     plugin->PostRecording(absolutFilepath,recordingduration_s);
                 }
-                if(KindOf == "prerec"){
+                if(plugintype == "prerec"){
                 }
             }
             else {
