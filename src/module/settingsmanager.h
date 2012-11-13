@@ -79,6 +79,11 @@ public:
     void setFFmpeglocation(QString location);
     QString FFmpeglocation();
 
+    void enablePlugins(bool state);
+    bool pluginsEnabled();
+
+    void setEnabledPlugins(QStringList listofplugins);
+    QStringList EnabledPlugins();
 
     //----------------SECTION: Common-----------------
     void removeSettingsfile();
@@ -122,6 +127,10 @@ private:
     QString previewplayerintegrated;
     QString SingleWindow_redrectangle;
     QString ffmpeglocation;
+
+//----------------SECTION: Plugins------------------
+    bool usePlugins;
+    QStringList enabledpluginnames;
 //----------------SECTION: OTHER------------------
     QString latestrecording;
     RecordingDevices recordingdevices;

@@ -41,6 +41,11 @@ void SettingsManager::writeAll()
     settings.setValue("latestrecording",latestrecording);
     settings.endGroup();
 
+    settings.beginGroup("plugins");
+    settings.setValue("usePlugins",usePlugins);
+    settings.setValue("enabledplugins",enabledpluginnames);
+    settings.endGroup();
+
     settings.sync();
 }
 
@@ -78,6 +83,11 @@ void SettingsManager::readAll()
     previewplayerintegrated = settings.value("previewplayerintegrated","false").toString();
     SingleWindow_redrectangle = settings.value("Singlewindow_redrectangle","true").toString();
     latestrecording = settings.value("latestrecording","Unknown").toString();
+    settings.endGroup();
+
+    settings.beginGroup("plugins");
+    usePlugins = settings.value("usePlugins","false").toBool();
+    enabledpluginnames = settings.value("enabledplugins","").toStringList();
     settings.endGroup();
 }
 
@@ -320,4 +330,23 @@ void SettingsManager::removeSettingsfile()
     settings.sync();
 }
 
+void SettingsManager::enablePlugins(bool state)
+{
+    usePlugins = state;
+}
 
+bool SettingsManager::pluginsEnabled()
+{
+    return usePlugins;
+}
+
+
+void SettingsManager::setEnabledPlugins(QStringList listofplugins)
+{
+    enabledpluginnames = listofplugins;
+}
+
+QStringList SettingsManager::EnabledPlugins()
+{
+    return enabledpluginnames;
+}
