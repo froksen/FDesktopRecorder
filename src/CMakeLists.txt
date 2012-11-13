@@ -65,4 +65,8 @@ QT4_WRAP_CPP(MOCS ${FDesktopRecorder_MOCS})
 add_executable ( ../FDesktopRecorder ${FDesktopRecorder_SRCS} ${UIS} ${RSCS} ${TRS} ${MOCS} )
 target_link_libraries ( ../FDesktopRecorder  ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRARY} ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRARY} ${KDE4_KDEUI_LIBS} ${KDE4_KPARTS_LIBS})
 
+#PLUGINS
+add_subdirectory(plugins/RecordingInfo/)
+
+#INSTALL SECTION
 install (TARGETS ../FDesktopRecorder DESTINATION bin)
