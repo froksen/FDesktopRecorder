@@ -3,6 +3,7 @@
 #include "dialogs/about/aboutprog.h"
 #include "utils/windowgrapper.h"
 #include "dialogs/settingsdialog/settingsdialog.h"
+#include "plugins/pluginmanager.h"
 #include <QtGui>
 #include <QtCore>
 #include <QMainWindow>
@@ -100,6 +101,9 @@ private:
 
     //FPS
     double recordingFPS;
+
+    //Plugin
+    PluginManager *mPluginManger;
 
 
 protected:

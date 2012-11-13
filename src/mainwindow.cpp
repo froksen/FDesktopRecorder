@@ -70,6 +70,11 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->actionSettings->setIcon(QIcon::fromTheme("preferences-system"));
     ui->actionOpen_recording_directory->setIcon(QIcon::fromTheme("system-file-manager"));
     ui->actionPreviewrecording->setIcon(QIcon::fromTheme("video-display"));
+
+    //Loads Plugins
+    mPluginManger = new PluginManager(this);
+    QString pluginpath = "/usr/share/fdesktoprecorder/plugins";
+    mPluginManger->setPluginpath(pluginpath);
 }
 
 MainWindow::~MainWindow()
@@ -409,6 +414,12 @@ void MainWindow::onProcessFinished(int Exitcode)
 
         //SystemTray: Reads information
         latestrecording->setText(trUtf8("Latest Recording") + ": " + currentdatetime);
+
+        //Runs/Loads the plugins for PostRecording
+        if(settings.pluginsEnabled()) {
+            mPluginManger->setEnabledPlugins(settings.EnabledPlugins());
+            mPluginManger->LoadPostRecPluings(filename,stopwatchtimeest);
+        }
 
     }
     //Recording: Failes
