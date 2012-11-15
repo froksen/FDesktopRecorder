@@ -7,5 +7,7 @@
         <file>translations/FDesktopRecorder.main/it_IT.qm</file>
         <file>translations/FDesktopRecorder.main/ro_RO.qm</file>
         <file>translations/FDesktopRecorder.main/de_DE.qm</file>
+        <file>translations/FDesktopRecorder.main/fr_FR.qm</file>
+        <file>translations/FDesktopRecorder.main/el_GR.qm</file>
     </qresource>
 </RCC>

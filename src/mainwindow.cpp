@@ -125,7 +125,7 @@ void MainWindow::on_pushButtonStartrecord_clicked()
     {
         //Informing the user about how to proceed
         QMessageBox msgBox;
-        msgBox.setText(trUtf8("<b> Recording a single window </b>"));
+        msgBox.setText(QString("<b>%1</b>").arg(trUtf8("Recording a single window")));
         msgBox.setWindowTitle(trUtf8("Recording a single window"));
         msgBox.setInformativeText(trUtf8("When you click 'OK' a small crossair will appear. \n \nWith this you will have to select the window you want to record. \n\nHereafter the recording will start."));
         msgBox.setStandardButtons(QMessageBox::Ok);
@@ -418,21 +418,21 @@ void MainWindow::onProcessFinished(int Exitcode)
         ui->statusBar->showMessage(trUtf8("Failed to start!"));
 
         //Knotification
-        doKnotification(trUtf8("Failed to start!"),trUtf8("View terminaloutput for more info."),"normal","errorRecording");
+        doKnotification(trUtf8("Failed to start!"),trUtf8("View console output for more info."),"normal","errorRecording");
 
-        //Shows the TerminalOutput Messagebox
+        //Shows the Console output Messagebox
         QMessageBox msgBox;
 
         //Creates the custom button
         QPushButton *showDetails = msgBox.addButton(trUtf8("Show output"), QMessageBox::ActionRole);
 
         //The rest of the combobox
-        msgBox.setText(trUtf8("<b>Failed to start recording!</b>"));
+        msgBox.setText(QString("<b>%1</b>").arg(trUtf8("Failed to start!")));
         msgBox.setInformativeText(trUtf8("Press <i>'Show output'</i> to see console ouput."));
         msgBox.setStandardButtons(QMessageBox::Ok);
         //msgBox.setDetailedText(QString(ui->textEditConsole->toPlainText()));
         msgBox.setDefaultButton(QMessageBox::Ok);
-        msgBox.setWindowTitle(trUtf8("Failed to start recording!"));
+        msgBox.setWindowTitle(trUtf8("Failed to start!"));
         msgBox.exec();
 
         if(msgBox.clickedButton() == showDetails){

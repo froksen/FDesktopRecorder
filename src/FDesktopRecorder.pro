@@ -42,6 +42,8 @@ TRANSLATIONS    = translations/FDesktopRecorder.main/da_DK.ts \
                   translations/FDesktopRecorder.main/es_ES.ts \
                   translations/FDesktopRecorder.main/it_IT.ts \
                   translations/FDesktopRecorder.main/ro_RO.ts \
+                  translations/FDesktopRecorder.main/fr_FR.ts \
+                  translations/FDesktopRecorder.main/el_GR.ts \
                   translations/FDesktopRecorder_untranslated.ts \
 
 

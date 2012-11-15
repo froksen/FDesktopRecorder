@@ -255,9 +255,11 @@ void SettingsDialog::findLanguages()
     QMap <QString,QString> localeMap;
     localeMap.insert("da_DK",QString::fromUtf8("Dansk"));
     localeMap.insert("de_DE",QString::fromUtf8("Deutch"));
-    localeMap.insert("ro_RO",QString::fromUtf8("Romantism"));
+    localeMap.insert("es_ES",QString::fromUtf8("Español"));
+    localeMap.insert("fr_FR",QString::fromUtf8("Français"));
+    localeMap.insert("el_GR",QString::fromUtf8("ελληνικά"));
     localeMap.insert("it_IT",QString::fromUtf8("Italiano"));
-    localeMap.insert("es_Es",QString::fromUtf8("Español"));
+    localeMap.insert("ro_RO",QString::fromUtf8("Român"));
 
 
     foreach (QString locale, localeMap.keys()){
@@ -280,7 +282,7 @@ void SettingsDialog::on_checkBoxPreviewplayer_clicked()
 }
 
 
-void SettingsDialog::on_comboBoxLanguage_activated(const QString &arg1)
+void SettingsDialog::on_comboBoxLanguage_activated()
 {
     QPalette labelLanguagePalette = ui->labelLanguage->palette();
     labelLanguagePalette.setColor(ui->labelLanguage->foregroundRole(),Qt::red);

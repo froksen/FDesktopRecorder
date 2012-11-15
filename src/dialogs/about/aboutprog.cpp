@@ -28,9 +28,17 @@ void AboutProg::appendTranslators()
     ui->textEdit_2->append(QString::fromUtf8("Ole 'Froksen' Holm Frandsen"));
     ui->textEdit_2->append("<br>");
 
+    ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("French")));
+    ui->textEdit_2->append(QString::fromUtf8("'aishen'"));
+    ui->textEdit_2->append("<br>");
+
     ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("German")));
     ui->textEdit_2->append(QString::fromUtf8("Max 'mx01' Huber"));
     ui->textEdit_2->append(QString::fromUtf8("Chris 'saftsocken' Räss"));
+    ui->textEdit_2->append("<br>");
+
+    ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("Greek")));
+    ui->textEdit_2->append(QString::fromUtf8("Γιάννης 'Evropi' Ανθυμίδης"));
     ui->textEdit_2->append("<br>");
 
     ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("Spanish")));

@@ -64,6 +64,7 @@ void SettingsManager::readAll()
     recordingdevices.getRecorddevices();
     microphonedevice = settings.value("defaultrecorddevice",recordingdevices.RecordDeviceHW[0]).toString();
     microphonemuted = settings.value("defaultrecorddeviceMute","true").toBool();
+    /*: Translate this into what a good basename for a recording would be in your language */
     filenameBase = settings.value("defaultname",trUtf8("recording")).toString();
     filenameUsedate = settings.value("defaultnametimedate","false").toBool();
     filenamePath = settings.value("defaultpath",QDir::homePath()).toString();

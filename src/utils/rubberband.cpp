@@ -81,16 +81,22 @@ bool RubberBand::isScalability()
   if ( ( size().width() % 2 ) != 0 )
   {
     QString str = QString::number ( size().width() );
-    emit error ( trUtf8 ( "Scalability Failure Width" ),
-                 trUtf8 ( "Frame Width must be a multiple of 2" ) );
+    //Modified by Ole Holm Frandsen, so error no is longer translatable.
+//    emit error ( trUtf8 ( "Scalability Failure Width" ),
+//                 trUtf8 ( "Frame Width must be a multiple of 2" ) );
+    emit error ("Scalability Failure Width",
+                 "Frame Width must be a multiple of 2"  );
     return false;
   }
 
   if ( ( size().height() % 2 ) != 0 )
   {
     QString str = QString::number ( size().height() );
-    emit error ( trUtf8 ( "Scalability Failure Height" ),
-                 trUtf8 ( "Frame Height must be a multiple of 2" ) );
+    //Modified by Ole Holm Frandsen, so error no is longer translatable.
+//    emit error ( trUtf8 ( "Scalability Failure Height" ),
+//                 trUtf8 ( "Frame Height must be a multiple of 2" ) );
+    emit error ("Scalability Failure Height",
+                 "Frame Height must be a multiple of 2");
     return false;
   }
 
