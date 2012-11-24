@@ -7,7 +7,7 @@
 #include <QSystemTrayIcon>
 #include <math.h>
 #include <iomanip>
-
+#include "utils/areaselectordialog.h"
 
 /*NOTE: Removed the PreviewPlayer. Keept intence since I might add it again in a later version  */
 //#include "previewplayer/previewplayer.h"
@@ -158,6 +158,33 @@ void MainWindow::on_pushButtonStartrecord_clicked()
         rubberband.move(QString(singleCornersList[0]).toInt()-2,QString(singleCornersList[1]).toInt()-2);
 
         //Shows the rectangle
+        if(settings.getSinglewindow_redrectangle() != "false")
+        {
+            rubberband.show();
+        }
+    }
+    else if(ui->radioButtonCustom->isChecked()) {
+
+        AreaSelectorDialog *mAreaSelector = new AreaSelectorDialog(this);
+        mAreaSelector->exec();
+
+        mrecordinginfo.geometry = QString::number(mAreaSelector->geometry().width()) + "x" + QString::number(mAreaSelector->geometry().height());
+        //mrecordinginfo.geometry = WindowGrapperClass->Fullscreenaspects();
+        mrecordinginfo.corners = ":0.0+" + QString::number(mAreaSelector->geometry().x()) + "," + QString::number(mAreaSelector->geometry().y()) ;
+
+        //Sets the red rectangle arround the area that is going to be recorded (QRubberband)
+
+        //The size of the window:
+        //rubberband.setGeometry(0,0,WindowGrapperClass->SinglewindowWidth(p_stdout).toInt()+5,WindowGrapperClass->SinglewindowHeight(p_stdout).toInt()+5);
+
+//        //The position of the window
+//        QString singleCorners = mrecordinginfo.corners;
+//        singleCorners.remove(0,5);
+//        QStringList singleCornersList = singleCorners.split(",");
+        //rubberband.move(mAreaSelector->geometry().x()-2,mAreaSelector->geometry().y()-2);
+        rubberband.setGeometry(mAreaSelector->geometry());
+
+//        //Shows the rectangle
         if(settings.getSinglewindow_redrectangle() != "false")
         {
             rubberband.show();

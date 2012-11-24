@@ -20,12 +20,14 @@ set ( FDesktopRecorder_SRCS
 	module/process.cpp
 	module/settingsmanager.cpp
 	utils/rubberband.cpp
+        utils/areaselectordialog.cpp
 	)
 
 set ( FDesktopRecorder_UIS
 	mainwindow.ui
 	dialogs/about/aboutprog.ui
 	dialogs/settingsdialog/settingsdialog.ui
+        utils/areaselectordialog.ui
 	)
 QT4_WRAP_UI(UIS ${FDesktopRecorder_UIS})
 
@@ -55,6 +57,7 @@ set ( FDesktopRecorder_MOCS
 	dialogs/settingsdialog/settingsdialog.h
 	module/process.h
 	utils/rubberband.h
+        utils/areaselectordialog.h
 	)
 QT4_WRAP_CPP(MOCS ${FDesktopRecorder_MOCS})
 

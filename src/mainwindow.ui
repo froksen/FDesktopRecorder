@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>556</width>
-    <height>373</height>
+    <height>394</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -30,6 +30,35 @@
       <property name="sizeConstraint">
        <enum>QLayout::SetMinimumSize</enum>
       </property>
+      <item row="1" column="2">
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="0" column="4">
+       <widget class="QCheckBox" name="checkBoxRecordaudio">
+        <property name="toolTip">
+         <string>If checked, it will record no audio from the microphone</string>
+        </property>
+        <property name="statusTip">
+         <string>Mute the microphone</string>
+        </property>
+        <property name="text">
+         <string>Mute microphone</string>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
       <item row="0" column="1">
        <widget class="QRadioButton" name="radioButtonEntirescreen">
         <property name="toolTip">
@@ -62,7 +91,21 @@
         </property>
        </widget>
       </item>
-      <item row="0" column="4">
+      <item row="0" column="6">
+       <widget class="QPushButton" name="pushButtonStoprecord">
+        <property name="statusTip">
+         <string>Stop the recording</string>
+        </property>
+        <property name="text">
+         <string>Stop</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/images/icon.png</normaloff>:/images/icon.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="5">
        <widget class="QPushButton" name="pushButtonStartrecord">
         <property name="toolTip">
          <string/>
@@ -79,46 +122,10 @@
         </property>
        </widget>
       </item>
-      <item row="1" column="2">
-       <spacer name="verticalSpacer">
-        <property name="orientation">
-         <enum>Qt::Vertical</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>20</width>
-          <height>40</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item row="0" column="5">
-       <widget class="QPushButton" name="pushButtonStoprecord">
-        <property name="statusTip">
-         <string>Stop the recording</string>
-        </property>
-        <property name="text">
-         <string>Stop</string>
-        </property>
-        <property name="icon">
-         <iconset resource="resources.qrc">
-          <normaloff>:/images/icon.png</normaloff>:/images/icon.png</iconset>
-        </property>
-       </widget>
-      </item>
       <item row="0" column="3">
-       <widget class="QCheckBox" name="checkBoxRecordaudio">
-        <property name="toolTip">
-         <string>If checked, it will record no audio from the microphone</string>
-        </property>
-        <property name="statusTip">
-         <string>Mute the microphone</string>
-        </property>
+       <widget class="QRadioButton" name="radioButtonCustom">
         <property name="text">
-         <string>Mute microphone</string>
-        </property>
-        <property name="checked">
-         <bool>false</bool>
+         <string>Region</string>
         </property>
        </widget>
       </item>
