@@ -170,17 +170,6 @@ void MainWindow::on_pushButtonStartrecord_clicked()
 
         mrecordinginfo.geometry = QString::number(WindowGrapperClass->fixResolution(mAreaSelector->frameSize().width())) + "x" + QString::number(WindowGrapperClass->fixResolution(mAreaSelector->frameSize().height()));
         mrecordinginfo.corners = ":0.0+" + QString::number(mAreaSelector->frameGeometry().x()) + "," + QString::number(mAreaSelector->frameGeometry().y()) ;
-
-        //Sets the red rectangle arround the area that is going to be recorded (QRubberband)
-
-        //The size of the window:
-        //rubberband.setGeometry(0,0,WindowGrapperClass->SinglewindowWidth(p_stdout).toInt()+5,WindowGrapperClass->SinglewindowHeight(p_stdout).toInt()+5);
-
-//        //The position of the window
-//        QString singleCorners = mrecordinginfo.corners;
-//        singleCorners.remove(0,5);
-//        QStringList singleCornersList = singleCorners.split(",");
-        //rubberband.move(mAreaSelector->geometry().x()-2,mAreaSelector->geometry().y()-2);
         rubberband.setGeometry(mAreaSelector->geometry());
 
 //        //Shows the rectangle
