@@ -38,8 +38,23 @@ void AreaSelectorDialog::mouseDoubleClickEvent(QMouseEvent *)
     close();
 }
 
+void AreaSelectorDialog::moveEvent(QMoveEvent *)
+{
+    changedSelection();
+}
+
 void AreaSelectorDialog::changedSelection()
 {
     emit selectionChanged(true);
     qDebug() << "Selection changed";
+
+    //X and Y
+    ui->labelXY->setText(QString("X: %1, Y: %2").arg(QString::number(geometry().x()),
+                                                     QString::number(geometry().y())));
+
+    //Width and Height
+    ui->labelWidthHeight->setText(QString("%1: %2, %3: %4").arg(trUtf8("Width"),
+                                                        QString::number(geometry().width()),
+                                                        trUtf8("Height"),
+                                                        QString::number(geometry().height())));
 }

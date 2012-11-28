@@ -34,6 +34,7 @@ private:
 protected:
     void resizeEvent(QResizeEvent *);
     void mouseDoubleClickEvent(QMouseEvent *);
+    void moveEvent(QMoveEvent *);
 
 };
 
