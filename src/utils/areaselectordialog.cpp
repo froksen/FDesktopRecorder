@@ -8,7 +8,9 @@ AreaSelectorDialog::AreaSelectorDialog(QWidget *parent) :
 {
     ui->setupUi(this);
     setWindowOpacity(0.5);
-    //qDebug() << geometry().bottom();
+
+    mRubberBand = new RubberBand(this);
+    mRubberBand->show();
 }
 
 AreaSelectorDialog::~AreaSelectorDialog()
@@ -58,4 +60,6 @@ void AreaSelectorDialog::changedSelection()
                                                         QString::number(frameSize().width()),
                                                         trUtf8("Height"),
                                                         QString::number(frameSize().height())));
+
+    mRubberBand->setGeometry(0,0,geometry().width(),geometry().height());
 }

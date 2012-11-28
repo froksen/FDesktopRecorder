@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include <QRect>
+#include "rubberband.h"
 
 namespace Ui {
 class AreaSelectorDialog;
@@ -30,6 +31,8 @@ signals:
 private:
     Ui::AreaSelectorDialog *ui;
     void changedSelection();
+
+    RubberBand *mRubberBand;
 
 protected:
     void resizeEvent(QResizeEvent *);
