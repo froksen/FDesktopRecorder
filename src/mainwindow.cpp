@@ -168,8 +168,8 @@ void MainWindow::on_pushButtonStartrecord_clicked()
         AreaSelectorDialog *mAreaSelector = new AreaSelectorDialog(this);
         mAreaSelector->exec();
 
-        mrecordinginfo.geometry = QString::number(WindowGrapperClass->fixResolution(mAreaSelector->geometry().width())) + "x" + QString::number(WindowGrapperClass->fixResolution(mAreaSelector->geometry().height()));
-        mrecordinginfo.corners = ":0.0+" + QString::number(mAreaSelector->geometry().x()) + "," + QString::number(mAreaSelector->geometry().y()) ;
+        mrecordinginfo.geometry = QString::number(WindowGrapperClass->fixResolution(mAreaSelector->frameSize().width())) + "x" + QString::number(WindowGrapperClass->fixResolution(mAreaSelector->frameSize().height()));
+        mrecordinginfo.corners = ":0.0+" + QString::number(mAreaSelector->frameGeometry().x()) + "," + QString::number(mAreaSelector->frameGeometry().y()) ;
 
         //Sets the red rectangle arround the area that is going to be recorded (QRubberband)
 

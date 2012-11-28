@@ -8,6 +8,7 @@ AreaSelectorDialog::AreaSelectorDialog(QWidget *parent) :
 {
     ui->setupUi(this);
     setWindowOpacity(0.5);
+    //qDebug() << geometry().bottom();
 }
 
 AreaSelectorDialog::~AreaSelectorDialog()
@@ -49,12 +50,12 @@ void AreaSelectorDialog::changedSelection()
     qDebug() << "Selection changed";
 
     //X and Y
-    ui->labelXY->setText(QString("X: %1, Y: %2").arg(QString::number(geometry().x()),
-                                                     QString::number(geometry().y())));
+    ui->labelXY->setText(QString("X: %1, Y: %2").arg(QString::number(frameGeometry().x()),
+                                                     QString::number(frameGeometry().y())));
 
     //Width and Height
     ui->labelWidthHeight->setText(QString("%1: %2, %3: %4").arg(trUtf8("Width"),
-                                                        QString::number(geometry().width()),
+                                                        QString::number(frameSize().width()),
                                                         trUtf8("Height"),
-                                                        QString::number(geometry().height())));
+                                                        QString::number(frameSize().height())));
 }
