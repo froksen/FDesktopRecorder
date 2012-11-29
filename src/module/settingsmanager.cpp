@@ -51,7 +51,7 @@ void SettingsManager::readAll()
     videocodec = settings.value("videocodec","libx264").toString();
     audiosource = settings.value("audiosource","alsa").toString();
     audiocodec = settings.value("audiocodec","flac").toString();
-    audiochannels = settings.value("audiochannels",2).toInt();
+    audiochannels = settings.value("audiochannels",1).toInt();
     vpre = settings.value("vpre").toString();
     apre = settings.value("apre").toString();
     Preset = settings.value("Preset","ultrafast").toString();
