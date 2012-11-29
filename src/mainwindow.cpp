@@ -70,6 +70,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->actionSettings->setIcon(QIcon::fromTheme("preferences-system"));
     ui->actionOpen_recording_directory->setIcon(QIcon::fromTheme("system-file-manager"));
     ui->actionPreviewrecording->setIcon(QIcon::fromTheme("video-display"));
+
+    WindowGrapperClass = new WindowGrapper(this);
 }
 
 MainWindow::~MainWindow()
@@ -169,7 +171,17 @@ void MainWindow::on_pushButtonStartrecord_clicked()
         mAreaSelector->exec();
 
         mrecordinginfo.geometry = QString::number(WindowGrapperClass->fixResolution(mAreaSelector->frameSize().width())) + "x" + QString::number(WindowGrapperClass->fixResolution(mAreaSelector->frameSize().height()));
-        mrecordinginfo.corners = ":0.0+" + QString::number(mAreaSelector->frameGeometry().x()) + "," + QString::number(mAreaSelector->frameGeometry().y()) ;
+
+        //Corners
+        QString frameCornerX = QString::number(mAreaSelector->frameGeometry().x());
+        frameCornerX = frameCornerX.replace("+","");
+        frameCornerX = frameCornerX.replace("-","");
+
+        QString frameCornerY = QString::number(mAreaSelector->frameGeometry().y());
+        frameCornerY = frameCornerY.replace("+","");
+        frameCornerY = frameCornerY.replace("-","");
+
+        mrecordinginfo.corners = ":0.0+" + frameCornerX + "," + frameCornerY ;
         rubberband.setGeometry(mAreaSelector->geometry());
 
 //        //Shows the rectangle
