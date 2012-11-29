@@ -95,6 +95,11 @@ void SettingsDialog::readSettings()
     int comboboxIndex = ui->comboBoxrecording->findData(recordingdevice);
     ui->comboBoxrecording->setCurrentIndex(comboboxIndex);
 
+    if(comboboxIndex == -1){
+        qDebug() << "Warning: Selected microphone" << recordingdevice << "was not found!";
+        ui->comboBoxrecording->insertItem(-1,trUtf8("Microphone not found!"));
+        ui->comboBoxrecording->setCurrentIndex(0);
+    }
 // -----------------SECTION: Format------------------------------
     //Addes the diffent formats to the combox. PLEASE NOTE: the order is important.
     QStringList ItemFormatList;
