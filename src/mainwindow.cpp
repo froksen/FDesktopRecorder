@@ -182,7 +182,7 @@ void MainWindow::on_pushButtonStartrecord_clicked()
         frameCornerY = frameCornerY.replace("-","");
 
         mrecordinginfo.corners = ":0.0+" + frameCornerX + "," + frameCornerY ;
-        rubberband.setGeometry(mAreaSelector->geometry());
+        rubberband.setGeometry(mAreaSelector->frameGeometry());
 
 //        //Shows the rectangle
         if(settings.getSinglewindow_redrectangle() != "false")

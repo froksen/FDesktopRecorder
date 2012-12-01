@@ -1,5 +1,7 @@
 *
-- Added: The possibility to record a region of the screen 
+- Added: The possibility to record a region of the screen
+- Changed: Default number of audio channels is now 1 (mono), rather than 2 (stereo)
+- Changed: If a chosen microphone no longer exists or not found, the settings dialog will say so. 
 
 *Thu Nov 15 2012
 - Fixed: Issue that caused that you were unable to choose the Spanish translation.
