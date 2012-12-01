@@ -1,6 +1,8 @@
 #include "aboutprog.h"
 #include "ui_aboutprog.h"
 #include <QDesktopWidget>
+#include <QTextStream>
+#include <QDebug>
 
 AboutProg::AboutProg(QDialog *parent) :
     QDialog(parent),
@@ -10,6 +12,10 @@ AboutProg::AboutProg(QDialog *parent) :
 
 //    QRect r = AboutProg::geometry();
 //    r.moveCenter(QApplication::desktop()->availableGeometry().center());
+
+
+    //GPL
+    readGPL();
 
     //Append texts
     appendTranslators();
@@ -65,4 +71,17 @@ void AboutProg::appendSpecialThanks()
     ui->textEditThanks->append("symbianflo");
     ui->textEditThanks->append("Mamut R. Ghiunhan (aka V3n3RiX)");
 
+}
+
+int AboutProg::readGPL()
+{
+    QFile file(":/licenseGPLv2.txt");
+    if(!file.open(QIODevice::ReadOnly | QIODevice::Text)){
+        ui->plainTextEditGPL->setPlainText("Was unable to find file " + file.fileName() + ". Find GPLv2 at http://www.gnu.org/licenses/gpl-2.0.html");
+        return -1;
+    }
+
+    QTextStream in(&file);
+    ui->plainTextEditGPL->setPlainText(in.readAll());
+    return 0;
 }

@@ -9,5 +9,6 @@
         <file>translations/FDesktopRecorder.main/de_DE.qm</file>
         <file>translations/FDesktopRecorder.main/fr_FR.qm</file>
         <file>translations/FDesktopRecorder.main/el_GR.qm</file>
+        <file>licenseGPLv2.txt</file>
     </qresource>
 </RCC>

@@ -3,6 +3,8 @@
 
 #include <QWidget>
 #include <QDialog>
+#include <QFile>
+#include <Q3TextStream>
 
 namespace Ui {
     class AboutProg;
@@ -21,6 +23,9 @@ private:
 
     void appendTranslators();
     void appendSpecialThanks();
+
+    //Changelog
+    int readGPL();
 };
 
 #endif // ABOUTPROG_H
