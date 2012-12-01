@@ -1,6 +1,8 @@
 *
+- Added: Portuguese (Brazil) by Alexandro "salmora8" Casanova
+- Added: Russian by Danilov "modos189" Alexandr
 - Added: The possibility to record a region of the screen
-- Changed: Default number of audio channels is now 1 (mono), rather than 2 (stereo)
+- Added: GPL license in about dialog
 - Changed: If a chosen microphone no longer exists or not found, the settings dialog will say so. 
 
 *Thu Nov 15 2012

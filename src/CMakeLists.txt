@@ -44,6 +44,8 @@ set ( FDesktopRecorder_TRS
 	translations/FDesktopRecorder.main/ro_RO.ts 
 	translations/FDesktopRecorder.main/fr_FR.ts 
 	translations/FDesktopRecorder.main/el_GR.ts 
+        translations/FDesktopRecorder.main/ru_RU.ts
+        translations/FDesktopRecorder.main/pt_BR.ts
 	translations/FDesktopRecorder_untranslated.ts 
 	)
 QT4_ADD_TRANSLATION(TRS ${FDesktopRecorder_TRS})
