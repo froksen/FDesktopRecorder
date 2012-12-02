@@ -178,6 +178,30 @@ p, li { white-space: pre-wrap; }
     </message>
 </context>
 <context>
+    <name>AreaSelectorDialog</name>
+    <message>
+        <location filename="../../utils/areaselectordialog.ui" line="14"/>
+        <location filename="../../utils/areaselectordialog.ui" line="140"/>
+        <source>Select the region to record and press OK</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../utils/areaselectordialog.ui" line="127"/>
+        <source>OK</source>
+        <translation type="unfinished">Εντάξει</translation>
+    </message>
+    <message>
+        <location filename="../../utils/areaselectordialog.cpp" line="59"/>
+        <source>Width</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../utils/areaselectordialog.cpp" line="61"/>
+        <source>Height</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>MainWindow</name>
     <message>
         <location filename="../../mainwindow.ui" line="20"/>

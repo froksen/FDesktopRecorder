@@ -14,6 +14,9 @@ AboutProg::AboutProg(QDialog *parent) :
 //    r.moveCenter(QApplication::desktop()->availableGeometry().center());
 
 
+    //About
+    about();
+
     //GPL
     readGPL();
 
@@ -30,6 +33,9 @@ AboutProg::~AboutProg()
 //This method makes it eaiser to add new translators, without having to retranste the entire textedit.
 void AboutProg::appendTranslators()
 {
+    ui->textEdit_2->setText(trUtf8("FDesktopRecorder have been translated into some languages. If you want to translate it into your language you can contact me on opendesktop.org by sending me a message."));
+
+    ui->textEdit_2->append(QString("<br><h3>%1</h3>").arg(trUtf8("Translations")));
     ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("Danish")));
     ui->textEdit_2->append(QString::fromUtf8("Ole 'Froksen' Holm Frandsen"));
     ui->textEdit_2->append("<br>");
@@ -71,6 +77,10 @@ void AboutProg::appendTranslators()
 
 void AboutProg::appendSpecialThanks()
 {
+    ui->textEditThanks->setText(QString("%1 <br> <br> - %2 <h3>%3</h3>").arg(trUtf8("The FDesktopRecorder has received valuable contributions from a lot of different people."),
+                                              trUtf8("Thanks alot everyone."),
+                                              trUtf8("Special thanks")));
+
     ui->textEditThanks->append("3electrons");
     ui->textEditThanks->append("kalac");
     ui->textEditThanks->append("swiftscythe");
@@ -79,6 +89,14 @@ void AboutProg::appendSpecialThanks()
     ui->textEditThanks->append("symbianflo");
     ui->textEditThanks->append("Mamut R. Ghiunhan (aka V3n3RiX)");
 
+}
+
+void AboutProg::about()
+{
+    ui->textEdit->setText(QString("<h3> %1</h3>GPLv2 (http://www.gnu.org/licenses/gpl-2.0.html)  <h3>%2 </h3>Ole Holm Frandsen <h3>%3</h3>%4").arg(trUtf8("License"),
+                                                                                                                                           trUtf8("Created by"),
+                                                                                                                                           trUtf8("Based on"),
+                                                                                                                                           trUtf8("A ffmpeq script by Peter Lybeth from the danish GNU/Linux show 'Kanal Tux': http://www.kanaltux.dk")));
 }
 
 int AboutProg::readGPL()

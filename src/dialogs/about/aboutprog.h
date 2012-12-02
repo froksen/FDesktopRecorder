@@ -4,7 +4,7 @@
 #include <QWidget>
 #include <QDialog>
 #include <QFile>
-#include <Q3TextStream>
+#include <QTextStream>
 
 namespace Ui {
     class AboutProg;
@@ -23,6 +23,8 @@ private:
 
     void appendTranslators();
     void appendSpecialThanks();
+
+    void about();
 
     //Changelog
     int readGPL();
