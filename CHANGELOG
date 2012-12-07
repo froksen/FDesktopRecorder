@@ -4,6 +4,7 @@
 - Added: The possibility to record a region of the screen
 - Added: GPL license in about dialog
 - Changed: If a chosen microphone no longer exists or not found, the settings dialog will say so. 
+- Fixed: Stopwatch does not stop when pushbutton is pressed, but when recording has been encoded
 
 *Thu Nov 15 2012
 - Fixed: Issue that caused that you were unable to choose the Spanish translation.
