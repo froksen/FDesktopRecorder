@@ -29,7 +29,7 @@ bool UserdirReader::readFile(QString filename)
     QString line = in.readLine();
     while (!line.isNull()) {
         if(line.startsWith("XDG_VIDEOS_DIR")){
-            xdg_videos_dir = line.remove("XDG_VIDEOS_DIR=").remove(0,1).remove(-1,1);
+            xdg_videos_dir = line.remove("XDG_VIDEOS_DIR=").remove(0,1).remove(-1,1).replace("$HOME",QDir::homePath());
         }
         line = in.readLine();
     }

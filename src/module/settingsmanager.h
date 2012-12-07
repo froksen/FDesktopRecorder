@@ -4,6 +4,7 @@
 #include <QObject>
 #include <QSettings>
 #include "recordingdevices.h"
+#include "../utils/userdirreader.h"
 
 class SettingsManager : public QObject
 {
@@ -80,6 +81,8 @@ public:
     QString FFmpeglocation();
 
 
+
+
     //----------------SECTION: Common-----------------
     void removeSettingsfile();
 
@@ -125,7 +128,9 @@ private:
 //----------------SECTION: OTHER------------------
     QString latestrecording;
     RecordingDevices recordingdevices;
-
+//----------------SECTION: userdirreader------------------
+    UserdirReader *mUserdirReader;
+    QString userXDG_VIDEOS_DIR();
 
 };
 
