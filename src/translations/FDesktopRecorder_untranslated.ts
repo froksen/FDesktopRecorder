@@ -386,42 +386,42 @@ Hereafter the recording will start.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="334"/>
-        <location filename="../mainwindow.cpp" line="644"/>
+        <location filename="../mainwindow.cpp" line="645"/>
         <source>Recording started</source>
         <translation>Recording started</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="351"/>
+        <location filename="../mainwindow.cpp" line="355"/>
         <source>Please wait while saving the recording. Might take some time.</source>
         <translation>Please wait while saving the recording. Might take some time.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="425"/>
-        <location filename="../mainwindow.cpp" line="428"/>
+        <location filename="../mainwindow.cpp" line="426"/>
+        <location filename="../mainwindow.cpp" line="429"/>
         <source>Successfully finished recording</source>
         <translation>Successfully finished recording</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="425"/>
+        <location filename="../mainwindow.cpp" line="426"/>
         <source>Size</source>
         <translation>Size</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="438"/>
-        <location filename="../mainwindow.cpp" line="519"/>
+        <location filename="../mainwindow.cpp" line="439"/>
+        <location filename="../mainwindow.cpp" line="520"/>
         <source>Latest Recording</source>
         <translation>Latest Recording</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="445"/>
-        <location filename="../mainwindow.cpp" line="448"/>
-        <location filename="../mainwindow.cpp" line="457"/>
-        <location filename="../mainwindow.cpp" line="462"/>
+        <location filename="../mainwindow.cpp" line="446"/>
+        <location filename="../mainwindow.cpp" line="449"/>
+        <location filename="../mainwindow.cpp" line="458"/>
+        <location filename="../mainwindow.cpp" line="463"/>
         <source>Failed to start!</source>
         <translation>Failed to start!</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="448"/>
+        <location filename="../mainwindow.cpp" line="449"/>
         <source>View console output for more info.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -430,7 +430,7 @@ Hereafter the recording will start.</translation>
         <translation type="obsolete">View terminaloutput for more info.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="454"/>
+        <location filename="../mainwindow.cpp" line="455"/>
         <source>Show output</source>
         <translation type="unfinished"></translation>
     </message>
@@ -439,7 +439,7 @@ Hereafter the recording will start.</translation>
         <translation type="obsolete">&lt;b&gt;Failed to start recording!&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="458"/>
+        <location filename="../mainwindow.cpp" line="459"/>
         <source>Press &lt;i&gt;&apos;Show output&apos;&lt;/i&gt; to see console ouput.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -452,27 +452,27 @@ Hereafter the recording will start.</translation>
         <translation type="obsolete">Failed to start recording!</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="505"/>
+        <location filename="../mainwindow.cpp" line="506"/>
         <source>&amp;Show/Hide window</source>
         <translation>&amp;Show/Hide window</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="509"/>
+        <location filename="../mainwindow.cpp" line="510"/>
         <source>&amp;Stop recording</source>
         <translation>&amp;Stop recording</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="513"/>
+        <location filename="../mainwindow.cpp" line="514"/>
         <source>&amp;Latest recording: </source>
         <translation>&amp;Latest recording: </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="521"/>
+        <location filename="../mainwindow.cpp" line="522"/>
         <source>&amp;Quit program</source>
         <translation>&amp;Quit program</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="735"/>
+        <location filename="../mainwindow.cpp" line="736"/>
         <source>Current output copied to clipboard</source>
         <translation>Current output copied to clipboard</translation>
     </message>
@@ -855,7 +855,7 @@ Be aware that this can NOT be undone.</translation>
 <context>
     <name>SettingsManager</name>
     <message>
-        <location filename="../module/settingsmanager.cpp" line="68"/>
+        <location filename="../module/settingsmanager.cpp" line="69"/>
         <source>recording</source>
         <extracomment>Translate this into what a good basename for a recording would be in your language</extracomment>
         <translation>recording</translation>

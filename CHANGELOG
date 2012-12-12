@@ -1,11 +1,11 @@
-*
+* Thu Dec 13 2012
 - Added: Portuguese (Brazil) by Alexandro "salmora8" Casanova
 - Added: Russian by Danilov "modos189" Alexandr
 - Added: The possibility to record a region of the screen
-- Added: GPL license in about dialog
-- Changed: Instead of default recording dir beeing $HOME then it will read XDG_VIDEOS_DIR. Like $HOME/Videos
+- Added: GPL license text in about dialog
+- Changed: Instead of default recording dir beeing $HOME then it will be your XDG_VIDEOS_DIR. Like $HOME/Videos
 - Changed: If a chosen microphone no longer exists or not found, the settings dialog will say so. 
-- Fixed: Stopwatch does not stop when pushbutton is pressed, but when recording has been encoded
+- Fixed: Stopwatch does now stop correct when stop-button is pressed
 
 *Thu Nov 15 2012
 - Fixed: Issue that caused that you were unable to choose the Spanish translation.
