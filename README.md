@@ -46,10 +46,10 @@ You can contact me via kde-apps.org. Find me under the username "froksen".
 * Vincenzo 'smart2128' Reale
 * Symbian flo
 
-##Russian translation
+###Russian translation
 * Danilov "modos189" Alexandr
 
-##Portuguese (Brazil) 
+###Portuguese (Brazil) 
 * Alexandro "salmora8" Casanova
 
 ###Help with translation?
