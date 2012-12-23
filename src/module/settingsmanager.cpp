@@ -1,11 +1,11 @@
 #include "settingsmanager.h"
 #include <QDebug>
 #include <QDir>
+#include <KGlobalSettings>
 
 SettingsManager::SettingsManager(QObject *parent) :
     QObject(parent)
 {
-    mUserdirReader = new UserdirReader(this);
 }
 
 void SettingsManager::writeAll()
@@ -68,14 +68,7 @@ void SettingsManager::readAll()
     /*: Translate this into what a good basename for a recording would be in your language */
     filenameBase = settings.value("defaultname",trUtf8("recording")).toString();
     filenameUsedate = settings.value("defaultnametimedate","false").toBool();
-
-    if(mUserdirReader->fileExists()){
-        filenamePath = settings.value("defaultpath",mUserdirReader->getXdg_videos_dir()).toString();
-    }
-    else {
-        filenamePath = settings.value("defaultpath",QDir::homePath()).toString();
-    }
-
+    filenamePath = settings.value("defaultpath",XDG_VIDEOS_DIR()).toString();
     format = settings.value("defaultformat","avi").toString();
     language = settings.value("language","default").toString();
     ffmpeglocation = settings.value("ffmpeglocation","ffmpeg").toString();
@@ -89,10 +82,9 @@ void SettingsManager::readAll()
     settings.endGroup();
 }
 
-QString SettingsManager::userXDG_VIDEOS_DIR()
+QString SettingsManager::XDG_VIDEOS_DIR()
 {
-
-    return "hej";
+    return KGlobalSettings::videosPath();
 }
 
 void SettingsManager::setFramerate(int newFramerate)

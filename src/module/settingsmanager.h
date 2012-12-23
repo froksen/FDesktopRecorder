@@ -4,7 +4,6 @@
 #include <QObject>
 #include <QSettings>
 #include "recordingdevices.h"
-#include "../utils/userdirreader.h"
 
 class SettingsManager : public QObject
 {
@@ -129,8 +128,7 @@ private:
     QString latestrecording;
     RecordingDevices recordingdevices;
 //----------------SECTION: userdirreader------------------
-    UserdirReader *mUserdirReader;
-    QString userXDG_VIDEOS_DIR();
+    QString XDG_VIDEOS_DIR();
 
 };
 
