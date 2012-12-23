@@ -21,7 +21,6 @@ set ( FDesktopRecorder_SRCS
 	module/settingsmanager.cpp
 	utils/rubberband.cpp
         utils/areaselectordialog.cpp
-        utils/userdirreader.cpp
 	)
 
 set ( FDesktopRecorder_UIS
@@ -61,7 +60,6 @@ set ( FDesktopRecorder_MOCS
 	module/process.h
 	utils/rubberband.h
         utils/areaselectordialog.h
-        utils/userdirreader.h
 	)
 QT4_WRAP_CPP(MOCS ${FDesktopRecorder_MOCS})
 
