@@ -315,6 +315,7 @@ void MainWindow::on_pushButtonStartrecord_clicked()
     ui->checkBoxRecordaudio->setEnabled(0);
     ui->radioButtonSinglewindow->setEnabled(0);
     ui->radioButtonEntirescreen->setEnabled(0);
+    ui->radioButtonCustom->setEnabled(0);
     ui->actionAbout->setEnabled(0);
     ui->actionSettings->setEnabled(0);
     ui->actionPreviewrecording->setEnabled(0);
@@ -383,6 +384,7 @@ void MainWindow::onProcessFinished(int Exitcode)
     ui->checkBoxRecordaudio->setEnabled(1);
     ui->radioButtonEntirescreen->setEnabled(1);
     ui->radioButtonSinglewindow->setEnabled(1);
+    ui->radioButtonCustom->setEnabled(1);
     ui->actionAbout->setEnabled(1);
     ui->actionSettings->setEnabled(1);
     ui->pushButtonStartrecord->setEnabled(1);
