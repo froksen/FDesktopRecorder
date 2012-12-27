@@ -332,7 +332,7 @@ void MainWindow::on_pushButtonStartrecord_clicked()
    setWindowIcon(QPixmap(":/images/recording.png"));
 
    //StatusBar
-   ui->statusBar->showMessage(trUtf8("Recording started") + " (" + filename + ")");
+   ui->statusBar->showMessage(trUtf8("Recording started") + " (" +QFileInfo(filename).fileName() + ")");
 
    stopwatchtimer = new QTimer(this);
    stopwatchtimeest = 0;
@@ -425,7 +425,7 @@ void MainWindow::onProcessFinished(int Exitcode)
     if(Exitcode == 0)
     {
         //StatusBar
-        ui->statusBar->showMessage(trUtf8("Successfully finished recording") + " (" + trUtf8("Size") + ": " + filesizestring + " - " + filename + ")");
+        ui->statusBar->showMessage(trUtf8("Successfully finished recording") + " (" + trUtf8("Size") + ": " + filesizestring + " - " + QFileInfo(filename).fileName() + ")");
 
         //Knotification
         doKnotification(trUtf8("Successfully finished recording"),"","normal","doneRecording");
@@ -644,7 +644,7 @@ void MainWindow::setRecordingStatusbarText()
     //If message in statusbar is changed, then this will change it back to the information, so the user knows that the program is recording.
     if (ui->statusBar->currentMessage().isEmpty())
     {
-        ui->statusBar->showMessage(trUtf8("Recording started") + " (" +filename + ")");
+        ui->statusBar->showMessage(trUtf8("Recording started") + " (" +QFileInfo(filename).fileName() + ")");
     }
 
 }
