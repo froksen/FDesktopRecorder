@@ -258,16 +258,17 @@ void SettingsDialog::findLanguages()
     ui->comboBoxLanguage->addItem(QString("English (%1)").arg(trUtf8("Original")),"STANDARD");
 
     QMap <QString,QString> localeMap;
-    localeMap.insert("da_DK",QString::fromUtf8("Dansk"));
-    localeMap.insert("de_DE",QString::fromUtf8("Deutch"));
-    localeMap.insert("es_ES",QString::fromUtf8("Español"));
-    localeMap.insert("fr_FR",QString::fromUtf8("Français"));
-    localeMap.insert("el_GR",QString::fromUtf8("ελληνικά"));
-    localeMap.insert("it_IT",QString::fromUtf8("Italiano"));
-    localeMap.insert("pt_BR",QString::fromUtf8("Português (Brasil)"));
-    localeMap.insert("ro_RO",QString::fromUtf8("Român"));
-    localeMap.insert("ru_RU",QString::fromUtf8("русский"));
-
+    localeMap.insert("da_DK",QString::fromUtf8("Danish - Dansk"));
+    localeMap.insert("zh_CN",QString::fromUtf8("Chinese - 中國的"));
+    localeMap.insert("fr_FR",QString::fromUtf8("French - Français"));
+    localeMap.insert("de_DE",QString::fromUtf8("German - Deutch"));
+    localeMap.insert("el_GR",QString::fromUtf8("Greek - ελληνικά"));
+    localeMap.insert("it_IT",QString::fromUtf8("Italian - Italiano"));
+    localeMap.insert("pl_PL",QString::fromUtf8("Polish - Polski"));
+    localeMap.insert("pt_BR",QString::fromUtf8("Portuguese (Brazil) - Português (Brasil)"));
+    localeMap.insert("ro_RO",QString::fromUtf8("Romanian - Român"));
+    localeMap.insert("ru_RU",QString::fromUtf8("Russian - русский"));
+    localeMap.insert("es_ES",QString::fromUtf8("Spanish - Español"));
 
     foreach (QString locale, localeMap.keys()){
         qDebug() << "Locale:" << locale << localeMap.value(locale);

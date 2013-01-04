@@ -762,7 +762,7 @@ A partir de agora a gravação será iniciada.</translation>
     <message>
         <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="575"/>
         <source>NOTE: Some changes might first apply after a restart of this program</source>
-        <translation>Nota: Algumas mudanças serão aplicadas apos a reinicialização do programa</translation>
+        <translation>Nota: Algumas mudanças serão aplicadas após a reinicialização do programa</translation>
     </message>
     <message>
         <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="588"/>

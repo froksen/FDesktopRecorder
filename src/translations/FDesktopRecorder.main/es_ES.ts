@@ -68,7 +68,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../dialogs/about/aboutprog.cpp" line="36"/>
         <source>FDesktopRecorder have been translated into some languages. If you want to translate it into your language you can contact me on opendesktop.org by sending me a message.</source>
-        <translation type="unfinished"/>
+        <translation>FDesktopRecorder ha sido traducido a varios idiomas. Si desea añadir una traducción puede ponerse en contacto conmigo a través de opendesktop.org.</translation>
     </message>
     <message>
         <location filename="../dialogs/about/aboutprog.cpp" line="39"/>
@@ -103,7 +103,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../dialogs/about/aboutprog.cpp" line="65"/>
         <source>Portuguese (Brazil)</source>
-        <translation type="unfinished"/>
+        <translation>Portugués (Brasil)</translation>
     </message>
     <message>
         <location filename="../dialogs/about/aboutprog.cpp" line="69"/>
@@ -113,42 +113,42 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../dialogs/about/aboutprog.cpp" line="73"/>
         <source>Russian</source>
-        <translation type="unfinished"/>
+        <translation>Ruso</translation>
     </message>
     <message>
         <location filename="../dialogs/about/aboutprog.cpp" line="80"/>
         <source>The FDesktopRecorder has received valuable contributions from a lot of different people.</source>
-        <translation type="unfinished"/>
+        <translation>FDesktopRecorder ha recibido aportaciones muy valiosas de un buen número de distintas personas.</translation>
     </message>
     <message>
         <location filename="../dialogs/about/aboutprog.cpp" line="81"/>
         <source>Thanks alot everyone.</source>
-        <translation type="unfinished"/>
+        <translation>Muchas gracias a todos.</translation>
     </message>
     <message>
         <location filename="../dialogs/about/aboutprog.cpp" line="82"/>
         <source>Special thanks</source>
-        <translation type="unfinished"/>
+        <translation>Agradecimientos especiales</translation>
     </message>
     <message>
         <location filename="../dialogs/about/aboutprog.cpp" line="96"/>
         <source>License</source>
-        <translation type="unfinished"/>
+        <translation>Licencia</translation>
     </message>
     <message>
         <location filename="../dialogs/about/aboutprog.cpp" line="97"/>
         <source>Created by</source>
-        <translation type="unfinished"/>
+        <translation>Creado por</translation>
     </message>
     <message>
         <location filename="../dialogs/about/aboutprog.cpp" line="98"/>
         <source>Based on</source>
-        <translation type="unfinished"/>
+        <translation>Basado en</translation>
     </message>
     <message>
         <location filename="../dialogs/about/aboutprog.cpp" line="99"/>
         <source>A ffmpeq script by Peter Lybeth from the danish GNU/Linux show &apos;Kanal Tux&apos;: http://www.kanaltux.dk</source>
-        <translation type="unfinished"/>
+        <translation>Un script para ffmpeg realizado por Peter Lybeth, de la serie danesa sobre GNU/Linux &apos;Kanal Tux&apos;: http://www.kanaltux.dk</translation>
     </message>
     <message>
         <source>Mamut R. Ghiunhan (aka V3n3RiX)</source>
@@ -161,22 +161,22 @@ p, li { white-space: pre-wrap; }
         <location filename="../utils/areaselectordialog.ui" line="14"/>
         <location filename="../utils/areaselectordialog.ui" line="140"/>
         <source>Select the region to record and press OK</source>
-        <translation type="unfinished"/>
+        <translation>Seleccione el área que desea grabar y pulse Aceptar</translation>
     </message>
     <message>
         <location filename="../utils/areaselectordialog.ui" line="127"/>
         <source>OK</source>
-        <translation type="unfinished"/>
+        <translation>Aceptar</translation>
     </message>
     <message>
         <location filename="../utils/areaselectordialog.cpp" line="59"/>
         <source>Width</source>
-        <translation type="unfinished"/>
+        <translation>Ancho</translation>
     </message>
     <message>
         <location filename="../utils/areaselectordialog.cpp" line="61"/>
         <source>Height</source>
-        <translation type="unfinished"/>
+        <translation>Alto</translation>
     </message>
 </context>
 <context>
@@ -255,7 +255,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../mainwindow.ui" line="128"/>
         <source>Region</source>
-        <translation type="unfinished"/>
+        <translation>Área</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="190"/>
@@ -802,7 +802,7 @@ Tenga en cuenta que NO se puede deshacer.</translation>
     <message>
         <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="100"/>
         <source>Microphone not found!</source>
-        <translation type="unfinished"/>
+        <translation>No se ha encontrado un micrófono.</translation>
     </message>
     <message>
         <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="217"/>

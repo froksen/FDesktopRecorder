@@ -50,6 +50,8 @@ TRANSLATIONS    = translations/FDesktopRecorder.main/da_DK.ts \
                   translations/FDesktopRecorder.main/el_GR.ts \
 		  translations/FDesktopRecorder.main/ru_RU.ts \
                   translations/FDesktopRecorder.main/pt_BR.ts \
+                  translations/FDesktopRecorder.main/zh_CN.ts \
+		  translations/FDesktopRecorder.main/pl_PL.ts \
                   translations/FDesktopRecorder_untranslated.ts
 
 
