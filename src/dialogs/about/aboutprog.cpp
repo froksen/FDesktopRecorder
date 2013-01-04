@@ -40,6 +40,10 @@ void AboutProg::appendTranslators()
     ui->textEdit_2->append(QString::fromUtf8("Ole 'Froksen' Holm Frandsen"));
     ui->textEdit_2->append("<br>");
 
+    ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("Chinese")));
+    ui->textEdit_2->append(QString::fromUtf8("'bruce.oy'"));
+    ui->textEdit_2->append("<br>");
+
     ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("French")));
     ui->textEdit_2->append(QString::fromUtf8("'aishen'"));
     ui->textEdit_2->append("<br>");
@@ -60,6 +64,10 @@ void AboutProg::appendTranslators()
     ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("Italian")));
     ui->textEdit_2->append(QString::fromUtf8("Vincenzo 'smart2128' Reale"));
     ui->textEdit_2->append(QString::fromUtf8("Symbian flo"));
+    ui->textEdit_2->append("<br>");
+
+    ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("Polish")));
+    ui->textEdit_2->append(QString::fromUtf8("Daniel 'napcok' Napora"));
     ui->textEdit_2->append("<br>");
 
     ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("Portuguese (Brazil)")));
