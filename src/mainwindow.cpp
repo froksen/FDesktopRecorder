@@ -332,7 +332,7 @@ void MainWindow::on_pushButtonStartrecord_clicked()
    setWindowIcon(QPixmap(":/images/recording.png"));
 
    //StatusBar
-   ui->statusBar->showMessage(trUtf8("Recording started") + " (" +QFileInfo(filename).fileName() + ")");
+   ui->statusBar->showMessage(trUtf8("Recording") + " (" +QFileInfo(filename).fileName() + ")");
 
    stopwatchtimer = new QTimer(this);
    stopwatchtimeest = 0;
@@ -445,10 +445,10 @@ void MainWindow::onProcessFinished(int Exitcode)
     else
     {
         //StatusBar
-        ui->statusBar->showMessage(trUtf8("Failed to start!"));
+        ui->statusBar->showMessage(trUtf8("Unable to start recording!"));
 
         //Knotification
-        doKnotification(trUtf8("Failed to start!"),trUtf8("View console output for more info."),"normal","errorRecording");
+        doKnotification(trUtf8("Unable to start recording!"),trUtf8("View console output for more info."),"normal","errorRecording");
 
         //Shows the Console output Messagebox
         QMessageBox msgBox;
@@ -457,12 +457,12 @@ void MainWindow::onProcessFinished(int Exitcode)
         QPushButton *showDetails = msgBox.addButton(trUtf8("Show output"), QMessageBox::ActionRole);
 
         //The rest of the combobox
-        msgBox.setText(QString("<b>%1</b>").arg(trUtf8("Failed to start!")));
+        msgBox.setText(QString("<b>%1</b>").arg(trUtf8("Unable to start recording!")));
         msgBox.setInformativeText(trUtf8("Press <i>'Show output'</i> to see console ouput."));
         msgBox.setStandardButtons(QMessageBox::Ok);
         //msgBox.setDetailedText(QString(ui->textEditConsole->toPlainText()));
         msgBox.setDefaultButton(QMessageBox::Ok);
-        msgBox.setWindowTitle(trUtf8("Failed to start!"));
+        msgBox.setWindowTitle(trUtf8("Unable to start recording!"));
         msgBox.exec();
 
         if(msgBox.clickedButton() == showDetails){
@@ -505,11 +505,11 @@ void MainWindow::on_actionSettings_triggered()
 void MainWindow::createsystemtray()
 {
     //Defines the actions
-    viewhidewindow = new QAction(tr("&Show/Hide window"), this);
+    viewhidewindow = new QAction(tr("Show/Hide window"), this);
     connect(viewhidewindow, SIGNAL(triggered()), this, SLOT(showhidewindow()));
     viewhidewindow->setIcon(QIcon::fromTheme("dashboard-show"));
 
-    stoprecord = new QAction(tr("&Stop recording"), this);
+    stoprecord = new QAction(tr("Stop recording"), this);
     stoprecord->setIcon(QIcon(":images/icon.png"));
     connect(stoprecord, SIGNAL(triggered()), this, SLOT(on_pushButtonStoprecord_clicked()));
 
@@ -521,7 +521,7 @@ void MainWindow::createsystemtray()
 
     latestrecording->setText(trUtf8("Latest Recording") + ": " + latestrecordingText);
 
-    quitAction = new QAction(tr("&Quit program"), this);
+    quitAction = new QAction(tr("Quit program"), this);
     quitAction->setIcon(QIcon::fromTheme("application-exit"));
     connect(quitAction, SIGNAL(triggered()), qApp , SLOT(quit()));
 
@@ -644,7 +644,7 @@ void MainWindow::setRecordingStatusbarText()
     //If message in statusbar is changed, then this will change it back to the information, so the user knows that the program is recording.
     if (ui->statusBar->currentMessage().isEmpty())
     {
-        ui->statusBar->showMessage(trUtf8("Recording started") + " (" +QFileInfo(filename).fileName() + ")");
+        ui->statusBar->showMessage(trUtf8("Recording") + " (" +QFileInfo(filename).fileName() + ")");
     }
 
 }
