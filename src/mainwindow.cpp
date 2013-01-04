@@ -460,7 +460,6 @@ void MainWindow::onProcessFinished(int Exitcode)
         msgBox.setText(QString("<b>%1</b>").arg(trUtf8("Unable to start recording!")));
         msgBox.setInformativeText(trUtf8("Press <i>'Show output'</i> to see console ouput."));
         msgBox.setStandardButtons(QMessageBox::Ok);
-        //msgBox.setDetailedText(QString(ui->textEditConsole->toPlainText()));
         msgBox.setDefaultButton(QMessageBox::Ok);
         msgBox.setWindowTitle(trUtf8("Unable to start recording!"));
         msgBox.exec();
