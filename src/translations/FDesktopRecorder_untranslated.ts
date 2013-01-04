@@ -104,76 +104,86 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="../dialogs/about/aboutprog.cpp" line="43"/>
-        <source>French</source>
+        <source>Chinese</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs/about/aboutprog.cpp" line="47"/>
+        <source>French</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/about/aboutprog.cpp" line="51"/>
         <source>German</source>
         <translation type="unfinished">German</translation>
     </message>
     <message>
-        <location filename="../dialogs/about/aboutprog.cpp" line="52"/>
+        <location filename="../dialogs/about/aboutprog.cpp" line="56"/>
         <source>Greek</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogs/about/aboutprog.cpp" line="56"/>
+        <location filename="../dialogs/about/aboutprog.cpp" line="60"/>
         <source>Spanish</source>
         <translation type="unfinished">Spanish</translation>
     </message>
     <message>
-        <location filename="../dialogs/about/aboutprog.cpp" line="60"/>
+        <location filename="../dialogs/about/aboutprog.cpp" line="64"/>
         <source>Italian</source>
         <translation type="unfinished">Italian</translation>
     </message>
     <message>
-        <location filename="../dialogs/about/aboutprog.cpp" line="65"/>
+        <location filename="../dialogs/about/aboutprog.cpp" line="69"/>
+        <source>Polish</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs/about/aboutprog.cpp" line="73"/>
         <source>Portuguese (Brazil)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogs/about/aboutprog.cpp" line="69"/>
+        <location filename="../dialogs/about/aboutprog.cpp" line="77"/>
         <source>Romanian</source>
         <translation type="unfinished">Romanian</translation>
     </message>
     <message>
-        <location filename="../dialogs/about/aboutprog.cpp" line="73"/>
+        <location filename="../dialogs/about/aboutprog.cpp" line="81"/>
         <source>Russian</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogs/about/aboutprog.cpp" line="80"/>
+        <location filename="../dialogs/about/aboutprog.cpp" line="88"/>
         <source>The FDesktopRecorder has received valuable contributions from a lot of different people.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogs/about/aboutprog.cpp" line="81"/>
+        <location filename="../dialogs/about/aboutprog.cpp" line="89"/>
         <source>Thanks alot everyone.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogs/about/aboutprog.cpp" line="82"/>
+        <location filename="../dialogs/about/aboutprog.cpp" line="90"/>
         <source>Special thanks</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogs/about/aboutprog.cpp" line="96"/>
+        <location filename="../dialogs/about/aboutprog.cpp" line="104"/>
         <source>License</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogs/about/aboutprog.cpp" line="97"/>
+        <location filename="../dialogs/about/aboutprog.cpp" line="105"/>
         <source>Created by</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogs/about/aboutprog.cpp" line="98"/>
+        <location filename="../dialogs/about/aboutprog.cpp" line="106"/>
         <source>Based on</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dialogs/about/aboutprog.cpp" line="99"/>
+        <location filename="../dialogs/about/aboutprog.cpp" line="107"/>
         <source>A ffmpeq script by Peter Lybeth from the danish GNU/Linux show &apos;Kanal Tux&apos;: http://www.kanaltux.dk</source>
         <translation type="unfinished"></translation>
     </message>
@@ -385,43 +395,66 @@ With this you will have to select the window you want to record.
 Hereafter the recording will start.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="334"/>
-        <location filename="../mainwindow.cpp" line="645"/>
         <source>Recording started</source>
-        <translation>Recording started</translation>
+        <translation type="obsolete">Recording started</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="355"/>
+        <location filename="../mainwindow.cpp" line="335"/>
+        <location filename="../mainwindow.cpp" line="646"/>
+        <source>Recording</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="356"/>
         <source>Please wait while saving the recording. Might take some time.</source>
         <translation>Please wait while saving the recording. Might take some time.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="426"/>
-        <location filename="../mainwindow.cpp" line="429"/>
+        <location filename="../mainwindow.cpp" line="428"/>
+        <location filename="../mainwindow.cpp" line="431"/>
         <source>Successfully finished recording</source>
         <translation>Successfully finished recording</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="426"/>
+        <location filename="../mainwindow.cpp" line="428"/>
         <source>Size</source>
         <translation>Size</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="439"/>
-        <location filename="../mainwindow.cpp" line="520"/>
+        <location filename="../mainwindow.cpp" line="441"/>
+        <location filename="../mainwindow.cpp" line="521"/>
         <source>Latest Recording</source>
         <translation>Latest Recording</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="446"/>
-        <location filename="../mainwindow.cpp" line="449"/>
-        <location filename="../mainwindow.cpp" line="458"/>
-        <location filename="../mainwindow.cpp" line="463"/>
-        <source>Failed to start!</source>
-        <translation>Failed to start!</translation>
+        <location filename="../mainwindow.cpp" line="448"/>
+        <location filename="../mainwindow.cpp" line="451"/>
+        <location filename="../mainwindow.cpp" line="460"/>
+        <location filename="../mainwindow.cpp" line="464"/>
+        <source>Unable to start recording!</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="449"/>
+        <location filename="../mainwindow.cpp" line="507"/>
+        <source>Show/Hide window</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="511"/>
+        <source>Stop recording</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="523"/>
+        <source>Quit program</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Failed to start!</source>
+        <translation type="obsolete">Failed to start!</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="451"/>
         <source>View console output for more info.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -430,7 +463,7 @@ Hereafter the recording will start.</translation>
         <translation type="obsolete">View terminaloutput for more info.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="455"/>
+        <location filename="../mainwindow.cpp" line="457"/>
         <source>Show output</source>
         <translation type="unfinished"></translation>
     </message>
@@ -439,7 +472,7 @@ Hereafter the recording will start.</translation>
         <translation type="obsolete">&lt;b&gt;Failed to start recording!&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="459"/>
+        <location filename="../mainwindow.cpp" line="461"/>
         <source>Press &lt;i&gt;&apos;Show output&apos;&lt;/i&gt; to see console ouput.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -452,27 +485,24 @@ Hereafter the recording will start.</translation>
         <translation type="obsolete">Failed to start recording!</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="506"/>
         <source>&amp;Show/Hide window</source>
-        <translation>&amp;Show/Hide window</translation>
+        <translation type="obsolete">&amp;Show/Hide window</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="510"/>
         <source>&amp;Stop recording</source>
-        <translation>&amp;Stop recording</translation>
+        <translation type="obsolete">&amp;Stop recording</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="514"/>
+        <location filename="../mainwindow.cpp" line="515"/>
         <source>&amp;Latest recording: </source>
         <translation>&amp;Latest recording: </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="522"/>
         <source>&amp;Quit program</source>
-        <translation>&amp;Quit program</translation>
+        <translation type="obsolete">&amp;Quit program</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="736"/>
+        <location filename="../mainwindow.cpp" line="737"/>
         <source>Current output copied to clipboard</source>
         <translation>Current output copied to clipboard</translation>
     </message>
@@ -847,7 +877,7 @@ Be aware that this can NOT be undone.</translation>
         <translation>Original</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="306"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="307"/>
         <source>FFmpeg location</source>
         <translation>FFmpeg location</translation>
     </message>
