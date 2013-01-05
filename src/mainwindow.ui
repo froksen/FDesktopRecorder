@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>556</width>
-    <height>394</height>
+    <width>622</width>
+    <height>407</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -124,6 +124,9 @@
       </item>
       <item row="0" column="3">
        <widget class="QRadioButton" name="radioButtonCustom">
+        <property name="statusTip">
+         <string>Record an area of the screen</string>
+        </property>
         <property name="text">
          <string>Region</string>
         </property>
@@ -138,8 +141,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>556</width>
-     <height>21</height>
+     <width>622</width>
+     <height>22</height>
     </rect>
    </property>
   </widget>
