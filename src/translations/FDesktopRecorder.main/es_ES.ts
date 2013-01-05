@@ -225,73 +225,78 @@
     </message>
     <message>
         <location filename="../../mainwindow.ui" line="128"/>
+        <source>Record an area of the screen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../mainwindow.ui" line="131"/>
         <source>Region</source>
         <translation>Área</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="190"/>
+        <location filename="../../mainwindow.ui" line="193"/>
         <source>Copy to Clipboard</source>
         <translation>Copiar al portapapeles</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="199"/>
+        <location filename="../../mainwindow.ui" line="202"/>
         <source>About</source>
         <translation>Acerca de</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="202"/>
+        <location filename="../../mainwindow.ui" line="205"/>
         <source>Shows information about this program</source>
         <translation>Muestra información sobre este programa</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="205"/>
+        <location filename="../../mainwindow.ui" line="208"/>
         <source>About FDesktopRecorder</source>
         <translation>Acerca de FDesktopRecorder</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="210"/>
-        <location filename="../../mainwindow.ui" line="216"/>
+        <location filename="../../mainwindow.ui" line="213"/>
+        <location filename="../../mainwindow.ui" line="219"/>
         <source>Settings</source>
         <translation>Preferencias</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="213"/>
+        <location filename="../../mainwindow.ui" line="216"/>
         <source>Let you change an amount of different settings like recording framerate etc.</source>
         <translation>Permite cambiar opciones diferentes como la grabación de imágenes por segundo, etc.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="221"/>
+        <location filename="../../mainwindow.ui" line="224"/>
         <source>Console</source>
         <translation>Consola</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="224"/>
+        <location filename="../../mainwindow.ui" line="227"/>
         <source>Shows a console where you can see the output. Usefull if recording fails.</source>
         <translation>Muestra una consola donde se puede ver la salida. Útil si la grabación falla.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="227"/>
+        <location filename="../../mainwindow.ui" line="230"/>
         <source>Show/Hide console output</source>
         <translation>Muestra/Oculta la consola</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="232"/>
+        <location filename="../../mainwindow.ui" line="235"/>
         <source>Open recording directory</source>
         <translation>Abrir carpeta de captura</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="235"/>
         <location filename="../../mainwindow.ui" line="238"/>
+        <location filename="../../mainwindow.ui" line="241"/>
         <source>Open directory containing your recordings</source>
         <translation>Abrir la carpeta que contiene las grabaciónes</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="243"/>
+        <location filename="../../mainwindow.ui" line="246"/>
         <source>Preview recording</source>
         <translation>Previsualizar grabación</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="246"/>
+        <location filename="../../mainwindow.ui" line="249"/>
         <source>Preview the recording</source>
         <translation>Previsualizar la grabación</translation>
     </message>

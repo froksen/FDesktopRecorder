@@ -225,73 +225,78 @@
     </message>
     <message>
         <location filename="../../mainwindow.ui" line="128"/>
+        <source>Record an area of the screen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../mainwindow.ui" line="131"/>
         <source>Region</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="190"/>
+        <location filename="../../mainwindow.ui" line="193"/>
         <source>Copy to Clipboard</source>
         <translation>Copier </translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="199"/>
+        <location filename="../../mainwindow.ui" line="202"/>
         <source>About</source>
         <translation>A propos</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="202"/>
+        <location filename="../../mainwindow.ui" line="205"/>
         <source>Shows information about this program</source>
         <translation>Afficher les infos à propos de ce programme</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="205"/>
+        <location filename="../../mainwindow.ui" line="208"/>
         <source>About FDesktopRecorder</source>
         <translation>A propos de FDesktopRecorder</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="210"/>
-        <location filename="../../mainwindow.ui" line="216"/>
+        <location filename="../../mainwindow.ui" line="213"/>
+        <location filename="../../mainwindow.ui" line="219"/>
         <source>Settings</source>
         <translation>Configurer</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="213"/>
+        <location filename="../../mainwindow.ui" line="216"/>
         <source>Let you change an amount of different settings like recording framerate etc.</source>
         <translation>Permet de modifier les différentes configurations d&apos;enregistrement</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="221"/>
+        <location filename="../../mainwindow.ui" line="224"/>
         <source>Console</source>
         <translation>Consol</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="224"/>
+        <location filename="../../mainwindow.ui" line="227"/>
         <source>Shows a console where you can see the output. Usefull if recording fails.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="227"/>
+        <location filename="../../mainwindow.ui" line="230"/>
         <source>Show/Hide console output</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="232"/>
+        <location filename="../../mainwindow.ui" line="235"/>
         <source>Open recording directory</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="235"/>
         <location filename="../../mainwindow.ui" line="238"/>
+        <location filename="../../mainwindow.ui" line="241"/>
         <source>Open directory containing your recordings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="243"/>
+        <location filename="../../mainwindow.ui" line="246"/>
         <source>Preview recording</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="246"/>
+        <location filename="../../mainwindow.ui" line="249"/>
         <source>Preview the recording</source>
         <translation type="unfinished"></translation>
     </message>

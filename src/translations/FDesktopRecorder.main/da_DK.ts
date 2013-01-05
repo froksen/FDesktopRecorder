@@ -225,74 +225,79 @@
     </message>
     <message>
         <location filename="../../mainwindow.ui" line="128"/>
+        <source>Record an area of the screen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../mainwindow.ui" line="131"/>
         <source>Region</source>
         <translation>Område</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="190"/>
+        <location filename="../../mainwindow.ui" line="193"/>
         <source>Copy to Clipboard</source>
         <translation>Kopier til udklipsholder</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="199"/>
+        <location filename="../../mainwindow.ui" line="202"/>
         <source>About</source>
         <translation>Om</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="202"/>
+        <location filename="../../mainwindow.ui" line="205"/>
         <source>Shows information about this program</source>
         <translation>Viser dit informationer om dette program</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="205"/>
+        <location filename="../../mainwindow.ui" line="208"/>
         <source>About FDesktopRecorder</source>
         <translation>Om FDesktopRecorder</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="210"/>
-        <location filename="../../mainwindow.ui" line="216"/>
+        <location filename="../../mainwindow.ui" line="213"/>
+        <location filename="../../mainwindow.ui" line="219"/>
         <source>Settings</source>
         <translation>Indstillinger</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="213"/>
+        <location filename="../../mainwindow.ui" line="216"/>
         <source>Let you change an amount of different settings like recording framerate etc.</source>
         <translation>Lader dig ændre en række indstillinger, som billeder i sekundet osv.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="221"/>
+        <location filename="../../mainwindow.ui" line="224"/>
         <source>Console</source>
         <translation>Konsol</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="224"/>
+        <location filename="../../mainwindow.ui" line="227"/>
         <source>Shows a console where you can see the output. Usefull if recording fails.</source>
         <translation>Viser en konsole hvor du kan se et output. Kan være brugbart hvis en optagelse fejler.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="227"/>
+        <location filename="../../mainwindow.ui" line="230"/>
         <source>Show/Hide console output</source>
         <translation>Vis/Gem konsol output</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="232"/>
+        <location filename="../../mainwindow.ui" line="235"/>
         <source>Open recording directory</source>
         <translation>Åben optagemappe
 </translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="235"/>
         <location filename="../../mainwindow.ui" line="238"/>
+        <location filename="../../mainwindow.ui" line="241"/>
         <source>Open directory containing your recordings</source>
         <translation>Åben mappen der indeholder dine optagelser</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="243"/>
+        <location filename="../../mainwindow.ui" line="246"/>
         <source>Preview recording</source>
         <translation>Se optagelse</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="246"/>
+        <location filename="../../mainwindow.ui" line="249"/>
         <source>Preview the recording</source>
         <translation>Se din seneste optagelse</translation>
     </message>

@@ -225,73 +225,78 @@
     </message>
     <message>
         <location filename="../../mainwindow.ui" line="128"/>
+        <source>Record an area of the screen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../mainwindow.ui" line="131"/>
         <source>Region</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="190"/>
+        <location filename="../../mainwindow.ui" line="193"/>
         <source>Copy to Clipboard</source>
         <translation>Копировать в буфер обмена</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="199"/>
+        <location filename="../../mainwindow.ui" line="202"/>
         <source>About</source>
         <translation>Информация</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="202"/>
+        <location filename="../../mainwindow.ui" line="205"/>
         <source>Shows information about this program</source>
         <translation>Показывать информацию об этой программе</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="205"/>
+        <location filename="../../mainwindow.ui" line="208"/>
         <source>About FDesktopRecorder</source>
         <translation>О FDesktopRecorder</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="210"/>
-        <location filename="../../mainwindow.ui" line="216"/>
+        <location filename="../../mainwindow.ui" line="213"/>
+        <location filename="../../mainwindow.ui" line="219"/>
         <source>Settings</source>
         <translation>Настройки</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="213"/>
+        <location filename="../../mainwindow.ui" line="216"/>
         <source>Let you change an amount of different settings like recording framerate etc.</source>
         <translation>Позволяет изменить различные параметры, такие как частота кадров и т.д.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="221"/>
+        <location filename="../../mainwindow.ui" line="224"/>
         <source>Console</source>
         <translation>Терминал</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="224"/>
+        <location filename="../../mainwindow.ui" line="227"/>
         <source>Shows a console where you can see the output. Usefull if recording fails.</source>
         <translation>Показывает терминал, где можно увидеть результат работы. Полезно, если не удаётся выполнить запись.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="227"/>
+        <location filename="../../mainwindow.ui" line="230"/>
         <source>Show/Hide console output</source>
         <translation>Показать/скрыть вывод терминала</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="232"/>
+        <location filename="../../mainwindow.ui" line="235"/>
         <source>Open recording directory</source>
         <translation>Открыть каталог записи</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="235"/>
         <location filename="../../mainwindow.ui" line="238"/>
+        <location filename="../../mainwindow.ui" line="241"/>
         <source>Open directory containing your recordings</source>
         <translation>Открыть каталог с вашими записями</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="243"/>
+        <location filename="../../mainwindow.ui" line="246"/>
         <source>Preview recording</source>
         <translation>Предварительный просмотр записи</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="246"/>
+        <location filename="../../mainwindow.ui" line="249"/>
         <source>Preview the recording</source>
         <translation>Предварительный просмотр записи</translation>
     </message>
