@@ -276,6 +276,7 @@ void SettingsDialog::findLanguages()
        ui->comboBoxLanguage->addItem(localeMap.value(locale),locale);
 
     }
+
 }
 
 void SettingsDialog::on_checkBoxPreviewplayer_clicked()
