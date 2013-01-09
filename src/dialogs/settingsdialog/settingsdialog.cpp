@@ -269,6 +269,7 @@ void SettingsDialog::findLanguages()
     localeMap.insert("ro_RO",QString::fromUtf8("Romanian - Român"));
     localeMap.insert("ru_RU",QString::fromUtf8("Russian - русский"));
     localeMap.insert("es_ES",QString::fromUtf8("Spanish - Español"));
+    localeMap.insert("uk_UA",QString::fromUtf8("Ukrainian - Український"));
 
     foreach (QString locale, localeMap.keys()){
         qDebug() << "Locale:" << locale << localeMap.value(locale);
