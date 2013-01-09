@@ -37,6 +37,7 @@ void SettingsManager::writeAll()
 
     settings.beginGroup("misc");
     settings.setValue("previewplayer",previewplayer);
+    settings.setValue("useKDEplayer",usekdeplayer);
     settings.setValue("previewplayerintegrated",previewplayerintegrated);
     settings.setValue("Singlewindow_redrectangle",SingleWindow_redrectangle);
     settings.setValue("latestrecording",latestrecording);
@@ -76,6 +77,7 @@ void SettingsManager::readAll()
 
     settings.beginGroup("misc");
     previewplayer = settings.value("previewplayer","kaffeine").toString();
+    previewplayerintegrated = settings.value("useKDEplayer",true).toBool();
     previewplayerintegrated = settings.value("previewplayerintegrated","false").toString();
     SingleWindow_redrectangle = settings.value("Singlewindow_redrectangle","true").toString();
     latestrecording = settings.value("latestrecording","Unknown").toString();
@@ -317,6 +319,16 @@ void SettingsManager::setFFmpeglocation(QString location)
 QString SettingsManager::FFmpeglocation()
 {
     return ffmpeglocation;
+}
+
+void SettingsManager::useKDEplayer(bool status)
+{
+    usekdeplayer = status;
+}
+
+bool SettingsManager::kdeplayerUsed()
+{
+    return usekdeplayer;
 }
 
 void SettingsManager::removeSettingsfile()

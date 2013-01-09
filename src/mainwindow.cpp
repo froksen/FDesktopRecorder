@@ -699,9 +699,18 @@ void MainWindow::on_actionPreviewrecording_triggered()
 //NOTE: Removed previewplayer. Kept the code, since I might add it again some day.
 //    if(settings.getPreviewplayerintegrated() == "false")
 //    {
+//        mProcessClass->setCommand(settings.getPreviewplayer());
+//        mProcessClass->setArguments(QStringList() << filename);
+//        mProcessClass->startCommand();
+    if(!settings.kdeplayerUsed()){
         mProcessClass->setCommand(settings.getPreviewplayer());
         mProcessClass->setArguments(QStringList() << filename);
         mProcessClass->startCommand();
+    }
+    else {
+        QDesktopServices::openUrl( QUrl::fromLocalFile(filename) );
+    }
+
 //    }
 //    else
 //    {

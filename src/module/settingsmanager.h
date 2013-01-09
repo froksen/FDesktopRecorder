@@ -79,6 +79,9 @@ public:
     void setFFmpeglocation(QString location);
     QString FFmpeglocation();
 
+    void useKDEplayer(bool status);
+    bool kdeplayerUsed();
+
 
 
 
@@ -121,6 +124,7 @@ private:
 //----------------SECTION: Application settings------------------
     QString language;
     QString previewplayer;
+    bool usekdeplayer;
     QString previewplayerintegrated;
     QString SingleWindow_redrectangle;
     QString ffmpeglocation;
