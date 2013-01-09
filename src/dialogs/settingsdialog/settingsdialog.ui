@@ -327,8 +327,8 @@
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>147</width>
-            <height>97</height>
+            <width>473</width>
+            <height>428</height>
            </rect>
           </property>
           <attribute name="label">
@@ -511,7 +511,7 @@
          <item row="2" column="2" colspan="2">
           <widget class="QCheckBox" name="checkBoxPreviewplayer">
            <property name="toolTip">
-            <string>Use the integrated player rather than the player chosen above</string>
+            <string>Use default mediaplayer rather than the one chosen from above</string>
            </property>
            <property name="text">
             <string>Use system default</string>

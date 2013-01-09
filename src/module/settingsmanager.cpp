@@ -77,7 +77,7 @@ void SettingsManager::readAll()
 
     settings.beginGroup("misc");
     previewplayer = settings.value("previewplayer","kaffeine").toString();
-    previewplayerintegrated = settings.value("useKDEplayer",true).toBool();
+    usekdeplayer = settings.value("useKDEplayer","true").toBool();
     previewplayerintegrated = settings.value("previewplayerintegrated","false").toString();
     SingleWindow_redrectangle = settings.value("Singlewindow_redrectangle","true").toString();
     latestrecording = settings.value("latestrecording","Unknown").toString();

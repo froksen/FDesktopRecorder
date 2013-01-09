@@ -702,7 +702,11 @@ void MainWindow::on_actionPreviewrecording_triggered()
 //        mProcessClass->setCommand(settings.getPreviewplayer());
 //        mProcessClass->setArguments(QStringList() << filename);
 //        mProcessClass->startCommand();
+
+    qDebug() << "Using default mediaplayer:" << settings.kdeplayerUsed();
+
     if(!settings.kdeplayerUsed()){
+        qDebug() << "- Using alternative player:" << settings.getPreviewplayer();
         mProcessClass->setCommand(settings.getPreviewplayer());
         mProcessClass->setArguments(QStringList() << filename);
         mProcessClass->startCommand();
