@@ -91,37 +91,42 @@
         <translation>Ρώσικα</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="88"/>
+        <location filename="../../dialogs/about/aboutprog.cpp" line="85"/>
+        <source>Ukrainian</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/about/aboutprog.cpp" line="92"/>
         <source>The FDesktopRecorder has received valuable contributions from a lot of different people.</source>
         <translation>Το FDesktopRecorder έχει λάβει σημαντικές συνεισφορές από πολλούς ανθρώπους.</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="89"/>
+        <location filename="../../dialogs/about/aboutprog.cpp" line="93"/>
         <source>Thanks alot everyone.</source>
         <translation>Ευχαριστώ πολύ σε όλους.</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="90"/>
+        <location filename="../../dialogs/about/aboutprog.cpp" line="94"/>
         <source>Special thanks</source>
         <translation>Ειδικές ευχαριστίες</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="104"/>
+        <location filename="../../dialogs/about/aboutprog.cpp" line="108"/>
         <source>License</source>
         <translation>Άδεια</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="105"/>
+        <location filename="../../dialogs/about/aboutprog.cpp" line="109"/>
         <source>Created by</source>
         <translation>Δημιουργήθηκε από</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="106"/>
+        <location filename="../../dialogs/about/aboutprog.cpp" line="110"/>
         <source>Based on</source>
         <translation>Βασισμένο στο</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="107"/>
+        <location filename="../../dialogs/about/aboutprog.cpp" line="111"/>
         <source>A ffmpeq script by Peter Lybeth from the danish GNU/Linux show &apos;Kanal Tux&apos;: http://www.kanaltux.dk</source>
         <translation>Μια δεσμή ενεργειών για το FFmpeg του Peter Lybeth της Δανικής εκπομπης GNU/Linux «Kanal Tux»: http://www.kanaltux.dk</translation>
     </message>
@@ -421,7 +426,7 @@ Hereafter the recording will start.</source>
         <translation type="obsolete">&amp;Τερματισμός προγράμματος</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="737"/>
+        <location filename="../../mainwindow.cpp" line="750"/>
         <source>Current output copied to clipboard</source>
         <translation>Αντιγράφτηκε η τωρινή απόδοση κονσόλας στο πρόχειρο</translation>
     </message>
@@ -625,13 +630,16 @@ Hereafter the recording will start.</source>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="514"/>
-        <source>Use the integrated player rather than the player chosen above</source>
-        <translation>Χρήση του ενσωματωμένου αναπαραγωγέα αντί για τον αναπαραγωγέα επιλεγμένο παραπάνω</translation>
+        <source>Use default mediaplayer rather than the one chosen from above</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="517"/>
+        <source>Use the integrated player rather than the player chosen above</source>
+        <translation type="obsolete">Χρήση του ενσωματωμένου αναπαραγωγέα αντί για τον αναπαραγωγέα επιλεγμένο παραπάνω</translation>
+    </message>
+    <message>
         <source>Use integrated player</source>
-        <translation>Χρήση ενσωματωμένου αναπαραγωγέα</translation>
+        <translation type="obsolete">Χρήση ενσωματωμένου αναπαραγωγέα</translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="530"/>
@@ -694,22 +702,23 @@ Be aware that this can NOT be undone.</source>
         <translation>Δεν βρέθηκε μικρόφωνο!</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="217"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="213"/>
         <source>Open Directory</source>
         <translation>Άνοιγμα Φακέλου</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="257"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="517"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="253"/>
         <source>Use system default</source>
         <translation>Χρήση προεπιλογής συστήματος</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="258"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="254"/>
         <source>Original</source>
         <translation>Αρχική</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="307"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="305"/>
         <source>FFmpeg location</source>
         <translation>Τοποθεσία FFmpeg</translation>
     </message>
@@ -717,7 +726,7 @@ Be aware that this can NOT be undone.</source>
 <context>
     <name>SettingsManager</name>
     <message>
-        <location filename="../../module/settingsmanager.cpp" line="69"/>
+        <location filename="../../module/settingsmanager.cpp" line="70"/>
         <source>recording</source>
         <extracomment>Translate this into what a good basename for a recording would be in your language</extracomment>
         <translation>καταγράφει</translation>

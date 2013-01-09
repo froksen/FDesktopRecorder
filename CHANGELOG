@@ -1,5 +1,7 @@
+*
 - Cleaned up some textstrings
 - Added chinese by bruce.oy, Ukranian by Eugene 'Gannet' and polish by Daniel Napora
+- Changed: The default mediaplayer is now the system default. Its still possible to choose an alternative.
 
 * Thu Dec 13 2012
 - Added: Portuguese (Brazil) by Alexandro "salmora8" Casanova
