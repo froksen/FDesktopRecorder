@@ -135,22 +135,18 @@ void SettingsDialog::readSettings()
     ui->comboBoxLanguage->setCurrentIndex(comboboxIndexLanguage);
 
     // -----------------SECTION: Previewplayer------------------------------
-
-    //NOTE: Removed previewplayer. Kept code since I might include it again someday. PLEASE NOTE, that the hide option is simply an easy
-    // way to remove the checkbox.
-    ui->checkBoxPreviewplayer->hide();
     ui->lineEditPreviewplayer->setText(settings.getPreviewplayer());
 
-//    if(settings.getPreviewplayerintegrated() == "false")
-//    {
-//        ui->checkBoxPreviewplayer->setChecked(false);
-        ui->lineEditPreviewplayer->setEnabled(true);
-//    }
-//    else
-//    {
-//        ui->checkBoxPreviewplayer->setChecked(true);
-//        ui->lineEditPreviewplayer->setEnabled(false);
-//    }
+    if(!settings.kdeplayerUsed())
+        {
+            ui->checkBoxPreviewplayer->setChecked(false);
+            ui->lineEditPreviewplayer->setEnabled(true);
+        }
+    else
+        {
+            ui->checkBoxPreviewplayer->setChecked(true);
+            ui->lineEditPreviewplayer->setEnabled(false);
+        }
 
     // -----------------SECTION: Single window: Use red rectangle------------------------------
     if(settings.getSinglewindow_redrectangle() == "false")
@@ -354,21 +350,16 @@ void SettingsDialog::writeSettings()
     int langindex = ui->comboBoxLanguage->currentIndex();
     settings.setLanguage(ui->comboBoxLanguage->itemData(langindex).toString());
 
-    //TODO: Remove this option. since the player is buggy and yeah no need to redo work others have done.
-    //NOTE: Removed previewplayer. Kept code since I might include it again someday. PLEASE NOTE, that the hide option is simply an easy
-    // way to remove the checkbox.
-
-    ui->checkBoxPreviewplayer->hide();
     //Preview player
     settings.setPreviewplayer(ui->lineEditPreviewplayer->text());
-//    if(!ui->checkBoxPreviewplayer->isChecked())
-//    {
-//        settings.setPreviewplayerintegrated("false");
-//    }
-//    else
-//    {
-//        settings.setPreviewplayerintegrated("true");
-//    }
+    if(!ui->checkBoxPreviewplayer->isChecked())
+    {
+        settings.useKDEplayer(false);
+    }
+    else
+    {
+        settings.useKDEplayer(true);
+    }
 
     //Single window: use red rectangle
     if(!ui->checkBoxSinglewindowredrectangle->isChecked())
