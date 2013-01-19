@@ -22,6 +22,9 @@ Created by: Ole "Froksen" Holm Frandsen
 You can contact me via kde-apps.org. Find me under the username "froksen".
 
 ##Translations
+###Chinese
+* 'bruce.oy'
+
 ###Danish
 * Ole 'froksen' Holm Frandsen
 
@@ -35,15 +38,27 @@ You can contact me via kde-apps.org. Find me under the username "froksen".
 ###Greek
 * Γιάννης 'Evropi' Ανθυμίδης
 
+###Italian
+* Vincenzo 'smart2128' Reale
+* Symbian flo
+
+###Polish
+* Daniel 'napcok' Napora
+
+###Portuguese (Brazil)
+* Alexandro 'salmora8' Casanova
+
 ###Spanish
 * Javi
 
-###Romanian translation
+###Romanian
 * Mamut 'V3n3RiX' R. Ghiunhan
 
-###Italian translation
-* Vincenzo 'smart2128' Reale
-* Symbian flo
+###Russian
+* Danilov 'modos189' Alexandr
+
+###Ukrainian
+* Eugene 'Gannet'
 
 ###Help with translation?
 All translation is done via Transifex, please visit the project page at: https://www.transifex.com/projects/p/FDesktopRecorder/
