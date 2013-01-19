@@ -1,11 +1,11 @@
 #include "settingsmanager.h"
 #include <QDebug>
 #include <QDir>
+#include <KGlobalSettings>
 
 SettingsManager::SettingsManager(QObject *parent) :
     QObject(parent)
 {
-    mUserdirReader = new UserdirReader(this);
 }
 
 void SettingsManager::writeAll()
@@ -37,6 +37,7 @@ void SettingsManager::writeAll()
 
     settings.beginGroup("misc");
     settings.setValue("previewplayer",previewplayer);
+    settings.setValue("useKDEplayer",usekdeplayer);
     settings.setValue("previewplayerintegrated",previewplayerintegrated);
     settings.setValue("Singlewindow_redrectangle",SingleWindow_redrectangle);
     settings.setValue("latestrecording",latestrecording);
@@ -68,14 +69,7 @@ void SettingsManager::readAll()
     /*: Translate this into what a good basename for a recording would be in your language */
     filenameBase = settings.value("defaultname",trUtf8("recording")).toString();
     filenameUsedate = settings.value("defaultnametimedate","false").toBool();
-
-    if(mUserdirReader->fileExists()){
-        filenamePath = settings.value("defaultpath",mUserdirReader->getXdg_videos_dir()).toString();
-    }
-    else {
-        filenamePath = settings.value("defaultpath",QDir::homePath()).toString();
-    }
-
+    filenamePath = settings.value("defaultpath",XDG_VIDEOS_DIR()).toString();
     format = settings.value("defaultformat","avi").toString();
     language = settings.value("language","default").toString();
     ffmpeglocation = settings.value("ffmpeglocation","ffmpeg").toString();
@@ -83,16 +77,16 @@ void SettingsManager::readAll()
 
     settings.beginGroup("misc");
     previewplayer = settings.value("previewplayer","kaffeine").toString();
+    usekdeplayer = settings.value("useKDEplayer","true").toBool();
     previewplayerintegrated = settings.value("previewplayerintegrated","false").toString();
     SingleWindow_redrectangle = settings.value("Singlewindow_redrectangle","true").toString();
     latestrecording = settings.value("latestrecording","Unknown").toString();
     settings.endGroup();
 }
 
-QString SettingsManager::userXDG_VIDEOS_DIR()
+QString SettingsManager::XDG_VIDEOS_DIR()
 {
-
-    return "hej";
+    return KGlobalSettings::videosPath();
 }
 
 void SettingsManager::setFramerate(int newFramerate)
@@ -325,6 +319,16 @@ void SettingsManager::setFFmpeglocation(QString location)
 QString SettingsManager::FFmpeglocation()
 {
     return ffmpeglocation;
+}
+
+void SettingsManager::useKDEplayer(bool status)
+{
+    usekdeplayer = status;
+}
+
+bool SettingsManager::kdeplayerUsed()
+{
+    return usekdeplayer;
 }
 
 void SettingsManager::removeSettingsfile()

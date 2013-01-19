@@ -21,7 +21,6 @@ set ( FDesktopRecorder_SRCS
 	module/settingsmanager.cpp
 	utils/rubberband.cpp
         utils/areaselectordialog.cpp
-        utils/userdirreader.cpp
 	)
 
 set ( FDesktopRecorder_UIS
@@ -47,6 +46,9 @@ set ( FDesktopRecorder_TRS
 	translations/FDesktopRecorder.main/el_GR.ts 
         translations/FDesktopRecorder.main/ru_RU.ts
         translations/FDesktopRecorder.main/pt_BR.ts
+        translations/FDesktopRecorder.main/zh_CN.ts
+        translations/FDesktopRecorder.main/pl_PL.ts
+        translations/FDesktopRecorder.main/uk_UA.ts
 	translations/FDesktopRecorder_untranslated.ts 
 	)
 QT4_ADD_TRANSLATION(TRS ${FDesktopRecorder_TRS})
@@ -61,7 +63,6 @@ set ( FDesktopRecorder_MOCS
 	module/process.h
 	utils/rubberband.h
         utils/areaselectordialog.h
-        utils/userdirreader.h
 	)
 QT4_WRAP_CPP(MOCS ${FDesktopRecorder_MOCS})
 

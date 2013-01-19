@@ -4,7 +4,6 @@
 #include <QObject>
 #include <QSettings>
 #include "recordingdevices.h"
-#include "../utils/userdirreader.h"
 
 class SettingsManager : public QObject
 {
@@ -80,6 +79,9 @@ public:
     void setFFmpeglocation(QString location);
     QString FFmpeglocation();
 
+    void useKDEplayer(bool status);
+    bool kdeplayerUsed();
+
 
 
 
@@ -122,6 +124,7 @@ private:
 //----------------SECTION: Application settings------------------
     QString language;
     QString previewplayer;
+    bool usekdeplayer;
     QString previewplayerintegrated;
     QString SingleWindow_redrectangle;
     QString ffmpeglocation;
@@ -129,8 +132,7 @@ private:
     QString latestrecording;
     RecordingDevices recordingdevices;
 //----------------SECTION: userdirreader------------------
-    UserdirReader *mUserdirReader;
-    QString userXDG_VIDEOS_DIR();
+    QString XDG_VIDEOS_DIR();
 
 };
 

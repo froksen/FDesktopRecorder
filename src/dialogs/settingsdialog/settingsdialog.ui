@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>525</width>
-    <height>583</height>
+    <width>523</width>
+    <height>581</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -54,8 +54,8 @@
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>471</width>
-            <height>442</height>
+            <width>473</width>
+            <height>428</height>
            </rect>
           </property>
           <attribute name="label">
@@ -327,8 +327,8 @@
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>131</width>
-            <height>90</height>
+            <width>473</width>
+            <height>428</height>
            </rect>
           </property>
           <attribute name="label">
@@ -511,10 +511,10 @@
          <item row="2" column="2" colspan="2">
           <widget class="QCheckBox" name="checkBoxPreviewplayer">
            <property name="toolTip">
-            <string>Use the integrated player rather than the player chosen above</string>
+            <string>Use default mediaplayer rather than the one chosen from above</string>
            </property>
            <property name="text">
-            <string>Use integrated player</string>
+            <string>Use system default</string>
            </property>
           </widget>
          </item>

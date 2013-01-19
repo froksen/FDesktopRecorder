@@ -135,22 +135,18 @@ void SettingsDialog::readSettings()
     ui->comboBoxLanguage->setCurrentIndex(comboboxIndexLanguage);
 
     // -----------------SECTION: Previewplayer------------------------------
-
-    //NOTE: Removed previewplayer. Kept code since I might include it again someday. PLEASE NOTE, that the hide option is simply an easy
-    // way to remove the checkbox.
-    ui->checkBoxPreviewplayer->hide();
     ui->lineEditPreviewplayer->setText(settings.getPreviewplayer());
 
-//    if(settings.getPreviewplayerintegrated() == "false")
-//    {
-//        ui->checkBoxPreviewplayer->setChecked(false);
-        ui->lineEditPreviewplayer->setEnabled(true);
-//    }
-//    else
-//    {
-//        ui->checkBoxPreviewplayer->setChecked(true);
-//        ui->lineEditPreviewplayer->setEnabled(false);
-//    }
+    if(!settings.kdeplayerUsed())
+        {
+            ui->checkBoxPreviewplayer->setChecked(false);
+            ui->lineEditPreviewplayer->setEnabled(true);
+        }
+    else
+        {
+            ui->checkBoxPreviewplayer->setChecked(true);
+            ui->lineEditPreviewplayer->setEnabled(false);
+        }
 
     // -----------------SECTION: Single window: Use red rectangle------------------------------
     if(settings.getSinglewindow_redrectangle() == "false")
@@ -258,22 +254,25 @@ void SettingsDialog::findLanguages()
     ui->comboBoxLanguage->addItem(QString("English (%1)").arg(trUtf8("Original")),"STANDARD");
 
     QMap <QString,QString> localeMap;
-    localeMap.insert("da_DK",QString::fromUtf8("Dansk"));
-    localeMap.insert("de_DE",QString::fromUtf8("Deutch"));
-    localeMap.insert("es_ES",QString::fromUtf8("Español"));
-    localeMap.insert("fr_FR",QString::fromUtf8("Français"));
-    localeMap.insert("el_GR",QString::fromUtf8("ελληνικά"));
-    localeMap.insert("it_IT",QString::fromUtf8("Italiano"));
-    localeMap.insert("pt_BR",QString::fromUtf8("Português (Brasil)"));
-    localeMap.insert("ro_RO",QString::fromUtf8("Român"));
-    localeMap.insert("ru_RU",QString::fromUtf8("русский"));
-
+    localeMap.insert("da_DK",QString::fromUtf8("Danish - Dansk"));
+    localeMap.insert("zh_CN",QString::fromUtf8("Chinese - 中國的"));
+    localeMap.insert("fr_FR",QString::fromUtf8("French - Français"));
+    localeMap.insert("de_DE",QString::fromUtf8("German - Deutch"));
+    localeMap.insert("el_GR",QString::fromUtf8("Greek - ελληνικά"));
+    localeMap.insert("it_IT",QString::fromUtf8("Italian - Italiano"));
+    localeMap.insert("pl_PL",QString::fromUtf8("Polish - Polski"));
+    localeMap.insert("pt_BR",QString::fromUtf8("Portuguese (Brazil) - Português (Brasil)"));
+    localeMap.insert("ro_RO",QString::fromUtf8("Romanian - Român"));
+    localeMap.insert("ru_RU",QString::fromUtf8("Russian - русский"));
+    localeMap.insert("es_ES",QString::fromUtf8("Spanish - Español"));
+    localeMap.insert("uk_UA",QString::fromUtf8("Ukrainian - Український"));
 
     foreach (QString locale, localeMap.keys()){
         qDebug() << "Locale:" << locale << localeMap.value(locale);
        ui->comboBoxLanguage->addItem(localeMap.value(locale),locale);
 
     }
+
 }
 
 void SettingsDialog::on_checkBoxPreviewplayer_clicked()
@@ -351,21 +350,16 @@ void SettingsDialog::writeSettings()
     int langindex = ui->comboBoxLanguage->currentIndex();
     settings.setLanguage(ui->comboBoxLanguage->itemData(langindex).toString());
 
-    //TODO: Remove this option. since the player is buggy and yeah no need to redo work others have done.
-    //NOTE: Removed previewplayer. Kept code since I might include it again someday. PLEASE NOTE, that the hide option is simply an easy
-    // way to remove the checkbox.
-
-    ui->checkBoxPreviewplayer->hide();
     //Preview player
     settings.setPreviewplayer(ui->lineEditPreviewplayer->text());
-//    if(!ui->checkBoxPreviewplayer->isChecked())
-//    {
-//        settings.setPreviewplayerintegrated("false");
-//    }
-//    else
-//    {
-//        settings.setPreviewplayerintegrated("true");
-//    }
+    if(!ui->checkBoxPreviewplayer->isChecked())
+    {
+        settings.useKDEplayer(false);
+    }
+    else
+    {
+        settings.useKDEplayer(true);
+    }
 
     //Single window: use red rectangle
     if(!ui->checkBoxSinglewindowredrectangle->isChecked())

@@ -77,76 +77,91 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="../dialogs/about/aboutprog.cpp" line="43"/>
+        <source>Chinese</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../dialogs/about/aboutprog.cpp" line="47"/>
         <source>French</source>
         <translation>Γαλλικά</translation>
     </message>
     <message>
-        <location filename="../dialogs/about/aboutprog.cpp" line="47"/>
+        <location filename="../dialogs/about/aboutprog.cpp" line="51"/>
         <source>German</source>
         <translation>Γερμανικά</translation>
     </message>
     <message>
-        <location filename="../dialogs/about/aboutprog.cpp" line="52"/>
+        <location filename="../dialogs/about/aboutprog.cpp" line="56"/>
         <source>Greek</source>
         <translation>Ελληνικά</translation>
     </message>
     <message>
-        <location filename="../dialogs/about/aboutprog.cpp" line="56"/>
+        <location filename="../dialogs/about/aboutprog.cpp" line="60"/>
         <source>Spanish</source>
         <translation>Ισπανικά</translation>
     </message>
     <message>
-        <location filename="../dialogs/about/aboutprog.cpp" line="60"/>
+        <location filename="../dialogs/about/aboutprog.cpp" line="64"/>
         <source>Italian</source>
         <translation>Ιταλικά</translation>
     </message>
     <message>
-        <location filename="../dialogs/about/aboutprog.cpp" line="65"/>
+        <location filename="../dialogs/about/aboutprog.cpp" line="69"/>
+        <source>Polish</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../dialogs/about/aboutprog.cpp" line="73"/>
         <source>Portuguese (Brazil)</source>
         <translation>Πορτογαλικά (Βραζιλίας)</translation>
     </message>
     <message>
-        <location filename="../dialogs/about/aboutprog.cpp" line="69"/>
+        <location filename="../dialogs/about/aboutprog.cpp" line="77"/>
         <source>Romanian</source>
         <translation>Ρουμανικά</translation>
     </message>
     <message>
-        <location filename="../dialogs/about/aboutprog.cpp" line="73"/>
+        <location filename="../dialogs/about/aboutprog.cpp" line="81"/>
         <source>Russian</source>
         <translation>Ρώσικα</translation>
     </message>
     <message>
-        <location filename="../dialogs/about/aboutprog.cpp" line="80"/>
+        <location filename="../dialogs/about/aboutprog.cpp" line="85"/>
+        <source>Ukrainian</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../dialogs/about/aboutprog.cpp" line="92"/>
         <source>The FDesktopRecorder has received valuable contributions from a lot of different people.</source>
         <translation>Το FDesktopRecorder έχει λάβει σημαντικές συνεισφορές από πολλούς ανθρώπους.</translation>
     </message>
     <message>
-        <location filename="../dialogs/about/aboutprog.cpp" line="81"/>
+        <location filename="../dialogs/about/aboutprog.cpp" line="93"/>
         <source>Thanks alot everyone.</source>
         <translation>Ευχαριστώ πολύ σε όλους.</translation>
     </message>
     <message>
-        <location filename="../dialogs/about/aboutprog.cpp" line="82"/>
+        <location filename="../dialogs/about/aboutprog.cpp" line="94"/>
         <source>Special thanks</source>
         <translation>Ειδικές ευχαριστίες</translation>
     </message>
     <message>
-        <location filename="../dialogs/about/aboutprog.cpp" line="96"/>
+        <location filename="../dialogs/about/aboutprog.cpp" line="108"/>
         <source>License</source>
         <translation>Άδεια</translation>
     </message>
     <message>
-        <location filename="../dialogs/about/aboutprog.cpp" line="97"/>
+        <location filename="../dialogs/about/aboutprog.cpp" line="109"/>
         <source>Created by</source>
         <translation>Δημιουργήθηκε από</translation>
     </message>
     <message>
-        <location filename="../dialogs/about/aboutprog.cpp" line="98"/>
+        <location filename="../dialogs/about/aboutprog.cpp" line="110"/>
         <source>Based on</source>
         <translation>Βασισμένο στο</translation>
     </message>
     <message>
-        <location filename="../dialogs/about/aboutprog.cpp" line="99"/>
+        <location filename="../dialogs/about/aboutprog.cpp" line="111"/>
         <source>A ffmpeq script by Peter Lybeth from the danish GNU/Linux show &apos;Kanal Tux&apos;: http://www.kanaltux.dk</source>
         <translation>Μια δεσμή ενεργειών για το FFmpeg του Peter Lybeth της Δανικής εκπομπης GNU/Linux «Kanal Tux»: http://www.kanaltux.dk</translation>
     </message>
@@ -254,73 +269,78 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="../mainwindow.ui" line="128"/>
+        <source>Record an area of the screen</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="131"/>
         <source>Region</source>
         <translation>Περιοχή</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="190"/>
+        <location filename="../mainwindow.ui" line="193"/>
         <source>Copy to Clipboard</source>
         <translation>Αντιγραφή στο Πρόχειρο</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="199"/>
+        <location filename="../mainwindow.ui" line="202"/>
         <source>About</source>
         <translation>Σχετικά</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="202"/>
+        <location filename="../mainwindow.ui" line="205"/>
         <source>Shows information about this program</source>
         <translation>Προβάλλει πληροφορίες σχετικά με το πρόγραμμα</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="205"/>
+        <location filename="../mainwindow.ui" line="208"/>
         <source>About FDesktopRecorder</source>
         <translation>Σχετικά με το FDesktopRecorder</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="210"/>
-        <location filename="../mainwindow.ui" line="216"/>
+        <location filename="../mainwindow.ui" line="213"/>
+        <location filename="../mainwindow.ui" line="219"/>
         <source>Settings</source>
         <translation>Ρυθμίσεις</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="213"/>
+        <location filename="../mainwindow.ui" line="216"/>
         <source>Let you change an amount of different settings like recording framerate etc.</source>
         <translation>Σας αφήνει να αλλάξετε πολλές διαφορετικές ρυθμίσεις όπως καρέ ανά δευτερόλεπτο κ.α.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="221"/>
+        <location filename="../mainwindow.ui" line="224"/>
         <source>Console</source>
         <translation>Κονσόλα</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="224"/>
+        <location filename="../mainwindow.ui" line="227"/>
         <source>Shows a console where you can see the output. Usefull if recording fails.</source>
         <translation>Προβάλλει μια κονσόλα που μπορείτε να δείτε την απόδοση. Χρήσιμο αν αποτυχαίνει η καταγραφή.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="227"/>
+        <location filename="../mainwindow.ui" line="230"/>
         <source>Show/Hide console output</source>
         <translation>Προβολή/Απόκρυψη απόδοσης κονσόλας</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="232"/>
+        <location filename="../mainwindow.ui" line="235"/>
         <source>Open recording directory</source>
         <translation>Άνοιγμα φακέλου εγγραφής</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="235"/>
         <location filename="../mainwindow.ui" line="238"/>
+        <location filename="../mainwindow.ui" line="241"/>
         <source>Open directory containing your recordings</source>
         <translation>Άνοιγμα του φακέλου που περιέχει τις εγγραφές σας</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="243"/>
+        <location filename="../mainwindow.ui" line="246"/>
         <source>Preview recording</source>
         <translation>Προεπισκόπηση εγγραφής</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="246"/>
+        <location filename="../mainwindow.ui" line="249"/>
         <source>Preview the recording</source>
         <translation>Για αναθεώρηση της εγγραφής</translation>
     </message>
@@ -358,43 +378,66 @@ Hereafter the recording will start.</source>
 Θα αρχίσει η εγγραφή εφεξής.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="334"/>
-        <location filename="../mainwindow.cpp" line="644"/>
         <source>Recording started</source>
-        <translation>Καταγραφή ξεκίνησε</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="351"/>
+        <location filename="../mainwindow.cpp" line="335"/>
+        <location filename="../mainwindow.cpp" line="646"/>
+        <source>Recording</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="356"/>
         <source>Please wait while saving the recording. Might take some time.</source>
         <translation>Παρακαλώ περιμένετε όσο η εγγραφή αποθηκεύεται. Μπορεί να διαρκέσει λίγη ώρα.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="425"/>
         <location filename="../mainwindow.cpp" line="428"/>
+        <location filename="../mainwindow.cpp" line="431"/>
         <source>Successfully finished recording</source>
         <translation>Επιτυχής ολοκληρώσε η εγγραφή</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="425"/>
+        <location filename="../mainwindow.cpp" line="428"/>
         <source>Size</source>
         <translation>Μέγεθος</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="438"/>
-        <location filename="../mainwindow.cpp" line="519"/>
+        <location filename="../mainwindow.cpp" line="441"/>
+        <location filename="../mainwindow.cpp" line="521"/>
         <source>Latest Recording</source>
         <translation>Τελευταία Καταγραφή</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="445"/>
         <location filename="../mainwindow.cpp" line="448"/>
-        <location filename="../mainwindow.cpp" line="457"/>
-        <location filename="../mainwindow.cpp" line="462"/>
-        <source>Failed to start!</source>
-        <translation>Αποτυχία εκκίνησης!</translation>
+        <location filename="../mainwindow.cpp" line="451"/>
+        <location filename="../mainwindow.cpp" line="460"/>
+        <location filename="../mainwindow.cpp" line="464"/>
+        <source>Unable to start recording!</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="448"/>
+        <location filename="../mainwindow.cpp" line="507"/>
+        <source>Show/Hide window</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="511"/>
+        <source>Stop recording</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="523"/>
+        <source>Quit program</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <source>Failed to start!</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="451"/>
         <source>View console output for more info.</source>
         <translation>Δείτε την απόδοση της κονσόλας για περισσότερες πληροφορίες.</translation>
     </message>
@@ -403,7 +446,7 @@ Hereafter the recording will start.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="454"/>
+        <location filename="../mainwindow.cpp" line="457"/>
         <source>Show output</source>
         <translation>Προβολή απόδοσης</translation>
     </message>
@@ -412,7 +455,7 @@ Hereafter the recording will start.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="458"/>
+        <location filename="../mainwindow.cpp" line="461"/>
         <source>Press &lt;i&gt;&apos;Show output&apos;&lt;/i&gt; to see console ouput.</source>
         <translation>Πατήστε &lt;i&gt;«Προβολή απόδοσης»&lt;/i&gt; για να δείτε την απόδοση στη κονσόλα.</translation>
     </message>
@@ -425,27 +468,24 @@ Hereafter the recording will start.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="505"/>
         <source>&amp;Show/Hide window</source>
-        <translation>&amp;Προβολή/Απόκρυψη παραθύρου</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="509"/>
         <source>&amp;Stop recording</source>
-        <translation>&amp;Διακοπή εγγραφής</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="513"/>
+        <location filename="../mainwindow.cpp" line="515"/>
         <source>&amp;Latest recording: </source>
         <translation>&amp;Τελευταία εγγραφή:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="521"/>
         <source>&amp;Quit program</source>
-        <translation>&amp;Τερματισμός προγράμματος</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="735"/>
+        <location filename="../mainwindow.cpp" line="750"/>
         <source>Current output copied to clipboard</source>
         <translation>Αντιγράφτηκε η τωρινή απόδοση κονσόλας στο πρόχειρο</translation>
     </message>
@@ -732,13 +772,16 @@ Hereafter the recording will start.</source>
     </message>
     <message>
         <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="514"/>
-        <source>Use the integrated player rather than the player chosen above</source>
-        <translation>Χρήση του ενσωματωμένου αναπαραγωγέα αντί για τον αναπαραγωγέα επιλεγμένο παραπάνω</translation>
+        <source>Use default mediaplayer rather than the one chosen from above</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="517"/>
+        <source>Use the integrated player rather than the player chosen above</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
         <source>Use integrated player</source>
-        <translation>Χρήση ενσωματωμένου αναπαραγωγέα</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="530"/>
@@ -805,22 +848,23 @@ Be aware that this can NOT be undone.</source>
         <translation>Δεν βρέθηκε μικρόφωνο!</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="217"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="213"/>
         <source>Open Directory</source>
         <translation>Άνοιγμα Φακέλου</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="257"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.ui" line="517"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="253"/>
         <source>Use system default</source>
         <translation>Χρήση προεπιλογής συστήματος</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="258"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="254"/>
         <source>Original</source>
         <translation>Αρχική</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="306"/>
+        <location filename="../dialogs/settingsdialog/settingsdialog.cpp" line="305"/>
         <source>FFmpeg location</source>
         <translation>Τοποθεσία FFmpeg</translation>
     </message>
@@ -828,7 +872,7 @@ Be aware that this can NOT be undone.</source>
 <context>
     <name>SettingsManager</name>
     <message>
-        <location filename="../module/settingsmanager.cpp" line="68"/>
+        <location filename="../module/settingsmanager.cpp" line="70"/>
         <source>recording</source>
         <extracomment>Translate this into what a good basename for a recording would be in your language</extracomment>
         <translation>καταγράφει</translation>
