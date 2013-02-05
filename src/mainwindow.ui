@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>622</width>
+    <width>627</width>
     <height>407</height>
    </rect>
   </property>
@@ -46,10 +46,10 @@
       <item row="0" column="4">
        <widget class="QCheckBox" name="checkBoxRecordaudio">
         <property name="toolTip">
-         <string>If checked, it will record no audio from the microphone</string>
+         <string>Mute the microphone</string>
         </property>
         <property name="statusTip">
-         <string>Mute the microphone</string>
+         <string/>
         </property>
         <property name="text">
          <string>Mute microphone</string>
@@ -62,10 +62,10 @@
       <item row="0" column="1">
        <widget class="QRadioButton" name="radioButtonEntirescreen">
         <property name="toolTip">
-         <string>When the recording starts, it will record your entire desktop</string>
+         <string>Records your entire desktop</string>
         </property>
         <property name="statusTip">
-         <string>Records your entire desktop</string>
+         <string/>
         </property>
         <property name="text">
          <string>Entire screen</string>
@@ -81,10 +81,10 @@
          <bool>true</bool>
         </property>
         <property name="toolTip">
-         <string extracomment="dsfdsfds">When you start the recording, you will have to choose the window that you want to record</string>
+         <string extracomment="dsfdsfds">Record a single window or screen.</string>
         </property>
         <property name="statusTip">
-         <string>Record a single window or screen.</string>
+         <string/>
         </property>
         <property name="text">
          <string>Single Window</string>
@@ -93,8 +93,11 @@
       </item>
       <item row="0" column="6">
        <widget class="QPushButton" name="pushButtonStoprecord">
-        <property name="statusTip">
+        <property name="toolTip">
          <string>Stop the recording</string>
+        </property>
+        <property name="statusTip">
+         <string/>
         </property>
         <property name="text">
          <string>Stop</string>
@@ -108,10 +111,10 @@
       <item row="0" column="5">
        <widget class="QPushButton" name="pushButtonStartrecord">
         <property name="toolTip">
-         <string/>
+         <string>Start a recording</string>
         </property>
         <property name="statusTip">
-         <string>Start a recording</string>
+         <string/>
         </property>
         <property name="text">
          <string>Record</string>
@@ -124,8 +127,11 @@
       </item>
       <item row="0" column="3">
        <widget class="QRadioButton" name="radioButtonCustom">
-        <property name="statusTip">
+        <property name="toolTip">
          <string>Record an area of the screen</string>
+        </property>
+        <property name="statusTip">
+         <string/>
         </property>
         <property name="text">
          <string>Region</string>
@@ -141,8 +147,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>622</width>
-     <height>22</height>
+     <width>627</width>
+     <height>21</height>
     </rect>
    </property>
   </widget>
@@ -202,10 +208,10 @@
     <string>About</string>
    </property>
    <property name="toolTip">
-    <string>Shows information about this program</string>
+    <string>About FDesktopRecorder</string>
    </property>
    <property name="statusTip">
-    <string>About FDesktopRecorder</string>
+    <string/>
    </property>
   </action>
   <action name="actionSettings">
@@ -213,10 +219,10 @@
     <string>Settings</string>
    </property>
    <property name="toolTip">
-    <string>Let you change an amount of different settings like recording framerate etc.</string>
+    <string>Settings</string>
    </property>
    <property name="statusTip">
-    <string>Settings</string>
+    <string/>
    </property>
   </action>
   <action name="actionConsole">
@@ -224,10 +230,10 @@
     <string>Console</string>
    </property>
    <property name="toolTip">
-    <string>Shows a console where you can see the output. Usefull if recording fails.</string>
+    <string>Show/Hide console output</string>
    </property>
    <property name="statusTip">
-    <string>Show/Hide console output</string>
+    <string/>
    </property>
   </action>
   <action name="actionOpen_recording_directory">
@@ -238,7 +244,7 @@
     <string>Open directory containing your recordings</string>
    </property>
    <property name="statusTip">
-    <string>Open directory containing your recordings</string>
+    <string/>
    </property>
   </action>
   <action name="actionPreviewrecording">

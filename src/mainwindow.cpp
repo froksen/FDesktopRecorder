@@ -425,7 +425,7 @@ void MainWindow::onProcessFinished(int Exitcode)
     if(Exitcode == 0)
     {
         //StatusBar
-        ui->statusBar->showMessage(trUtf8("Successfully finished recording") + " (" + trUtf8("Size") + ": " + filesizestring + " - " + QFileInfo(filename).fileName() + ")");
+        ui->statusBar->showMessage(trUtf8("Successfully finished recording") + " (" + trUtf8("Size") + ": " + filesizestring + " - " + QFileInfo(filename).fileName() + ")",5000);
 
         //Knotification
         doKnotification(trUtf8("Successfully finished recording"),"","normal","doneRecording");
@@ -439,7 +439,6 @@ void MainWindow::onProcessFinished(int Exitcode)
 
         //SystemTray: Reads information
         latestrecording->setText(trUtf8("Latest Recording") + ": " + currentdatetime);
-
     }
     //Recording: Failes
     else
