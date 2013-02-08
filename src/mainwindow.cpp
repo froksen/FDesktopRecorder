@@ -48,8 +48,10 @@ MainWindow::MainWindow(QWidget *parent) :
     //Set the Startrecord PushButton menu
     QMenu *Recordbuttonmenu = new QMenu();
     QAction *startrecording = new QAction(trUtf8("Start recording"), this);
+    startrecording->setToolTip(trUtf8("Start the recording without minimizing this window."));
     connect(startrecording,SIGNAL(triggered()),this,SLOT(on_pushButtonStartrecord_clicked()));
     QAction *startandminimize = new QAction(trUtf8("Minimize and start record"), this);
+    startandminimize->setToolTip(trUtf8("This window will be minimized to tray and hereafter the recording will start."));
     connect(startandminimize,SIGNAL(triggered()),this,SLOT(startRecordandminimize()));
 
     Recordbuttonmenu->addAction(startrecording);
