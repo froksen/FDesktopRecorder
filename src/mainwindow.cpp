@@ -434,7 +434,7 @@ void MainWindow::onProcessFinished(int Exitcode)
     if(Exitcode == 0)
     {
         //StatusBar
-        ui->statusBar->showMessage(trUtf8("Successfully finished recording") + " (" + trUtf8("Size") + ": " + filesizestring + " - " + QFileInfo(filename).fileName() + ")",5000);
+        ui->statusBar->showMessage(trUtf8("Successfully finished recording") + " (" + trUtf8("Size") + ": " + filesizestring + " - " + QFileInfo(filename).fileName() + ")",20000);
 
         //Knotification
         doKnotification(trUtf8("Successfully finished recording"),"","normal","doneRecording");
@@ -453,7 +453,7 @@ void MainWindow::onProcessFinished(int Exitcode)
     else
     {
         //StatusBar
-        ui->statusBar->showMessage(trUtf8("Unable to start recording!"));
+        ui->statusBar->showMessage(trUtf8("Unable to start recording!"),20000);
 
         //Knotification
         doKnotification(trUtf8("Unable to start recording!"),trUtf8("View console output for more info."),"normal","errorRecording");
