@@ -12,21 +12,24 @@ void process::startCommand()
     //Creates the new process.
     mprocess = new QProcess();
 
-    //Stats the process
-    mprocess->start(command,arguments);
-
     //Sets the connections
     connect(mprocess,SIGNAL(readyReadStandardOutput()),this,SLOT(readstdout()));
     connect(mprocess,SIGNAL(readyReadStandardError()),this,SLOT(readstderr()));
     connect(mprocess, SIGNAL(finished(int, QProcess::ExitStatus)),
             this, SLOT(onProcessFinished(int, QProcess::ExitStatus)));
+
+    //ProcessChannelMode
+    mprocess->setProcessChannelMode(QProcess::MergedChannels);
+
+    //Stats the process
+    mprocess->start(command,arguments);
 }
 
 void process::readstdout()
 {
     stdoutdata = mprocess->readAllStandardOutput();
     emit stdoutText(stdoutdata);
-    qDebug() << "Standard output:" << stdoutdata;
+    qDebug() << stdoutdata;
 }
 
 
