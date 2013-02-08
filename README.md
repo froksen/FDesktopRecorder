@@ -14,6 +14,7 @@ FDesktopRecorder is a program that can video record a single window or your enti
 ###Basic features:
 * Video record a single window
 * Video record your entire desktop
+* Video record a region of your desktop
 
 Based on a script by Peter Lyberth from the danish GNU/Linux show "Kanal Tux" http://www.kanaltux.dk 
 
@@ -59,6 +60,12 @@ You can contact me via kde-apps.org. Find me under the username "froksen".
 
 ###Ukrainian
 * Eugene 'Gannet'
+
+###Russian translation
+* Danilov "modos189" Alexandr
+
+###Portuguese (Brazil) 
+* Alexandro "salmora8" Casanova
 
 ###Help with translation?
 All translation is done via Transifex, please visit the project page at: https://www.transifex.com/projects/p/FDesktopRecorder/
