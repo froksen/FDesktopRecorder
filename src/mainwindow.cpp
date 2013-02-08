@@ -276,7 +276,14 @@ void MainWindow::on_pushButtonStartrecord_clicked()
     recordingargs << "-y";
     recordingargs << filename;
 
-    qDebug() << recordingargs;
+    QString commandRunning = settings.FFmpeglocation();
+    foreach(QString arg, recordingargs){
+        commandRunning.append(" " + arg);
+    }
+
+    qDebug() << "..::Running FFMpeg command::..";
+    qDebug() << commandRunning;
+    qDebug() << "....................";
 
     //------------------------SECTION: Set and run the recording--------------------------------
     //Sets the arguments to the program
