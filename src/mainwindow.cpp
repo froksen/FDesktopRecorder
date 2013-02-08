@@ -301,16 +301,14 @@ void MainWindow::on_pushButtonStartrecord_clicked()
     //This will clear the terminaltext
     ui->textEditConsole->clear();
     //These two lines posts the QProcess text to the GUI
-    connect(mProcessClass,SIGNAL(stderrText(QString)),ui->textEditConsole,SLOT(append(QString)));
     connect(mProcessClass,SIGNAL(stdoutText(QString)),ui->textEditConsole,SLOT(append(QString)));
-    connect(mProcessClass,SIGNAL(stderrText(QString)),this,SLOT(getFPS(QString)));
     connect(mProcessClass,SIGNAL(stdoutText(QString)),this,SLOT(getFPS(QString)));
 
     //When recording is finished it will send the exitCode, wether its succesfull or not.
     connect(mProcessClass, SIGNAL(FinishedExitCode(int)),this, SLOT(onProcessFinished(int)));
 
     //This makes sure that the user knows that a recording is happening (The Statusbar text)
-    connect(mProcessClass,SIGNAL(stderrText(QString)),this,SLOT(setRecordingStatusbarText()));
+    connect(mProcessClass,SIGNAL(stdoutText(QString)),this,SLOT(setRecordingStatusbarText()));
 
     //------------------------SECTION: GUI things--------------------------------
 
