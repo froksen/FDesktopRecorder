@@ -85,7 +85,8 @@ MainWindow::~MainWindow()
 QString MainWindow::setFilename(QString path, QString basename, QString format)
 {
     QFileInfo Filename = path + "/" + basename + "." + format;
-    qDebug() << "..::Checking if file exists::..";
+    qDebug() << "";
+    qDebug() << "..::   Checking if file exists ::..";
     int indexnumber = 1;
     while(Filename.exists())
     {
@@ -93,7 +94,10 @@ QString MainWindow::setFilename(QString path, QString basename, QString format)
         Filename = path + "/" + basename + QString::number(indexnumber) + "." + format;
         indexnumber += 1;
     }
-    qDebug() << "..::Done checking::.. \n New filename: " + Filename.absoluteFilePath();
+    qDebug() << "";
+    qDebug() << "..::   Done checking   ::.. \n New filename: " + Filename.absoluteFilePath();
+    qDebug() << "";
+
     QString Filenamestr = Filename.absoluteFilePath();
     return Filenamestr;
 }
@@ -281,9 +285,10 @@ void MainWindow::on_pushButtonStartrecord_clicked()
         commandRunning.append(" " + arg);
     }
 
-    qDebug() << "..::Running FFMpeg command::..";
+    qDebug() << "";
+    qDebug() << "..::   Running FFMpeg command  ::..";
     qDebug() << commandRunning;
-    qDebug() << "....................";
+    qDebug() << "";
 
     //------------------------SECTION: Set and run the recording--------------------------------
     //Sets the arguments to the program
@@ -294,6 +299,9 @@ void MainWindow::on_pushButtonStartrecord_clicked()
     mProcessClass->setCommand(settings.FFmpeglocation());
 
     //Starts the command
+    qDebug() << "";
+    qDebug() << "..::   FFmpeg output start!   ::..";
+    qDebug() << "";
     mProcessClass->startCommand();
 
     //------------------SECTION: Connections---------------------
