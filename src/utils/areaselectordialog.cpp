@@ -52,14 +52,14 @@ void AreaSelectorDialog::changedSelection()
     qDebug() << "Selection changed";
 
     //X and Y
-    ui->labelXY->setText(QString("X: %1, Y: %2").arg(QString::number(frameGeometry().x()),
-                                                     QString::number(frameGeometry().y())));
+    ui->labelXY->setText(QString("X: %1, Y: %2").arg(QString::number(geometry().x()),
+                                                     QString::number(geometry().y())));
 
     //Width and Height
     ui->labelWidthHeight->setText(QString("%1: %2, %3: %4").arg(trUtf8("Width"),
-                                                        QString::number(frameSize().width()),
+                                                        QString::number(geometry().width()),
                                                         trUtf8("Height"),
-                                                        QString::number(frameSize().height())));
+                                                        QString::number(geometry().height())));
 
     mRubberBand->setGeometry(0,0,geometry().width(),geometry().height());
 }

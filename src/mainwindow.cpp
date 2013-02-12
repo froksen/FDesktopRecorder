@@ -176,19 +176,19 @@ void MainWindow::on_pushButtonStartrecord_clicked()
         AreaSelectorDialog *mAreaSelector = new AreaSelectorDialog(this);
         mAreaSelector->exec();
 
-        mrecordinginfo.geometry = QString::number(WindowGrapperClass->fixResolution(mAreaSelector->frameSize().width())) + "x" + QString::number(WindowGrapperClass->fixResolution(mAreaSelector->frameSize().height()));
+        mrecordinginfo.geometry = QString::number(WindowGrapperClass->fixResolution(mAreaSelector->geometry().width())) + "x" + QString::number(WindowGrapperClass->fixResolution(mAreaSelector->geometry().height()));
 
         //Corners
-        QString frameCornerX = QString::number(mAreaSelector->frameGeometry().x());
+        QString frameCornerX = QString::number(mAreaSelector->geometry().x());
         frameCornerX = frameCornerX.replace("+","");
         frameCornerX = frameCornerX.replace("-","");
 
-        QString frameCornerY = QString::number(mAreaSelector->frameGeometry().y());
+        QString frameCornerY = QString::number(mAreaSelector->geometry().y());
         frameCornerY = frameCornerY.replace("+","");
         frameCornerY = frameCornerY.replace("-","");
 
         mrecordinginfo.corners = ":0.0+" + frameCornerX + "," + frameCornerY ;
-        rubberband.setGeometry(mAreaSelector->frameGeometry());
+        rubberband.setGeometry(mAreaSelector->geometry());
 
 //        //Shows the rectangle
         if(settings.getSinglewindow_redrectangle() != "false")
