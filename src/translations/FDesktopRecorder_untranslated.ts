@@ -229,12 +229,11 @@ p, li { white-space: pre-wrap; }
         <translation>FDesktopRecorder</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="65"/>
         <source>When the recording starts, it will record your entire desktop</source>
-        <translation>When the recording starts, it will record your entire desktop</translation>
+        <translation type="obsolete">When the recording starts, it will record your entire desktop</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="68"/>
+        <location filename="../mainwindow.ui" line="65"/>
         <source>Records your entire desktop</source>
         <translation>Records your entire desktop</translation>
     </message>
@@ -244,14 +243,14 @@ p, li { white-space: pre-wrap; }
         <translation>Entire screen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="84"/>
         <source>When you start the recording, you will have to choose the window that you want to record</source>
         <extracomment>dsfdsfds</extracomment>
-        <translation>When you start the recording, you will have to choose the window that you want to record</translation>
+        <translation type="obsolete">When you start the recording, you will have to choose the window that you want to record</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="87"/>
+        <location filename="../mainwindow.ui" line="84"/>
         <source>Record a single window or screen.</source>
+        <extracomment>dsfdsfds</extracomment>
         <translation>Record a single window or screen.</translation>
     </message>
     <message>
@@ -265,7 +264,7 @@ p, li { white-space: pre-wrap; }
         <translation>Start a recording</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="117"/>
+        <location filename="../mainwindow.ui" line="120"/>
         <source>Record</source>
         <translation>Record</translation>
     </message>
@@ -275,17 +274,16 @@ p, li { white-space: pre-wrap; }
         <translation>Stop the recording</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="100"/>
+        <location filename="../mainwindow.ui" line="103"/>
         <source>Stop</source>
         <translation>Stop</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="49"/>
         <source>If checked, it will record no audio from the microphone</source>
-        <translation>If checked, it will record no audio from the microphone</translation>
+        <translation type="obsolete">If checked, it will record no audio from the microphone</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="52"/>
+        <location filename="../mainwindow.ui" line="49"/>
         <source>Mute the microphone</source>
         <translation>Mute the microphone</translation>
     </message>
@@ -295,79 +293,75 @@ p, li { white-space: pre-wrap; }
         <translation>Mute microphone</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="128"/>
+        <location filename="../mainwindow.ui" line="131"/>
         <source>Record an area of the screen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="131"/>
+        <location filename="../mainwindow.ui" line="137"/>
         <source>Region</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="193"/>
+        <location filename="../mainwindow.ui" line="199"/>
         <source>Copy to Clipboard</source>
         <translation>Copy to Clipboard</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="202"/>
+        <location filename="../mainwindow.ui" line="208"/>
         <source>About</source>
         <translation>About</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="205"/>
         <source>Shows information about this program</source>
-        <translation>Shows information about this program</translation>
+        <translation type="obsolete">Shows information about this program</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="208"/>
+        <location filename="../mainwindow.ui" line="211"/>
         <source>About FDesktopRecorder</source>
         <translation>About FDesktopRecorder</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="213"/>
         <location filename="../mainwindow.ui" line="219"/>
+        <location filename="../mainwindow.ui" line="222"/>
         <source>Settings</source>
         <translation>Settings</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="216"/>
         <source>Let you change an amount of different settings like recording framerate etc.</source>
-        <translation>Let you change an amount of different settings like recording framerate etc.</translation>
+        <translation type="obsolete">Let you change an amount of different settings like recording framerate etc.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="224"/>
+        <location filename="../mainwindow.ui" line="230"/>
         <source>Console</source>
         <translation>Console</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="227"/>
         <source>Shows a console where you can see the output. Usefull if recording fails.</source>
-        <translation>Shows a console where you can see the output. Usefull if recording fails.</translation>
+        <translation type="obsolete">Shows a console where you can see the output. Usefull if recording fails.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="230"/>
+        <location filename="../mainwindow.ui" line="233"/>
         <source>Show/Hide console output</source>
         <translation>Show/Hide console output</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="235"/>
+        <location filename="../mainwindow.ui" line="241"/>
         <source>Open recording directory</source>
         <translation>Open recording directory</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="238"/>
-        <location filename="../mainwindow.ui" line="241"/>
+        <location filename="../mainwindow.ui" line="244"/>
         <source>Open directory containing your recordings</source>
         <translation>Open directory containing your recordings</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="246"/>
+        <location filename="../mainwindow.ui" line="252"/>
         <source>Preview recording</source>
         <translation>Preview recording</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="249"/>
+        <location filename="../mainwindow.ui" line="255"/>
         <source>Preview the recording</source>
         <translation>Preview the recording</translation>
     </message>
@@ -377,7 +371,12 @@ p, li { white-space: pre-wrap; }
         <translation>Start recording</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="52"/>
+        <location filename="../mainwindow.cpp" line="51"/>
+        <source>Start the recording without minimizing this window.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="53"/>
         <source>Minimize and start record</source>
         <translation>Minimize and start record</translation>
     </message>
@@ -386,13 +385,13 @@ p, li { white-space: pre-wrap; }
         <translation type="obsolete">&lt;b&gt; Recording a single window &lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="130"/>
-        <location filename="../mainwindow.cpp" line="131"/>
+        <location filename="../mainwindow.cpp" line="136"/>
+        <location filename="../mainwindow.cpp" line="137"/>
         <source>Recording a single window</source>
         <translation>Recording a single window</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="132"/>
+        <location filename="../mainwindow.cpp" line="138"/>
         <source>When you click &apos;OK&apos; a small crossair will appear. 
  
 With this you will have to select the window you want to record. 
@@ -409,53 +408,58 @@ Hereafter the recording will start.</translation>
         <translation type="obsolete">Recording started</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="335"/>
-        <location filename="../mainwindow.cpp" line="646"/>
+        <location filename="../mainwindow.cpp" line="54"/>
+        <source>This window will be minimized to tray and hereafter the recording will start.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="350"/>
+        <location filename="../mainwindow.cpp" line="660"/>
         <source>Recording</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="356"/>
+        <location filename="../mainwindow.cpp" line="371"/>
         <source>Please wait while saving the recording. Might take some time.</source>
         <translation>Please wait while saving the recording. Might take some time.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="428"/>
-        <location filename="../mainwindow.cpp" line="431"/>
+        <location filename="../mainwindow.cpp" line="443"/>
+        <location filename="../mainwindow.cpp" line="446"/>
         <source>Successfully finished recording</source>
         <translation>Successfully finished recording</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="428"/>
+        <location filename="../mainwindow.cpp" line="443"/>
         <source>Size</source>
         <translation>Size</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="441"/>
-        <location filename="../mainwindow.cpp" line="521"/>
+        <location filename="../mainwindow.cpp" line="456"/>
+        <location filename="../mainwindow.cpp" line="535"/>
         <source>Latest Recording</source>
         <translation>Latest Recording</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="448"/>
-        <location filename="../mainwindow.cpp" line="451"/>
-        <location filename="../mainwindow.cpp" line="460"/>
-        <location filename="../mainwindow.cpp" line="464"/>
+        <location filename="../mainwindow.cpp" line="462"/>
+        <location filename="../mainwindow.cpp" line="465"/>
+        <location filename="../mainwindow.cpp" line="474"/>
+        <location filename="../mainwindow.cpp" line="478"/>
         <source>Unable to start recording!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="507"/>
+        <location filename="../mainwindow.cpp" line="521"/>
         <source>Show/Hide window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="511"/>
+        <location filename="../mainwindow.cpp" line="525"/>
         <source>Stop recording</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="523"/>
+        <location filename="../mainwindow.cpp" line="537"/>
         <source>Quit program</source>
         <translation type="unfinished"></translation>
     </message>
@@ -464,7 +468,7 @@ Hereafter the recording will start.</translation>
         <translation type="obsolete">Failed to start!</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="451"/>
+        <location filename="../mainwindow.cpp" line="465"/>
         <source>View console output for more info.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -473,7 +477,7 @@ Hereafter the recording will start.</translation>
         <translation type="obsolete">View terminaloutput for more info.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="457"/>
+        <location filename="../mainwindow.cpp" line="471"/>
         <source>Show output</source>
         <translation type="unfinished"></translation>
     </message>
@@ -482,7 +486,7 @@ Hereafter the recording will start.</translation>
         <translation type="obsolete">&lt;b&gt;Failed to start recording!&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="461"/>
+        <location filename="../mainwindow.cpp" line="475"/>
         <source>Press &lt;i&gt;&apos;Show output&apos;&lt;/i&gt; to see console ouput.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -503,7 +507,7 @@ Hereafter the recording will start.</translation>
         <translation type="obsolete">&amp;Stop recording</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="515"/>
+        <location filename="../mainwindow.cpp" line="529"/>
         <source>&amp;Latest recording: </source>
         <translation>&amp;Latest recording: </translation>
     </message>
@@ -512,7 +516,7 @@ Hereafter the recording will start.</translation>
         <translation type="obsolete">&amp;Quit program</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="750"/>
+        <location filename="../mainwindow.cpp" line="764"/>
         <source>Current output copied to clipboard</source>
         <translation>Current output copied to clipboard</translation>
     </message>
