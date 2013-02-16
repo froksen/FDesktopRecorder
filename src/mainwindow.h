@@ -59,7 +59,6 @@ private slots:
 private:
     Ui::MainWindow *ui;
 
-
     //fixResolution
     int fixResolution(int number);
     QString setFilename(QString path, QString basename, QString format);
@@ -74,6 +73,7 @@ private:
     process *mProcessClass;
     SettingsManager settings;
     RubberBand rubberband;
+    bool folderExists(QDir dir);
 
     //Systemtray other
     QSystemTrayIcon *trayIcon;
