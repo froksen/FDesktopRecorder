@@ -163,10 +163,6 @@
         <translation>FDesktopRecorder</translation>
     </message>
     <message>
-        <source>When the recording starts, it will record your entire desktop</source>
-        <translation type="obsolete">Når optagelsen starter, vil den optage hele dit skrivebord</translation>
-    </message>
-    <message>
         <location filename="../../mainwindow.ui" line="65"/>
         <source>Records your entire desktop</source>
         <translation>Optage hele dit skrivebord</translation>
@@ -175,11 +171,6 @@
         <location filename="../../mainwindow.ui" line="71"/>
         <source>Entire screen</source>
         <translation>Hele skærmen</translation>
-    </message>
-    <message>
-        <source>When you start the recording, you will have to choose the window that you want to record</source>
-        <extracomment>dsfdsfds</extracomment>
-        <translation type="obsolete">Når du starter optagelsen, skal du vælge hvilket vindue du vil optage</translation>
     </message>
     <message>
         <location filename="../../mainwindow.ui" line="84"/>
@@ -213,10 +204,6 @@
         <translation>Stop</translation>
     </message>
     <message>
-        <source>If checked, it will record no audio from the microphone</source>
-        <translation type="obsolete">Hvis afkrydset, vil der ikke blive optaget noget lyd fra mikrofonen</translation>
-    </message>
-    <message>
         <location filename="../../mainwindow.ui" line="49"/>
         <source>Mute the microphone</source>
         <translation>Sluk mikrofonen</translation>
@@ -224,7 +211,7 @@
     <message>
         <location filename="../../mainwindow.ui" line="55"/>
         <source>Mute microphone</source>
-        <translation>Sluk mikofon</translation>
+        <translation>Sluk mikrofon</translation>
     </message>
     <message>
         <location filename="../../mainwindow.ui" line="131"/>
@@ -247,10 +234,6 @@
         <translation>Om</translation>
     </message>
     <message>
-        <source>Shows information about this program</source>
-        <translation type="obsolete">Viser dit informationer om dette program</translation>
-    </message>
-    <message>
         <location filename="../../mainwindow.ui" line="211"/>
         <source>About FDesktopRecorder</source>
         <translation>Om FDesktopRecorder</translation>
@@ -262,17 +245,9 @@
         <translation>Indstillinger</translation>
     </message>
     <message>
-        <source>Let you change an amount of different settings like recording framerate etc.</source>
-        <translation type="obsolete">Lader dig ændre en række indstillinger, som billeder i sekundet osv.</translation>
-    </message>
-    <message>
         <location filename="../../mainwindow.ui" line="230"/>
         <source>Console</source>
         <translation>Konsol</translation>
-    </message>
-    <message>
-        <source>Shows a console where you can see the output. Usefull if recording fails.</source>
-        <translation type="obsolete">Viser en konsole hvor du kan se et output. Kan være brugbart hvis en optagelse fejler.</translation>
     </message>
     <message>
         <location filename="../../mainwindow.ui" line="233"/>
@@ -308,7 +283,7 @@
     <message>
         <location filename="../../mainwindow.cpp" line="51"/>
         <source>Start the recording without minimizing this window.</source>
-        <translation type="unfinished"></translation>
+        <translation>Start optagelsen uden at minimere vinduet.</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="53"/>
@@ -316,13 +291,13 @@
         <translation>Minimér og start optagelse</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="136"/>
-        <location filename="../../mainwindow.cpp" line="137"/>
+        <location filename="../../mainwindow.cpp" line="164"/>
+        <location filename="../../mainwindow.cpp" line="165"/>
         <source>Recording a single window</source>
         <translation>Optagelse af et enkelt vindue</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="138"/>
+        <location filename="../../mainwindow.cpp" line="166"/>
         <source>When you click &apos;OK&apos; a small crossair will appear. 
  
 With this you will have to select the window you want to record. 
@@ -337,81 +312,103 @@ Herefter vil optagelsen påbegynde.</translation>
     <message>
         <location filename="../../mainwindow.cpp" line="54"/>
         <source>This window will be minimized to tray and hereafter the recording will start.</source>
+        <translation>Dette vindue vil blive minimeret til statusområdet og bagefter vil optagelsen begynde.</translation>
+    </message>
+    <message>
+        <location filename="../../mainwindow.cpp" line="110"/>
+        <source>Directory not found</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="350"/>
-        <location filename="../../mainwindow.cpp" line="660"/>
+        <location filename="../../mainwindow.cpp" line="111"/>
+        <source>&lt;b&gt;The directory used for storing recordings does not exist.&lt;/b&gt; 
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../mainwindow.cpp" line="112"/>
+        <source>Maybe you moved or deleted this directory? 
+Its not possible to do any recordings before this issue is fixed. 
+
+Current directory is %1 
+ 
+
+Open &apos;Settings&apos;?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../mainwindow.cpp" line="381"/>
+        <location filename="../../mainwindow.cpp" line="691"/>
         <source>Recording</source>
         <translation>Optager</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="371"/>
+        <location filename="../../mainwindow.cpp" line="402"/>
         <source>Please wait while saving the recording. Might take some time.</source>
         <translation>Vent venligst mens optagelsen bliver gemt. Dette kan tage lidt tid.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="443"/>
-        <location filename="../../mainwindow.cpp" line="446"/>
+        <location filename="../../mainwindow.cpp" line="474"/>
+        <location filename="../../mainwindow.cpp" line="477"/>
         <source>Successfully finished recording</source>
         <translation>Afsluttede optagelsen korrekt</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="443"/>
+        <location filename="../../mainwindow.cpp" line="474"/>
         <source>Size</source>
         <translation>Størrelse</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="456"/>
-        <location filename="../../mainwindow.cpp" line="535"/>
+        <location filename="../../mainwindow.cpp" line="487"/>
+        <location filename="../../mainwindow.cpp" line="566"/>
         <source>Latest Recording</source>
         <translation>Seneste optagelse</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="462"/>
-        <location filename="../../mainwindow.cpp" line="465"/>
-        <location filename="../../mainwindow.cpp" line="474"/>
-        <location filename="../../mainwindow.cpp" line="478"/>
+        <location filename="../../mainwindow.cpp" line="493"/>
+        <location filename="../../mainwindow.cpp" line="496"/>
+        <location filename="../../mainwindow.cpp" line="505"/>
+        <location filename="../../mainwindow.cpp" line="509"/>
         <source>Unable to start recording!</source>
         <translation>Kan ikke starte optagelsen!</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="521"/>
+        <location filename="../../mainwindow.cpp" line="552"/>
         <source>Show/Hide window</source>
         <translation>Vis/Skjul vindue</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="525"/>
+        <location filename="../../mainwindow.cpp" line="556"/>
         <source>Stop recording</source>
         <translation>Stop optagelsen</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="537"/>
+        <location filename="../../mainwindow.cpp" line="568"/>
         <source>Quit program</source>
         <translation>Afslut program</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="465"/>
+        <location filename="../../mainwindow.cpp" line="496"/>
         <source>View console output for more info.</source>
         <translation>Se konsol output for mere information.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="471"/>
+        <location filename="../../mainwindow.cpp" line="502"/>
         <source>Show output</source>
         <translation>Vis output</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="475"/>
+        <location filename="../../mainwindow.cpp" line="506"/>
         <source>Press &lt;i&gt;&apos;Show output&apos;&lt;/i&gt; to see console ouput.</source>
         <translation>Tryk på &lt;i&gt;&apos;Vis output&apos;&lt;/i&gt; for at se terminal output.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="529"/>
+        <location filename="../../mainwindow.cpp" line="560"/>
         <source>&amp;Latest recording: </source>
         <translation>&amp;Seneste optagelse:</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="764"/>
+        <location filename="../../mainwindow.cpp" line="795"/>
         <source>Current output copied to clipboard</source>
         <translation>Nuværrende output kopieret til udklipsholder</translation>
     </message>
@@ -464,7 +461,7 @@ Herefter vil optagelsen påbegynde.</translation>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="126"/>
         <source>Microphone</source>
-        <translation>Microfon</translation>
+        <translation>Mikrofon</translation>
     </message>
     <message>
         <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="140"/>

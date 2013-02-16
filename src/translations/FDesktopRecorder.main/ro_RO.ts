@@ -315,13 +315,13 @@
         <translation>Minimalizează și pornește înregistrarea</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="136"/>
-        <location filename="../../mainwindow.cpp" line="137"/>
+        <location filename="../../mainwindow.cpp" line="164"/>
+        <location filename="../../mainwindow.cpp" line="165"/>
         <source>Recording a single window</source>
         <translation>Se înregistrează o singură fereastră</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="138"/>
+        <location filename="../../mainwindow.cpp" line="166"/>
         <source>When you click &apos;OK&apos; a small crossair will appear. 
  
 With this you will have to select the window you want to record. 
@@ -335,78 +335,100 @@ Hereafter the recording will start.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="350"/>
-        <location filename="../../mainwindow.cpp" line="660"/>
+        <location filename="../../mainwindow.cpp" line="110"/>
+        <source>Directory not found</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../mainwindow.cpp" line="111"/>
+        <source>&lt;b&gt;The directory used for storing recordings does not exist.&lt;/b&gt; 
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../mainwindow.cpp" line="112"/>
+        <source>Maybe you moved or deleted this directory? 
+Its not possible to do any recordings before this issue is fixed. 
+
+Current directory is %1 
+ 
+
+Open &apos;Settings&apos;?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../mainwindow.cpp" line="381"/>
+        <location filename="../../mainwindow.cpp" line="691"/>
         <source>Recording</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="371"/>
+        <location filename="../../mainwindow.cpp" line="402"/>
         <source>Please wait while saving the recording. Might take some time.</source>
         <translation>Vă rugăm așteptați salvarea înregistrării. Ar putea dura câteva minute.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="443"/>
-        <location filename="../../mainwindow.cpp" line="446"/>
+        <location filename="../../mainwindow.cpp" line="474"/>
+        <location filename="../../mainwindow.cpp" line="477"/>
         <source>Successfully finished recording</source>
         <translation>Înregistrare încheiată cu succes</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="443"/>
+        <location filename="../../mainwindow.cpp" line="474"/>
         <source>Size</source>
         <translation>Mărime</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="456"/>
-        <location filename="../../mainwindow.cpp" line="535"/>
+        <location filename="../../mainwindow.cpp" line="487"/>
+        <location filename="../../mainwindow.cpp" line="566"/>
         <source>Latest Recording</source>
         <translation>Ultima înregistrare</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="462"/>
-        <location filename="../../mainwindow.cpp" line="465"/>
-        <location filename="../../mainwindow.cpp" line="474"/>
-        <location filename="../../mainwindow.cpp" line="478"/>
+        <location filename="../../mainwindow.cpp" line="493"/>
+        <location filename="../../mainwindow.cpp" line="496"/>
+        <location filename="../../mainwindow.cpp" line="505"/>
+        <location filename="../../mainwindow.cpp" line="509"/>
         <source>Unable to start recording!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="521"/>
+        <location filename="../../mainwindow.cpp" line="552"/>
         <source>Show/Hide window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="525"/>
+        <location filename="../../mainwindow.cpp" line="556"/>
         <source>Stop recording</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="537"/>
+        <location filename="../../mainwindow.cpp" line="568"/>
         <source>Quit program</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="465"/>
+        <location filename="../../mainwindow.cpp" line="496"/>
         <source>View console output for more info.</source>
         <translation>Vezi rezultatul din  consola  pentru mai multe informaţii.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="471"/>
+        <location filename="../../mainwindow.cpp" line="502"/>
         <source>Show output</source>
         <translation>Arată rezultatul</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="475"/>
+        <location filename="../../mainwindow.cpp" line="506"/>
         <source>Press &lt;i&gt;&apos;Show output&apos;&lt;/i&gt; to see console ouput.</source>
         <translation>Apăsați &lt;i&gt; &quot;Arată rezultatul&quot; &lt;/i&gt; pentru a vedea rezultatul din consola.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="529"/>
+        <location filename="../../mainwindow.cpp" line="560"/>
         <source>&amp;Latest recording: </source>
         <translation>&amp;Ultima înregistrare:</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="764"/>
+        <location filename="../../mainwindow.cpp" line="795"/>
         <source>Current output copied to clipboard</source>
         <translation>Rezultatul prezent copiat în clipboard</translation>
     </message>

@@ -315,13 +315,13 @@
         <translation>Minimizar e iniciar grabación</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="136"/>
-        <location filename="../../mainwindow.cpp" line="137"/>
+        <location filename="../../mainwindow.cpp" line="164"/>
+        <location filename="../../mainwindow.cpp" line="165"/>
         <source>Recording a single window</source>
         <translation>Grabando una ventana individual</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="138"/>
+        <location filename="../../mainwindow.cpp" line="166"/>
         <source>When you click &apos;OK&apos; a small crossair will appear. 
  
 With this you will have to select the window you want to record. 
@@ -339,78 +339,100 @@ A continuación comenzará la grabación</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="350"/>
-        <location filename="../../mainwindow.cpp" line="660"/>
+        <location filename="../../mainwindow.cpp" line="110"/>
+        <source>Directory not found</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../mainwindow.cpp" line="111"/>
+        <source>&lt;b&gt;The directory used for storing recordings does not exist.&lt;/b&gt; 
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../mainwindow.cpp" line="112"/>
+        <source>Maybe you moved or deleted this directory? 
+Its not possible to do any recordings before this issue is fixed. 
+
+Current directory is %1 
+ 
+
+Open &apos;Settings&apos;?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../mainwindow.cpp" line="381"/>
+        <location filename="../../mainwindow.cpp" line="691"/>
         <source>Recording</source>
         <translation>Grabando</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="371"/>
+        <location filename="../../mainwindow.cpp" line="402"/>
         <source>Please wait while saving the recording. Might take some time.</source>
         <translation>Espere mientras se guarda la grabación. Puede tardar un tiempo.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="443"/>
-        <location filename="../../mainwindow.cpp" line="446"/>
+        <location filename="../../mainwindow.cpp" line="474"/>
+        <location filename="../../mainwindow.cpp" line="477"/>
         <source>Successfully finished recording</source>
         <translation>Grabación terminada correctamente</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="443"/>
+        <location filename="../../mainwindow.cpp" line="474"/>
         <source>Size</source>
         <translation>Tamaño</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="456"/>
-        <location filename="../../mainwindow.cpp" line="535"/>
+        <location filename="../../mainwindow.cpp" line="487"/>
+        <location filename="../../mainwindow.cpp" line="566"/>
         <source>Latest Recording</source>
         <translation>Ultima grabación</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="462"/>
-        <location filename="../../mainwindow.cpp" line="465"/>
-        <location filename="../../mainwindow.cpp" line="474"/>
-        <location filename="../../mainwindow.cpp" line="478"/>
+        <location filename="../../mainwindow.cpp" line="493"/>
+        <location filename="../../mainwindow.cpp" line="496"/>
+        <location filename="../../mainwindow.cpp" line="505"/>
+        <location filename="../../mainwindow.cpp" line="509"/>
         <source>Unable to start recording!</source>
         <translation>Imposible iniciar grabación</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="521"/>
+        <location filename="../../mainwindow.cpp" line="552"/>
         <source>Show/Hide window</source>
         <translation>Mostrar/Ocultar ventana</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="525"/>
+        <location filename="../../mainwindow.cpp" line="556"/>
         <source>Stop recording</source>
         <translation>Detener grabación</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="537"/>
+        <location filename="../../mainwindow.cpp" line="568"/>
         <source>Quit program</source>
         <translation>Salir</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="465"/>
+        <location filename="../../mainwindow.cpp" line="496"/>
         <source>View console output for more info.</source>
         <translation>Ver la salida en consola para más información.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="471"/>
+        <location filename="../../mainwindow.cpp" line="502"/>
         <source>Show output</source>
         <translation>Mostrar salida</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="475"/>
+        <location filename="../../mainwindow.cpp" line="506"/>
         <source>Press &lt;i&gt;&apos;Show output&apos;&lt;/i&gt; to see console ouput.</source>
         <translation>Pulsar &lt;i&gt;&apos;Mostrar salida&apos;&lt;/i&gt; para ver la salida en consola.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="529"/>
+        <location filename="../../mainwindow.cpp" line="560"/>
         <source>&amp;Latest recording: </source>
         <translation>Ú&amp;ltima grabación:</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="764"/>
+        <location filename="../../mainwindow.cpp" line="795"/>
         <source>Current output copied to clipboard</source>
         <translation>Salida actual copiada al portapapeles</translation>
     </message>

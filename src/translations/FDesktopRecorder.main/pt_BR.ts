@@ -163,10 +163,6 @@
         <translation>FDesktopRecorder</translation>
     </message>
     <message>
-        <source>When the recording starts, it will record your entire desktop</source>
-        <translation type="obsolete">Quando a gravação começar, ele irá gravar todo o seu desktop</translation>
-    </message>
-    <message>
         <location filename="../../mainwindow.ui" line="65"/>
         <source>Records your entire desktop</source>
         <translation>Grava todo o seu desktop</translation>
@@ -175,11 +171,6 @@
         <location filename="../../mainwindow.ui" line="71"/>
         <source>Entire screen</source>
         <translation>Tela inteira</translation>
-    </message>
-    <message>
-        <source>When you start the recording, you will have to choose the window that you want to record</source>
-        <extracomment>dsfdsfds</extracomment>
-        <translation type="obsolete">Quando você iniciar a gravação, você vai ter que escolher a janela que deseja gravar</translation>
     </message>
     <message>
         <location filename="../../mainwindow.ui" line="84"/>
@@ -213,10 +204,6 @@
         <translation>Parar</translation>
     </message>
     <message>
-        <source>If checked, it will record no audio from the microphone</source>
-        <translation type="obsolete">Se marcado, não ira gravar o áudio do microfone</translation>
-    </message>
-    <message>
         <location filename="../../mainwindow.ui" line="49"/>
         <source>Mute the microphone</source>
         <translation>Silenciar o microfone</translation>
@@ -247,10 +234,6 @@
         <translation>Sobre</translation>
     </message>
     <message>
-        <source>Shows information about this program</source>
-        <translation type="obsolete">Mostra informações sobre este programa</translation>
-    </message>
-    <message>
         <location filename="../../mainwindow.ui" line="211"/>
         <source>About FDesktopRecorder</source>
         <translation>Sobre FDesktopRecorder</translation>
@@ -262,17 +245,9 @@
         <translation>Configurações</translation>
     </message>
     <message>
-        <source>Let you change an amount of different settings like recording framerate etc.</source>
-        <translation type="obsolete">Permite você mudar uma quantidades diferentes configurações, como gravação, taxa de quadros, etc.</translation>
-    </message>
-    <message>
         <location filename="../../mainwindow.ui" line="230"/>
         <source>Console</source>
         <translation>Console</translation>
-    </message>
-    <message>
-        <source>Shows a console where you can see the output. Usefull if recording fails.</source>
-        <translation type="obsolete">Mostra um console onde você pode ver a saída. Útil se a gravação falhar.</translation>
     </message>
     <message>
         <location filename="../../mainwindow.ui" line="233"/>
@@ -307,7 +282,7 @@
     <message>
         <location filename="../../mainwindow.cpp" line="51"/>
         <source>Start the recording without minimizing this window.</source>
-        <translation type="unfinished"></translation>
+        <translation>Iniciar a gravação sem minimizar esta janela.</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="53"/>
@@ -315,13 +290,13 @@
         <translation>Minimizar e iniciar a gravação</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="136"/>
-        <location filename="../../mainwindow.cpp" line="137"/>
+        <location filename="../../mainwindow.cpp" line="164"/>
+        <location filename="../../mainwindow.cpp" line="165"/>
         <source>Recording a single window</source>
         <translation>Gravação de uma única janela</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="138"/>
+        <location filename="../../mainwindow.cpp" line="166"/>
         <source>When you click &apos;OK&apos; a small crossair will appear. 
  
 With this you will have to select the window you want to record. 
@@ -336,81 +311,103 @@ A partir de agora a gravação será iniciada.</translation>
     <message>
         <location filename="../../mainwindow.cpp" line="54"/>
         <source>This window will be minimized to tray and hereafter the recording will start.</source>
+        <translation>Esta janela será minimizada a área de notificação e a seguir a gravação será iniciada.</translation>
+    </message>
+    <message>
+        <location filename="../../mainwindow.cpp" line="110"/>
+        <source>Directory not found</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="350"/>
-        <location filename="../../mainwindow.cpp" line="660"/>
+        <location filename="../../mainwindow.cpp" line="111"/>
+        <source>&lt;b&gt;The directory used for storing recordings does not exist.&lt;/b&gt; 
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../mainwindow.cpp" line="112"/>
+        <source>Maybe you moved or deleted this directory? 
+Its not possible to do any recordings before this issue is fixed. 
+
+Current directory is %1 
+ 
+
+Open &apos;Settings&apos;?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../mainwindow.cpp" line="381"/>
+        <location filename="../../mainwindow.cpp" line="691"/>
         <source>Recording</source>
         <translation>Gravação</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="371"/>
+        <location filename="../../mainwindow.cpp" line="402"/>
         <source>Please wait while saving the recording. Might take some time.</source>
         <translation>Por favor aguarde enquanto salva a gravação. Pode levar algum tempo.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="443"/>
-        <location filename="../../mainwindow.cpp" line="446"/>
+        <location filename="../../mainwindow.cpp" line="474"/>
+        <location filename="../../mainwindow.cpp" line="477"/>
         <source>Successfully finished recording</source>
         <translation>Gravação concluída com sucesso</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="443"/>
+        <location filename="../../mainwindow.cpp" line="474"/>
         <source>Size</source>
         <translation>Tamanho</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="456"/>
-        <location filename="../../mainwindow.cpp" line="535"/>
+        <location filename="../../mainwindow.cpp" line="487"/>
+        <location filename="../../mainwindow.cpp" line="566"/>
         <source>Latest Recording</source>
         <translation>Última Gravação</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="462"/>
-        <location filename="../../mainwindow.cpp" line="465"/>
-        <location filename="../../mainwindow.cpp" line="474"/>
-        <location filename="../../mainwindow.cpp" line="478"/>
+        <location filename="../../mainwindow.cpp" line="493"/>
+        <location filename="../../mainwindow.cpp" line="496"/>
+        <location filename="../../mainwindow.cpp" line="505"/>
+        <location filename="../../mainwindow.cpp" line="509"/>
         <source>Unable to start recording!</source>
         <translation>Não foi possível iniciar a gravação!</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="521"/>
+        <location filename="../../mainwindow.cpp" line="552"/>
         <source>Show/Hide window</source>
         <translation>Mostrar/Ocultar janela</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="525"/>
+        <location filename="../../mainwindow.cpp" line="556"/>
         <source>Stop recording</source>
         <translation>Parar gravação</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="537"/>
+        <location filename="../../mainwindow.cpp" line="568"/>
         <source>Quit program</source>
         <translation>Sair do programa</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="465"/>
+        <location filename="../../mainwindow.cpp" line="496"/>
         <source>View console output for more info.</source>
         <translation>Ver saída do console para mais informações.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="471"/>
+        <location filename="../../mainwindow.cpp" line="502"/>
         <source>Show output</source>
         <translation>Mostrar a saída</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="475"/>
+        <location filename="../../mainwindow.cpp" line="506"/>
         <source>Press &lt;i&gt;&apos;Show output&apos;&lt;/i&gt; to see console ouput.</source>
         <translation>Pressione &lt;i&gt;&apos;Mostrar a saída&apos;&lt;/i&gt; para ver a saída do console.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="529"/>
+        <location filename="../../mainwindow.cpp" line="560"/>
         <source>&amp;Latest recording: </source>
         <translation>&amp;Última gravação</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="764"/>
+        <location filename="../../mainwindow.cpp" line="795"/>
         <source>Current output copied to clipboard</source>
         <translation>Saída atual copiada para a área de transferência </translation>
     </message>

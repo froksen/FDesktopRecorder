@@ -53,6 +53,7 @@ TRANSLATIONS    = translations/FDesktopRecorder.main/da_DK.ts \
                   translations/FDesktopRecorder.main/zh_CN.ts \
 		  translations/FDesktopRecorder.main/pl_PL.ts \
 		  translations/FDesktopRecorder.main/uk_UA.ts \
+		  translations/FDesktopRecorder.main/tr_TR.ts \
                   translations/FDesktopRecorder_untranslated.ts
 
 

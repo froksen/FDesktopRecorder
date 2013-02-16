@@ -315,13 +315,13 @@
         <translation>Мінімізувати та записувати</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="136"/>
-        <location filename="../../mainwindow.cpp" line="137"/>
+        <location filename="../../mainwindow.cpp" line="164"/>
+        <location filename="../../mainwindow.cpp" line="165"/>
         <source>Recording a single window</source>
         <translation>Запис окремого вікна</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="138"/>
+        <location filename="../../mainwindow.cpp" line="166"/>
         <source>When you click &apos;OK&apos; a small crossair will appear. 
  
 With this you will have to select the window you want to record. 
@@ -335,78 +335,100 @@ Hereafter the recording will start.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="350"/>
-        <location filename="../../mainwindow.cpp" line="660"/>
+        <location filename="../../mainwindow.cpp" line="110"/>
+        <source>Directory not found</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../mainwindow.cpp" line="111"/>
+        <source>&lt;b&gt;The directory used for storing recordings does not exist.&lt;/b&gt; 
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../mainwindow.cpp" line="112"/>
+        <source>Maybe you moved or deleted this directory? 
+Its not possible to do any recordings before this issue is fixed. 
+
+Current directory is %1 
+ 
+
+Open &apos;Settings&apos;?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../mainwindow.cpp" line="381"/>
+        <location filename="../../mainwindow.cpp" line="691"/>
         <source>Recording</source>
         <translation>Запис</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="371"/>
+        <location filename="../../mainwindow.cpp" line="402"/>
         <source>Please wait while saving the recording. Might take some time.</source>
         <translation>Будь ласка почекайте поки запис зберігається. Може зайняти деякий час.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="443"/>
-        <location filename="../../mainwindow.cpp" line="446"/>
+        <location filename="../../mainwindow.cpp" line="474"/>
+        <location filename="../../mainwindow.cpp" line="477"/>
         <source>Successfully finished recording</source>
         <translation>Запис успішно завершено</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="443"/>
+        <location filename="../../mainwindow.cpp" line="474"/>
         <source>Size</source>
         <translation>Розмір</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="456"/>
-        <location filename="../../mainwindow.cpp" line="535"/>
+        <location filename="../../mainwindow.cpp" line="487"/>
+        <location filename="../../mainwindow.cpp" line="566"/>
         <source>Latest Recording</source>
         <translation>Останній запис</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="462"/>
-        <location filename="../../mainwindow.cpp" line="465"/>
-        <location filename="../../mainwindow.cpp" line="474"/>
-        <location filename="../../mainwindow.cpp" line="478"/>
+        <location filename="../../mainwindow.cpp" line="493"/>
+        <location filename="../../mainwindow.cpp" line="496"/>
+        <location filename="../../mainwindow.cpp" line="505"/>
+        <location filename="../../mainwindow.cpp" line="509"/>
         <source>Unable to start recording!</source>
         <translation>Неможливо почати запис!</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="521"/>
+        <location filename="../../mainwindow.cpp" line="552"/>
         <source>Show/Hide window</source>
         <translation>Показати/Приховати вікно</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="525"/>
+        <location filename="../../mainwindow.cpp" line="556"/>
         <source>Stop recording</source>
         <translation>Зупинити запис</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="537"/>
+        <location filename="../../mainwindow.cpp" line="568"/>
         <source>Quit program</source>
         <translation>Вийти з програми</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="465"/>
+        <location filename="../../mainwindow.cpp" line="496"/>
         <source>View console output for more info.</source>
         <translation>Переглянути вивід консолі для отримання додаткової інформації.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="471"/>
+        <location filename="../../mainwindow.cpp" line="502"/>
         <source>Show output</source>
         <translation>Показувати вивід</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="475"/>
+        <location filename="../../mainwindow.cpp" line="506"/>
         <source>Press &lt;i&gt;&apos;Show output&apos;&lt;/i&gt; to see console ouput.</source>
         <translation>Натисніть &lt;i&gt;&apos;Показувати вивід&apos;&lt;/i&gt; щоб побачити вивід консолі</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="529"/>
+        <location filename="../../mainwindow.cpp" line="560"/>
         <source>&amp;Latest recording: </source>
         <translation>&amp;Останній запис:</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="764"/>
+        <location filename="../../mainwindow.cpp" line="795"/>
         <source>Current output copied to clipboard</source>
         <translation>Поточний вивід скопійовано до буферу</translation>
     </message>

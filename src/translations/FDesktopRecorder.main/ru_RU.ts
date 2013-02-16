@@ -163,10 +163,6 @@
         <translation>FDesktopRecorder</translation>
     </message>
     <message>
-        <source>When the recording starts, it will record your entire desktop</source>
-        <translation type="obsolete">Когда начнётся запись, программа будет записывать весь рабочий стол</translation>
-    </message>
-    <message>
         <location filename="../../mainwindow.ui" line="65"/>
         <source>Records your entire desktop</source>
         <translation>Запись всего рабочего стола</translation>
@@ -175,11 +171,6 @@
         <location filename="../../mainwindow.ui" line="71"/>
         <source>Entire screen</source>
         <translation>Весь экран</translation>
-    </message>
-    <message>
-        <source>When you start the recording, you will have to choose the window that you want to record</source>
-        <extracomment>dsfdsfds</extracomment>
-        <translation type="obsolete">Когда вы начнёте запись, вы должны выбрать окно, которое хотите записать</translation>
     </message>
     <message>
         <location filename="../../mainwindow.ui" line="84"/>
@@ -213,10 +204,6 @@
         <translation>Остановить</translation>
     </message>
     <message>
-        <source>If checked, it will record no audio from the microphone</source>
-        <translation type="obsolete">Если включено, то звук с микрофона записываться не будет</translation>
-    </message>
-    <message>
         <location filename="../../mainwindow.ui" line="49"/>
         <source>Mute the microphone</source>
         <translation>Отключить микрофон</translation>
@@ -247,10 +234,6 @@
         <translation>Информация</translation>
     </message>
     <message>
-        <source>Shows information about this program</source>
-        <translation type="obsolete">Показывать информацию об этой программе</translation>
-    </message>
-    <message>
         <location filename="../../mainwindow.ui" line="211"/>
         <source>About FDesktopRecorder</source>
         <translation>О FDesktopRecorder</translation>
@@ -262,17 +245,9 @@
         <translation>Настройки</translation>
     </message>
     <message>
-        <source>Let you change an amount of different settings like recording framerate etc.</source>
-        <translation type="obsolete">Позволяет изменить различные параметры, такие как частота кадров и т.д.</translation>
-    </message>
-    <message>
         <location filename="../../mainwindow.ui" line="230"/>
         <source>Console</source>
         <translation>Терминал</translation>
-    </message>
-    <message>
-        <source>Shows a console where you can see the output. Usefull if recording fails.</source>
-        <translation type="obsolete">Показывает терминал, где можно увидеть результат работы. Полезно, если не удаётся выполнить запись.</translation>
     </message>
     <message>
         <location filename="../../mainwindow.ui" line="233"/>
@@ -307,7 +282,7 @@
     <message>
         <location filename="../../mainwindow.cpp" line="51"/>
         <source>Start the recording without minimizing this window.</source>
-        <translation type="unfinished"></translation>
+        <translation>Начать запись без минимизации этого окна</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="53"/>
@@ -315,13 +290,13 @@
         <translation>Минимизировать и начать запись</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="136"/>
-        <location filename="../../mainwindow.cpp" line="137"/>
+        <location filename="../../mainwindow.cpp" line="164"/>
+        <location filename="../../mainwindow.cpp" line="165"/>
         <source>Recording a single window</source>
         <translation>Запись только окна</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="138"/>
+        <location filename="../../mainwindow.cpp" line="166"/>
         <source>When you click &apos;OK&apos; a small crossair will appear. 
  
 With this you will have to select the window you want to record. 
@@ -334,81 +309,103 @@ Hereafter the recording will start.</source>
     <message>
         <location filename="../../mainwindow.cpp" line="54"/>
         <source>This window will be minimized to tray and hereafter the recording will start.</source>
+        <translation>Это окно будет свёрнуто в трей и начнётся запись</translation>
+    </message>
+    <message>
+        <location filename="../../mainwindow.cpp" line="110"/>
+        <source>Directory not found</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="350"/>
-        <location filename="../../mainwindow.cpp" line="660"/>
+        <location filename="../../mainwindow.cpp" line="111"/>
+        <source>&lt;b&gt;The directory used for storing recordings does not exist.&lt;/b&gt; 
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../mainwindow.cpp" line="112"/>
+        <source>Maybe you moved or deleted this directory? 
+Its not possible to do any recordings before this issue is fixed. 
+
+Current directory is %1 
+ 
+
+Open &apos;Settings&apos;?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../mainwindow.cpp" line="381"/>
+        <location filename="../../mainwindow.cpp" line="691"/>
         <source>Recording</source>
         <translation>Запись</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="371"/>
+        <location filename="../../mainwindow.cpp" line="402"/>
         <source>Please wait while saving the recording. Might take some time.</source>
         <translation>Пожалуйста, дождитесь сохранения записи. Это может занять некоторое время.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="443"/>
-        <location filename="../../mainwindow.cpp" line="446"/>
+        <location filename="../../mainwindow.cpp" line="474"/>
+        <location filename="../../mainwindow.cpp" line="477"/>
         <source>Successfully finished recording</source>
         <translation>Запись успешно окончилась</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="443"/>
+        <location filename="../../mainwindow.cpp" line="474"/>
         <source>Size</source>
         <translation>Размер</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="456"/>
-        <location filename="../../mainwindow.cpp" line="535"/>
+        <location filename="../../mainwindow.cpp" line="487"/>
+        <location filename="../../mainwindow.cpp" line="566"/>
         <source>Latest Recording</source>
         <translation>Последняя запись</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="462"/>
-        <location filename="../../mainwindow.cpp" line="465"/>
-        <location filename="../../mainwindow.cpp" line="474"/>
-        <location filename="../../mainwindow.cpp" line="478"/>
+        <location filename="../../mainwindow.cpp" line="493"/>
+        <location filename="../../mainwindow.cpp" line="496"/>
+        <location filename="../../mainwindow.cpp" line="505"/>
+        <location filename="../../mainwindow.cpp" line="509"/>
         <source>Unable to start recording!</source>
         <translation>Не удается начать запись!</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="521"/>
+        <location filename="../../mainwindow.cpp" line="552"/>
         <source>Show/Hide window</source>
         <translation>Показать/скрыть окно</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="525"/>
+        <location filename="../../mainwindow.cpp" line="556"/>
         <source>Stop recording</source>
         <translation>Остановить запись</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="537"/>
+        <location filename="../../mainwindow.cpp" line="568"/>
         <source>Quit program</source>
         <translation>Закрыть программу</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="465"/>
+        <location filename="../../mainwindow.cpp" line="496"/>
         <source>View console output for more info.</source>
         <translation>Просмотр вывода терминала для получения дополнительной информации.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="471"/>
+        <location filename="../../mainwindow.cpp" line="502"/>
         <source>Show output</source>
         <translation>Показать вывод</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="475"/>
+        <location filename="../../mainwindow.cpp" line="506"/>
         <source>Press &lt;i&gt;&apos;Show output&apos;&lt;/i&gt; to see console ouput.</source>
         <translation>Нажмите &lt;i&gt;&apos;Показать вывод&apos;&lt;/i&gt;, чтобы увидеть вывод в терминале.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="529"/>
+        <location filename="../../mainwindow.cpp" line="560"/>
         <source>&amp;Latest recording: </source>
         <translation>&amp;Последняя запись: </translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="764"/>
+        <location filename="../../mainwindow.cpp" line="795"/>
         <source>Current output copied to clipboard</source>
         <translation>Вывод терминала скопирован в буфер обмена</translation>
     </message>
