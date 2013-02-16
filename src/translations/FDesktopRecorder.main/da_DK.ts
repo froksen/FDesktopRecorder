@@ -96,37 +96,42 @@
         <translation>Ukrainsk</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="92"/>
+        <location filename="../../dialogs/about/aboutprog.cpp" line="89"/>
+        <source>Turkish</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/about/aboutprog.cpp" line="96"/>
         <source>The FDesktopRecorder has received valuable contributions from a lot of different people.</source>
         <translation>FDesktopRecorder&apos;en har modtaget værdigfulde bidrag fra mange personer.</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="93"/>
+        <location filename="../../dialogs/about/aboutprog.cpp" line="97"/>
         <source>Thanks alot everyone.</source>
         <translation>Tusind tak alle sammen.</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="94"/>
+        <location filename="../../dialogs/about/aboutprog.cpp" line="98"/>
         <source>Special thanks</source>
         <translation>Specielt tak</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="108"/>
+        <location filename="../../dialogs/about/aboutprog.cpp" line="112"/>
         <source>License</source>
         <translation>Licens</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="109"/>
+        <location filename="../../dialogs/about/aboutprog.cpp" line="113"/>
         <source>Created by</source>
         <translation>Skabt af</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="110"/>
+        <location filename="../../dialogs/about/aboutprog.cpp" line="114"/>
         <source>Based on</source>
         <translation>Baseret på</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="111"/>
+        <location filename="../../dialogs/about/aboutprog.cpp" line="115"/>
         <source>A ffmpeq script by Peter Lybeth from the danish GNU/Linux show &apos;Kanal Tux&apos;: http://www.kanaltux.dk</source>
         <translation>Et ffmpeg script af Peter Lybeth fra det danske GNU/Linux show &apos;Kanal Tux&apos;: http://www.kanaltux.dk</translation>
     </message>
@@ -693,7 +698,7 @@ Vær obmærksom på at dette IKKE kan tilbage gøres.</translation>
         <translation>Original</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="305"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="306"/>
         <source>FFmpeg location</source>
         <translation>FFmpeg placering</translation>
     </message>
