@@ -85,6 +85,10 @@ void AboutProg::appendTranslators()
     ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("Ukrainian")));
     ui->textEdit_2->append(QString::fromUtf8("Eugene 'Gannet'"));
     ui->textEdit_2->append("<br>");
+
+    ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("Turkish")));
+    ui->textEdit_2->append(QString::fromUtf8("Emre 'emfi' FIRAT"));
+    ui->textEdit_2->append("<br>");
 }
 
 void AboutProg::appendSpecialThanks()
