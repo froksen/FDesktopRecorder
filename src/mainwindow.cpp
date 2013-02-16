@@ -107,8 +107,9 @@ bool MainWindow::folderExists(QDir dir)
     if(!dir.exists()){
         QMessageBox msgBox;
         msgBox.setIcon(QMessageBox::Warning);
-        msgBox.setText(trUtf8("<b>The folder %1 does not exist.</b> \n").arg(dir.absolutePath()));
-        msgBox.setInformativeText(trUtf8("Maybe you moved or deleted this folder? \nIts not possible to do any recordings before this issue is fixed. \n\nOpen 'Settings'?"));
+        msgBox.setWindowTitle(trUtf8("Directory not found"));
+        msgBox.setText(trUtf8("<b>The directory used for storing recordings does not exist.</b> \n"));
+        msgBox.setInformativeText(trUtf8("Maybe you moved or deleted this directory? \nIts not possible to do any recordings before this issue is fixed. \n\nCurrent directory is %1 \n \n\nOpen 'Settings'?").arg(dir.absolutePath()));
         msgBox.setStandardButtons(QMessageBox::Yes | QMessageBox::No);
         msgBox.setDefaultButton(QMessageBox::Yes);
         int ret = msgBox.exec();
@@ -116,8 +117,10 @@ bool MainWindow::folderExists(QDir dir)
         switch (ret) {
           case QMessageBox::Yes:
             on_actionSettings_triggered();
+            return false;
             break;
           case QMessageBox::No:
+            return false;
               break;
         }
 
@@ -242,7 +245,9 @@ void MainWindow::on_pushButtonStartrecord_clicked()
     }
 
     //Sets the final filname!
-   folderExists(QDir(mrecordinginfo.defaultpath));
+   if(!folderExists(QDir(mrecordinginfo.defaultpath))){
+    return;
+   }
     filename = setFilename(mrecordinginfo.defaultpath,mrecordinginfo.defaultname,mrecordinginfo.defaultformat);
 
 
