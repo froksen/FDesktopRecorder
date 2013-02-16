@@ -15,5 +15,6 @@
         <file>translations/FDesktopRecorder.main/zh_CN.qm</file>
         <file>translations/FDesktopRecorder.main/pl_PL.qm</file>
         <file>translations/FDesktopRecorder.main/uk_UA.qm</file>
+        <file>translations/FDesktopRecorder.main/tr_TR.qm</file>
     </qresource>
 </RCC>
