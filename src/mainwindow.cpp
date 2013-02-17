@@ -134,7 +134,8 @@ bool MainWindow::folderExists(QDir dir)
 //This function handles what happens when Start Record is clicked!
 void MainWindow::on_pushButtonStartrecord_clicked()
 {
-    mProcessClass = new process(this);
+    //Pointer - Is deleted in onProcessFinished();
+    mProcessClass = new process();
 
     //TODO: clean up this method so its not so confusing and so ugly
 
@@ -522,6 +523,9 @@ void MainWindow::onProcessFinished(int Exitcode)
     disconnect(mProcessClass,SIGNAL(stdoutText(QString)),ui->textEditConsole,SLOT(append(QString)));
     disconnect(mProcessClass, SIGNAL(FinishedExitCode(int)),this, SLOT(onProcessFinished(int)));
     disconnect(mProcessClass,SIGNAL(stderrText(QString)),this,SLOT(setRecordingStatusbarText()));
+
+    //Delete the pointer
+    delete mProcessClass;
 }
 
 
