@@ -63,8 +63,8 @@ void process::setArguments(QStringList newArguments)
 
 void process::stopCommand()
 {
-    //This function is more or less from Juergen Heinemann's "qx11grab". Great work from a great person! :-)
-    // Visit his project at: http://qt-apps.org/content/show.php?content=89204
+//    This function is more or less from Juergen Heinemann's "qx11grab". Great work from a great person! :-)
+//     Visit his project at: http://qt-apps.org/content/show.php?content=89204
 //    char q = 'q';
 //    if ( ( mprocess->write ( &q ) != -1 ) && ( mprocess->waitForBytesWritten () ) ){
 //          mprocess->closeWriteChannel();
@@ -74,7 +74,14 @@ void process::stopCommand()
 //        mprocess->kill();
 //    }
 
-    //kill(mprocess->pid(),SIGINT);
-    mprocess->kill();
+    kill(mprocess->pid(),SIGINT);
+//        if ( ( mprocess->waitForBytesWritten () ) ){
+//              mprocess->closeWriteChannel();
+//        }
+//        else
+//        {
+//            //mprocess->kill();
+//        }
+
 }
 

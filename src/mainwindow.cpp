@@ -469,7 +469,7 @@ void MainWindow::onProcessFinished(int Exitcode)
     }
 
     //Recording: Successful
-    if(Exitcode == 0)
+    if(Exitcode == 0 || Exitcode == 255)
     {
         //StatusBar
         ui->statusBar->showMessage(trUtf8("Successfully finished recording") + " (" + trUtf8("Size") + ": " + filesizestring + " - " + QFileInfo(filename).fileName() + ")",20000);
@@ -526,6 +526,7 @@ void MainWindow::onProcessFinished(int Exitcode)
 
     //Delete the pointer
     delete mProcessClass;
+    mProcessClass = NULL;
 }
 
 
