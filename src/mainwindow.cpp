@@ -395,10 +395,6 @@ void MainWindow::on_pushButtonStoprecord_clicked()
     //Disables what needs to be disabled
     ui->pushButtonStoprecord->setEnabled(0);
 
-    //Stopwatch
-    stopwatchtimer->stop();
-    delete stopwatchtimer;
-
     //StausBar
     ui->statusBar->showMessage(trUtf8("Please wait while saving the recording. Might take some time."));
     ui->statusBar->setUpdatesEnabled(0);
@@ -410,6 +406,10 @@ void MainWindow::on_pushButtonStoprecord_clicked()
 void MainWindow::onProcessFinished(int Exitcode)
 {  
     //------------------SECTION: COMMON---------------------
+
+    //Stopwatch
+    stopwatchtimer->stop();
+    delete stopwatchtimer;
 
     //StatusBar:
     ui->statusBar->setUpdatesEnabled(1);
