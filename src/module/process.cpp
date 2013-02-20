@@ -73,15 +73,11 @@ void process::stopCommand()
 //    {
 //        mprocess->kill();
 //    }
-
-    kill(mprocess->pid(),SIGINT);
-//        if ( ( mprocess->waitForBytesWritten () ) ){
-//              mprocess->closeWriteChannel();
-//        }
-//        else
-//        {
-//            //mprocess->kill();
-//        }
-
+    if ( mprocess->state() == QProcess::Running )
+    {
+        kill(mprocess->pid(),SIGINT);
+        mprocess->waitForBytesWritten ();
+        mprocess->closeWriteChannel();
+    }
 }
 
