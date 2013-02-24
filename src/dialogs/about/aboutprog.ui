@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>About FDesktopRecorder</string>
+   <string>About</string>
   </property>
   <property name="windowIcon">
    <iconset resource="../../resources.qrc">
@@ -31,7 +31,7 @@
       </font>
      </property>
      <property name="text">
-      <string>About FDesktopRecorder</string>
+      <string>About</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignHCenter|Qt::AlignTop</set>
