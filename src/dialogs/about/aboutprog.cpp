@@ -92,10 +92,10 @@ void AboutProg::appendTranslators()
 
 void AboutProg::about()
 {
-    ui->textEdit->setText(QString("<h3> %1</h3>GPLv2 (http://www.gnu.org/licenses/gpl-2.0.html)  <h3>%2 </h3>Ole Holm Frandsen <h3>%3</h3>%4").arg(trUtf8("License"),
+    ui->textEdit->setHtml(QString("<h3> %1</h3>GPLv2 (http://www.gnu.org/licenses/gpl-2.0.html)  <h3>%2 </h3>Ole Holm Frandsen <h3>%3</h3>%4 <h3>%6</h3>https://groups.google.com/forum/?fromgroups#!forum/fdesktoprecorder <h3>%5</h3>https://github.com/froksen/FDesktopRecorder").arg(trUtf8("License"),
                                                                                                                                            trUtf8("Created by"),
                                                                                                                                            trUtf8("Based on"),
-                                                                                                                                           trUtf8("A ffmpeq script by Peter Lybeth from the danish GNU/Linux show 'Kanal Tux': http://www.kanaltux.dk")));
+                                                                                                                                                   trUtf8("A ffmpeq script by Peter Lybeth from the danish GNU/Linux show 'Kanal Tux': http://www.kanaltux.dk"),trUtf8("Source code"),trUtf8("Mailing list")));
 }
 
 int AboutProg::readGPL()
