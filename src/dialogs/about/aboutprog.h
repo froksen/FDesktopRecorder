@@ -22,7 +22,6 @@ private:
     Ui::AboutProg *ui;
 
     void appendTranslators();
-    void appendSpecialThanks();
 
     void about();
 

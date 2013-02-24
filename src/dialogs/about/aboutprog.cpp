@@ -22,7 +22,6 @@ AboutProg::AboutProg(QDialog *parent) :
 
     //Append texts
     appendTranslators();
-    appendSpecialThanks();
 }
 
 AboutProg::~AboutProg()
@@ -89,22 +88,6 @@ void AboutProg::appendTranslators()
     ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("Turkish")));
     ui->textEdit_2->append(QString::fromUtf8("Emre 'emfi' FIRAT"));
     ui->textEdit_2->append("<br>");
-}
-
-void AboutProg::appendSpecialThanks()
-{
-    ui->textEditThanks->setText(QString("%1 <br> <br> - %2 <h3>%3</h3>").arg(trUtf8("The FDesktopRecorder has received valuable contributions from a lot of different people."),
-                                              trUtf8("Thanks alot everyone."),
-                                              trUtf8("Special thanks")));
-
-    ui->textEditThanks->append("3electrons");
-    ui->textEditThanks->append("kalac");
-    ui->textEditThanks->append("swiftscythe");
-    ui->textEditThanks->append("jboss1995");
-    ui->textEditThanks->append("undefined");
-    ui->textEditThanks->append("symbianflo");
-    ui->textEditThanks->append("Mamut R. Ghiunhan (aka V3n3RiX)");
-
 }
 
 void AboutProg::about()
