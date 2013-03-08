@@ -4,136 +4,116 @@
 <context>
     <name>AboutProg</name>
     <message>
-        <location filename="../../dialogs/about/aboutprog.ui" line="14"/>
-        <location filename="../../dialogs/about/aboutprog.ui" line="34"/>
         <source>About FDesktopRecorder</source>
-        <translation>关于 FDesktopRecorder</translation>
+        <translation type="obsolete">关于 FDesktopRecorder</translation>
     </message>
     <message>
+        <location filename="../../dialogs/about/aboutprog.ui" line="14"/>
+        <location filename="../../dialogs/about/aboutprog.ui" line="34"/>
         <location filename="../../dialogs/about/aboutprog.ui" line="63"/>
         <source>About</source>
         <translation>关于</translation>
     </message>
     <message>
         <location filename="../../dialogs/about/aboutprog.ui" line="90"/>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="38"/>
         <source>Translations</source>
         <translation>翻译</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.ui" line="111"/>
         <source>Thanks</source>
-        <translation>鸣谢</translation>
+        <translation type="obsolete">鸣谢</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.ui" line="149"/>
+        <location filename="../../dialogs/about/aboutprog.ui" line="128"/>
         <source>OK</source>
         <translation>确定</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="36"/>
         <source>FDesktopRecorder have been translated into some languages. If you want to translate it into your language you can contact me on opendesktop.org by sending me a message.</source>
-        <translation>FDesktopRecorder 已被翻译成多种语言。如果你想把它翻译成你使用的语言，可以在 opendesktop.org 上给我发消息来联系我。</translation>
+        <translation type="obsolete">FDesktopRecorder 已被翻译成多种语言。如果你想把它翻译成你使用的语言，可以在 opendesktop.org 上给我发消息来联系我。</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="39"/>
         <source>Danish</source>
-        <translation>丹麦语</translation>
+        <translation type="obsolete">丹麦语</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="43"/>
-        <source>Chinese</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="47"/>
         <source>French</source>
-        <translation>法语</translation>
+        <translation type="obsolete">法语</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="51"/>
         <source>German</source>
-        <translation>德语</translation>
+        <translation type="obsolete">德语</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="56"/>
         <source>Greek</source>
-        <translation>希腊语</translation>
+        <translation type="obsolete">希腊语</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="60"/>
         <source>Spanish</source>
-        <translation>西班牙语</translation>
+        <translation type="obsolete">西班牙语</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="64"/>
         <source>Italian</source>
-        <translation>意大利语</translation>
+        <translation type="obsolete">意大利语</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="69"/>
-        <source>Polish</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="73"/>
         <source>Portuguese (Brazil)</source>
-        <translation>葡萄牙语(巴西)</translation>
+        <translation type="obsolete">葡萄牙语(巴西)</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="77"/>
         <source>Romanian</source>
-        <translation>罗马尼亚语</translation>
+        <translation type="obsolete">罗马尼亚语</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="81"/>
         <source>Russian</source>
-        <translation>俄语</translation>
+        <translation type="obsolete">俄语</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="85"/>
-        <source>Ukrainian</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="89"/>
-        <source>Turkish</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="96"/>
         <source>The FDesktopRecorder has received valuable contributions from a lot of different people.</source>
-        <translation>FDesktopRecorder 收到了来自世界各地的许多人的贡献。</translation>
+        <translation type="obsolete">FDesktopRecorder 收到了来自世界各地的许多人的贡献。</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="97"/>
         <source>Thanks alot everyone.</source>
-        <translation>非常感谢大家。</translation>
+        <translation type="obsolete">非常感谢大家。</translation>
+    </message>
+    <message>
+        <source>Special thanks</source>
+        <translation type="obsolete">特别鸣谢</translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/about/aboutprog.cpp" line="35"/>
+        <source>FDesktopRecorder have been translated into alot of different languages. You want to help? Then please visit the projects Transifex page.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../dialogs/about/aboutprog.cpp" line="98"/>
-        <source>Special thanks</source>
-        <translation>特别鸣谢</translation>
-    </message>
-    <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="112"/>
         <source>License</source>
         <translation>许可证</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="113"/>
+        <location filename="../../dialogs/about/aboutprog.cpp" line="99"/>
         <source>Created by</source>
         <translation>创建人</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="114"/>
+        <location filename="../../dialogs/about/aboutprog.cpp" line="100"/>
         <source>Based on</source>
         <translation>基于</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="115"/>
+        <location filename="../../dialogs/about/aboutprog.cpp" line="101"/>
         <source>A ffmpeq script by Peter Lybeth from the danish GNU/Linux show &apos;Kanal Tux&apos;: http://www.kanaltux.dk</source>
         <translation>Peter Lybeth 提供的 ffmpeg 脚本。Peter Lybeth 来自于丹麦，他创办了 &apos;Kanal Tux&apos; : http://www.kanaltux.dk</translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/about/aboutprog.cpp" line="101"/>
+        <source>Source code</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/about/aboutprog.cpp" line="101"/>
+        <source>Mailing list</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -320,13 +300,13 @@
         <translation>最小化窗口并开始录制</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="164"/>
         <location filename="../../mainwindow.cpp" line="165"/>
+        <location filename="../../mainwindow.cpp" line="166"/>
         <source>Recording a single window</source>
         <translation>录制单个窗口</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="166"/>
+        <location filename="../../mainwindow.cpp" line="167"/>
         <source>When you click &apos;OK&apos; a small crossair will appear. 
  
 With this you will have to select the window you want to record. 
@@ -366,78 +346,78 @@ Open &apos;Settings&apos;?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="381"/>
-        <location filename="../../mainwindow.cpp" line="691"/>
+        <location filename="../../mainwindow.cpp" line="382"/>
+        <location filename="../../mainwindow.cpp" line="696"/>
         <source>Recording</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="402"/>
+        <location filename="../../mainwindow.cpp" line="399"/>
         <source>Please wait while saving the recording. Might take some time.</source>
         <translation>正在保存录像，可能会花费一段时间，请稍等。</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="474"/>
-        <location filename="../../mainwindow.cpp" line="477"/>
+        <location filename="../../mainwindow.cpp" line="475"/>
+        <location filename="../../mainwindow.cpp" line="478"/>
         <source>Successfully finished recording</source>
         <translation>成功完成录制</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="474"/>
+        <location filename="../../mainwindow.cpp" line="475"/>
         <source>Size</source>
         <translation>大小</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="487"/>
-        <location filename="../../mainwindow.cpp" line="566"/>
+        <location filename="../../mainwindow.cpp" line="488"/>
+        <location filename="../../mainwindow.cpp" line="571"/>
         <source>Latest Recording</source>
         <translation>最近的录像</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="493"/>
-        <location filename="../../mainwindow.cpp" line="496"/>
-        <location filename="../../mainwindow.cpp" line="505"/>
-        <location filename="../../mainwindow.cpp" line="509"/>
+        <location filename="../../mainwindow.cpp" line="494"/>
+        <location filename="../../mainwindow.cpp" line="497"/>
+        <location filename="../../mainwindow.cpp" line="506"/>
+        <location filename="../../mainwindow.cpp" line="510"/>
         <source>Unable to start recording!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="552"/>
+        <location filename="../../mainwindow.cpp" line="557"/>
         <source>Show/Hide window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="556"/>
+        <location filename="../../mainwindow.cpp" line="561"/>
         <source>Stop recording</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="568"/>
+        <location filename="../../mainwindow.cpp" line="573"/>
         <source>Quit program</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="496"/>
+        <location filename="../../mainwindow.cpp" line="497"/>
         <source>View console output for more info.</source>
         <translation>查看控制台输出的详细信息</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="502"/>
+        <location filename="../../mainwindow.cpp" line="503"/>
         <source>Show output</source>
         <translation>显示输出</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="506"/>
+        <location filename="../../mainwindow.cpp" line="507"/>
         <source>Press &lt;i&gt;&apos;Show output&apos;&lt;/i&gt; to see console ouput.</source>
         <translation>按&lt;i&gt;&apos;显示输出&apos;&lt;/i&gt;来查看控制台输出</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="560"/>
+        <location filename="../../mainwindow.cpp" line="565"/>
         <source>&amp;Latest recording: </source>
         <translation>最近的录像（&amp;L）</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="795"/>
+        <location filename="../../mainwindow.cpp" line="800"/>
         <source>Current output copied to clipboard</source>
         <translation>当前输出信息已拷贝到剪贴板</translation>
     </message>

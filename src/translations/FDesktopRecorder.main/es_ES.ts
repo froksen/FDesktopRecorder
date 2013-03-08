@@ -4,136 +4,124 @@
 <context>
     <name>AboutProg</name>
     <message>
-        <location filename="../../dialogs/about/aboutprog.ui" line="14"/>
-        <location filename="../../dialogs/about/aboutprog.ui" line="34"/>
         <source>About FDesktopRecorder</source>
-        <translation>Acerca de FDesktopRecorder</translation>
+        <translation type="obsolete">Acerca de FDesktopRecorder</translation>
     </message>
     <message>
+        <location filename="../../dialogs/about/aboutprog.ui" line="14"/>
+        <location filename="../../dialogs/about/aboutprog.ui" line="34"/>
         <location filename="../../dialogs/about/aboutprog.ui" line="63"/>
         <source>About</source>
         <translation>Acerca de</translation>
     </message>
     <message>
         <location filename="../../dialogs/about/aboutprog.ui" line="90"/>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="38"/>
         <source>Translations</source>
         <translation>Traducciones</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.ui" line="111"/>
         <source>Thanks</source>
-        <translation>Agradecimientos</translation>
+        <translation type="obsolete">Agradecimientos</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.ui" line="149"/>
+        <location filename="../../dialogs/about/aboutprog.ui" line="128"/>
         <source>OK</source>
         <translation>Aceptar</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="36"/>
         <source>FDesktopRecorder have been translated into some languages. If you want to translate it into your language you can contact me on opendesktop.org by sending me a message.</source>
-        <translation>FDesktopRecorder ha sido traducido a varios idiomas. Si desea añadir una traducción puede ponerse en contacto conmigo a través de opendesktop.org.</translation>
+        <translation type="obsolete">FDesktopRecorder ha sido traducido a varios idiomas. Si desea añadir una traducción puede ponerse en contacto conmigo a través de opendesktop.org.</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="39"/>
         <source>Danish</source>
-        <translation>Danés</translation>
+        <translation type="obsolete">Danés</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="43"/>
         <source>Chinese</source>
-        <translation>Chino</translation>
+        <translation type="obsolete">Chino</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="47"/>
         <source>French</source>
-        <translation>Francés</translation>
+        <translation type="obsolete">Francés</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="51"/>
         <source>German</source>
-        <translation>Alemán</translation>
+        <translation type="obsolete">Alemán</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="56"/>
         <source>Greek</source>
-        <translation>Griego</translation>
+        <translation type="obsolete">Griego</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="60"/>
         <source>Spanish</source>
-        <translation>Español</translation>
+        <translation type="obsolete">Español</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="64"/>
         <source>Italian</source>
-        <translation>Italiano</translation>
+        <translation type="obsolete">Italiano</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="69"/>
         <source>Polish</source>
-        <translation>Polaco</translation>
+        <translation type="obsolete">Polaco</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="73"/>
         <source>Portuguese (Brazil)</source>
-        <translation>Portugués (Brasil)</translation>
+        <translation type="obsolete">Portugués (Brasil)</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="77"/>
         <source>Romanian</source>
-        <translation>Rumano</translation>
+        <translation type="obsolete">Rumano</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="81"/>
         <source>Russian</source>
-        <translation>Ruso</translation>
+        <translation type="obsolete">Ruso</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="85"/>
-        <source>Ukrainian</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="89"/>
-        <source>Turkish</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="96"/>
         <source>The FDesktopRecorder has received valuable contributions from a lot of different people.</source>
-        <translation>FDesktopRecorder ha recibido aportaciones muy valiosas de un buen número de distintas personas.</translation>
+        <translation type="obsolete">FDesktopRecorder ha recibido aportaciones muy valiosas de un buen número de distintas personas.</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="97"/>
         <source>Thanks alot everyone.</source>
-        <translation>Muchas gracias a todos.</translation>
+        <translation type="obsolete">Muchas gracias a todos.</translation>
+    </message>
+    <message>
+        <source>Special thanks</source>
+        <translation type="obsolete">Agradecimientos especiales</translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/about/aboutprog.cpp" line="35"/>
+        <source>FDesktopRecorder have been translated into alot of different languages. You want to help? Then please visit the projects Transifex page.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../dialogs/about/aboutprog.cpp" line="98"/>
-        <source>Special thanks</source>
-        <translation>Agradecimientos especiales</translation>
-    </message>
-    <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="112"/>
         <source>License</source>
         <translation>Licencia</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="113"/>
+        <location filename="../../dialogs/about/aboutprog.cpp" line="99"/>
         <source>Created by</source>
         <translation>Creado por</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="114"/>
+        <location filename="../../dialogs/about/aboutprog.cpp" line="100"/>
         <source>Based on</source>
         <translation>Basado en</translation>
     </message>
     <message>
-        <location filename="../../dialogs/about/aboutprog.cpp" line="115"/>
+        <location filename="../../dialogs/about/aboutprog.cpp" line="101"/>
         <source>A ffmpeq script by Peter Lybeth from the danish GNU/Linux show &apos;Kanal Tux&apos;: http://www.kanaltux.dk</source>
         <translation>Un script para ffmpeg realizado por Peter Lybeth, de la serie danesa sobre GNU/Linux &apos;Kanal Tux&apos;: http://www.kanaltux.dk</translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/about/aboutprog.cpp" line="101"/>
+        <source>Source code</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/about/aboutprog.cpp" line="101"/>
+        <source>Mailing list</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -320,13 +308,13 @@
         <translation>Minimizar e iniciar grabación</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="164"/>
         <location filename="../../mainwindow.cpp" line="165"/>
+        <location filename="../../mainwindow.cpp" line="166"/>
         <source>Recording a single window</source>
         <translation>Grabando una ventana individual</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="166"/>
+        <location filename="../../mainwindow.cpp" line="167"/>
         <source>When you click &apos;OK&apos; a small crossair will appear. 
  
 With this you will have to select the window you want to record. 
@@ -366,78 +354,78 @@ Open &apos;Settings&apos;?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="381"/>
-        <location filename="../../mainwindow.cpp" line="691"/>
+        <location filename="../../mainwindow.cpp" line="382"/>
+        <location filename="../../mainwindow.cpp" line="696"/>
         <source>Recording</source>
         <translation>Grabando</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="402"/>
+        <location filename="../../mainwindow.cpp" line="399"/>
         <source>Please wait while saving the recording. Might take some time.</source>
         <translation>Espere mientras se guarda la grabación. Puede tardar un tiempo.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="474"/>
-        <location filename="../../mainwindow.cpp" line="477"/>
+        <location filename="../../mainwindow.cpp" line="475"/>
+        <location filename="../../mainwindow.cpp" line="478"/>
         <source>Successfully finished recording</source>
         <translation>Grabación terminada correctamente</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="474"/>
+        <location filename="../../mainwindow.cpp" line="475"/>
         <source>Size</source>
         <translation>Tamaño</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="487"/>
-        <location filename="../../mainwindow.cpp" line="566"/>
+        <location filename="../../mainwindow.cpp" line="488"/>
+        <location filename="../../mainwindow.cpp" line="571"/>
         <source>Latest Recording</source>
         <translation>Ultima grabación</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="493"/>
-        <location filename="../../mainwindow.cpp" line="496"/>
-        <location filename="../../mainwindow.cpp" line="505"/>
-        <location filename="../../mainwindow.cpp" line="509"/>
+        <location filename="../../mainwindow.cpp" line="494"/>
+        <location filename="../../mainwindow.cpp" line="497"/>
+        <location filename="../../mainwindow.cpp" line="506"/>
+        <location filename="../../mainwindow.cpp" line="510"/>
         <source>Unable to start recording!</source>
         <translation>Imposible iniciar grabación</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="552"/>
+        <location filename="../../mainwindow.cpp" line="557"/>
         <source>Show/Hide window</source>
         <translation>Mostrar/Ocultar ventana</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="556"/>
+        <location filename="../../mainwindow.cpp" line="561"/>
         <source>Stop recording</source>
         <translation>Detener grabación</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="568"/>
+        <location filename="../../mainwindow.cpp" line="573"/>
         <source>Quit program</source>
         <translation>Salir</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="496"/>
+        <location filename="../../mainwindow.cpp" line="497"/>
         <source>View console output for more info.</source>
         <translation>Ver la salida en consola para más información.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="502"/>
+        <location filename="../../mainwindow.cpp" line="503"/>
         <source>Show output</source>
         <translation>Mostrar salida</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="506"/>
+        <location filename="../../mainwindow.cpp" line="507"/>
         <source>Press &lt;i&gt;&apos;Show output&apos;&lt;/i&gt; to see console ouput.</source>
         <translation>Pulsar &lt;i&gt;&apos;Mostrar salida&apos;&lt;/i&gt; para ver la salida en consola.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="560"/>
+        <location filename="../../mainwindow.cpp" line="565"/>
         <source>&amp;Latest recording: </source>
         <translation>Ú&amp;ltima grabación:</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="795"/>
+        <location filename="../../mainwindow.cpp" line="800"/>
         <source>Current output copied to clipboard</source>
         <translation>Salida actual copiada al portapapeles</translation>
     </message>
