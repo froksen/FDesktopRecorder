@@ -49,20 +49,22 @@ You can contact me via kde-apps.org. Find me under the username "froksen".
 ###Portuguese (Brazil)
 * Alexandro 'salmora8' Casanova
 
-###Spanish
-* Javi
-
 ###Romanian
 * Mamut 'V3n3RiX' R. Ghiunhan
 
 ###Russian
 * Danilov 'modos189' Alexandr
 
+###Spanish
+* Javi
+
+###Turkish
+* Emre 'emfi' FIRAT
+
 ###Ukrainian
 * Eugene 'Gannet'
 
-###Russian translation
-* Danilov "modos189" Alexandr
+
 
 ###Portuguese (Brazil) 
 * Alexandro "salmora8" Casanova
