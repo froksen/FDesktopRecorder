@@ -64,8 +64,6 @@ You can contact me via kde-apps.org. Find me under the username "froksen".
 ###Ukrainian
 * Eugene 'Gannet'
 
-
-
 ###Portuguese (Brazil) 
 * Alexandro "salmora8" Casanova
 

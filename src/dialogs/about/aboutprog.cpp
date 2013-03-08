@@ -32,62 +32,65 @@ AboutProg::~AboutProg()
 //This method makes it eaiser to add new translators, without having to retranste the entire textedit.
 void AboutProg::appendTranslators()
 {
-    ui->textEdit_2->setText(trUtf8("FDesktopRecorder have been translated into some languages. If you want to translate it into your language you can contact me on opendesktop.org by sending me a message."));
-
-    ui->textEdit_2->append(QString("<br><h3>%1</h3>").arg(trUtf8("Translations")));
-    ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("Danish")));
-    ui->textEdit_2->append(QString::fromUtf8("Ole 'Froksen' Holm Frandsen"));
+    ui->textEdit_2->setText(trUtf8("FDesktopRecorder have been translated into alot of different languages. You want to help? Then please visit the projects Transifex page."));
     ui->textEdit_2->append("<br>");
+    ui->textEdit_2->append(QString("<b>Transifex:</b> <br> <a href='https://www.transifex.com/projects/p/FDesktopRecorder/'>https://www.transifex.com/projects/p/FDesktopRecorder/</a>").arg("More information"));
+    ui->textEdit_2->append(QString("<b>%1:</b> <br> <a href='https://github.com/froksen/FDesktopRecorder#translations'>https://github.com/froksen/FDesktopRecorder#translations</a>").arg("More information"));
+    ui->textEdit_2->toHtml();
+//    ui->textEdit_2->append(QString("<br><h3>%1</h3>").arg(trUtf8("Translations")));
+//    ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("Danish")));
+//    ui->textEdit_2->append(QString::fromUtf8("Ole 'Froksen' Holm Frandsen"));
+//    ui->textEdit_2->append("<br>");
 
-    ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("Chinese")));
-    ui->textEdit_2->append(QString::fromUtf8("'bruce.oy'"));
-    ui->textEdit_2->append("<br>");
+//    ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("Chinese")));
+//    ui->textEdit_2->append(QString::fromUtf8("'bruce.oy'"));
+//    ui->textEdit_2->append("<br>");
 
-    ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("French")));
-    ui->textEdit_2->append(QString::fromUtf8("'aishen'"));
-    ui->textEdit_2->append("<br>");
+//    ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("French")));
+//    ui->textEdit_2->append(QString::fromUtf8("'aishen'"));
+//    ui->textEdit_2->append("<br>");
 
-    ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("German")));
-    ui->textEdit_2->append(QString::fromUtf8("Max 'mx01' Huber"));
-    ui->textEdit_2->append(QString::fromUtf8("Chris 'saftsocken' Räss"));
-    ui->textEdit_2->append("<br>");
+//    ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("German")));
+//    ui->textEdit_2->append(QString::fromUtf8("Max 'mx01' Huber"));
+//    ui->textEdit_2->append(QString::fromUtf8("Chris 'saftsocken' Räss"));
+//    ui->textEdit_2->append("<br>");
 
-    ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("Greek")));
-    ui->textEdit_2->append(QString::fromUtf8("Γιάννης 'Evropi' Ανθυμίδης"));
-    ui->textEdit_2->append("<br>");
+//    ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("Greek")));
+//    ui->textEdit_2->append(QString::fromUtf8("Γιάννης 'Evropi' Ανθυμίδης"));
+//    ui->textEdit_2->append("<br>");
 
-    ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("Spanish")));
-    ui->textEdit_2->append(QString::fromUtf8("Javi"));
-    ui->textEdit_2->append("<br>");
+//    ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("Spanish")));
+//    ui->textEdit_2->append(QString::fromUtf8("Javi"));
+//    ui->textEdit_2->append("<br>");
 
-    ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("Italian")));
-    ui->textEdit_2->append(QString::fromUtf8("Vincenzo 'smart2128' Reale"));
-    ui->textEdit_2->append(QString::fromUtf8("Symbian flo"));
-    ui->textEdit_2->append("<br>");
+//    ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("Italian")));
+//    ui->textEdit_2->append(QString::fromUtf8("Vincenzo 'smart2128' Reale"));
+//    ui->textEdit_2->append(QString::fromUtf8("Symbian flo"));
+//    ui->textEdit_2->append("<br>");
 
-    ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("Polish")));
-    ui->textEdit_2->append(QString::fromUtf8("Daniel 'napcok' Napora"));
-    ui->textEdit_2->append("<br>");
+//    ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("Polish")));
+//    ui->textEdit_2->append(QString::fromUtf8("Daniel 'napcok' Napora"));
+//    ui->textEdit_2->append("<br>");
 
-    ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("Portuguese (Brazil)")));
-    ui->textEdit_2->append(QString::fromUtf8("Alexandro 'salmora8' Casanova"));
-    ui->textEdit_2->append("<br>");
+//    ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("Portuguese (Brazil)")));
+//    ui->textEdit_2->append(QString::fromUtf8("Alexandro 'salmora8' Casanova"));
+//    ui->textEdit_2->append("<br>");
 
-    ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("Romanian")));
-    ui->textEdit_2->append(QString::fromUtf8("Mamut R. 'V3n3RiX' Ghiunhan"));
-    ui->textEdit_2->append("<br>");
+//    ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("Romanian")));
+//    ui->textEdit_2->append(QString::fromUtf8("Mamut R. 'V3n3RiX' Ghiunhan"));
+//    ui->textEdit_2->append("<br>");
 
-    ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("Russian")));
-    ui->textEdit_2->append(QString::fromUtf8("Danilov 'modos189' Alexandr"));
-    ui->textEdit_2->append("<br>");
+//    ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("Russian")));
+//    ui->textEdit_2->append(QString::fromUtf8("Danilov 'modos189' Alexandr"));
+//    ui->textEdit_2->append("<br>");
 
-    ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("Ukrainian")));
-    ui->textEdit_2->append(QString::fromUtf8("Eugene 'Gannet'"));
-    ui->textEdit_2->append("<br>");
+//    ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("Ukrainian")));
+//    ui->textEdit_2->append(QString::fromUtf8("Eugene 'Gannet'"));
+//    ui->textEdit_2->append("<br>");
 
-    ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("Turkish")));
-    ui->textEdit_2->append(QString::fromUtf8("Emre 'emfi' FIRAT"));
-    ui->textEdit_2->append("<br>");
+//    ui->textEdit_2->append(QString::fromUtf8("<b>%1</b>").arg(trUtf8("Turkish")));
+//    ui->textEdit_2->append(QString::fromUtf8("Emre 'emfi' FIRAT"));
+//    ui->textEdit_2->append("<br>");
 }
 
 void AboutProg::about()
