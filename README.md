@@ -129,3 +129,13 @@ This will install the *.notifyrc file in the correct place. If you are building 
     $ make
   ```
   (You can do "make install" after this to install)
+
+##Development
+###'master' branch
+This branch contains the latest "released" version. Since this is a hoppy project and much more, I will not call this branch "stabile" but "usable" :-)
+If you want to run or package the project, this is the branch for you.
+
+###'development' branch
+This branch contains changes made since the last release and contains all active development. Although I try to make everything run, there is absolut no garantie. Features might be added, changed or deleted again :-)
+When I release a new version, the development branch will be merged into the master branch.
+If you want to send pull requests or want to help with coding and so on, this is the branch for you :-)
