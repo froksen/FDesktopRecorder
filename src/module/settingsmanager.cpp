@@ -76,7 +76,7 @@ void SettingsManager::readAll()
     settings.endGroup();
 
     settings.beginGroup("misc");
-    previewplayer = settings.value("previewplayer","kaffeine").toString();
+    previewplayer = settings.value("previewplayer","xdg-open").toString();
     usekdeplayer = settings.value("useKDEplayer","true").toBool();
     previewplayerintegrated = settings.value("previewplayerintegrated","false").toString();
     SingleWindow_redrectangle = settings.value("Singlewindow_redrectangle","true").toString();
