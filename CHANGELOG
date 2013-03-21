@@ -1,4 +1,4 @@
-*
+* 20130321
 - Added: Turkish by Emre 'emfi' FIRAT
 - Fixed: (Issue #1) Check existance of directory for storing recorded videos
 - Fixed (Issue #3) Stopwatch does not stop on crashexit
