@@ -1,6 +1,6 @@
 #!/usr/bin/env xdg-open
 [Desktop Entry]
-Exec=FDesktopRecorder
+Exec=fdesktoprecorder
 Icon=fdesktoprecorder
 Terminal=false
 Type=Application
@@ -10,6 +10,6 @@ GenericName=Record your desktop
 
 Name[da]=FDesktopRecorder
 Name=FDesktopRecorder
-Categories=Qt;KDE;Utility;X-KDE-Utilities-Desktop;X-SuSE-DesktopUtility;
+Categories=Qt;KDE;Utility;X-KDE-Utilities-Desktop;
 
 X-Desktop-File-Install-Version=0.18

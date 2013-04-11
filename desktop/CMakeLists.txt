@@ -3,5 +3,5 @@ include_directories (
 	)
 	
 #Installs the desktopfile
-install( FILES FDesktopRecorder.desktop DESTINATION share/applications/)
+install( FILES fdesktoprecorder.desktop DESTINATION share/applications/)
 install( FILES fdesktoprecorder.png DESTINATION share/pixmaps/)
