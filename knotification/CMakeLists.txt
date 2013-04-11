@@ -3,4 +3,4 @@ include_directories (
 	)
 	
 #Installs the desktopfile
-install( FILES FDesktopRecorder.notifyrc DESTINATION share/kde4/apps/FDesktopRecorder)
+install( FILES fdesktoprecorder.notifyrc DESTINATION share/kde4/apps/fdesktoprecorder)
