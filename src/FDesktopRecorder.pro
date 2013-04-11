@@ -9,7 +9,7 @@ QT += phonon
 
 LIBS += -lkdeui
 
-TARGET = FDesktopRecorder
+TARGET = fdesktoprecorder
 TEMPLATE = app
 
 
