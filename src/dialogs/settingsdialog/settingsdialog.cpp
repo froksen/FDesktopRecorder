@@ -253,6 +253,7 @@ void SettingsDialog::findLanguages()
     ui->comboBoxLanguage->addItem(trUtf8("Use system default"),"default");
     ui->comboBoxLanguage->addItem(QString("English (%1)").arg(trUtf8("Original")),"STANDARD");
 
+    /*If anybody finds any mistakes here, please let me know. */
     QMap <QString,QString> localeMap;
     localeMap.insert("da_DK",QString::fromUtf8("Danish - Dansk"));
     localeMap.insert("zh_CN",QString::fromUtf8("Chinese - 中國的"));
@@ -267,6 +268,10 @@ void SettingsDialog::findLanguages()
     localeMap.insert("es_ES",QString::fromUtf8("Spanish - Español"));
     localeMap.insert("uk_UA",QString::fromUtf8("Ukrainian - Український"));
     localeMap.insert("tr_TR",QString::fromUtf8("Turkish - Türk"));
+    localeMap.insert("hu_HU",QString::fromUtf8("Hungarian - Magyar"));
+    localeMap.insert("ast",QString::fromUtf8("Asturian - Asturianu"));
+
+
 
     foreach (QString locale, localeMap.keys()){
         qDebug() << "Locale:" << locale << localeMap.value(locale);
