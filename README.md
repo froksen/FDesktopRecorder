@@ -23,54 +23,20 @@ Created by: Ole "Froksen" Holm Frandsen
 You can contact me via kde-apps.org. Find me under the username "froksen".
 
 ##Translations
-###Chinese
-* 'bruce.oy'
-
-###Danish
-* Ole 'froksen' Holm Frandsen
-
-###French
-* 'aishen'
-
-###German
-* Max 'mx01' Huber
-* Christian 'saftsocken' Räss 
-
-###Greek
-* Γιάννης 'Evropi' Ανθυμίδης
-
-###Italian
-* Vincenzo 'smart2128' Reale
-* Symbian flo
-
-###Polish
-* Daniel 'napcok' Napora
-
-###Portuguese (Brazil)
-* Alexandro 'salmora8' Casanova
-
-###Romanian
-* Mamut 'V3n3RiX' R. Ghiunhan
-
-###Russian
-* Danilov 'modos189' Alexandr
-
-###Spanish
-* Javi
-
-###Turkish
-* Emre 'emfi' FIRAT
-
-###Ukrainian
-* Eugene 'Gannet'
-
-###Portuguese (Brazil) 
-* Alexandro "salmora8" Casanova
+For information about who has translated this program. Please visit Transifex: https://www.transifex.com/projects/p/FDesktopRecorder/
 
 ###Help with translation?
 All translation is done via Transifex, please visit the project page at: https://www.transifex.com/projects/p/FDesktopRecorder/
 
-##Build and Install
+##Development
+###'master' branch
+This branch contains the latest "released" version. Since this is a hoppy project and much more, I will not call this branch "stabile" but "usable" :-)
+If you want to run or package the project, this is the branch for you.
+
+###'development' branch
+This branch contains changes made since the last release and contains all active development. Although I try to make everything run, there is absolut no garantie. Features might be added, changed or deleted again :-)
+When I release a new version, the development branch will be merged into the master branch.
+If you want to send pull requests or want to help with coding and so on, this is the branch for you :-)
 
 ###Requires to run
 * ffmpeq is used for the recording
@@ -118,24 +84,3 @@ This will install the *.notifyrc file in the correct place. If you are building 
     $ make
   ```
   (You can do "make install" after this to install)
-  
-###How to build/compile via CMake before version 20121012
-  ```
-    $ cd <FDesktopRecorder-folder>
-    $ cd source
-    $ mkdir build
-    $ cd build/
-    $ cmake ..
-    $ make
-  ```
-  (You can do "make install" after this to install)
-
-##Development
-###'master' branch
-This branch contains the latest "released" version. Since this is a hoppy project and much more, I will not call this branch "stabile" but "usable" :-)
-If you want to run or package the project, this is the branch for you.
-
-###'development' branch
-This branch contains changes made since the last release and contains all active development. Although I try to make everything run, there is absolut no garantie. Features might be added, changed or deleted again :-)
-When I release a new version, the development branch will be merged into the master branch.
-If you want to send pull requests or want to help with coding and so on, this is the branch for you :-)
