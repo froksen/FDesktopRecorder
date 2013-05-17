@@ -1,7 +1,7 @@
-*
-- Added: Hungarian and Asturian translations
-- Changed: Binary is now lowercased (FDesktopRecorder is now fdesktoprecorder)
-- FDesktopRecorder.desktop does not longer contain openSUSE spefic arguments. 
+* 20130517
+- Added: Hungarian and Asturian translations (Incomplete)
+- Changed: Binary filename is now lowercased
+- fdesktoprecorder.desktop does not longer contain openSUSE spefic arguments. 
 
 * 20130321
 - Added: Turkish by Emre 'emfi' FIRAT
