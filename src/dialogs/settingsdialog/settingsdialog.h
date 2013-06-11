@@ -2,8 +2,8 @@
 #define SETTINGSDIALOG_H
 
 #include <QDialog>
-#include "../module/settingsmanager.h"
-#include "../module/recordingdevices.h"
+#include "../../module/settingsmanager.h"
+#include "../../module/recordingdevices.h"
 
 namespace Ui {
     class SettingsDialog;
@@ -26,6 +26,7 @@ private slots:
     void on_checkBoxPreviewplayer_clicked();
     void on_comboBoxLanguage_activated();
     void on_pushButtonFFmpegbrowse_clicked();
+    void on_lineEditOtheraudiodevice_changed(int);
 
 private:
     Ui::SettingsDialog *ui;

@@ -157,8 +157,8 @@ void MainWindow::on_pushButtonStartrecord_clicked()
     //------------------------SECTION: Geometry--------------------------------
 
 
-    //If Single Window radio is checked, then to this. Else record fullscreen :-)
-    if(ui->radioButtonSinglewindow->isChecked())
+    //If Single Window or Single Window (no frame) radio is checked, then to this.
+    if((ui->radioButtonSinglewindow->isChecked()) || (ui->radioButtonSinglewindownoframe->isChecked()))
     {
         //Informing the user about how to proceed
         QMessageBox msgBox;
@@ -173,7 +173,12 @@ void MainWindow::on_pushButtonStartrecord_clicked()
         //Starting the singlewindow setup
         QProcess p;
         QStringList argsscript;
-        argsscript << "-frame";
+
+        if(ui->radioButtonSinglewindow->isChecked())
+        {
+            argsscript << "-frame";
+        }
+
         p.start("xwininfo",argsscript);
         p.waitForFinished(-1);
 
@@ -200,6 +205,7 @@ void MainWindow::on_pushButtonStartrecord_clicked()
             rubberband.show();
         }
     }
+
     else if(ui->radioButtonCustom->isChecked()) {
 
         AreaSelectorDialog *mAreaSelector = new AreaSelectorDialog(this);

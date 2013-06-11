@@ -25,6 +25,9 @@ public:
     void setAudiochannels(int newValue);
     int getAudiochannles();
 
+    void setOtheraudiodevice(QString newDevice);
+    QString getOtheraudiodevice();
+
     void setMicrophonedevice(QString newDevice);
     QString getMicrophonedevice();
 
@@ -108,6 +111,7 @@ private:
     //Microphone
     QString microphonedevice;
     bool microphonemuted;
+    QString otheraudiodevice;
     //Advanced
     QString vpre;
     QString usevpre;

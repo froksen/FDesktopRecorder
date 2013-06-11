@@ -149,53 +149,63 @@
         <translation>Участок</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="199"/>
+        <location filename="../../mainwindow.ui" line="147"/>
+        <source>Record a single window or screen without frame.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../mainwindow.ui" line="150"/>
+        <source>Single Window (no frame)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../mainwindow.ui" line="212"/>
         <source>Copy to Clipboard</source>
         <translation>Копировать в буфер обмена</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="208"/>
+        <location filename="../../mainwindow.ui" line="221"/>
         <source>About</source>
         <translation>Информация</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="211"/>
+        <location filename="../../mainwindow.ui" line="224"/>
         <source>About FDesktopRecorder</source>
         <translation>О FDesktopRecorder</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="219"/>
-        <location filename="../../mainwindow.ui" line="222"/>
+        <location filename="../../mainwindow.ui" line="232"/>
+        <location filename="../../mainwindow.ui" line="235"/>
         <source>Settings</source>
         <translation>Настройки</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="230"/>
+        <location filename="../../mainwindow.ui" line="243"/>
         <source>Console</source>
         <translation>Терминал</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="233"/>
+        <location filename="../../mainwindow.ui" line="246"/>
         <source>Show/Hide console output</source>
         <translation>Показать/скрыть вывод терминала</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="241"/>
+        <location filename="../../mainwindow.ui" line="254"/>
         <source>Open recording directory</source>
         <translation>Открыть каталог записи</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="244"/>
+        <location filename="../../mainwindow.ui" line="257"/>
         <source>Open directory containing your recordings</source>
         <translation>Открыть каталог с вашими записями</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="252"/>
+        <location filename="../../mainwindow.ui" line="265"/>
         <source>Preview recording</source>
         <translation>Предварительный просмотр записи</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.ui" line="255"/>
+        <location filename="../../mainwindow.ui" line="268"/>
         <source>Preview the recording</source>
         <translation>Предварительный просмотр записи</translation>
     </message>
@@ -266,78 +276,78 @@ Open &apos;Settings&apos;?</source>
 Открыть &apos;Настройки&apos;?</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="382"/>
-        <location filename="../../mainwindow.cpp" line="696"/>
+        <location filename="../../mainwindow.cpp" line="388"/>
+        <location filename="../../mainwindow.cpp" line="702"/>
         <source>Recording</source>
         <translation>Запись</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="399"/>
+        <location filename="../../mainwindow.cpp" line="405"/>
         <source>Please wait while saving the recording. Might take some time.</source>
         <translation>Пожалуйста, дождитесь сохранения записи. Это может занять некоторое время.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="475"/>
-        <location filename="../../mainwindow.cpp" line="478"/>
+        <location filename="../../mainwindow.cpp" line="481"/>
+        <location filename="../../mainwindow.cpp" line="484"/>
         <source>Successfully finished recording</source>
         <translation>Запись успешно окончилась</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="475"/>
+        <location filename="../../mainwindow.cpp" line="481"/>
         <source>Size</source>
         <translation>Размер</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="488"/>
-        <location filename="../../mainwindow.cpp" line="571"/>
+        <location filename="../../mainwindow.cpp" line="494"/>
+        <location filename="../../mainwindow.cpp" line="577"/>
         <source>Latest Recording</source>
         <translation>Последняя запись</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="494"/>
-        <location filename="../../mainwindow.cpp" line="497"/>
-        <location filename="../../mainwindow.cpp" line="506"/>
-        <location filename="../../mainwindow.cpp" line="510"/>
+        <location filename="../../mainwindow.cpp" line="500"/>
+        <location filename="../../mainwindow.cpp" line="503"/>
+        <location filename="../../mainwindow.cpp" line="512"/>
+        <location filename="../../mainwindow.cpp" line="516"/>
         <source>Unable to start recording!</source>
         <translation>Не удается начать запись!</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="557"/>
+        <location filename="../../mainwindow.cpp" line="563"/>
         <source>Show/Hide window</source>
         <translation>Показать/скрыть окно</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="561"/>
+        <location filename="../../mainwindow.cpp" line="567"/>
         <source>Stop recording</source>
         <translation>Остановить запись</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="573"/>
+        <location filename="../../mainwindow.cpp" line="579"/>
         <source>Quit program</source>
         <translation>Закрыть программу</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="497"/>
+        <location filename="../../mainwindow.cpp" line="503"/>
         <source>View console output for more info.</source>
         <translation>Просмотр вывода терминала для получения дополнительной информации.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="503"/>
+        <location filename="../../mainwindow.cpp" line="509"/>
         <source>Show output</source>
         <translation>Показать вывод</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="507"/>
+        <location filename="../../mainwindow.cpp" line="513"/>
         <source>Press &lt;i&gt;&apos;Show output&apos;&lt;/i&gt; to see console ouput.</source>
         <translation>Нажмите &lt;i&gt;&apos;Показать вывод&apos;&lt;/i&gt;, чтобы увидеть вывод в терминале.</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="565"/>
+        <location filename="../../mainwindow.cpp" line="571"/>
         <source>&amp;Latest recording: </source>
         <translation>&amp;Последняя запись: </translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="800"/>
+        <location filename="../../mainwindow.cpp" line="806"/>
         <source>Current output copied to clipboard</source>
         <translation>Вывод терминала скопирован в буфер обмена</translation>
     </message>
@@ -348,6 +358,11 @@ Open &apos;Settings&apos;?</source>
         <location filename="../../module/recordingdevices.cpp" line="64"/>
         <source>Pulse Audio (might not work)</source>
         <translation>Pulse Audio (может не работать)</translation>
+    </message>
+    <message>
+        <location filename="../../module/recordingdevices.cpp" line="67"/>
+        <source>Other</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -368,57 +383,57 @@ Open &apos;Settings&apos;?</source>
         <translation>Основые</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="70"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="98"/>
         <source>Frames pr. sec</source>
         <translation>Кадров в сек.</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="84"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="77"/>
         <source>Video codec</source>
         <translation>Видео кодек</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="98"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="91"/>
         <source>Audio codec</source>
         <translation>Аудио кодек</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="112"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="119"/>
         <source>Audiochannels</source>
         <translation>Аудиоканалы</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="126"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="133"/>
         <source>Microphone</source>
         <translation>Микрофон</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="140"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="126"/>
         <source>Basename</source>
         <translation>Базовое имя</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="159"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="166"/>
         <source>Time/Date</source>
         <translation>Время/Дата</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="168"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="147"/>
         <source>Default path</source>
         <translation>Путь по умолчанию</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="190"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="197"/>
         <source>Change</source>
         <translation>Применить</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="199"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="206"/>
         <source>Default format</source>
         <translation>Формат сохранения</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="231"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="213"/>
         <source>Sound architecture</source>
         <translation>Архитектура звука</translation>
     </message>
@@ -428,14 +443,14 @@ Open &apos;Settings&apos;?</source>
         <translation>Отключение звука при запуске</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="335"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="345"/>
         <source>Advanced</source>
         <translation>Расширенные</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="353"/>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="364"/>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="388"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="363"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="374"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="398"/>
         <source>Use</source>
         <translation>Использовать</translation>
     </message>
@@ -445,57 +460,57 @@ Open &apos;Settings&apos;?</source>
         <translation>Настройки записи (FFmpeg)</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="77"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="70"/>
         <source>Framerate in recording.</source>
         <translation>Частота кадров в записи.</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="91"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="84"/>
         <source>Video codec used in recording</source>
         <translation>Видео кодек, используемый в записи</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="105"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="112"/>
         <source>Audio codec used in the recording</source>
         <translation>Аудио кодек, используемый в записи</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="119"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="105"/>
         <source>Number of audiochannels used. To record in mono set to 1, for stereo set to 2 etc.</source>
         <translation>Количество используемых аудиканалов. Для записи в режиме моно равно 1, для стерео равно 2 и т.д.</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="149"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="156"/>
         <source>Basename of recordings</source>
         <translation>Базовое имя из записей</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="156"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="163"/>
         <source>Use time and date as the basename.</source>
         <translation>Использовать дату и время как базовое имя.</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="177"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="184"/>
         <source>Location of recordings</source>
         <translation>Местоположение записей</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="187"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="194"/>
         <source>Change default path.</source>
         <translation>Изменение пути по умолчанию.</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="206"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="175"/>
         <source>File format of the recording</source>
         <translation>Формат файла записи</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="215"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="229"/>
         <source>Microphone used for audioinput</source>
         <translation>Используемый микрофоном аудиовход</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="224"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="220"/>
         <source>Sound architecture used in recording. This can be alsa, oss etc.</source>
         <translation>Архитектура звука, используемоая при записи. Это может быть ALSA, OSS и т.д.</translation>
     </message>
@@ -505,93 +520,98 @@ Open &apos;Settings&apos;?</source>
         <translation>Если выбрано, то микрофон отключен при старте</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="418"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="311"/>
+        <source>Name of sound device.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="428"/>
         <source>Application Settings</source>
         <translation>Настройки приложения</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="431"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="441"/>
         <source>Application settings</source>
         <translation>Настройки приложения</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="450"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="460"/>
         <source>Preview player</source>
         <translation>Предварительный просмотр</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="457"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="467"/>
         <source>Language</source>
         <translation>Язык</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="484"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="494"/>
         <source>Show red rectangle</source>
         <translation>Показать красный прямоугольник</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="497"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="507"/>
         <source>Single Window</source>
         <translation>Единственное Окно</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="507"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="517"/>
         <source>...</source>
         <translation>...</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="514"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="524"/>
         <source>Use default mediaplayer rather than the one chosen from above</source>
         <translation>Предоставлять высший приоритет плееру за умолчинием, чем выбранному выше</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="530"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="540"/>
         <source>Show a red rectangle that marks the area which is beeing recorded.</source>
         <translation>Выделить записываемую область экрана красным прямоугольником</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="533"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="543"/>
         <source>Enable/Disable</source>
         <translation>Включить/Выключить</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="553"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="563"/>
         <source>FFmpeg</source>
         <translation>FFmpeg</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="575"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="585"/>
         <source>NOTE: Some changes might first apply after a restart of this program</source>
         <translation>ПРИМЕЧАНИЕ: Для применения некоторых изменений необходимо перезапустить программу</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="588"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="598"/>
         <source>Save or decline changes</source>
         <translation>Сохранить или отклонить изменения</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="601"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="611"/>
         <source>Restores the settings to the defaults. Please note, these can not be undone!</source>
         <translation>Восстановить настройки по умолчанию. Обратите внимание, что это не может быть отменено!</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="604"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="614"/>
         <source>Restore to default. PLEASE NOTE: CAN NOT BE UNDONE!</source>
         <translation>Восстановить значения по умолчанию. ОБРАТИТЕ ВНИМАНИЕ: НЕ МОЖЕТ БЫТЬ ОТМЕНЕНО!</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="607"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="617"/>
         <source>Restore to default</source>
         <translation>По умолчанию</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="37"/>
         <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="38"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="39"/>
         <source>Restore everything to default?</source>
         <translation>Восстановить все по умолчанию ?</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="39"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="40"/>
         <source>If you press Yes everything will be restored to default. 
 
 Be aware that this can NOT be undone.</source>
@@ -600,28 +620,33 @@ Be aware that this can NOT be undone.</source>
 Имейте в виду, что это не может быть отменено.</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="100"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="116"/>
         <source>Microphone not found!</source>
         <translation>Микрофон не найден!</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="213"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="229"/>
         <source>Open Directory</source>
         <translation>Открыть папку</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="517"/>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="253"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="337"/>
+        <source>Other</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.ui" line="527"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="269"/>
         <source>Use system default</source>
         <translation>Использовать параметры системы</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="254"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="270"/>
         <source>Original</source>
         <translation>Исходный текст</translation>
     </message>
     <message>
-        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="306"/>
+        <location filename="../../dialogs/settingsdialog/settingsdialog.cpp" line="327"/>
         <source>FFmpeg location</source>
         <translation>Расположение FFmpeg</translation>
     </message>
@@ -629,7 +654,7 @@ Be aware that this can NOT be undone.</source>
 <context>
     <name>SettingsManager</name>
     <message>
-        <location filename="../../module/settingsmanager.cpp" line="70"/>
+        <location filename="../../module/settingsmanager.cpp" line="72"/>
         <source>recording</source>
         <extracomment>Translate this into what a good basename for a recording would be in your language</extracomment>
         <translation>запись</translation>

@@ -54,8 +54,8 @@
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>473</width>
-            <height>428</height>
+            <width>458</width>
+            <height>424</height>
            </rect>
           </property>
           <attribute name="label">
@@ -64,13 +64,6 @@
           <layout class="QVBoxLayout" name="verticalLayout_4">
            <item>
             <layout class="QGridLayout" name="gridLayout_4">
-             <item row="0" column="1">
-              <widget class="QLabel" name="labelfps">
-               <property name="text">
-                <string>Frames pr. sec</string>
-               </property>
-              </widget>
-             </item>
              <item row="0" column="2">
               <widget class="QSpinBox" name="spinBoxfps">
                <property name="toolTip">
@@ -99,6 +92,20 @@
                </property>
               </widget>
              </item>
+             <item row="0" column="1">
+              <widget class="QLabel" name="labelfps">
+               <property name="text">
+                <string>Frames pr. sec</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="2">
+              <widget class="QSpinBox" name="spinBoxaudiochannels">
+               <property name="toolTip">
+                <string>Number of audiochannels used. To record in mono set to 1, for stereo set to 2 etc.</string>
+               </property>
+              </widget>
+             </item>
              <item row="3" column="2">
               <widget class="QLineEdit" name="lineEditaudiocodec">
                <property name="toolTip">
@@ -113,10 +120,10 @@
                </property>
               </widget>
              </item>
-             <item row="4" column="2">
-              <widget class="QSpinBox" name="spinBoxaudiochannels">
-               <property name="toolTip">
-                <string>Number of audiochannels used. To record in mono set to 1, for stereo set to 2 etc.</string>
+             <item row="12" column="1">
+              <widget class="QLabel" name="labelbasename">
+               <property name="text">
+                <string>Basename</string>
                </property>
               </widget>
              </item>
@@ -127,21 +134,21 @@
                </property>
               </widget>
              </item>
-             <item row="7" column="1" colspan="2">
+             <item row="11" column="1" colspan="2">
               <widget class="Line" name="line">
                <property name="orientation">
                 <enum>Qt::Horizontal</enum>
                </property>
               </widget>
              </item>
-             <item row="8" column="1">
-              <widget class="QLabel" name="labelbasename">
+             <item row="13" column="1">
+              <widget class="QLabel" name="labelpath">
                <property name="text">
-                <string>Basename</string>
+                <string>Default path</string>
                </property>
               </widget>
              </item>
-             <item row="8" column="2">
+             <item row="12" column="2">
               <layout class="QGridLayout" name="gridLayout">
                <item row="0" column="0">
                 <widget class="QLineEdit" name="lineEditbasename">
@@ -162,14 +169,14 @@
                </item>
               </layout>
              </item>
-             <item row="9" column="1">
-              <widget class="QLabel" name="labelpath">
-               <property name="text">
-                <string>Default path</string>
+             <item row="14" column="2">
+              <widget class="QComboBox" name="comboBoxFormat">
+               <property name="toolTip">
+                <string>File format of the recording</string>
                </property>
               </widget>
              </item>
-             <item row="9" column="2">
+             <item row="13" column="2">
               <layout class="QGridLayout" name="gridLayout_3">
                <item row="0" column="0">
                 <widget class="QLineEdit" name="lineEditpath">
@@ -193,17 +200,24 @@
                </item>
               </layout>
              </item>
-             <item row="10" column="1">
+             <item row="14" column="1">
               <widget class="QLabel" name="labelFormat">
                <property name="text">
                 <string>Default format</string>
                </property>
               </widget>
              </item>
-             <item row="10" column="2">
-              <widget class="QComboBox" name="comboBoxFormat">
+             <item row="2" column="1">
+              <widget class="QLabel" name="label_3">
+               <property name="text">
+                <string>Sound architecture</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="2">
+              <widget class="QLineEdit" name="lineEditAudiosource">
                <property name="toolTip">
-                <string>File format of the recording</string>
+                <string>Sound architecture used in recording. This can be alsa, oss etc.</string>
                </property>
               </widget>
              </item>
@@ -218,21 +232,7 @@
                </item>
               </layout>
              </item>
-             <item row="2" column="2">
-              <widget class="QLineEdit" name="lineEditAudiosource">
-               <property name="toolTip">
-                <string>Sound architecture used in recording. This can be alsa, oss etc.</string>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="1">
-              <widget class="QLabel" name="label_3">
-               <property name="text">
-                <string>Sound architecture</string>
-               </property>
-              </widget>
-             </item>
-             <item row="6" column="2">
+             <item row="7" column="2">
               <widget class="QCheckBox" name="checkBoxMicMute">
                <property name="toolTip">
                 <string>If selected the microphone is muted on startup</string>
@@ -255,7 +255,7 @@
                </property>
               </widget>
              </item>
-             <item row="9" column="0">
+             <item row="13" column="0">
               <widget class="QLabel" name="Pixmaplabel_Defaultpath">
                <property name="text">
                 <string/>
@@ -285,7 +285,7 @@
                </property>
               </widget>
              </item>
-             <item row="10" column="0">
+             <item row="14" column="0">
               <widget class="QLabel" name="Pixmaplabel_Defaultformat">
                <property name="text">
                 <string/>
@@ -295,13 +295,23 @@
                </property>
               </widget>
              </item>
-             <item row="8" column="0">
+             <item row="12" column="0">
               <widget class="QLabel" name="Pixmaplabel_basename">
                <property name="text">
                 <string/>
                </property>
                <property name="pixmap">
                 <pixmap>../../../../../usr/share/icons/default.kde4/22x22/actions/edit-rename.png</pixmap>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="2">
+              <widget class="QLineEdit" name="lineEditOtheraudiodevice">
+               <property name="toolTip">
+                <string>Name of sound device.</string>
+               </property>
+               <property name="readOnly">
+                <bool>false</bool>
                </property>
               </widget>
              </item>
@@ -327,8 +337,8 @@
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>473</width>
-            <height>428</height>
+            <width>458</width>
+            <height>424</height>
            </rect>
           </property>
           <attribute name="label">

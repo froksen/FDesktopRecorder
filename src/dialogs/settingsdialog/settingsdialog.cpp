@@ -1,6 +1,6 @@
 #include "settingsdialog.h"
 #include "ui_settingsdialog.h"
-#include "../module/recordingdevices.h"
+#include "../../module/recordingdevices.h"
 #include <QDebug>
 #include <QFile>
 #include <QFileDialog>
@@ -18,6 +18,7 @@ SettingsDialog::SettingsDialog(QWidget *parent) :
     readSettings();
 
     on_checkBoxMicMute_clicked();
+    on_lineEditOtheraudiodevice_changed(ui->comboBoxrecording->currentIndex());
 
 }
 
@@ -46,8 +47,13 @@ void SettingsDialog::on_pushButtonRestore_clicked()
     switch (ret)  {
       case QMessageBox::Yes:
             {
-            qDebug() << "-----  Settingsdialog: Restoring settings to defaults -----";
+                qDebug() << "-----  Settingsdialog: Restoring settings to defaults -----";
                 //in the GUI
+
+                //SLOT and SIGNAL must be disconnected before execute clear()
+                disconnect(ui->comboBoxrecording, SIGNAL(currentIndexChanged(int)), this,
+                           SLOT(on_lineEditOtheraudiodevice_changed(int)));
+
                 ui->checkBoxMicMute->setChecked(1);
                 ui->comboBoxFormat->clear();
                 ui->comboBoxLanguage->clear();
@@ -56,6 +62,7 @@ void SettingsDialog::on_pushButtonRestore_clicked()
                 //Restores the defaults
                 settings.removeSettingsfile();
                 readSettings();
+                on_lineEditOtheraudiodevice_changed(ui->comboBoxrecording->currentIndex());
               break;
             }
       case QMessageBox::No:
@@ -89,6 +96,15 @@ void SettingsDialog::readSettings()
 
         index += 1;
     }
+
+    //Loading last saved other audio device
+    ui->lineEditOtheraudiodevice->setText(settings.getOtheraudiodevice());
+    ui->comboBoxrecording->setItemData(index-1, settings.getOtheraudiodevice());
+    recordingdevices.RecordDeviceHW[index-1] = settings.getOtheraudiodevice();
+
+    //Connecting singal from comboBoxrecording to on_lineEditOtheraudiodevice_changed function
+    connect(ui->comboBoxrecording, SIGNAL(currentIndexChanged(int)), this,
+            SLOT(on_lineEditOtheraudiodevice_changed(int)));
 
     //Reads the prefered value
     QString recordingdevice = settings.getMicrophonedevice();
@@ -316,6 +332,19 @@ void SettingsDialog::on_pushButtonFFmpegbrowse_clicked()
     }
 }
 
+void SettingsDialog::on_lineEditOtheraudiodevice_changed(int index)
+{
+    if(recordingdevices.RecordDeviceDesc[index]==trUtf8("Other"))
+    {
+        ui->lineEditOtheraudiodevice->setEnabled(1);
+    }
+
+    else
+    {
+        ui->lineEditOtheraudiodevice->setEnabled(0);
+    }
+}
+
 void SettingsDialog::writeSettings()
 {
     //other
@@ -323,7 +352,11 @@ void SettingsDialog::writeSettings()
     settings.setVideocodec(ui->lineEditvideocodec->text());
     settings.setAudiocodec(ui->lineEditaudiocodec->text());
     settings.setAudiochannels(ui->spinBoxaudiochannels->value());
+    settings.setOtheraudiodevice(ui->lineEditOtheraudiodevice->text());
     settings.setAudiosource(ui->lineEditAudiosource->text());
+
+    //Writing name of other audio device
+    ui->comboBoxrecording->setItemData(ui->comboBoxrecording->count()-1, ui->lineEditOtheraudiodevice->text());
 
     //Microphone
     int MicIndex = ui->comboBoxrecording->currentIndex();

@@ -64,6 +64,9 @@ void RecordingDevices::getRecorddevices(){
        RecordDeviceDesc << trUtf8("Pulse Audio (might not work)");
        RecordDeviceHW << "pulse";
 
+       RecordDeviceDesc << trUtf8("Other");
+       RecordDeviceHW << "";
+
        qDebug() << "Record devices found:";
        foreach(QString device, RecordDeviceDesc){
            qDebug() << "-" << device;

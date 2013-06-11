@@ -1,7 +1,7 @@
 #include "settingsmanager.h"
 #include <QDebug>
 #include <QDir>
-#include <KGlobalSettings>
+#include <kglobalsettings.h>
 
 SettingsManager::SettingsManager(QObject *parent) :
     QObject(parent)
@@ -16,6 +16,7 @@ void SettingsManager::writeAll()
     settings.setValue("audiosource",audiosource);
     settings.setValue("audiocodec",audiocodec);
     settings.setValue("audiochannels",audiochannels);
+    settings.setValue("otheraudiodevice", otheraudiodevice);
     settings.setValue("vpre",vpre);
     settings.setValue("apre",apre);
     settings.setValue("Preset",Preset);
@@ -54,6 +55,7 @@ void SettingsManager::readAll()
     audiosource = settings.value("audiosource","alsa").toString();
     audiocodec = settings.value("audiocodec","flac").toString();
     audiochannels = settings.value("audiochannels",2).toInt();
+    otheraudiodevice = settings.value("otheraudiodevice", "").toString();
     vpre = settings.value("vpre").toString();
     apre = settings.value("apre").toString();
     Preset = settings.value("Preset","ultrafast").toString();
@@ -138,6 +140,16 @@ void SettingsManager::setAudiochannels(int newValue)
 int SettingsManager::getAudiochannles()
 {
     return audiochannels;
+}
+
+QString SettingsManager::getOtheraudiodevice()
+{
+    return otheraudiodevice;
+}
+
+void SettingsManager::setOtheraudiodevice(QString newDevice)
+{
+    otheraudiodevice = newDevice;
 }
 
 
