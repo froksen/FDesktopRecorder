@@ -200,10 +200,13 @@ void MainWindow::on_pushButtonStartrecord_clicked()
         rubberband.move(QString(singleCornersList[0]).toInt()-2,QString(singleCornersList[1]).toInt()-2);
 
         //Shows the rectangle
-        if(settings.getSinglewindow_redrectangle() != "false")
-        {
-            rubberband.show();
+        if(!ui->radioButtonSinglewindownoframe->isChecked()){
+            if(settings.getSinglewindow_redrectangle() != "false")
+            {
+                rubberband.show();
+            }
         }
+
     }
 
     else if(ui->radioButtonCustom->isChecked()) {
