@@ -286,6 +286,7 @@ void SettingsDialog::findLanguages()
     localeMap.insert("tr_TR",QString::fromUtf8("Turkish - Türk"));
     localeMap.insert("hu_HU",QString::fromUtf8("Hungarian - Magyar"));
     localeMap.insert("ast",QString::fromUtf8("Asturian - Asturianu"));
+    localeMap.insert("vi",QString::fromUtf8("Vietnamese - Việt"));
 
 
 

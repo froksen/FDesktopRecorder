@@ -18,5 +18,6 @@
         <file>translations/FDesktopRecorder.main/tr_TR.qm</file>
         <file>translations/FDesktopRecorder.main/hu_HU.qm</file>
         <file>translations/FDesktopRecorder.main/ast.qm</file>
+        <file>translations/FDesktopRecorder.main/vi.qm</file>
     </qresource>
 </RCC>
