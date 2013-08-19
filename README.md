@@ -1,3 +1,6 @@
+#NOTE: As of today (19. August 2013) Artur Lacki (Lacky) have taken over development and mangement of this project. He has decided to use Bitbucket instead of Github. So for more information and latest sourcecode please visit: https://bitbucket.org/Lacky/fdesktoprecorder/
+
+
 #FDesktopRecorder
 
 ##Description
